@@ -266,6 +266,7 @@ def Constructor():
     RunEvent(8090, slot=2, args=(3, 512, 11217030), arg_types='Bii')
     RunEvent(8090, slot=3, args=(3, 513, 11217040), arg_types='Bii')
     RunEvent(8090, slot=4, args=(3, 514, 11217050), arg_types='Bii')
+    RunEvent(9999)
 
 
 def Preconstructor():
@@ -390,6 +391,15 @@ def Preconstructor():
     EnableFlag(50006071)
     EnableFlag(50006080)
 
+
+def Event9999():
+    """ 9999: Event 9999 """
+    IfPlayerHasWeapon(-1, 503005, including_box=False)
+    IfPlayerHasWeapon(-1, 503105, including_box=False)
+    IfPlayerHasWeapon(-1, 503205, including_box=False)
+    IfConditionTrue(0, -1)
+    EnableFlag(11519888)
+    
 
 def Event290():
     """ 290: Event 290 """

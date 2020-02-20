@@ -90,10 +90,10 @@ class State_6(State):
             return State_16
         if IsPlayerDead() == 1 and GetDistanceToPlayer() <= 5 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 180 and GetDistanceToPlayer() <= 5:
             return State_46
-        if IsPlayerTalkingToMe() == 1 and GetFlagState(11400888) == 1 and GetDistanceToPlayer() <= 10:
+        if IsPlayerTalkingToMe() == 1 and GetFlagState(11409888) == 1 and GetDistanceToPlayer() <= 10:
             return State_64
-        if IsPlayerTalkingToMe() == 1 and GetFlagState(11510888) == 1 and GetFlagState(11400888) == 0 and GetDistanceToPlayer() <= 10:
-            return State_58
+        if IsPlayerTalkingToMe() == 1 and GetFlagState(11519888) == 1 and GetFlagState(11400888) == 0 and GetDistanceToPlayer() <= 10:
+            return State_59
         if GetFlagState(1603) == 1 and GetFlagState(71200065) == 0 and GetDistanceToPlayer() <= 10 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 180 and GetDistanceToPlayer() <= 10 and GetSelfHP() <= 40 and GetFlagState(71200077) == 0:
             return State_52
         if IsPlayerTalkingToMe() == 1 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 2 and GetOneLineHelpStatus() == 1 and GetFlagState(1601) == 1:
@@ -952,8 +952,8 @@ class State_57(State):
             return State_6
 
 
-class State_58(State):
-    """ 58: Chaos Blade quest [start]"""
+class State_59(State):
+    """ 59: Chaos Blade quest [start]"""
 
     def previous_states(self):
         return [State_6]
@@ -962,18 +962,10 @@ class State_58(State):
         TalkToPlayer(conversation=41010700, unk1=-1, unk2=-1)
 
     def test(self):
-        return State_59
-
-
-class State_59(State):
-    """ 59: Chaos Blade quest [prompt]"""
-
-    def previous_states(self):
-        return [State_58]
-
-    def test(self):
         if HasTalkEnded() == 1:
             return State_60
+        if GetDistanceToPlayer() > 10:
+            return State_6 
 
 
 class State_60(State):
@@ -990,7 +982,7 @@ class State_60(State):
             return State_61
         if GetGenericDialogButtonResult() == 2 and IsGenericDialogOpen() == 0:
             return State_62
-        if GetDistanceToPlayer() > 5:
+        if GetDistanceToPlayer() > 10:
             return State_6
 
 class State_61(State):
@@ -1000,6 +992,8 @@ class State_61(State):
         return [State_60]
 
     def enter(self):
+        SetFlagState(flag=11409887, state=1)
+        SetFlagState(flag=11409884, state=1)
         TalkToPlayer(conversation=41010800, unk1=-1, unk2=-1)
 
     def test(self):
@@ -1029,7 +1023,7 @@ class State_63(State):
         return [State_61]
 
     def enter(self):
-        SetFlagState(flag=11400888, state=1)
+        SetFlagState(flag=11409888, state=1)
 
     def test(self):
         return State_6
@@ -1049,20 +1043,21 @@ class State_64(State):
             return State_65
 
 
-class State_65:
+class State_65(State):
     """65: Chaos Blade quest [aggro]"""
 
     def previous_states(self):
         return [State_62, State_64]
 
     def enter(self):
-        SetFlagState(flag=11400889, state=1)
+        SetFlagState(flag=11409889, state=1)
+        TalkToPlayer(conversation=41011000, unk1=-1, unk2=-1)
 
     def test(self):
         if IsPlayerDead() == 1 and GetDistanceToPlayer() <= 10 and GetFlagState(11400888) == 1:
             return State_66
         if IsPlayerDead() == 1 and GetDistanceToPlayer() <= 10 and GetFlagState(11400888) == 0:
-            return State_67
+            return State_67            
 
 
 class State_66(State):
@@ -1072,8 +1067,9 @@ class State_66(State):
         return [State_65]
 
     def enter(self):
-        TalkToPlayer(conversation=41011200, unk1=-1, unk2=-1)
-        SetFlagState(flag=11400887, state=1)
+        TalkToPlayer(conversation=41011200, unk1=-1, unk2=-1)        
+        SetFlagState(flag=11409886, state=1)
+        SetFlagState(flag=11409885, state=1)
 
 
 class State_67(State):
@@ -1084,4 +1080,8 @@ class State_67(State):
 
     def enter(self):
         TalkToPlayer(conversation=41011100, unk1=-1, unk2=-1)
-        SetFlagState(flag=11400887, state=1)
+        SetFlagState(flag=11409887, state=1)
+        SetFlagState(flag=11409886, state=1)
+        SetFlagState(flag=11409885, state=1)
+        
+        

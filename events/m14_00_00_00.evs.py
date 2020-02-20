@@ -10,6 +10,8 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11400884)
+    RunEvent(11400885)
     RunEvent(11400886)
     RunEvent(11400887)
     RunEvent(11400888)
@@ -210,48 +212,58 @@ def Preconstructor():
     DisableFlag(1766)
 
 
-def Event11400885():
-    """11400885: Event 11400885"""
-    IfFlagOn(1, 11400885)
+def Event11400884():
+    """11400884: Give player back the Chaos Blade"""
+    IfFlagOn(1, 11409884)
+    IfCharacterDead(1, 6311)
     IfConditionTrue(0, 1)
+    AwardItemLot(63160, host_only=True)
+
+
+def Event11400885():
+    """11400885: Disable Shiva and his ninja if he got the Chaos Blade"""
+    SkipLinesIfFlagOff(2, 11409885)
     DisableCharacter(6311)
     DisableCharacter(6421)
 
 
 def Event11400886():
-    """11400886: Event 11400886"""
-    SkipLinesIfFlagOff(4, 11400886)
-    IfFlagOff(1, 11400885)
-    IfConditionTrue(0, 1)
+    """11400886: Give player Black Eye Orb"""
+    SkipLinesIfFlagOff(2, 11409886)
     AwardItemLot(63150, host_only=True)
-    EnableFlag(11400885)
+    EnableFlag(11409886)
 
 
 def Event11400887():
-    """11400887: Event 11400887"""
-    IfFlagOn(1, 11400887)
+    """11400887: Take away players Chaos Blade"""
+    IfFlagOn(1, 11409887)
     IfConditionTrue(0, 1)
-    RemoveWeaponFromPlayer(503000, 1)
-    RemoveWeaponFromPlayer(503001, 1)
-    RemoveWeaponFromPlayer(503002, 1)
-    RemoveWeaponFromPlayer(503003, 1)
-    RemoveWeaponFromPlayer(503004, 1)
+    IfPlayerHasWeapon(1, 503005, including_box=False)
+    SkipLinesIfConditionFalse(2, 1)
     RemoveWeaponFromPlayer(503005, 1)
-    EnableFlag(11400886)
-
+    End()
+    IfPlayerHasWeapon(2, 503105, including_box=False)
+    SkipLinesIfConditionFalse(2, 2)
+    RemoveWeaponFromPlayer(503105, 1)
+    End()
+    IfPlayerHasWeapon(3, 503205, including_box=False)
+    SkipLinesIfConditionFalse(2, 3)
+    RemoveWeaponFromPlayer(503205, 1)
+    End()
 
 def Event11400888():
-    """11400888: Event 11400888"""
-    IfFlagOn(1, 11400888)
+    """11400888: Award Gold Coins for the Chaos Blade"""
+    IfFlagOn(1, 11409888)
     IfConditionTrue(0, 1)
     AwardItemLot(6315, host_only=True)
 
 
 def Event11400889():
-    """11400889: Event 11400889"""
-    IfFlagOn(1, 11400889)
+    """11400889: Make Shiva hostile"""
+    IfFlagOn(1, 11409889)
     IfConditionTrue(0, 1)
     SetTeamTypeAndExitStandbyAnimation(6311, TeamType.HostileAlly)
+    Wait(1)
     SetTeamTypeAndExitStandbyAnimation(6421, TeamType.HostileAlly)
 
 
@@ -1117,6 +1129,7 @@ def Event11400504(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     IfCharacterHollow(-7, PLAYER)
     IfConditionTrue(7, input_condition=-7)
     IfPlayerCovenant(7, Covenant.ForestHunter)
+    IfFlagOff(7, 11409889)
     EndIfConditionFalse(7)
     BetrayCurrentCovenant()
     EnableFlag(742)
