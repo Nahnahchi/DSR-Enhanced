@@ -399,7 +399,13 @@ def Event9999():
     IfPlayerHasWeapon(-1, 503205, including_box=False)
     IfConditionTrue(0, -1)
     EnableFlag(11519888)
-    
+    IfPlayerHasWeapon(-2, 503005, including_box=False)
+    IfPlayerHasWeapon(-2, 503105, including_box=False)
+    IfPlayerHasWeapon(-2, 503205, including_box=False)
+    IfConditionFalse(0, -2)
+    DisableFlag(11519888)
+    Restart()
+
 
 def Event290():
     """ 290: Event 290 """

@@ -1082,7 +1082,7 @@ class State_66(State):
         return [State_65]
 
     def enter(self):
-        TalkToPlayer(conversation=41011200, unk1=-1, unk2=-1)
+        TalkToPlayer(conversation=41011400, unk1=-1, unk2=-1)
         SetFlagState(flag=11409886, state=1)
         SetFlagState(flag=11409885, state=1)
 

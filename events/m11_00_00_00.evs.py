@@ -143,11 +143,11 @@ def Event11100999():
     """11100999: Event 11100999"""
     IfFlagOn(1, 11109999)
     IfConditionTrue(0, 1)
-    Wait(1)
+    Wait(2)
     AwardItemLot(63160, host_only=True)
-    Wait(1)
+    Wait(2)
     AwardItemLot(6310, host_only=True)
-    Wait(1)
+    Wait(2)
     AwardItemLot(6420, host_only=True)
 
 

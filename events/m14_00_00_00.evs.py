@@ -17,9 +17,9 @@ def Constructor():
     RunEvent(11400888)
     RunEvent(11400889)
     RunEvent(11400995)
-    RunEvent(11400996, slot=0, args=(1400405,))
-    RunEvent(11400996, slot=1, args=(1400406,))
-    RunEvent(11400996, slot=2, args=(61320,))
+    RunEvent(11400996, slot=0, args=(1400405, 0))
+    RunEvent(11400996, slot=1, args=(1400406, 0))
+    RunEvent(11400996, slot=2, args=(61320, 2090))
     RunEvent(11400997)
     RunEvent(11400998)
     RunEvent(11400999, slot=0, args=(61320,))
@@ -267,30 +267,6 @@ def Event11400889():
     SetTeamTypeAndExitStandbyAnimation(6421, TeamType.HostileAlly)
 
 
-#def Event11400993():
-#    """11400993: Event 11400993"""
-#    IfFlagOff(1, 1272)
-#    IfFlagOff(1, 11407132)
-#    IfEntityBeyondDistance(1, 61320, 1401960, 6)
-#    IfConditionTrue(0, 1)
-#    EnableFlag(11407132)
-#    AddSpecialEffect(61320, 2091)
-#    ForceAnimation(61320, 7570)
-#    Wait(1)
-#    CreateTemporaryFX(22733, anchor_entity=61320, anchor_type=CoordEntityType.Character, model_point=236)
-#    Wait(1)
-#    DisableCharacter(61320)
-
-
-#def Event11400994():
-#    """11400994: Event 11400994"""
-#    IfHealthEqual(1, 10000, 0)
-#    IfEntityWithinDistance(1, 10000, 61320, 4)
-#    IfFlagOn(1, 1272)
-#    IfConditionTrue(0, 1)
-#    ForceAnimation(61320, 6803)
-
-
 def Event11400995():
     """11400995: Event 11400995"""
     SkipLinesIfFlagOn(12, 11407132)
@@ -309,11 +285,12 @@ def Event11400995():
     DisableCharacter(61320)
     
 
-def Event11400996(chaos_servant_entity: int):
+def Event11400996(chaos_servant_entity: int, sp_effect: int):
     """11400996: Event 11400996"""
     IfFlagOn(1, 1272)
     IfConditionTrue(0, 1)
     SetTeamTypeAndExitStandbyAnimation(chaos_servant_entity, TeamType.HostileAlly)
+    AddSpecialEffect(chaos_servant_entity, sp_effect)
 
 
 def Event11400997():
