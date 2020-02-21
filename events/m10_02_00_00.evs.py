@@ -62,7 +62,7 @@ def Constructor():
 
 
 def Event11020999(player_class: uchar, treasure_id: int):
-    """ 11020999: Event 11020999 """
+    """ 11020999: Give the player their class armor """
     IfPlayerClass(1, player_class)
     EndIfConditionFalse(1)
     DisableTreasure(10219990)

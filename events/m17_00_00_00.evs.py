@@ -229,7 +229,7 @@ def Preconstructor():
 
 @RestartOnRest
 def Event11705071(arg_0_3: int):
-    """ 11705071: Event 11705071 """
+    """ 11705071: Manage the giants tantrum attack [1] """
     IfHasTAEEvent(0, arg_0_3, tae_event_id=500)
     EzstateAIRequest(arg_0_3, command_id=1500, slot=0)
     IfDoesNotHaveTAEEvent(0, arg_0_3, tae_event_id=500)
@@ -238,7 +238,7 @@ def Event11705071(arg_0_3: int):
 
 @RestartOnRest
 def Event11705070(arg_0_3: int):
-    """ 11705070: Event 11705070 """
+    """ 11705070: Manage the giants tantrum attack [2] """
     IfHasTAEEvent(0, arg_0_3, tae_event_id=1400)
     Wait(10.0)
     EzstateAIRequest(arg_0_3, command_id=1501, slot=0)

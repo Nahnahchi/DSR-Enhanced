@@ -298,7 +298,7 @@ def Preconstructor():
 
 
 def Event11400996(egg_carrier: int):
-    """11400996: Event 11400996"""
+    """ 11400996: Infect the player with eggs """
     IfHealthEqual(1, 10000, 0)
     IfEntityWithinDistance(1, 10000, egg_carrier, 10)
     IfConditionTrue(0, 1)
@@ -306,7 +306,7 @@ def Event11400996(egg_carrier: int):
 
 
 def Event11410997():
-    """ 11410997: Event 11410997 """
+    """ 11410997: The last encounter with the infected chaos servant """
     SkipLinesIfFlagOff(1, 10)
     SkipLinesIfFlagOn(2, 11417132)
     DisableCharacter(61322)
@@ -319,7 +319,7 @@ def Event11410997():
 
 
 def Event11410998():
-    """ 11410998: Event 11410998 """
+    """ 11410998: The second encounter with the infected chaos servant """
     SkipLinesIfFlagOn(17, 11417132)
     SkipLinesIfFlagOff(16, 11407132)
     IfAttacked(1, 61321, 10000)
@@ -345,7 +345,7 @@ def Event11410998():
 
 
 def Event11410999():
-    """ 11410999: Event 11410999 """
+    """ 11410999: Delete Demon Firesage fog walls """
     DisableObject(1411410)
     DeleteFX(1411411, erase_root_only=False)
     DisableObject(1411412)
@@ -354,7 +354,7 @@ def Event11410999():
 
 @RestartOnRest
 def Event11410850(arg_0_3: int, arg_4_7: int):
-    """ 11410850: Event 11410850 """
+    """ 11410850: Manage one-time kill enemy despawns """
     SkipLinesIfThisEventSlotOff(3)
     DisableCharacter(arg_0_3)
     Kill(arg_0_3, award_souls=False)

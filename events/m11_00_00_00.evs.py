@@ -128,7 +128,7 @@ def Preconstructor():
 
 
 def Event11100998():
-    """11100998: Event 11100998"""
+    """ 11100998: You feel the black eye orb quivering """
     SkipLinesIfFlagOn(5, 11109998)
     IfEntityWithinDistance(1, 10000, 1101160, 5)
     IfPlayerHasGood(1, 116, including_box=False)
@@ -140,7 +140,7 @@ def Event11100998():
 
 
 def Event11100999():
-    """11100999: Event 11100999"""
+    """ 11100999: Shivas & Ninjas loot + the Chaos Blade """
     IfFlagOn(1, 11109999)
     IfConditionTrue(0, 1)
     Wait(2)

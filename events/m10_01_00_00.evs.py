@@ -269,7 +269,7 @@ def Preconstructor():
 
 @RestartOnRest
 def Event11010999():
-    """ 11010999: Event 11010999 """
+    """ 11010999: Spawn some hollows when the Berenike knight is dead """
     SkipLinesIfThisEventSlotOn(2)
     DisableCharacter(1010996)
     DisableCharacter(1010997)

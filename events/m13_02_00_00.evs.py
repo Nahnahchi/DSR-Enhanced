@@ -79,7 +79,7 @@ def Preconstructor():
 
 
 def Event11320999():
-    """ 11320999: Event 11320999 """
+    """ 11320999: Lots of poise to the dragon guy """
     AddSpecialEffect(6286, 2091)
 
 

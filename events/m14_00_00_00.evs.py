@@ -213,7 +213,7 @@ def Preconstructor():
 
 
 def Event11400884():
-    """11400884: Give player back the Chaos Blade"""
+    """ 11400884: Give player back the Chaos Blade """
     IfFlagOn(1, 11409884)
     IfCharacterDead(1, 6311)
     IfConditionTrue(0, 1)
@@ -221,21 +221,21 @@ def Event11400884():
 
 
 def Event11400885():
-    """11400885: Disable Shiva and his ninja if he got the Chaos Blade"""
+    """ 11400885: Disable Shiva and his ninja if he got the Chaos Blade """
     SkipLinesIfFlagOff(2, 11409885)
     DisableCharacter(6311)
     DisableCharacter(6421)
 
 
 def Event11400886():
-    """11400886: Give player Black Eye Orb"""
+    """ 11400886: Give player Black Eye Orb """
     SkipLinesIfFlagOff(2, 11409886)
     AwardItemLot(63150, host_only=True)
     EnableFlag(11409886)
 
 
 def Event11400887():
-    """11400887: Take away players Chaos Blade"""
+    """ 11400887: Take away players Chaos Blade """
     IfFlagOn(1, 11409887)
     IfConditionTrue(0, 1)
     IfPlayerHasWeapon(1, 503005, including_box=False)
@@ -252,14 +252,14 @@ def Event11400887():
     End()
 
 def Event11400888():
-    """11400888: Award Gold Coins for the Chaos Blade"""
+    """ 11400888: Award Gold Coins for the Chaos Blade """
     IfFlagOn(1, 11409888)
     IfConditionTrue(0, 1)
     AwardItemLot(6315, host_only=True)
 
 
 def Event11400889():
-    """11400889: Make Shiva hostile"""
+    """ 11400889: Make Shiva hostile """
     IfFlagOn(1, 11409889)
     IfConditionTrue(0, 1)
     SetTeamTypeAndExitStandbyAnimation(6311, TeamType.HostileAlly)
@@ -268,7 +268,7 @@ def Event11400889():
 
 
 def Event11400995():
-    """11400995: Event 11400995"""
+    """ 11400995: Teleport the chaos servant away """
     SkipLinesIfFlagOn(12, 11407132)
     IfFlagOff(1, 1272)
     IfAttacked(1, 61320, 10000)
@@ -286,7 +286,7 @@ def Event11400995():
     
 
 def Event11400996(chaos_servant_entity: int, sp_effect: int):
-    """11400996: Event 11400996"""
+    """ 11400996: Make chaos servants hostile """
     IfFlagOn(1, 1272)
     IfConditionTrue(0, 1)
     SetTeamTypeAndExitStandbyAnimation(chaos_servant_entity, TeamType.HostileAlly)
@@ -294,7 +294,7 @@ def Event11400996(chaos_servant_entity: int, sp_effect: int):
 
 
 def Event11400997():
-    """11400997: Event 11400997"""
+    """ 11400997: Make the egg infested hollow stand up """
     IfEntityWithinDistance(1, 10000, 6133, 3)
     IfConditionTrue(0, 1)
     ForceAnimation(6133, 7702)
@@ -302,7 +302,7 @@ def Event11400997():
 
 
 def Event11400998():
-    """11400998: Event 11400998"""
+    """ 11400998: Manage the taurus demons relation to the bonfire """
     IfEntityBeyondDistance(1, 10000, 1409999, 15)
     IfConditionTrue(0, 1)
     SetTeamType(1409999, TeamType.Ally)
@@ -315,7 +315,7 @@ def Event11400998():
 
 
 def Event11400999(egg_carrier: int):
-    """11400999: Event 11400999"""
+    """ 11400999: Infect the player with eggs if they die to an infested enemy """
     IfHealthEqual(1, 10000, 0)
     IfEntityWithinDistance(1, 10000, egg_carrier, 10)
     IfConditionTrue(0, 1)
