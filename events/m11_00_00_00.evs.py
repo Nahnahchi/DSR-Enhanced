@@ -10,6 +10,8 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11100998)
+    RunEvent(11100999)
     RegisterBonfire(11100992, obj=1101960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterLadder(start_climbing_flag=11100010, stop_climbing_flag=11100011, obj=1101140)
     RegisterLadder(start_climbing_flag=11100014, stop_climbing_flag=11100015, obj=1101142)
@@ -123,6 +125,30 @@ def Preconstructor():
     RunEvent(11100534, slot=0, args=(6312, 1600, 1619, 1609))
     RunEvent(11100535, slot=0, args=(6312, 1600, 1619, 1608, 1609))
     RunEvent(11100300)
+
+
+def Event11100998():
+    """11100998: Event 11100998"""
+    SkipLinesIfFlagOn(5, 11109998)
+    IfEntityWithinDistance(1, 10000, 1101160, 5)
+    IfPlayerHasGood(1, 116, including_box=False)
+    IfConditionTrue(0, 1)
+    DisplayStatus(text=10010690)
+    EnableFlag(11109998)
+    IfOutsideMap(2, game_map=PAINTED_WORLD)
+    DisableFlag(11109998)
+
+
+def Event11100999():
+    """11100999: Event 11100999"""
+    IfFlagOn(1, 11109999)
+    IfConditionTrue(0, 1)
+    Wait(1)
+    AwardItemLot(63160, host_only=True)
+    Wait(1)
+    AwardItemLot(6310, host_only=True)
+    Wait(1)
+    AwardItemLot(6420, host_only=True)
 
 
 @RestartOnRest
@@ -1321,6 +1347,9 @@ def Event11100532(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg
     DisableCharacter(1100402)
     DisableCharacter(1100403)
     DisableCharacter(1100404)
+    DisableCharacter(1100997)
+    DisableCharacter(1100996)
+    DisableCharacter(6611)
 
 
 def Event11100533(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
@@ -1347,6 +1376,7 @@ def Event11100535(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg
     IfFlagOff(1, 11100700)
     IfFlagOn(1, 8110)
     IfConditionTrue(0, input_condition=1)
+    EnableFlag(11109999)
     RemoveGoodFromPlayer(116)
     EnableFlag(11100300)
     DisableCharacter(arg_0_3)
