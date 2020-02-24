@@ -25,7 +25,7 @@ def Constructor():
     EnableTreasure(1101610)
     RunEvent(11100860, slot=0, args=(6611, 0, 0))
     RunEvent(11100860, slot=1, args=(1100999, 0, 0))
-    RunEvent(11100860, slot=0, args=(1100998, 0, 0))
+    RunEvent(11100860, slot=2, args=(1100998, 0, 0))
     RunEvent(11100090, slot=1, args=(1101702, 1101703, 1102602, 1102603))
     RunEvent(11105070)
     RunEvent(11105071)
@@ -129,19 +129,21 @@ def Preconstructor():
 
 def Event11100998():
     """ 11100998: You feel the black eye orb quivering """
-    SkipLinesIfFlagOn(5, 11109998)
+    SkipLinesIfFlagOn(7, 11102998)
     IfEntityWithinDistance(1, 10000, 1101160, 5)
     IfPlayerHasGood(1, 116, including_box=False)
+    IfFlagOff(1, 1606)
+    IfFlagOff(1, 1607)
     IfConditionTrue(0, 1)
     DisplayStatus(text=10010690)
-    EnableFlag(11109998)
+    EnableFlag(11102998)
     IfOutsideMap(2, game_map=PAINTED_WORLD)
-    DisableFlag(11109998)
+    DisableFlag(11102998)
 
 
 def Event11100999():
     """ 11100999: Shivas & Ninjas loot + the Chaos Blade """
-    IfFlagOn(1, 11109999)
+    IfFlagOn(1, 11102999)
     IfConditionTrue(0, 1)
     Wait(2)
     AwardItemLot(63160, host_only=True)

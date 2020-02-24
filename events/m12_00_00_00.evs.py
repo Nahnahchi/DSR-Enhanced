@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11200999)
     RegisterBonfire(11200984, obj=1201961, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterLadder(start_climbing_flag=11200010, stop_climbing_flag=11200011, obj=1201140)
     RegisterLadder(start_climbing_flag=11200012, stop_climbing_flag=11200013, obj=1201141)
@@ -229,6 +230,13 @@ def Preconstructor():
     RunEvent(11200520, slot=3, args=(6420, 1760, 1769, 1764))
     RunEvent(11200501, slot=0, args=(6310, 1603))
     RunEvent(11200535, slot=0, args=(6310,))
+
+
+def Event11200999():
+    """ 11200999: Event 11200999 """
+    EndIfFlagOff(11402885)
+    DisableCharacter(6310)
+    DisableCharacter(6420)
 
 
 def Event11200090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):

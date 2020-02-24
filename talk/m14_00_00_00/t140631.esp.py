@@ -90,9 +90,9 @@ class State_6(State):
             return State_16
         if IsPlayerDead() == 1 and GetDistanceToPlayer() <= 5 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 180 and GetDistanceToPlayer() <= 5:
             return State_46
-        if IsPlayerTalkingToMe() == 1 and GetFlagState(11409888) == 1 and GetDistanceToPlayer() <= 10:
+        if IsPlayerTalkingToMe() == 1 and GetFlagState(11402888) == 1 and GetDistanceToPlayer() <= 10:
             return State_64
-        if IsPlayerTalkingToMe() == 1 and GetFlagState(11519888) == 1 and GetFlagState(11400888) == 0 and GetDistanceToPlayer() <= 10:
+        if IsPlayerTalkingToMe() == 1 and GetFlagState(11512888) == 1 and GetFlagState(11402888) == 0 and GetDistanceToPlayer() <= 10:
             return State_59
         if GetFlagState(1603) == 1 and GetFlagState(71200065) == 0 and GetDistanceToPlayer() <= 10 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 180 and GetDistanceToPlayer() <= 10 and GetSelfHP() <= 40 and GetFlagState(71200077) == 0:
             return State_52
@@ -1006,8 +1006,8 @@ class State_61(State):
         return [State_60]
 
     def enter(self):
-        SetFlagState(flag=11409887, state=1)
-        SetFlagState(flag=11409884, state=1)
+        SetFlagState(flag=11402887, state=1)
+        SetFlagState(flag=11402884, state=1)
         TalkToPlayer(conversation=41010800, unk1=-1, unk2=-1)
 
     def test(self):
@@ -1036,7 +1036,7 @@ class State_63(State):
         return [State_61]
 
     def enter(self):
-        SetFlagState(flag=11409888, state=1)
+        SetFlagState(flag=11402888, state=1)
 
     def test(self):
         return State_6
@@ -1063,7 +1063,7 @@ class State_65(State):
         return [State_62, State_64]
 
     def enter(self):
-        SetFlagState(flag=11409889, state=1)
+        SetFlagState(flag=11402889, state=1)
         TalkToPlayer(conversation=41011000, unk1=-1, unk2=-1)
 
     def test(self):
@@ -1083,8 +1083,8 @@ class State_66(State):
 
     def enter(self):
         TalkToPlayer(conversation=41011400, unk1=-1, unk2=-1)
-        SetFlagState(flag=11409886, state=1)
-        SetFlagState(flag=11409885, state=1)
+        SetFlagState(flag=11402886, state=1)
+        SetFlagState(flag=11402885, state=1)
 
 
 class State_67(State):
@@ -1095,9 +1095,9 @@ class State_67(State):
 
     def enter(self):
         TalkToPlayer(conversation=41011100, unk1=-1, unk2=-1)
-        SetFlagState(flag=11409887, state=1)
-        SetFlagState(flag=11409886, state=1)
-        SetFlagState(flag=11409885, state=1)
+        SetFlagState(flag=11402887, state=1)
+        SetFlagState(flag=11402886, state=1)
+        SetFlagState(flag=11402885, state=1)
 
 
 class State_68(State):

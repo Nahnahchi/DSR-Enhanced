@@ -394,16 +394,16 @@ def Preconstructor():
 
 def Event9999():
     """ 9999: Event 9999 """
-    IfPlayerHasWeapon(-1, 503005, including_box=False)
-    IfPlayerHasWeapon(-1, 503105, including_box=False)
-    IfPlayerHasWeapon(-1, 503205, including_box=False)
+    IfPlayerHasWeapon(-1, 503000, including_box=False)
+    IfPlayerHasWeapon(-1, 503100, including_box=False)
+    IfPlayerHasWeapon(-1, 503200, including_box=False)
     IfConditionTrue(0, -1)
-    EnableFlag(11519888)
-    IfPlayerHasWeapon(-2, 503005, including_box=False)
-    IfPlayerHasWeapon(-2, 503105, including_box=False)
-    IfPlayerHasWeapon(-2, 503205, including_box=False)
+    EnableFlag(11512888)
+    IfPlayerHasWeapon(-2, 503000, including_box=False)
+    IfPlayerHasWeapon(-2, 503100, including_box=False)
+    IfPlayerHasWeapon(-2, 503200, including_box=False)
     IfConditionFalse(0, -2)
-    DisableFlag(11519888)
+    DisableFlag(11512888)
     Restart()
 
 

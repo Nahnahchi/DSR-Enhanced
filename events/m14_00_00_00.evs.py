@@ -214,7 +214,7 @@ def Preconstructor():
 
 def Event11400884():
     """ 11400884: Give player back the Chaos Blade """
-    IfFlagOn(1, 11409884)
+    IfFlagOn(1, 11402884)
     IfCharacterDead(1, 6311)
     IfConditionTrue(0, 1)
     AwardItemLot(63160, host_only=True)
@@ -222,45 +222,45 @@ def Event11400884():
 
 def Event11400885():
     """ 11400885: Disable Shiva and his ninja if he got the Chaos Blade """
-    SkipLinesIfFlagOff(2, 11409885)
+    SkipLinesIfFlagOff(2, 11402885)
     DisableCharacter(6311)
     DisableCharacter(6421)
 
 
 def Event11400886():
     """ 11400886: Give player Black Eye Orb """
-    SkipLinesIfFlagOff(2, 11409886)
+    SkipLinesIfFlagOff(2, 11402886)
     AwardItemLot(63150, host_only=True)
-    EnableFlag(11409886)
+    EnableFlag(11402886)
 
 
 def Event11400887():
     """ 11400887: Take away players Chaos Blade """
-    IfFlagOn(1, 11409887)
+    IfFlagOn(1, 11402887)
     IfConditionTrue(0, 1)
-    IfPlayerHasWeapon(1, 503005, including_box=False)
+    IfPlayerHasWeapon(1, 503000, including_box=False)
     SkipLinesIfConditionFalse(2, 1)
-    RemoveWeaponFromPlayer(503005, 1)
+    RemoveWeaponFromPlayer(503000, 1)
     End()
-    IfPlayerHasWeapon(2, 503105, including_box=False)
+    IfPlayerHasWeapon(2, 503100, including_box=False)
     SkipLinesIfConditionFalse(2, 2)
-    RemoveWeaponFromPlayer(503105, 1)
+    RemoveWeaponFromPlayer(503100, 1)
     End()
-    IfPlayerHasWeapon(3, 503205, including_box=False)
+    IfPlayerHasWeapon(3, 503200, including_box=False)
     SkipLinesIfConditionFalse(2, 3)
-    RemoveWeaponFromPlayer(503205, 1)
+    RemoveWeaponFromPlayer(503200, 1)
     End()
 
 def Event11400888():
     """ 11400888: Award Gold Coins for the Chaos Blade """
-    IfFlagOn(1, 11409888)
+    IfFlagOn(1, 11402888)
     IfConditionTrue(0, 1)
     AwardItemLot(6315, host_only=True)
 
 
 def Event11400889():
     """ 11400889: Make Shiva hostile """
-    IfFlagOn(1, 11409889)
+    IfFlagOn(1, 11402889)
     IfConditionTrue(0, 1)
     SetTeamTypeAndExitStandbyAnimation(6311, TeamType.HostileAlly)
     Wait(1)
@@ -1106,7 +1106,7 @@ def Event11400504(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     IfCharacterHollow(-7, PLAYER)
     IfConditionTrue(7, input_condition=-7)
     IfPlayerCovenant(7, Covenant.ForestHunter)
-    IfFlagOff(7, 11409889)
+    IfFlagOff(7, 11402889)
     EndIfConditionFalse(7)
     BetrayCurrentCovenant()
     EnableFlag(742)

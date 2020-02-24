@@ -13,6 +13,7 @@ def Constructor():
     RunEvent(11410999)
     RunEvent(11410998)
     RunEvent(11410997)
+    RunEvent(11410995)
     RunEvent(11410996, slot=0, args=(61321,))
     RunEvent(11410996, slot=1, args=(61322,))
     RunEvent(11410850, slot=7, args=(61322, 61320000))
@@ -112,10 +113,10 @@ def Constructor():
     SkipLines(7)
     RunEvent(11415340)
     RunEvent(11415341)
-    #RunEvent(11415343)
-    #RunEvent(11415342)
+    RunEvent(11415343)
+    RunEvent(11415342)
     RunEvent(11415344)
-    #RunEvent(11410410)
+    RunEvent(11410410)
     RunEvent(11415345)
     DisableSoundEvent(1413802)
     SkipLinesIfFlagOff(6, 11410901)
@@ -297,6 +298,13 @@ def Preconstructor():
     RunEvent(11410548, slot=0, args=(6286,))
 
 
+def Event11400995():
+    """ 11400995: Activate Demon Ruins elevator """
+    IfEntityWithinDistance(1, 1410400, 10000, 50)
+    IfConditionTrue(0, 1)
+    EnableFlag(11410410)
+
+
 def Event11400996(egg_carrier: int):
     """ 11400996: Infect the player with eggs """
     IfHealthEqual(1, 10000, 0)
@@ -342,14 +350,6 @@ def Event11410998():
     Wait(1)
     SetTeamType(61321, TeamType.Ally)
     DisableCharacter(61321)
-
-
-def Event11410999():
-    """ 11410999: Delete Demon Firesage fog walls """
-    DisableObject(1411410)
-    DeleteFX(1411411, erase_root_only=False)
-    DisableObject(1411412)
-    DeleteFX(1411413, erase_root_only=False)
 
 
 @RestartOnRest

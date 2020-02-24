@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11510999)
     SkipLinesIfFlagOff(1, 12)
     RegisterBonfire(11510920, obj=1511950, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11510992, obj=1511960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=10)
@@ -299,6 +300,13 @@ def Preconstructor():
     RunEvent(11510542, slot=0, args=(6302, 1570, 1599, 1575))
     RunEvent(11510543, slot=0, args=(6302, 1570, 1599, 1572))
     RunEvent(11510544, slot=0, args=(6302, 1570, 1599, 1575))
+
+
+def Event11510999():
+    """ 11510999: Event 11510999 """
+    IfEntityWithinDistance(1, 6807, 10000, 5)
+    IfConditionTrue(0, 1)
+    SetTeamType(6807, TeamType.Enemy)
 
 
 def Event11510090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):

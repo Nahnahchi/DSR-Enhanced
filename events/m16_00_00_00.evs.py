@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11600999)
     SkipLinesIfFlagOff(1, 13)
     RegisterBonfire(11600920, obj=1601950, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11600984, obj=1601961, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -154,6 +155,8 @@ def Constructor():
     RunEvent(11605250, slot=11, args=(1600421,))
     RunEvent(11600850, slot=0, args=(1600400,))
     RunEvent(11600850, slot=1, args=(1600401,))
+    RunEvent(11600850, slot=2, args=(6181,))
+    RunEvent(11600850, slot=3, args=(6182,))
     RunEvent(11600600, slot=0, args=(1601650, 11600600))
     RunEvent(11600600, slot=1, args=(1601651, 11600601))
     RunEvent(11600600, slot=2, args=(1601652, 11600602))
@@ -203,6 +206,13 @@ def Preconstructor():
     RunEvent(11600540, slot=0, args=(6340, 1670, 1678, 1677))
     RunEvent(11600541, slot=0, args=(6340, 1670, 1678, 1677))
     RunEvent(11606200)
+
+
+def Event11600999():
+    """ 11600999: Make the Ghost Sealer agressive """
+    IfEntityWithinDistance(1, 6181, 10000, 5)
+    IfConditionTrue(0, 1)
+    SetTeamType(6181, TeamType.Enemy)    
 
 
 def Event11600090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
@@ -785,6 +795,7 @@ def Event11605100():
     DisableBackread(1600903)
     DisableBackread(1600904)
     DisableBackread(1600905)
+    DisableBackread(1600999)
     IfFlagOn(0, 11600100)
     EnableBackread(1600100)
     EnableBackread(1600101)
@@ -805,6 +816,7 @@ def Event11605100():
     EnableBackread(1600903)
     EnableBackread(1600904)
     EnableBackread(1600905)
+    EnableBackread(1600999)
 
 
 def Event11600100():

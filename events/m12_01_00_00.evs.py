@@ -10,6 +10,10 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11210997)
+    RunEvent(11210998)
+    RunEvent(11210999, slot=0, args=(1210999, 0))
+    RunEvent(11210999, slot=1, args=(1210924, 0))
     RunEvent(11210700)
     SkipLinesIfClient(10)
     DisableObject(1211988)
@@ -293,6 +297,36 @@ def Preconstructor():
     RunEvent(11210015)
 
 
+def Event11210997():
+    """ 11210997: Disable Very Large Ember in Gough's shop """
+    EndIfFlagOn(11210004)
+    EnableFlag(11217080)
+
+
+def Event11210998():
+    """ 11210998: Enable Very Large Ember in Gough's shop """
+    EndIfFlagOn(11212998)
+    IfFlagOn(1, 11210004)
+    IfConditionTrue(0, 1)
+    DisableFlag(11217080)
+    EnableFlag(11212998)
+
+
+@RestartOnRest
+def Event11210999(arg_0_3: int, arg_4_7: int):
+    """ 11210999: Despawn one-time kill enemies """
+    SkipLinesIfThisEventSlotOff(3)
+    DisableCharacter(arg_0_3)
+    Kill(arg_0_3, award_souls=False)
+    End()
+    IfCharacterDead(0, arg_0_3)
+    EndIfEqual(left=arg_4_7, right=0)
+    IfCharacterHuman(-7, PLAYER)
+    IfCharacterHollow(-7, PLAYER)
+    EndIfConditionFalse(-7)
+    AwardItemLot(arg_4_7, host_only=True)
+
+
 def Event11210090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11210090: Event 11210090 """
     SkipLinesIfThisEventSlotOff(3)
@@ -345,7 +379,7 @@ def Event11215090():
     DisableCharacter(1210921)
     DisableCharacter(1210922)
     DisableCharacter(1210923)
-    DisableCharacter(1210924)
+    #DisableCharacter(1210924)
     DisableCharacter(1210925)
     IfFlagOn(0, 11210080)
     EndIfFlagOn(735)
@@ -374,7 +408,7 @@ def Event11215090():
     EnableCharacter(1210921)
     EnableCharacter(1210922)
     EnableCharacter(1210923)
-    EnableCharacter(1210924)
+    #EnableCharacter(1210924)
     EnableCharacter(1210925)
 
 
@@ -413,7 +447,7 @@ def Event11215091():
     Kill(1210921, award_souls=False)
     Kill(1210922, award_souls=False)
     Kill(1210923, award_souls=False)
-    Kill(1210924, award_souls=False)
+    #Kill(1210924, award_souls=False)
     Kill(1210925, award_souls=False)
 
 
