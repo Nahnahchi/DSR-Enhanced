@@ -298,15 +298,14 @@ def Preconstructor():
     RunEvent(11410548, slot=0, args=(6286,))
 
 
-def Event11400995():
-    """ 11400995: Activate Demon Ruins elevator """
-    IfEntityWithinDistance(1, 1410400, 10000, 50)
-    IfConditionTrue(0, 1)
-    EnableFlag(11410410)
+def Event11410995():
+    """ 11410995: Make the chaos servant immortal in his second encounter """
+    EnableInvincibility(61321)
+    EnableImmortality(61321)    
 
 
-def Event11400996(egg_carrier: int):
-    """ 11400996: Infect the player with eggs """
+def Event11410996(egg_carrier: int):
+    """ 11410996: Infect the player with eggs """
     IfHealthEqual(1, 10000, 0)
     IfEntityWithinDistance(1, 10000, egg_carrier, 10)
     IfConditionTrue(0, 1)
@@ -333,7 +332,7 @@ def Event11410998():
     IfAttacked(1, 61321, 10000)
     IfConditionTrue(0, 1)
     AddSpecialEffect(61321, 2090)
-    EnableInvincibility(61321)
+    DisableInvincibility(61321)
     ForceAnimation(61321, 7702)
     SetTeamTypeAndExitStandbyAnimation(61321, TeamType.HostileAlly)
     DisableInvincibility(61321)

@@ -1667,6 +1667,7 @@ def Event11510130():
     DisableCharacter(1510910)
     DisableCharacter(1510911)
     DisableCharacter(1510912)
+    DisableCharacter(1510990)
     EndIfFlagOn(1034)
     Move(6010, destination=1512450, destination_type=CoordEntityType.Region, model_point=-1, copy_draw_parent=1510452)
     SetNest(6010, 1512450)
