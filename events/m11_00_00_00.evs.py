@@ -1378,7 +1378,7 @@ def Event11100535(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg
     IfFlagOff(1, 11100700)
     IfFlagOn(1, 8110)
     IfConditionTrue(0, input_condition=1)
-    EnableFlag(11109999)
+    EnableFlag(11102999) # Chaos Blade quest
     RemoveGoodFromPlayer(116)
     EnableFlag(11100300)
     DisableCharacter(arg_0_3)

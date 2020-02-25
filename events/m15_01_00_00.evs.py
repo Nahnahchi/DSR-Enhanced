@@ -304,8 +304,9 @@ def Preconstructor():
 
 def Event11510999():
     """ 11510999: Event 11510999 """
-    IfEntityWithinDistance(1, 6807, 10000, 5)
-    IfConditionTrue(0, 1)
+    IfEntityWithinDistance(-1, 6807, 10000, 5)
+    IfAttacked(-1, 6807, 10000)
+    IfConditionTrue(0, -1)
     SetTeamType(6807, TeamType.Enemy)
 
 

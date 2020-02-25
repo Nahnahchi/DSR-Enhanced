@@ -233,7 +233,7 @@ def Preconstructor():
 
 
 def Event11200999():
-    """ 11200999: Event 11200999 """
+    """ 11200999: Disable Shiva cuz he back for some reason """
     EndIfFlagOff(11402885)
     DisableCharacter(6310)
     DisableCharacter(6420)

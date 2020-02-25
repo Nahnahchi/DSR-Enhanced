@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11320998)
     RunEvent(11320999)
     RunEvent(11320850, slot=0, args=(6286, 0))
     RegisterBonfire(11320992, obj=1321960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=10)
@@ -78,9 +79,17 @@ def Preconstructor():
     EnableImmortality(1320800)
 
 
+def Event11320998():
+    """ 11320998: Make dragon guy aggressive """
+    IfEntityWithinDistance(-1, 6286, 10000, 5)
+    IfAttacked(-1, 6286, 10000)
+    IfConditionTrue(0, -1)
+    SetTeamType(6286, TeamType.Enemy)
+
+
 def Event11320999():
-    """ 11320999: Lots of poise to the dragon guy """
-    AddSpecialEffect(6286, 2091)
+    """ 11320999: Some poise to the dragon guy """
+    AddSpecialEffect(6286, 2090)
 
 
 @RestartOnRest
