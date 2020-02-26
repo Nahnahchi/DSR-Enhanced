@@ -300,7 +300,6 @@ def Preconstructor():
 
 def Event11410995():
     """ 11410995: Make the chaos servant immortal in his second encounter """
-    EnableInvincibility(61321)
     EnableImmortality(61321)    
 
 
@@ -327,15 +326,14 @@ def Event11410997():
 
 def Event11410998():
     """ 11410998: The second encounter with the infected chaos servant """
-    SkipLinesIfFlagOn(17, 11417132)
-    SkipLinesIfFlagOff(16, 11407132)
+    SkipLinesIfFlagOn(18, 11417132)
+    SkipLinesIfFlagOff(17, 11407132)
     IfAttacked(1, 61321, 10000)
     IfConditionTrue(0, 1)
     AddSpecialEffect(61321, 2090)
     DisableInvincibility(61321)
     ForceAnimation(61321, 7702)
     SetTeamTypeAndExitStandbyAnimation(61321, TeamType.HostileAlly)
-    DisableInvincibility(61321)
     IfHealthLessThanOrEqual(2, 61321, 0.25)
     IfConditionTrue(0, 2)
     EnableFlag(11417132)
