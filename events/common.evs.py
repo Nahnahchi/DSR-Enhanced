@@ -1037,12 +1037,14 @@ def Event770():
     DisableFlag(1841)
     DisableFlag(1863)
     DisableFlag(1871)
+    DisableFlag(11012997)
     SetTeamType(6001, TeamType.Ally)
     SetTeamType(6040, TeamType.Ally)
     SetTeamType(6072, TeamType.Ally)
     SetTeamType(6190, TeamType.Ally)
     SetTeamType(6230, TeamType.Ally)
     SetTeamType(6300, TeamType.Ally)
+    SetTeamType(6288, TeamType.Ally)
     Restart()
 
 

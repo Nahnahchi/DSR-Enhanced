@@ -11,6 +11,8 @@ from soulstruct.events.darksouls1 import *
 def Constructor():
     """ 0: Event 0 """
     RunEvent(11010008)
+    RunEvent(11010997)
+    RunEvent(11010998)
     RunEvent(11010999)
     DisableFlag(11010580)
     SkipLinesIfFlagOff(2, 61010610)
@@ -184,6 +186,7 @@ def Constructor():
     RunEvent(11010860, slot=5, args=(1010370, 0, 0))
     RunEvent(11010860, slot=6, args=(6010, 0, 0))
     RunEvent(11010860, slot=7, args=(1010998, 0, 0))
+    RunEvent(11010860, slot=8, args=(6288, 0, 0))
     RunEvent(11010400, slot=2, args=(1011652, 1011502))
     RunEvent(11010400, slot=3, args=(1011653, 1011503))
     RunEvent(11010400, slot=4, args=(1011654, 1011504))
@@ -265,6 +268,30 @@ def Preconstructor():
     RunEvent(11010510, slot=7, args=(6370, 1701))
     RunEvent(11010520, slot=7, args=(6370, 1700, 1709, 1702))
     RunEvent(11010581, slot=0, args=(6370,))
+
+
+def Event11010998():
+    """ 11010998: Despawn the Anonymous """
+    SkipLinesIfFlagOff(2, 11012998)
+    DisableCharacter(6288)
+    End()
+    IfFlagOn(-1, 11017900)
+    IfFlagOn(-1, 11017910)
+    IfFlagOn(-1, 11017920)
+    IfFlagOn(-1, 11017930)
+    IfConditionTrue(0, -1)
+    EnableFlag(11012998)
+
+
+def Event11010997():
+    """ 11010997: Make the Anonymous hostile """
+    SkipLinesIfFlagOn(5, 11012997)
+    IfAttacked(1, 6288, attacking_character=10000)
+    IfHealthLessThanOrEqual(1, 6288, 0.75)
+    IfConditionTrue(0, 1)
+    EnableFlag(11012997)
+    EnableFlag(744)
+    SetTeamTypeAndExitStandbyAnimation(6288, TeamType.HostileAlly)
 
 
 @RestartOnRest
