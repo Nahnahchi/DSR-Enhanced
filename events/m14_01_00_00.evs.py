@@ -14,6 +14,8 @@ def Constructor():
     RunEvent(11410998)
     RunEvent(11410997)
     RunEvent(11410995)
+    RunEvent(11410994)
+    RunEvent(11410993)
     RunEvent(11410996, slot=0, args=(61321,))
     RunEvent(11410996, slot=1, args=(61322,))
     RunEvent(11410850, slot=7, args=(61322, 61320000))
@@ -24,6 +26,7 @@ def Constructor():
     RunEvent(11410850, slot=4, args=(1410995, 0))
     RunEvent(11410850, slot=5, args=(1410994, 0))
     RunEvent(11410850, slot=6, args=(1410400, 0))
+    RunEvent(11410850, slot=8, args=(62883, 0))
     SkipLinesIfFlagOff(1, 10)
     RegisterBonfire(11410920, obj=1411950, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11410992, obj=1411960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -296,6 +299,32 @@ def Preconstructor():
     RunEvent(11410550, slot=0, args=(6286, 1490, 1514, 1514))
     RunEvent(11410547, slot=0, args=(6286,))
     RunEvent(11410548, slot=0, args=(6286,))
+
+
+def Event11410993():
+    """ 11410993: Despawn the Anonymous """
+    IfFlagOn(1, 11302998)
+    IfFlagOn(1, 11512998)
+    SkipLinesIfConditionFalse(3, 1)
+    SkipLinesIfFlagOn(2, 11510869)
+    SkipLinesIfFlagOn(1, 11300861)
+    SkipLinesIfFlagOff(2, 11412993)
+    DisableCharacter(62883)
+    End()
+    IfFlagOn(2, 11417900)
+    IfConditionTrue(0, 2)
+    EnableFlag(11412993)
+
+
+def Event11410994():
+    """ 11410994: Make the Anonymous hostile """
+    SkipLinesIfFlagOn(5, 11012997)
+    IfAttacked(1, 62883, attacking_character=10000)
+    IfHealthLessThanOrEqual(1, 62883, 0.75)
+    IfConditionTrue(0, 1)
+    EnableFlag(11012997)
+    EnableFlag(744)
+    SetTeamTypeAndExitStandbyAnimation(62883, TeamType.HostileAlly)
 
 
 def Event11410995():

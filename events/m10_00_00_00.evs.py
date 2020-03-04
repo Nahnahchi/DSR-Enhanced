@@ -10,6 +10,9 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11000993)
+    RunEvent(11000994)
+    RunEvent(11000999)
     RegisterBonfire(11000992, obj=1001960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterLadder(start_climbing_flag=11000010, stop_climbing_flag=11000011, obj=1001140)
     RegisterStatue(1001900, game_map=DEPTHS, statue_type=StatueType.Stone)
@@ -89,6 +92,7 @@ def Constructor():
     RunEvent(11000850, slot=2, args=(1000090,))
     RunEvent(11000850, slot=3, args=(1000300,))
     RunEvent(11000850, slot=4, args=(1000301,))
+    RunEvent(11000850, slot=5, args=(62884,))
     RunEvent(11005843, slot=0, args=(2, 1001990, 1002998, 1002997))
     RunEvent(11005844, slot=0, args=(2, 1001990, 1001991))
 
@@ -132,6 +136,53 @@ def Preconstructor():
     RunEvent(11000510, slot=1, args=(6260, 1434))
     RunEvent(11000533, slot=0, args=(6260, 1435))
 
+
+def Event11000993():
+    """ 11000993: Despawn the Anonymous """
+    IfFlagOff(-1, 11412993)
+    IfFlagOn(-1, 11410858)
+    IfConditionTrue(0, -1)
+    DisableCharacter(62884)
+    End()
+
+
+def Event11000994():
+    """ 11000994: Make the Anonymous hostile """
+    SkipLinesIfFlagOn(5, 11012997)
+    IfAttacked(1, 62884, attacking_character=10000)
+    IfHealthLessThanOrEqual(1, 62884, 0.75)
+    IfConditionTrue(0, 1)
+    EnableFlag(11012997)
+    EnableFlag(744)
+    SetTeamTypeAndExitStandbyAnimation(62884, TeamType.HostileAlly)
+
+
+@RestartOnRest
+def Event11000999():
+    """ 11000999: Event 11000999 """
+    DisableHealthBar(1000999)
+    EnableInvincibility(1000999)
+    DisableHealthBar(1000998)
+    EnableInvincibility(1000998)
+    DisableHealthBar(1000997)
+    EnableInvincibility(1000997)
+    DisableHealthBar(1000996)
+    EnableInvincibility(1000996)
+    DisableHealthBar(1000995)
+    EnableInvincibility(1000995)
+    IfFlagOn(1, 2)
+    IfConditionTrue(0, 1)
+    EnableHealthBar(1000999)
+    DisableInvincibility(1000999)
+    EnableHealthBar(1000998)
+    DisableInvincibility(1000998)
+    EnableHealthBar(1000997)
+    DisableInvincibility(1000997)
+    EnableHealthBar(1000996)
+    DisableInvincibility(1000996)
+    EnableHealthBar(1000995)
+    DisableInvincibility(1000995)
+    
 
 def Event11000090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11000090: Event 11000090 """

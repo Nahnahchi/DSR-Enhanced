@@ -75,7 +75,7 @@ class State_6(State):
     """6: Anonymous [Shop]"""
 
     def enter(self):
-        OpenRegularShop(6700, 6799)
+        OpenRegularShop(6700, 6709)
 
     def test(self):
         if IsMenuOpen(11) == 0:
