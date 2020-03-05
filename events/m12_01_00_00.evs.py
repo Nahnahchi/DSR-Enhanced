@@ -300,7 +300,7 @@ def Preconstructor():
 def Event11210997():
     """ 11210997: Disable Very Large Ember in Gough's shop """
     EndIfFlagOn(11210004)
-    EnableFlag(11217080)
+    EnableFlag(11217980)
 
 
 def Event11210998():
@@ -308,7 +308,7 @@ def Event11210998():
     EndIfFlagOn(11212998)
     IfFlagOn(1, 11210004)
     IfConditionTrue(0, 1)
-    DisableFlag(11217080)
+    DisableFlag(11217980)
     EnableFlag(11212998)
 
 
