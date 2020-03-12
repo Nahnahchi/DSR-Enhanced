@@ -10,6 +10,8 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11700998)
+    RunEvent(11700999)
     RunEvent(11705071, slot=0, args=(1700999,))
     RunEvent(11705070, slot=0, args=(1700999,))
     SkipLinesIfFlagOff(1, 14)
@@ -225,6 +227,22 @@ def Preconstructor():
     DisableCharacter(6073)
     RunEvent(11700520, slot=3, args=(6073, 1170, 1189, 1177))
     RunEvent(11700545, slot=0, args=(6073, 1170, 1189, 1181))
+
+
+@RestartOnRest
+def Event11700998():
+    """11700998: Event 11700999"""
+    IfPlayerHasGood(1, 9012)
+    IfConditionTrue(0, 1)
+    RemoveGoodFromPlayer(9012, 1)
+
+
+@RestartOnRest
+def Event11700999():
+    """11700999: Event 11700999"""
+    IfAttacked(1, 6076, 10000)
+    IfConditionTrue(0, 1)
+    SetTeamTypeAndExitStandbyAnimation(6076, TeamType.HostileAlly)
 
 
 @RestartOnRest

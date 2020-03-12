@@ -266,7 +266,8 @@ def Constructor():
     RunEvent(8090, slot=2, args=(3, 512, 11217030), arg_types='Bii')
     RunEvent(8090, slot=3, args=(3, 513, 11217040), arg_types='Bii')
     RunEvent(8090, slot=4, args=(3, 514, 11217050), arg_types='Bii')
-    RunEvent(9999)
+    RunEvent(11219998)
+    RunEvent(11409999)
 
 
 def Preconstructor():
@@ -392,8 +393,29 @@ def Preconstructor():
     EnableFlag(50006080)
 
 
-def Event9999():
-    """ 9999: Event 9999 """
+def Event11219998():
+    """ 11219998: Play Artorias's dialogue """
+    EndIfFlagOn(11212997)
+    IfCharacterHasSpecialEffect(1, 10000, 3322)
+    IfInsideMap(1, OOLACILE)
+    IfConditionTrue(0, 1)
+    Wait(5)
+    PlaySoundEffect(10000, SoundType.v_Voice, 257000100)
+    Wait(2.1)
+    PlaySoundEffect(10000, SoundType.v_Voice, 257000110)
+    Wait(3.6)
+    PlaySoundEffect(10000, SoundType.v_Voice, 257000120)
+    Wait(6.3)
+    PlaySoundEffect(10000, SoundType.v_Voice, 257000130)
+    Wait(0.1)
+    PlaySoundEffect(10000, SoundType.v_Voice, 257000140)
+    Wait(8.4)
+    PlaySoundEffect(10000, SoundType.v_Voice, 257000150)
+    EnableFlag(11212997)
+
+
+def Event11409999():
+    """ 11409999: Event 11409999 """
     IfPlayerHasWeapon(-1, 503000, including_box=False)
     IfPlayerHasWeapon(-1, 503100, including_box=False)
     IfPlayerHasWeapon(-1, 503200, including_box=False)
