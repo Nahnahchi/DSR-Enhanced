@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11400799)
     RunEvent(11400884)
     RunEvent(11400885)
     RunEvent(11400886)
@@ -210,6 +211,16 @@ def Preconstructor():
     WaitFrames(1)
     EnableFlag(11405022)
     DisableFlag(1766)
+
+
+def Event11400799():
+    """11400799: Check Old Witch's Ring equipped"""
+    IfCharacterHasSpecialEffect(1, 10000, 2190)
+    IfConditionTrue(0, 1)
+    EnableFlag(11402799)
+    IfCharacterDoesNotHaveSpecialEffect(2, 10000, 2190)
+    IfConditionTrue(0, 2)
+    DisableFlag(11402799)
 
 
 def Event11400884():
