@@ -268,6 +268,8 @@ def Constructor():
     RunEvent(8090, slot=4, args=(3, 514, 11217050), arg_types='Bii')
     RunEvent(11219998)
     RunEvent(11409999)
+    #RunEvent(11709996)
+    RunEvent(11709997)
 
 
 def Preconstructor():
@@ -412,6 +414,27 @@ def Event11219998():
     Wait(8.4)
     PlaySoundEffect(10000, SoundType.v_Voice, 257000150)
     EnableFlag(11212997)
+
+
+def Event11709996():
+    """ 11709996: Event 11709996 """
+    IfCharacterDoesNotHaveSpecialEffect(1, 10000, 6801)
+    IfConditionTrue(0, 1)
+    CancelSpecialEffect(10000, 6802)
+    Restart()
+
+
+def Event11709997():
+    """ 11709997: Event 11709997 """
+    IfCharacterHasSpecialEffect(1, 10000, 6965)
+    IfConditionTrue(0, 1)
+    IfPlayerCovenant(2, Covenant.NoCovenant)
+    IfConditionFalse(0, 2)
+    AddSpecialEffect(10000, 6966)
+    IfCharacterDoesNotHaveSpecialEffect(3, 10000, 6965)
+    IfConditionTrue(0, 3)
+    CancelSpecialEffect(10000, 6966)
+    Restart()
 
 
 def Event11409999():
