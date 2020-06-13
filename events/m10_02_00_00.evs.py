@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11020998)
     RegisterBonfire(11020992, obj=1021960, reaction_distance=1.0, reaction_angle=180.0, initial_kindle_level=10)
     SkipLinesIfFlagOff(1, 11020108)
     RegisterBonfire(11020992, obj=1021960, reaction_distance=1.0, reaction_angle=180.0, initial_kindle_level=30)
@@ -61,6 +62,14 @@ def Constructor():
     RunEvent(11025200, slot=14, args=(1020213, 1020213, 3.0, 0.0), arg_types='iiff')
 
 
+def Event11020998():
+    """ 11020998: Ingward debug """
+    EndIfThisEventSlotOn()
+    IfFlagOn(1, 1315)
+    IfConditionTrue(0, 1)
+    DisplayBanner(BannerType.YouLose)
+
+    
 def Event11020999(player_class: uchar, treasure_id: int):
     """ 11020999: Give the player their class armor """
     IfPlayerClass(1, player_class)

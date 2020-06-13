@@ -270,6 +270,7 @@ def Constructor():
     RunEvent(11409999)
     #RunEvent(11709996)
     RunEvent(11709997)
+    RunEvent(11029999)
 
 
 def Preconstructor():
@@ -393,6 +394,15 @@ def Preconstructor():
     EnableFlag(814)
     EnableFlag(50006071)
     EnableFlag(50006080)
+
+
+@RestartOnRest
+def Event11029999():
+    """ 11029999: Ingward temporary fix """
+    IfFlagOn(1, 1315)
+    IfPlayerDoesNotHaveGood(1, 2013, including_box=True)
+    IfConditionTrue(0, 1)
+    AwardItemLot(6180, host_only=True)    
 
 
 def Event11219998():
