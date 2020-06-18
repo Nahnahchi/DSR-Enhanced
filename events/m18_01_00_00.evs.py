@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11810992)
     RegisterBonfire(11810992, obj=1811960, reaction_distance=1.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11810984, obj=1811961, reaction_distance=1.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterLadder(start_climbing_flag=11810010, stop_climbing_flag=11810011, obj=1811140)
@@ -163,6 +164,21 @@ def Preconstructor():
     RunEvent(11810531, slot=0, args=(6024, 1060, 1074, 1061))
     RunEvent(11810532, slot=0, args=(6024, 1060, 1074, 1062))
     RunEvent(11815010)
+
+
+def Event11810992():
+    """ 11810992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1810810, 7100)
+    AddSpecialEffect(1810200, 7100)
+    AddSpecialEffect(1810213, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1810810, 7100)
+    CancelSpecialEffect(1810200, 7100)
+    CancelSpecialEffect(1810213, 7100)
+    Restart()
 
 
 def Event11810090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):

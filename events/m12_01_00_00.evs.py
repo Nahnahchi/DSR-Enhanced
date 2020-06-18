@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11210992)
     RunEvent(11210997)
     RunEvent(11210998)
     RunEvent(11210999, slot=0, args=(1210999, 0))
@@ -297,6 +298,33 @@ def Preconstructor():
     RunEvent(11210015)
 
 
+def Event11210992():
+    """ 11210992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1210800, 7100)
+    AddSpecialEffect(1210801, 7100)
+    AddSpecialEffect(1210802, 7100)
+    AddSpecialEffect(1210820, 7100)
+    AddSpecialEffect(1210840, 7100)
+    AddSpecialEffect(1210400, 7100)
+    AddSpecialEffect(1210401, 7100)
+    AddSpecialEffect(6731, 7100)
+    AddSpecialEffect(6732, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1210800, 7100)
+    CancelSpecialEffect(1210801, 7100)
+    CancelSpecialEffect(1210802, 7100)
+    CancelSpecialEffect(1210820, 7100)
+    CancelSpecialEffect(1210840, 7100)
+    CancelSpecialEffect(1210400, 7100)
+    CancelSpecialEffect(1210401, 7100)
+    CancelSpecialEffect(6731, 7100)
+    CancelSpecialEffect(6732, 7100)
+    Restart()
+
+
 def Event11210997():
     """ 11210997: Disable Very Large Ember in Gough's shop """
     EndIfFlagOn(11210004)
@@ -355,6 +383,7 @@ def Event11210090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11215090():
     """ 11215090: Event 11215090 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(25, 11007999)
     DisableCharacter(1210900)
     DisableCharacter(1210901)
     DisableCharacter(1210902)
@@ -379,8 +408,8 @@ def Event11215090():
     DisableCharacter(1210921)
     DisableCharacter(1210922)
     DisableCharacter(1210923)
-    #DisableCharacter(1210924)
     DisableCharacter(1210925)
+    #DisableCharacter(1210924)
     #IfFlagOn(0, 11210080)
     #EndIfFlagOn(735)
     #EnableFlag(5000)

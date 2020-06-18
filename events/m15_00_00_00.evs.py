@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11500992)
     CreateProjectileOwner(1500200)
     SetNetworkUpdateRate(1500100, is_fixed=True, update_rate=CharacterUpdateRate.Always)
     RegisterBonfire(11500984, obj=1501961, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -229,6 +230,23 @@ def Preconstructor():
     RunEvent(11500520, slot=3, args=(6250, 1420, 1429, 1422))
 
 
+def Event11500992():
+    """ 11500992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1500800, 7100)
+    AddSpecialEffect(1500100, 7100)
+    AddSpecialEffect(1500101, 7100)
+    AddSpecialEffect(1500102, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1500800, 7100)
+    CancelSpecialEffect(1500100, 7100)
+    CancelSpecialEffect(1500101, 7100)
+    CancelSpecialEffect(1500102, 7100)
+    Restart()
+
+
 def Event1000000000():
     """ 1000000000: Event 1000000000 """
     DisableCharacter(1500200)
@@ -263,6 +281,7 @@ def Event11500090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11505090():
     """ 11505090: Event 11505090 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1500900)
     DisableCharacter(1500901)
     DisableCharacter(1500902)

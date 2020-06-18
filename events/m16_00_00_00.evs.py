@@ -10,7 +10,41 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11600992)
     RunEvent(11600999)
+    RunEvent(11602098, slot=0, args=(6181,))
+    RunEvent(11602098, slot=1, args=(6182,))
+    RunEvent(11602098, slot=2, args=(1600350,))
+    RunEvent(11602098, slot=3, args=(1600203,))
+    RunEvent(11602098, slot=4, args=(1600351,))
+    RunEvent(11602098, slot=5, args=(1600205,))
+    RunEvent(11602098, slot=6, args=(1600202,))
+    RunEvent(11602098, slot=7, args=(1600352,))
+    RunEvent(11602098, slot=8, args=(1600201,))
+    RunEvent(11602098, slot=9, args=(1600200,))
+    RunEvent(11602098, slot=10, args=(1600301,))
+    RunEvent(11602098, slot=11, args=(1600252,))
+    RunEvent(11602098, slot=12, args=(1600253,))
+    RunEvent(11602098, slot=13, args=(1600255,))
+    RunEvent(11602098, slot=14, args=(1600206,))
+    RunEvent(11602098, slot=15, args=(1600204,))
+    RunEvent(11602098, slot=16, args=(1600355,))
+    RunEvent(11602098, slot=17, args=(1600207,))
+    RunEvent(11602098, slot=18, args=(1600208,))
+    RunEvent(11602098, slot=19, args=(1600356,))
+    RunEvent(11602098, slot=20, args=(1600357,))
+    RunEvent(11602098, slot=21, args=(1600250,))
+    RunEvent(11602098, slot=22, args=(1600358,))
+    RunEvent(11602098, slot=23, args=(1600359,))
+    RunEvent(11602098, slot=24, args=(1600360,))
+    RunEvent(11602098, slot=25, args=(1600251,))
+    RunEvent(11602098, slot=26, args=(1600361,))
+    RunEvent(11602098, slot=27, args=(1600209,))
+    RunEvent(11602098, slot=28, args=(1600210,))
+    RunEvent(11602098, slot=29, args=(1600211,))
+    RunEvent(11602098, slot=30, args=(1600310,))
+    RunEvent(11602098, slot=31, args=(1600300,))
+    RunEvent(11602098, slot=32, args=(1600999,))
     SkipLinesIfFlagOff(1, 13)
     RegisterBonfire(11600920, obj=1601950, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11600984, obj=1601961, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -208,11 +242,50 @@ def Preconstructor():
     RunEvent(11606200)
 
 
-def Event11600999():
-    """ 11600999: Make the Ghost Sealer agressive """
-    IfEntityWithinDistance(1, 6181, 10000, 5)
+def Event11600992():
+    """ 11600992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
-    SetTeamType(6181, TeamType.Enemy)    
+    AddSpecialEffect(1600800, 7100)
+    AddSpecialEffect(1600801, 7100)
+    AddSpecialEffect(1600802, 7100)
+    AddSpecialEffect(1600803, 7100)
+    AddSpecialEffect(1600804, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1600800, 7100)
+    CancelSpecialEffect(1600801, 7100)
+    CancelSpecialEffect(1600802, 7100)
+    CancelSpecialEffect(1600803, 7100)
+    CancelSpecialEffect(1600804, 7100)
+    Restart()
+
+
+def Event11602098(ghost_id: int):
+    """ 11602098: Ring of Blind Ghosts effect """
+    IfCharacterHasSpecialEffect(1, PLAYER, 2180)
+    IfConditionTrue(0, 1)
+    DisableAI(ghost_id)
+    EnableInvincibility(ghost_id)  
+    IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 2180)
+    IfConditionTrue(0, 2)
+    EnableAI(ghost_id)
+    DisableInvincibility(ghost_id)
+    Restart()
+    
+
+@RestartOnRest
+def Event11600999():
+    """ 11600999: Make the Ghost BK agressive """
+    IfEntityBeyondDistance(2, 6181, PLAYER, 5)
+    IfConditionTrue(0, 2)
+    EnableInvincibility(6181)
+    DisableAI(6181)
+    IfEntityWithinDistance(1, 6181, PLAYER, 5)
+    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 2180)
+    IfConditionTrue(0, 1)
+    DisableInvincibility(6181)
+    EnableAI(6181)    
 
 
 def Event11600090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
@@ -243,6 +316,7 @@ def Event11600090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11605090():
     """ 11605090: Event 11605090 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(6, 11007999)
     DisableCharacter(1600900)
     DisableCharacter(1600901)
     DisableCharacter(1600902)
@@ -1241,6 +1315,7 @@ def Event11605001(arg_0_3: int, arg_4_7: float, arg_8_11: int):
     ResetStandbyAnimationSettings(arg_0_3)
     End()
     DisableAI(arg_0_3)
+    IfCharacterDoesNotHaveSpecialEffect(0, PLAYER, 2180) 
     IfEntityWithinDistance(1, arg_0_3, PLAYER, radius=arg_4_7)
     IfAttacked(2, arg_0_3, attacking_character=PLAYER)
     IfConditionTrue(-1, input_condition=1)
@@ -1260,6 +1335,7 @@ def Event11605050(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg
     ResetStandbyAnimationSettings(arg_0_3)
     End()
     DisableAI(arg_0_3)
+    IfCharacterDoesNotHaveSpecialEffect(0, PLAYER, 2180)
     IfCharacterInsideRegion(1, PLAYER, region=arg_4_7)
     IfAttacked(2, arg_0_3, attacking_character=PLAYER)
     SkipLinesIfEqual(1, left=arg_12_15, right=0)

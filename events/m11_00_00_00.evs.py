@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11100992)
     RunEvent(11100998)
     RunEvent(11100999)
     RegisterBonfire(11100992, obj=1101960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -127,6 +128,19 @@ def Preconstructor():
     RunEvent(11100300)
 
 
+def Event11100992():
+    """ 11100992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1100160, 7100)
+    AddSpecialEffect(6570, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1100160, 7100)
+    CancelSpecialEffect(6570, 7100)
+    Restart()
+
+
 def Event11100998():
     """ 11100998: You feel the black eye orb quivering """
     SkipLinesIfFlagOn(7, 11102998)
@@ -197,6 +211,7 @@ def Event11100090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11105070():
     """ 11105070: Event 11105070 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(12, 11007999)
     DisableCharacter(1100900)
     DisableCharacter(1100901)
     DisableCharacter(1100902)

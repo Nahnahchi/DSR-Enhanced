@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11310992)
     SkipLinesIfFlagOff(1, 7)
     RegisterBonfire(11310920, obj=1311950, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11310992, obj=1311960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -124,6 +125,33 @@ def Preconstructor():
     RunEvent(11310002)
 
 
+def Event11310992():
+    """ 11310992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1310800, 7100)
+    AddSpecialEffect(1310810, 7100)
+    AddSpecialEffect(1310120, 7100)
+    AddSpecialEffect(1310121, 7100)
+    AddSpecialEffect(1310122, 7100)
+    AddSpecialEffect(1310123, 7100)
+    AddSpecialEffect(1310124, 7100)
+    AddSpecialEffect(1310125, 7100)
+    AddSpecialEffect(6551, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1310800, 7100)
+    CancelSpecialEffect(1310810, 7100)
+    CancelSpecialEffect(1310120, 7100)
+    CancelSpecialEffect(1310121, 7100)
+    CancelSpecialEffect(1310122, 7100)
+    CancelSpecialEffect(1310123, 7100)
+    CancelSpecialEffect(1310124, 7100)
+    CancelSpecialEffect(1310125, 7100)
+    CancelSpecialEffect(6551, 7100)
+    Restart()
+
+
 def Event11310090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11310090: Event 11310090 """
     SkipLinesIfThisEventSlotOff(3)
@@ -152,6 +180,7 @@ def Event11310090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11315040():
     """ 11315040: Event 11315040 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1310900)
     DisableCharacter(1310901)
     DisableCharacter(1310902)

@@ -271,6 +271,12 @@ def Constructor():
     #RunEvent(11709996)
     RunEvent(11709997)
     RunEvent(11029999)
+    RunEvent(11029998)
+    RunEvent(11029997)
+    RunEvent(11029996)
+    RunEvent(11029995)
+    RunEvent(11029994)
+    RunEvent(11029888)
 
 
 def Preconstructor():
@@ -394,11 +400,83 @@ def Preconstructor():
     EnableFlag(814)
     EnableFlag(50006071)
     EnableFlag(50006080)
+    
+
+def Event11029888():
+    """ 11029888: Give Ring of Displacement """
+    EndIfFlagOff(11027888)
+    AwardItemLotToHostOnly(1020330)
+    DisableFlag(11027888)
+
+
+@RestartOnRest
+def Event11029994():
+    """ 11029994: Prevent Ring of Condemnation from recharging on quit """
+    IfCharacterHasSpecialEffect(-1, PLAYER, 100)
+    IfHealthEqual(-1, PLAYER, 0)
+    IfConditionTrue(0, -1)
+    DisableFlag(11027994)
+
+    
+@RestartOnRest
+def Event11029995():
+    """ 11029995: Ring of Condemnation effect """
+    IfCharacterHasSpecialEffect(1, PLAYER, 1801)
+    IfFlagOff(1, 11027994)
+    IfConditionTrue(0, 1)
+    EnableImmortality(PLAYER)
+    IfCharacterHasSpecialEffect(1, PLAYER, 1802)
+    IfHealthLessThanOrEqual(1, PLAYER, 0.01)
+    IfConditionTrue(0, 1)
+    ShootProjectile(PLAYER, PLAYER, 220, 1001)
+    EnableFlag(11027994)
+    Wait(0.5)
+    DisableImmortality(PLAYER)
+
+
+def Event11029996():
+    """ 11029996: Check Ring of Condemnation """
+    IfCharacterHasSpecialEffect(0, PLAYER, 1801)
+    AddSpecialEffect(PLAYER, 1802)
+    IfCharacterDoesNotHaveSpecialEffect(0, PLAYER, 1801)
+    CancelSpecialEffect(PLAYER, 1802)
+    DisableImmortality(PLAYER)
+    Restart()
+
+
+def Event11029997():
+    """ 11029997: Dark World Tendency buff """
+    IfFlagOn(1, 744)
+    IfFlagOn(1, 742)
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(PLAYER, 3163)
+    EnableFlag(11027997)
+    IfFlagOff(-1, 744)
+    IfFlagOff(-1, 742)
+    IfConditionTrue(0, -1)
+    CancelSpecialEffect(PLAYER, 3163)
+    CancelSpecialEffect(PLAYER, 3162)
+    DisableFlag(11027997)
+    Restart()
+
+
+def Event11029998():
+    """ 11029998: Dark World Tendency debuff """
+    IfCharacterHasSpecialEffect(1, PLAYER, 3163)
+    IfConditionTrue(0, 1)
+    IfCharacterHollow(2, PLAYER)
+    IfConditionTrue(0, 2)
+    AddSpecialEffect(PLAYER, 3162)
+    IfCharacterHuman(3, PLAYER)
+    IfConditionTrue(0, 3)
+    CancelSpecialEffect(PLAYER, 3162)
+    Restart()
 
 
 @RestartOnRest
 def Event11029999():
     """ 11029999: Ingward temporary fix """
+    EndIfThisEventSlotOn()
     IfFlagOn(1, 1315)
     IfPlayerDoesNotHaveGood(1, 2013, including_box=True)
     IfConditionTrue(0, 1)
@@ -408,42 +486,42 @@ def Event11029999():
 def Event11219998():
     """ 11219998: Play Artorias's dialogue """
     EndIfFlagOn(11212997)
-    IfCharacterHasSpecialEffect(1, 10000, 3322)
+    IfCharacterHasSpecialEffect(1, PLAYER, 3322)
     IfInsideMap(1, OOLACILE)
     IfConditionTrue(0, 1)
     Wait(5)
-    PlaySoundEffect(10000, SoundType.v_Voice, 257000100)
+    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000100)
     Wait(2.1)
-    PlaySoundEffect(10000, SoundType.v_Voice, 257000110)
+    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000110)
     Wait(3.6)
-    PlaySoundEffect(10000, SoundType.v_Voice, 257000120)
+    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000120)
     Wait(6.3)
-    PlaySoundEffect(10000, SoundType.v_Voice, 257000130)
+    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000130)
     Wait(0.1)
-    PlaySoundEffect(10000, SoundType.v_Voice, 257000140)
+    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000140)
     Wait(8.4)
-    PlaySoundEffect(10000, SoundType.v_Voice, 257000150)
+    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000150)
     EnableFlag(11212997)
 
 
 def Event11709996():
     """ 11709996: Event 11709996 """
-    IfCharacterDoesNotHaveSpecialEffect(1, 10000, 6801)
+    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 6801)
     IfConditionTrue(0, 1)
-    CancelSpecialEffect(10000, 6802)
+    CancelSpecialEffect(PLAYER, 6802)
     Restart()
 
 
 def Event11709997():
     """ 11709997: Event 11709997 """
-    IfCharacterHasSpecialEffect(1, 10000, 6965)
+    IfCharacterHasSpecialEffect(1, PLAYER, 6965)
     IfConditionTrue(0, 1)
     IfPlayerCovenant(2, Covenant.NoCovenant)
     IfConditionFalse(0, 2)
-    AddSpecialEffect(10000, 6966)
-    IfCharacterDoesNotHaveSpecialEffect(3, 10000, 6965)
+    AddSpecialEffect(PLAYER, 6966)
+    IfCharacterDoesNotHaveSpecialEffect(3, PLAYER, 6965)
     IfConditionTrue(0, 3)
-    CancelSpecialEffect(10000, 6966)
+    CancelSpecialEffect(PLAYER, 6966)
     Restart()
 
 

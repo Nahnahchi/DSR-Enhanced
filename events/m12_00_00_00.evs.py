@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11200992)
     RunEvent(11200999)
     RegisterBonfire(11200984, obj=1201961, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterLadder(start_climbing_flag=11200010, stop_climbing_flag=11200011, obj=1201140)
@@ -232,6 +233,21 @@ def Preconstructor():
     RunEvent(11200535, slot=0, args=(6310,))
 
 
+def Event11200992():
+    """ 11200992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1200800, 7100)
+    AddSpecialEffect(1200010, 7100)
+    AddSpecialEffect(1200801, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1200800, 7100)
+    CancelSpecialEffect(1200010, 7100)
+    CancelSpecialEffect(1200801, 7100)
+    Restart()
+
+
 def Event11200999():
     """ 11200999: Disable Shiva cuz he back for some reason """
     EndIfFlagOff(11402885)
@@ -267,6 +283,7 @@ def Event11200090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11205080():
     """ 11205080: Event 11205080 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1200900)
     DisableCharacter(1200901)
     DisableCharacter(1200902)

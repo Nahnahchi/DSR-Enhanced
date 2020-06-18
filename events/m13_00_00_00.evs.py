@@ -12,6 +12,7 @@ def Constructor():
     """ 0: Event 0 """
     RunEvent(11300997)
     RunEvent(11300998)
+    RunEvent(11302098, slot=0, args=(6184,))
     RegisterBonfire(11300992, obj=1301960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11300984, obj=1301961, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterBonfire(11300976, obj=1301962, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
@@ -176,6 +177,19 @@ def Preconstructor():
     RunEvent(11300593)
 
 
+def Event11302098(ghost_id: int):
+    """ 11302098: Ring of Blind Ghosts effect """
+    IfCharacterHasSpecialEffect(1, PLAYER, 2180)
+    IfConditionTrue(0, 1)
+    DisableAI(ghost_id)
+    EnableInvincibility(ghost_id)  
+    IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 2180)
+    IfConditionTrue(0, 2)
+    EnableAI(ghost_id)
+    DisableInvincibility(ghost_id)
+    Restart()
+    
+
 def Event11300998():
     """ 11300998: Despawn the Anonymous """
     SkipLinesIfFlagOff(3, 11012998)
@@ -230,6 +244,7 @@ def Event11300090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11305065():
     """ 11305065: Event 11305065 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(11, 11007999)
     DisableCharacter(1300900)
     DisableCharacter(1300901)
     DisableCharacter(1300902)

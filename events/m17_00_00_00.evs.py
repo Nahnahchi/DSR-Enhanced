@@ -10,8 +10,10 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11700992)
     RunEvent(11700998)
     RunEvent(11700999)
+    RunEvent(11702098, slot=0, args=(6076,))
     RunEvent(11705071, slot=0, args=(1700999,))
     RunEvent(11705070, slot=0, args=(1700999,))
     SkipLinesIfFlagOff(1, 14)
@@ -229,6 +231,36 @@ def Preconstructor():
     RunEvent(11700545, slot=0, args=(6073, 1170, 1189, 1181))
 
 
+def Event11702098(ghost_id: int):
+    """ 11702098: Ring of Blind Ghosts effect """
+    IfCharacterHasSpecialEffect(1, PLAYER, 2180)
+    IfConditionTrue(0, 1)
+    DisableAI(ghost_id)
+    IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 2180)
+    IfConditionTrue(0, 2)
+    EnableAI(ghost_id)
+    Restart()
+
+
+def Event11700992():
+    """ 11700992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1700700, 7100)
+    AddSpecialEffect(1700800, 7100)
+    AddSpecialEffect(1700190, 7100)
+    AddSpecialEffect(1700191, 7100)
+    AddSpecialEffect(1700998, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1700700, 7100)
+    CancelSpecialEffect(1700800, 7100)
+    CancelSpecialEffect(1700190, 7100)
+    CancelSpecialEffect(1700191, 7100)
+    CancelSpecialEffect(1700998, 7100)
+    Restart()
+
+
 @RestartOnRest
 def Event11700998():
     """11700998: Event 11700999"""
@@ -319,6 +351,7 @@ def Event11700083(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11705080():
     """ 11705080: Event 11705080 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1700900)
     DisableCharacter(1700901)
     DisableCharacter(1700902)

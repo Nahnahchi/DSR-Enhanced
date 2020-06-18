@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11020997)
     RunEvent(11020998)
     RegisterBonfire(11020992, obj=1021960, reaction_distance=1.0, reaction_angle=180.0, initial_kindle_level=10)
     SkipLinesIfFlagOff(1, 11020108)
@@ -62,16 +63,23 @@ def Constructor():
     RunEvent(11025200, slot=14, args=(1020213, 1020213, 3.0, 0.0), arg_types='iiff')
 
 
+def Event11020997():
+    """ 11020997: Check if can give Ring of Displacement """
+    EndIfThisEventOn()
+    IfCharacterInsideRegion(0, PLAYER, 1022999)
+    EnableFlag(11027888)
+
+
 def Event11020998():
-    """ 11020998: Ingward debug """
+    """ 11020998: Give Seek Guidance """
     EndIfThisEventSlotOn()
-    IfFlagOn(1, 1315)
+    IfFlagOn(1, 11027998)
     IfConditionTrue(0, 1)
-    DisplayBanner(BannerType.YouLose)
+    AwardItemLot(1020320, host_only=True)
 
     
 def Event11020999(player_class: uchar, treasure_id: int):
-    """ 11020999: Give the player their class armor """
+    """ 11020999: Give the player their class gear """
     IfPlayerClass(1, player_class)
     EndIfConditionFalse(1)
     DisableTreasure(10219990)

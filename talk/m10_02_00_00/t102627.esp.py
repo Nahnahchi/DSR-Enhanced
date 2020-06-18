@@ -520,6 +520,7 @@ class State_28(State):
     def enter(self):
         SetFlagState(flag=71100026, state=1)
         SetFlagState(flag=11026105, state=1)
+        SetFlagState(flag=11027998, state=1)
 
     def test(self):
         return State_6

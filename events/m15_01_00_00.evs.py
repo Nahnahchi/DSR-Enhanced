@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11510992)
     RunEvent(11510997)
     RunEvent(11510998)
     RunEvent(11510999)
@@ -305,6 +306,25 @@ def Preconstructor():
     RunEvent(11510544, slot=0, args=(6302, 1570, 1599, 1575))
 
 
+def Event11510992():
+    """ 11510992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1510800, 7100)
+    AddSpecialEffect(1510801, 7100)
+    AddSpecialEffect(1510810, 7100)
+    AddSpecialEffect(1510811, 7100)
+    AddSpecialEffect(1510650, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1510800, 7100)
+    CancelSpecialEffect(1510801, 7100)
+    CancelSpecialEffect(1510810, 7100)
+    CancelSpecialEffect(1510811, 7100)
+    CancelSpecialEffect(1510650, 7100)
+    Restart()
+
+
 def Event11510998():
     """ 11510998: Despawn the Anonymous """
     SkipLinesIfFlagOff(3, 11012998)
@@ -368,6 +388,7 @@ def Event11510090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11515040():
     """ 11515040: Event 11515040 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1510900)
     DisableCharacter(1510901)
     DisableCharacter(1510902)

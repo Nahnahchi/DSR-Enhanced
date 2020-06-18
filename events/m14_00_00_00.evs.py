@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11400992)
     RunEvent(11400799)
     RunEvent(11400884)
     RunEvent(11400885)
@@ -213,6 +214,19 @@ def Preconstructor():
     DisableFlag(1766)
 
 
+def Event11400992():
+    """ 11400992: Dark World Tendency boss buff """
+    IfFlagOn(1, 11027997)    
+    IfConditionTrue(0, 1)
+    AddSpecialEffect(1400800, 7100)
+    AddSpecialEffect(6531, 7100)
+    IfFlagOff(2, 11027997)    
+    IfConditionTrue(0, 2)
+    CancelSpecialEffect(1400800, 7100)
+    CancelSpecialEffect(6531, 7100)
+    Restart()
+
+
 def Event11400799():
     """11400799: Check Old Witch's Ring equipped"""
     IfCharacterHasSpecialEffect(1, 10000, 2190)
@@ -361,6 +375,7 @@ def Event11400090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 def Event11405090():
     """ 11405090: Event 11405090 """
     EndIfThisEventOn()
+    SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1400900)
     DisableCharacter(1400901)
     DisableCharacter(1400902)
