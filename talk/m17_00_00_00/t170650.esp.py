@@ -3,14 +3,14 @@ from soulstruct.esd.functions import *
 
 
 class State_0(State):
-    """0: Imprisoned Maiden [start]"""
+    """ 0: Imprisoned Maiden [start] """
 
     def test(self):
         return State_2
 
 
 class State_1(State):
-    """1: Imprisoned Maiden [silence]"""
+    """ 1: Imprisoned Maiden [silence] """
 
     def enter(self):
         TalkToPlayer(conversation=62000000, unk1=-1, unk2=-1)
@@ -23,7 +23,7 @@ class State_1(State):
 
 
 class State_2(State):
-    """2: Imprisoned Maiden [conditionals]"""
+    """ 2: Imprisoned Maiden [conditionals] """
 
     def test(self):
         if GetOneLineHelpStatus() == 0 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3:
@@ -55,7 +55,7 @@ class State_4(State):
 
 
 class State_5(State):
-    """5: Imprisoned Maiden [prompt]"""
+    """ 5: Imprisoned Maiden [prompt] """
 
     def enter(self):
         AddTalkListData(menu_index=1, menu_text=15000010, required_flag=-1)
@@ -72,7 +72,7 @@ class State_5(State):
 
 
 class State_6(State):
-    """6: Imprisoned Maiden [Shop]"""
+    """ 6: Imprisoned Maiden [Shop] """
 
     def enter(self):
         OpenRegularShop(6800, 6805)
@@ -85,7 +85,7 @@ class State_6(State):
 
 
 class State_7(State):
-    "7: Imprisoned Maiden [Prepare]"
+    """ 7: Imprisoned Maiden [Prepare] """
 
     def enter(self):
         ForceCloseMenu()

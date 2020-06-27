@@ -444,11 +444,13 @@ def Event11029996():
     Restart()
 
 
+@RestartOnRest
 def Event11029997():
     """ 11029997: Dark World Tendency buff """
+    SkipLinesIfFlagOn(5, 11027997)
     IfFlagOn(1, 744)
     IfFlagOn(1, 742)
-    IfConditionTrue(0, 1)
+    EndIfConditionFalse(1)
     AddSpecialEffect(PLAYER, 3163)
     EnableFlag(11027997)
     IfFlagOff(-1, 744)
@@ -462,13 +464,10 @@ def Event11029997():
 
 def Event11029998():
     """ 11029998: Dark World Tendency debuff """
-    IfCharacterHasSpecialEffect(1, PLAYER, 3163)
-    IfConditionTrue(0, 1)
-    IfCharacterHollow(2, PLAYER)
-    IfConditionTrue(0, 2)
+    IfCharacterHasSpecialEffect(0, PLAYER, 3163)
+    IfCharacterHollow(0, PLAYER)
     AddSpecialEffect(PLAYER, 3162)
-    IfCharacterHuman(3, PLAYER)
-    IfConditionTrue(0, 3)
+    IfCharacterHuman(0, PLAYER)
     CancelSpecialEffect(PLAYER, 3162)
     Restart()
 

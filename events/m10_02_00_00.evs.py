@@ -10,6 +10,7 @@ from soulstruct.events.darksouls1 import *
 
 def Constructor():
     """ 0: Event 0 """
+    RunEvent(11020996)
     RunEvent(11020997)
     RunEvent(11020998)
     RegisterBonfire(11020992, obj=1021960, reaction_distance=1.0, reaction_angle=180.0, initial_kindle_level=10)
@@ -61,6 +62,14 @@ def Constructor():
     RunEvent(11025200, slot=12, args=(1020209, 1020211, 11.0, 1.5), arg_types='iiff')
     RunEvent(11025200, slot=13, args=(1020209, 1020212, 11.0, 2.200000047683716), arg_types='iiff')
     RunEvent(11025200, slot=14, args=(1020213, 1020213, 3.0, 0.0), arg_types='iiff')
+
+
+def Event11020996():
+    """ 11020996: Disable Humanity Merchant """
+    IfFlagOff(-1, 744)
+    IfFlagOff(-1, 742)
+    IfConditionTrue(0, -1)
+    DisableCharacter(1020999)
 
 
 def Event11020997():
@@ -304,7 +313,7 @@ def Preconstructor():
     SkipLinesIfFlagOn(1, 1313)
     DisableCharacter(6181)
     RunEvent(11020510, slot=7, args=(6181, 1314))
-    RunEvent(11020530, slot=7, args=(6181, 1310, 1319, 1315))
+    RunEvent(11020530, slot=0, args=(6181, 1310, 1319, 1315))
     RunEvent(11020576, slot=0, args=(6181, 1310, 1319, 1313))
     RunEvent(11020504, slot=8, args=(6240, 1411))
     RunEvent(11020530, slot=8, args=(6240, 1410, 1413, 1412))
@@ -710,7 +719,7 @@ def Event11020510(arg_0_3: int, arg_4_7: int):
 
 def Event11020530(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11020530: Event 11020530 """
-    SkipLinesIfThisEventSlotOff(2)
+    SkipLinesIfFlagOff(line_count=2, flag=arg_12_15)    # Ingward fix
     DropMandatoryTreasure(arg_0_3)
     End()
     IfHealthLessThanOrEqual(1, arg_0_3, 0.0)
@@ -718,6 +727,9 @@ def Event11020530(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     IfConditionTrue(-1, input_condition=1)
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(0, input_condition=-1)
+    IfInsideMap(3, game_map=FIRELINK_SHRINE)            # Ingward fix
+    SkipLinesIfConditionTrue(line_count=1, condition=3) # ^
+    Restart()                                           # ^
     SkipLinesIfFinishedConditionTrue(2, 1)
     Kill(arg_0_3, award_souls=True)
     DisableGravity(arg_0_3)
