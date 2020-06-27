@@ -231,7 +231,7 @@ def Preconstructor():
     RunEvent(11700545, slot=0, args=(6073, 1170, 1189, 1181))
 
 
-def Event11702098(ghost_id: int):
+def RoBG_Check(ghost_id: int):
     """ 11702098: Ring of Blind Ghosts effect """
     IfCharacterHasSpecialEffect(1, PLAYER, 2180)
     IfConditionTrue(0, 1)
@@ -242,7 +242,7 @@ def Event11702098(ghost_id: int):
     Restart()
 
 
-def Event11700992():
+def WT_BossBuff():
     """ 11700992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -262,23 +262,21 @@ def Event11700992():
 
 
 @RestartOnRest
-def Event11700998():
-    """11700998: Event 11700999"""
-    IfPlayerHasGood(1, 9012)
-    IfConditionTrue(0, 1)
+def Prostration_RemoveItem():
+    """ 11700998: Remove 'prostration' as item from the player's inventory """
+    IfPlayerHasGood(0, 9012)
     RemoveGoodFromPlayer(9012, 1)
 
 
 @RestartOnRest
-def Event11700999():
-    """11700999: Event 11700999"""
-    IfAttacked(1, 6076, 10000)
-    IfConditionTrue(0, 1)
+def GhostMerchant_Aggro():
+    """ 11700999: Make Ghost Merchant aggressive """
+    IfAttacked(0, 6076, 10000)
     SetTeamTypeAndExitStandbyAnimation(6076, TeamType.HostileAlly)
 
 
 @RestartOnRest
-def Event11705071(arg_0_3: int):
+def Giant_WaitPart1(arg_0_3: int):
     """ 11705071: Manage the giants tantrum attack [1] """
     IfHasTAEEvent(0, arg_0_3, tae_event_id=500)
     EzstateAIRequest(arg_0_3, command_id=1500, slot=0)
@@ -287,7 +285,7 @@ def Event11705071(arg_0_3: int):
 
 
 @RestartOnRest
-def Event11705070(arg_0_3: int):
+def Giant_WaitPart2(arg_0_3: int):
     """ 11705070: Manage the giants tantrum attack [2] """
     IfHasTAEEvent(0, arg_0_3, tae_event_id=1400)
     Wait(10.0)
@@ -348,7 +346,7 @@ def Event11700083(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11705080():
+def WT_SpawnPhantoms():
     """ 11705080: Event 11705080 """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
@@ -384,7 +382,7 @@ def Event11705080():
 
 
 @RestartOnRest
-def Event11705081():
+def WT_KillPhantoms():
     """ 11705081: Event 11705081 """
     #IfFlagOn(-1, 11705085)
     #IfFlagOn(-1, 735)

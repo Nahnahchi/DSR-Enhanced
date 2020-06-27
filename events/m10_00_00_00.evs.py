@@ -138,7 +138,7 @@ def Preconstructor():
     RunEvent(11000533, slot=0, args=(6260, 1435))
 
 
-def Event11000992():
+def WT_BossBuff():
     """ 11000992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -151,7 +151,7 @@ def Event11000992():
     Restart()
 
 
-def Event11000993():
+def Anon_Despawn():
     """ 11000993: Despawn the Anonymous """
     IfFlagOff(-1, 11412993)
     IfFlagOn(-1, 11410858)
@@ -160,7 +160,7 @@ def Event11000993():
     End()
 
 
-def Event11000994():
+def Anon_Aggro():
     """ 11000994: Make the Anonymous hostile """
     SkipLinesIfFlagOn(5, 11012997)
     IfAttacked(1, 62884, attacking_character=10000)
@@ -221,8 +221,8 @@ def Event11000090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11005080():
-    """ 11005080: Event 11005080 """
+def WT_SpawnPhantoms():
+    """ 11005080: Spawn Red Phantom enemies """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(14, 11007999)
     DisableCharacter(1000900)
@@ -265,8 +265,8 @@ def Event11005080():
 
 
 @RestartOnRest
-def Event11005081():
-    """ 11005081: Event 11005081 """
+def WT_KillPhantoms():
+    """ 11005081: Kill Red Phantom enemies """
     #IfFlagOn(-1, 11005085)
     #IfFlagOn(-1, 735)
     #IfConditionTrue(0, input_condition=-1)

@@ -233,7 +233,7 @@ def Preconstructor():
     RunEvent(11200535, slot=0, args=(6310,))
 
 
-def Event11200992():
+def WT_BossBuff():
     """ 11200992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -248,7 +248,7 @@ def Event11200992():
     Restart()
 
 
-def Event11200999():
+def ChaosBladeQuest_ContinuityFix():
     """ 11200999: Disable Shiva cuz he back for some reason """
     EndIfFlagOff(11402885)
     DisableCharacter(6310)

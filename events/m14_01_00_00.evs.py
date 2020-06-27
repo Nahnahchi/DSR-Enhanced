@@ -302,7 +302,7 @@ def Preconstructor():
     RunEvent(11410548, slot=0, args=(6286,))
 
 
-def Event11410992():
+def WT_BossBuff():
     """ 11410992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -321,7 +321,7 @@ def Event11410992():
     Restart()
 
 
-def Event11410993():
+def Anon_Despawn():
     """ 11410993: Despawn the Anonymous """
     IfFlagOn(1, 11302998)
     IfFlagOn(1, 11512998)
@@ -336,7 +336,7 @@ def Event11410993():
     EnableFlag(11412993)
 
 
-def Event11410994():
+def Anon_Aggro():
     """ 11410994: Make the Anonymous hostile """
     SkipLinesIfFlagOn(5, 11012997)
     IfAttacked(1, 62883, attacking_character=10000)
@@ -347,12 +347,12 @@ def Event11410994():
     SetTeamTypeAndExitStandbyAnimation(62883, TeamType.HostileAlly)
 
 
-def Event11410995():
+def EggHead_MakeImmortal():
     """ 11410995: Make the chaos servant immortal in his second encounter """
     EnableImmortality(61321)    
 
 
-def Event11410996(egg_carrier: int):
+def EggHead_Infect(egg_carrier: int):
     """ 11410996: Infect the player with eggs """
     IfHealthEqual(1, 10000, 0)
     IfEntityWithinDistance(1, 10000, egg_carrier, 10)
@@ -360,7 +360,7 @@ def Event11410996(egg_carrier: int):
     AddSpecialEffect(10000, 5210)
 
 
-def Event11410997():
+def ChaosEmberQuest_End():
     """ 11410997: The last encounter with the infected chaos servant """
     SkipLinesIfFlagOff(1, 10)
     SkipLinesIfFlagOn(2, 11417132)
@@ -373,10 +373,10 @@ def Event11410997():
     SetTeamType(61322, TeamType.HostileAlly)
 
 
-def Event11410998():
+def ChaosEmberQuest_Fight():
     """ 11410998: The second encounter with the infected chaos servant """
-    SkipLinesIfFlagOn(18, 11417132)
-    SkipLinesIfFlagOff(17, 11407132)
+    SkipLinesIfFlagOn(22, 11417132)
+    SkipLinesIfFlagOff(21, 11407132)
     IfAttacked(1, 61321, 10000)
     IfConditionTrue(0, 1)
     AddSpecialEffect(61321, 2090)
@@ -388,18 +388,21 @@ def Event11410998():
     EnableFlag(11417132)
     EnableInvincibility(61321)
     AddSpecialEffect(61321, 2091)
-    Wait(3)
+    Wait(3.0)
+    FadeOutCharacter(61321, 5.0)
+    DisableAI(61321)
+    ResetAnimation(61321)
     ForceAnimation(61321, 7570)
-    Wait(1)
+    Wait(1.0)
     PlaySoundEffect(61321, SoundType.s_SFX, 21200)
     CreateTemporaryFX(22733, anchor_entity=61321, anchor_type=CoordEntityType.Character, model_point=236)
-    Wait(1)
     SetTeamType(61321, TeamType.Ally)
+    Wait(6.0)
     DisableCharacter(61321)
 
 
 @RestartOnRest
-def Event11410850(arg_0_3: int, arg_4_7: int):
+def Enemies_Dispose(arg_0_3: int, arg_4_7: int):
     """ 11410850: Manage one-time kill enemy despawns """
     SkipLinesIfThisEventSlotOff(3)
     DisableCharacter(arg_0_3)
@@ -438,7 +441,7 @@ def Event11410090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11415090():
+def WT_SpawnPhantoms():
     """ 11415090: Event 11415090 """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(8, 11007999)
@@ -470,7 +473,7 @@ def Event11415090():
 
 
 @RestartOnRest
-def Event11415091():
+def WT_KillPhantoms():
     """ 11415091: Event 11415091 """
     #IfFlagOn(-1, 11415095)
     #IfFlagOn(-1, 735)

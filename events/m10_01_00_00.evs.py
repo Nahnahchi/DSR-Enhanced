@@ -271,7 +271,7 @@ def Preconstructor():
     RunEvent(11010581, slot=0, args=(6370,))
 
 
-def Event11010992():
+def WT_BossBuff():
     """ 11010992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -290,7 +290,7 @@ def Event11010992():
     Restart()
 
 
-def Event11010998():
+def Anon_Despawn():
     """ 11010998: Despawn the Anonymous """
     SkipLinesIfFlagOff(2, 11012998)
     DisableCharacter(62880)
@@ -303,7 +303,7 @@ def Event11010998():
     EnableFlag(11012998)
 
 
-def Event11010997():
+def Anon_Aggro():
     """ 11010997: Make the Anonymous hostile """
     SkipLinesIfFlagOn(5, 11012997)
     IfAttacked(1, 62880, attacking_character=10000)
@@ -315,7 +315,7 @@ def Event11010997():
 
 
 @RestartOnRest
-def Event11010999():
+def BackgroundChar_Spawn():
     """ 11010999: Spawn some hollows when the Berenike knight is dead """
     SkipLinesIfThisEventSlotOn(2)
     DisableCharacter(1010996)
@@ -372,8 +372,8 @@ def Event11010090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11015070():
-    """ 11015070: Event 11015070 """
+def WT_SpawnPhantoms():
+    """ 11015070: Spawn Phantom enemies """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(13, 11007999)
     DisableCharacter(1010900)
@@ -414,8 +414,8 @@ def Event11015070():
 
 
 @RestartOnRest
-def Event11015071():
-    """ 11015071: Event 11015071 """
+def WT_KillPhantoms():
+    """ 11015071: Kill Phantom enemies """
     #IfFlagOn(-1, 11015075)
     #IfFlagOn(-1, 735)
     #IfConditionTrue(0, input_condition=-1)

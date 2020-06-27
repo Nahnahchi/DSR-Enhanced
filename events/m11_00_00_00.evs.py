@@ -128,7 +128,7 @@ def Preconstructor():
     RunEvent(11100300)
 
 
-def Event11100992():
+def WT_BossBuff():
     """ 11100992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -141,7 +141,7 @@ def Event11100992():
     Restart()
 
 
-def Event11100998():
+def BlackEyeOrb_ShowMessage():
     """ 11100998: You feel the black eye orb quivering """
     SkipLinesIfFlagOn(7, 11102998)
     IfEntityWithinDistance(1, 10000, 1101160, 5)
@@ -155,7 +155,7 @@ def Event11100998():
     DisableFlag(11102998)
 
 
-def Event11100999():
+def ChaosBladeQuest_Award():
     """ 11100999: Shivas & Ninjas loot + the Chaos Blade """
     IfFlagOn(1, 11102999)
     IfConditionTrue(0, 1)

@@ -64,7 +64,7 @@ def Constructor():
     RunEvent(11025200, slot=14, args=(1020213, 1020213, 3.0, 0.0), arg_types='iiff')
 
 
-def Event11020996():
+def WT_DespawnHumMerchant():
     """ 11020996: Disable Humanity Merchant """
     IfFlagOff(-1, 744)
     IfFlagOff(-1, 742)
@@ -72,14 +72,14 @@ def Event11020996():
     DisableCharacter(1020999)
 
 
-def Event11020997():
+def RoD_GiveItem():
     """ 11020997: Check if can give Ring of Displacement """
     EndIfThisEventOn()
     IfCharacterInsideRegion(0, PLAYER, 1022999)
     EnableFlag(11027888)
 
 
-def Event11020998():
+def SeekGuidance_Give():
     """ 11020998: Give Seek Guidance """
     EndIfThisEventSlotOn()
     IfFlagOn(1, 11027998)
@@ -87,7 +87,7 @@ def Event11020998():
     AwardItemLot(1020320, host_only=True)
 
     
-def Event11020999(player_class: uchar, treasure_id: int):
+def ClassGear_Enable(player_class: uchar, treasure_id: int):
     """ 11020999: Give the player their class gear """
     IfPlayerClass(1, player_class)
     EndIfConditionFalse(1)

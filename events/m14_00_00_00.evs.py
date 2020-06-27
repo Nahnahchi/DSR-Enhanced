@@ -214,7 +214,7 @@ def Preconstructor():
     DisableFlag(1766)
 
 
-def Event11400992():
+def WT_BossBuff():
     """ 11400992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -227,7 +227,7 @@ def Event11400992():
     Restart()
 
 
-def Event11400799():
+def OWR_Check():
     """11400799: Check Old Witch's Ring equipped"""
     IfCharacterHasSpecialEffect(1, 10000, 2190)
     IfConditionTrue(0, 1)
@@ -237,7 +237,7 @@ def Event11400799():
     DisableFlag(11402799)
 
 
-def Event11400884():
+def ChaosBladeQuest_FalseEnd():
     """ 11400884: Give player back the Chaos Blade """
     IfFlagOn(1, 11402884)
     IfCharacterDead(1, 6311)
@@ -245,21 +245,21 @@ def Event11400884():
     AwardItemLot(63160, host_only=True)
 
 
-def Event11400885():
+def ChaosBladeQuest_DisableTraitors():
     """ 11400885: Disable Shiva and his ninja if he got the Chaos Blade """
     SkipLinesIfFlagOff(2, 11402885)
     DisableCharacter(6311)
     DisableCharacter(6421)
 
 
-def Event11400886():
+def BlackEyeOrb_GiveItem():
     """ 11400886: Give player Black Eye Orb """
     SkipLinesIfFlagOff(2, 11402886)
     AwardItemLot(63150, host_only=True)
     EnableFlag(11402886)
 
 
-def Event11400887():
+def ChaosBladeQuest_TakeSword():
     """ 11400887: Take away players Chaos Blade """
     IfFlagOn(1, 11402887)
     IfConditionTrue(0, 1)
@@ -276,14 +276,15 @@ def Event11400887():
     RemoveWeaponFromPlayer(503200, 1)
     End()
 
-def Event11400888():
+
+def ChaosBladeQuest_PayMoney():
     """ 11400888: Award Gold Coins for the Chaos Blade """
     IfFlagOn(1, 11402888)
     IfConditionTrue(0, 1)
     AwardItemLot(6315, host_only=True)
 
 
-def Event11400889():
+def ChaosBladeQuest_Aggro():
     """ 11400889: Make Shiva hostile """
     IfFlagOn(1, 11402889)
     IfConditionTrue(0, 1)
@@ -292,9 +293,9 @@ def Event11400889():
     SetTeamTypeAndExitStandbyAnimation(6421, TeamType.HostileAlly)
 
 
-def Event11400995():
+def ChaosEmberQuest_Teleport():
     """ 11400995: Teleport the chaos servant away """
-    SkipLinesIfFlagOn(12, 11407132)
+    SkipLinesIfFlagOn(13, 11407132)
     IfFlagOff(1, 1272)
     IfAttacked(1, 61320, 10000)
     IfConditionTrue(0, 1)
@@ -302,15 +303,16 @@ def Event11400995():
     AddSpecialEffect(61320, 2091)
     EnableInvincibility(61320)
     SetTeamTypeAndExitStandbyAnimation(61320, TeamType.Ally)
+    FadeOutCharacter(61320, 5.0)
     ForceAnimation(61320, 7570)
-    Wait(1)
+    Wait(1.0)
     PlaySoundEffect(61320, SoundType.s_SFX, 21200)
     CreateTemporaryFX(22733, anchor_entity=61320, anchor_type=CoordEntityType.Character, model_point=236)
-    Wait(1)
+    Wait(6.0)
     DisableCharacter(61320)
     
 
-def Event11400996(chaos_servant_entity: int, sp_effect: int):
+def ChaosEmberQuest_FalseEnd(chaos_servant_entity: int, sp_effect: int):
     """ 11400996: Make chaos servants hostile """
     IfFlagOn(1, 1272)
     IfConditionTrue(0, 1)
@@ -318,7 +320,7 @@ def Event11400996(chaos_servant_entity: int, sp_effect: int):
     AddSpecialEffect(chaos_servant_entity, sp_effect)
 
 
-def Event11400997():
+def EggHeadHollow_Aggro():
     """ 11400997: Make the egg infested hollow stand up """
     IfEntityWithinDistance(1, 10000, 6133, 3)
     IfConditionTrue(0, 1)
@@ -326,7 +328,7 @@ def Event11400997():
     SetTeamTypeAndExitStandbyAnimation(6133, TeamType.Enemy)
 
 
-def Event11400998():
+def Taurus_FixBonfire():
     """ 11400998: Manage the taurus demons relation to the bonfire """
     IfEntityBeyondDistance(1, 10000, 1409999, 15)
     IfConditionTrue(0, 1)
@@ -339,7 +341,7 @@ def Event11400998():
     Restart()
 
 
-def Event11400999(egg_carrier: int):
+def EggHead_Infect(egg_carrier: int):
     """ 11400999: Infect the player with eggs if they die to an infested enemy """
     IfHealthEqual(1, 10000, 0)
     IfEntityWithinDistance(1, 10000, egg_carrier, 10)
@@ -372,8 +374,8 @@ def Event11400090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11405090():
-    """ 11405090: Event 11405090 """
+def WT_SpawnPhantoms():
+    """ 11405090: Spawn Phantom enemies """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1400900)
@@ -408,8 +410,8 @@ def Event11405090():
 
 
 @RestartOnRest
-def Event11405091():
-    """ 11405091: Event 11405091 """
+def WT_KillPhantoms():
+    """ 11405091: Kill Phantom enemies """
     #IfFlagOn(-1, 11405095)
     #IfFlagOn(-1, 735)
     #IfConditionTrue(0, input_condition=-1)

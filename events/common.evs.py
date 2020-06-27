@@ -268,7 +268,6 @@ def Constructor():
     RunEvent(8090, slot=4, args=(3, 514, 11217050), arg_types='Bii')
     RunEvent(11219998)
     RunEvent(11409999)
-    #RunEvent(11709996)
     RunEvent(11709997)
     RunEvent(11029999)
     RunEvent(11029998)
@@ -403,7 +402,7 @@ def Preconstructor():
     EnableFlag(50006080)
 
 
-def Event11029888():
+def RoD_GiveItem():
     """ 11029888: Give Ring of Displacement """
     EndIfFlagOff(11027888)
     AwardItemLotToHostOnly(1020330)
@@ -459,7 +458,7 @@ def RoC_Fix():
 
 
 @RestartOnRest
-def Event11029997():
+def WT_BuffPlayer():
     """ 11029997: Dark World Tendency buff """
     SkipLinesIfFlagOn(5, 11027997)
     IfFlagOn(1, 744)
@@ -476,7 +475,7 @@ def Event11029997():
     Restart()
 
 
-def Event11029998():
+def WT_DebuffPlayer():
     """ 11029998: Dark World Tendency debuff """
     IfCharacterHasSpecialEffect(0, PLAYER, 3163)
     IfCharacterHollow(0, PLAYER)
@@ -487,7 +486,7 @@ def Event11029998():
 
 
 @RestartOnRest
-def Event11029999():
+def GiveKeyToTheSeal_Temp():
     """ 11029999: Ingward temporary fix """
     EndIfThisEventSlotOn()
     IfFlagOn(1, 1315)
@@ -496,7 +495,7 @@ def Event11029999():
     AwardItemLot(6180, host_only=True)    
 
 
-def Event11219998():
+def CleansingShield_Talk():
     """ 11219998: Play Artorias's dialogue """
     EndIfFlagOn(11212997)
     IfCharacterHasSpecialEffect(1, PLAYER, 3322)
@@ -517,16 +516,8 @@ def Event11219998():
     EnableFlag(11212997)
 
 
-def Event11709996():
-    """ 11709996: Event 11709996 """
-    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 6801)
-    IfConditionTrue(0, input_condition=1)
-    CancelSpecialEffect(PLAYER, 6802)
-    Restart()
-
-
-def Event11709997():
-    """ 11709997: Event 11709997 """
+def UnionTalisman_Curse():
+    """ 11709997: Check Union Talisman """
     IfCharacterHasSpecialEffect(1, PLAYER, 6965)
     IfConditionTrue(0, input_condition=1)
     IfPlayerCovenant(2, Covenant.NoCovenant)
@@ -538,8 +529,8 @@ def Event11709997():
     Restart()
 
 
-def Event11409999():
-    """ 11409999: Event 11409999 """
+def ChaosBlade_Check():
+    """ 11409999: Check Chaos Blade """
     IfPlayerHasWeapon(-1, 503000, including_box=False)
     IfPlayerHasWeapon(-1, 503100, including_box=False)
     IfPlayerHasWeapon(-1, 503200, including_box=False)

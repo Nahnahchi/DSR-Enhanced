@@ -242,7 +242,7 @@ def Preconstructor():
     RunEvent(11606200)
 
 
-def Event11600992():
+def WT_BossBuff():
     """ 11600992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -261,7 +261,7 @@ def Event11600992():
     Restart()
 
 
-def Event11602098(ghost_id: int):
+def RoBG_Check(ghost_id: int):
     """ 11602098: Ring of Blind Ghosts effect """
     IfCharacterHasSpecialEffect(1, PLAYER, 2180)
     IfConditionTrue(0, 1)
@@ -275,7 +275,7 @@ def Event11602098(ghost_id: int):
     
 
 @RestartOnRest
-def Event11600999():
+def BK_Aggro():
     """ 11600999: Make the Ghost BK agressive """
     IfEntityBeyondDistance(2, 6181, PLAYER, 5)
     IfConditionTrue(0, 2)
@@ -313,7 +313,7 @@ def Event11600090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11605090():
+def WT_SpawnPhantoms():
     """ 11605090: Event 11605090 """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(6, 11007999)
@@ -341,7 +341,7 @@ def Event11605090():
 
 
 @RestartOnRest
-def Event11605091():
+def WT_KillPhantoms():
     """ 11605091: Event 11605091 """
     #IfFlagOn(-1, 11605095)
     #IfFlagOn(-1, 735)

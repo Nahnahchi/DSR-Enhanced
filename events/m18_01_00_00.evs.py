@@ -166,7 +166,7 @@ def Preconstructor():
     RunEvent(11815010)
 
 
-def Event11810992():
+def WT_BossBuff():
     """ 11810992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)

@@ -88,7 +88,7 @@ def Preconstructor():
     RunEvent(11806201)
 
 
-def Event11800992():
+def WT_BossBuff():
     """ 11800992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -100,7 +100,7 @@ def Event11800992():
 
 
 @RestartOnRest
-def Event11805090():
+def WT_SpawnPhantoms():
     """ 11805090: Event 11805090 """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(5, 11007999)
@@ -126,7 +126,7 @@ def Event11805090():
 
 
 @RestartOnRest
-def Event11805091():
+def WT_KillPhantoms():
     """ 11805091: Event 11805091 """
     #IfFlagOn(-1, 11805095)
     #IfFlagOn(-1, 735)

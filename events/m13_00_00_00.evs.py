@@ -177,7 +177,7 @@ def Preconstructor():
     RunEvent(11300593)
 
 
-def Event11302098(ghost_id: int):
+def RoBG_Check(ghost_id: int):
     """ 11302098: Ring of Blind Ghosts effect """
     IfCharacterHasSpecialEffect(1, PLAYER, 2180)
     IfConditionTrue(0, 1)
@@ -190,7 +190,7 @@ def Event11302098(ghost_id: int):
     Restart()
     
 
-def Event11300998():
+def Anon_Despawn():
     """ 11300998: Despawn the Anonymous """
     SkipLinesIfFlagOff(3, 11012998)
     SkipLinesIfFlagOn(2, 11010868)
@@ -205,7 +205,7 @@ def Event11300998():
     EnableFlag(11302998)
 
 
-def Event11300997():
+def Anon_Aggro():
     """ 11300997: Make the Anonymous hostile """
     SkipLinesIfFlagOn(5, 11012997)
     IfAttacked(1, 62881, attacking_character=10000)
@@ -241,8 +241,8 @@ def Event11300090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11305065():
-    """ 11305065: Event 11305065 """
+def WT_SpawnPhantoms():
+    """ 11305065: Spawn Phantom enemies """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(11, 11007999)
     DisableCharacter(1300900)
@@ -279,8 +279,8 @@ def Event11305065():
 
 
 @RestartOnRest
-def Event11305066():
-    """ 11305066: Event 11305066 """
+def WT_KillPhantoms():
+    """ 11305066: Kill Phantom enemies """
     #IfFlagOn(-1, 11305069)
     #IfFlagOn(-1, 735)
     #IfConditionTrue(0, input_condition=-1)

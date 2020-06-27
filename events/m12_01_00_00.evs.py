@@ -298,7 +298,7 @@ def Preconstructor():
     RunEvent(11210015)
 
 
-def Event11210992():
+def WT_BossBuff():
     """ 11210992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -325,13 +325,13 @@ def Event11210992():
     Restart()
 
 
-def Event11210997():
+def VeryLargeEmber_Disable():
     """ 11210997: Disable Very Large Ember in Gough's shop """
     EndIfFlagOn(11210004)
     EnableFlag(11217980)
 
 
-def Event11210998():
+def VeryLargeEmber_Enable():
     """ 11210998: Enable Very Large Ember in Gough's shop """
     EndIfFlagOn(11212998)
     IfFlagOn(1, 11210004)
@@ -341,7 +341,7 @@ def Event11210998():
 
 
 @RestartOnRest
-def Event11210999(arg_0_3: int, arg_4_7: int):
+def Enemy_Dispose(arg_0_3: int, arg_4_7: int):
     """ 11210999: Despawn one-time kill enemies """
     SkipLinesIfThisEventSlotOff(3)
     DisableCharacter(arg_0_3)

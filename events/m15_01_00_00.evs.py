@@ -306,7 +306,7 @@ def Preconstructor():
     RunEvent(11510544, slot=0, args=(6302, 1570, 1599, 1575))
 
 
-def Event11510992():
+def WT_BossBuff():
     """ 11510992: Dark World Tendency boss buff """
     IfFlagOn(1, 11027997)    
     IfConditionTrue(0, 1)
@@ -325,7 +325,7 @@ def Event11510992():
     Restart()
 
 
-def Event11510998():
+def Anon_Despawn():
     """ 11510998: Despawn the Anonymous """
     SkipLinesIfFlagOff(3, 11012998)
     SkipLinesIfFlagOn(2, 11010868)
@@ -341,7 +341,7 @@ def Event11510998():
     EnableFlag(11512998)
 
 
-def Event11510997():
+def Anon_Aggro():
     """ 11510997: Make the Anonymous hostile """
     SkipLinesIfFlagOn(5, 11012997)
     IfAttacked(1, 62882, attacking_character=10000)
@@ -352,8 +352,8 @@ def Event11510997():
     SetTeamTypeAndExitStandbyAnimation(62882, TeamType.HostileAlly)
 
 
-def Event11510999():
-    """ 11510999: Event 11510999 """
+def DragonSlayer_Aggro():
+    """ 11510999: Make Dragon Slayer hostile """
     IfEntityWithinDistance(-1, 6807, 10000, 5)
     IfAttacked(-1, 6807, 10000)
     IfConditionTrue(0, -1)
@@ -385,7 +385,7 @@ def Event11510090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11515040():
+def WT_SpawnPhantoms():
     """ 11515040: Event 11515040 """
     EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
@@ -421,7 +421,7 @@ def Event11515040():
 
 
 @RestartOnRest
-def Event11515041():
+def WT_KillPhantoms():
     """ 11515041: Event 11515041 """
     #IfFlagOn(-1, 11515045)
     #IfFlagOn(-1, 735)
