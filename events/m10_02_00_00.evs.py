@@ -313,7 +313,7 @@ def Preconstructor():
     SkipLinesIfFlagOn(1, 1313)
     DisableCharacter(6181)
     RunEvent(11020510, slot=7, args=(6181, 1314))
-    RunEvent(11020530, slot=0, args=(6181, 1310, 1319, 1315))
+    RunEvent(11020530, slot=7, args=(6181, 1310, 1319, 1315))
     RunEvent(11020576, slot=0, args=(6181, 1310, 1319, 1313))
     RunEvent(11020504, slot=8, args=(6240, 1411))
     RunEvent(11020530, slot=8, args=(6240, 1410, 1413, 1412))
