@@ -277,6 +277,7 @@ def Constructor():
     RunEvent(11029995)
     RunEvent(11029994)
     RunEvent(11029888)
+    RunEvent(11029887)
 
 
 def Preconstructor():
@@ -400,7 +401,7 @@ def Preconstructor():
     EnableFlag(814)
     EnableFlag(50006071)
     EnableFlag(50006080)
-    
+
 
 def Event11029888():
     """ 11029888: Give Ring of Displacement """
@@ -410,37 +411,50 @@ def Event11029888():
 
 
 @RestartOnRest
-def Event11029994():
-    """ 11029994: Prevent Ring of Condemnation from recharging on quit """
+def RoC_Recharge():
+    """ 11029994: Recharge the Ring of Condemnation """
+    IfFlagOn(0, 11027994)
     IfCharacterHasSpecialEffect(-1, PLAYER, 100)
     IfHealthEqual(-1, PLAYER, 0)
-    IfConditionTrue(0, -1)
+    IfConditionTrue(0, input_condition=-1)
     DisableFlag(11027994)
 
-    
+
 @RestartOnRest
-def Event11029995():
+def RoC_ShootBullet():
     """ 11029995: Ring of Condemnation effect """
     IfCharacterHasSpecialEffect(1, PLAYER, 1801)
-    IfFlagOff(1, 11027994)
-    IfConditionTrue(0, 1)
-    EnableImmortality(PLAYER)
-    IfCharacterHasSpecialEffect(1, PLAYER, 1802)
     IfHealthLessThanOrEqual(1, PLAYER, 0.01)
-    IfConditionTrue(0, 1)
+    IfFlagOff(1, 11027994)
+    IfConditionTrue(0, input_condition=1)
     ShootProjectile(PLAYER, PLAYER, 220, 1001)
-    EnableFlag(11027994)
     Wait(0.5)
-    DisableImmortality(PLAYER)
+    EnableFlag(11027994)
 
 
-def Event11029996():
+def RoC_Check():
     """ 11029996: Check Ring of Condemnation """
-    IfCharacterHasSpecialEffect(0, PLAYER, 1801)
-    AddSpecialEffect(PLAYER, 1802)
-    IfCharacterDoesNotHaveSpecialEffect(0, PLAYER, 1801)
-    CancelSpecialEffect(PLAYER, 1802)
+    IfCharacterHasSpecialEffect(1, PLAYER, 1801)
+    IfFlagOff(1, 11027994)
+    IfConditionTrue(0, input_condition=1)
+    EnableImmortality(PLAYER)
+    IfCharacterDoesNotHaveSpecialEffect(-1, PLAYER, 1801)
+    IfFlagOn(-1, 11027994)
+    IfConditionTrue(0, input_condition=-1)
     DisableImmortality(PLAYER)
+    Restart()
+
+
+def RoC_Fix():
+    """ 11029887: Prevent possible sequence breaks via RoC's immortality """
+    IfCharacterHasSpecialEffect(1, PLAYER, 32)
+    IfCharacterHasSpecialEffect(1, PLAYER, 1801)
+    IfConditionTrue(0, input_condition=1)
+    CancelSpecialEffect(PLAYER, 1801)
+    IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 32)
+    IfHealthGreaterThan(2, PLAYER, 0)
+    IfConditionTrue(0, input_condition=2)
+    AddSpecialEffect(PLAYER, 1801)
     Restart()
 
 
@@ -455,7 +469,7 @@ def Event11029997():
     EnableFlag(11027997)
     IfFlagOff(-1, 744)
     IfFlagOff(-1, 742)
-    IfConditionTrue(0, -1)
+    IfConditionTrue(0, input_condition=-1)
     CancelSpecialEffect(PLAYER, 3163)
     CancelSpecialEffect(PLAYER, 3162)
     DisableFlag(11027997)
@@ -478,7 +492,7 @@ def Event11029999():
     EndIfThisEventSlotOn()
     IfFlagOn(1, 1315)
     IfPlayerDoesNotHaveGood(1, 2013, including_box=True)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     AwardItemLot(6180, host_only=True)    
 
 
@@ -487,7 +501,7 @@ def Event11219998():
     EndIfFlagOn(11212997)
     IfCharacterHasSpecialEffect(1, PLAYER, 3322)
     IfInsideMap(1, OOLACILE)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     Wait(5)
     PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000100)
     Wait(2.1)
@@ -506,7 +520,7 @@ def Event11219998():
 def Event11709996():
     """ 11709996: Event 11709996 """
     IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 6801)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     CancelSpecialEffect(PLAYER, 6802)
     Restart()
 
@@ -514,12 +528,12 @@ def Event11709996():
 def Event11709997():
     """ 11709997: Event 11709997 """
     IfCharacterHasSpecialEffect(1, PLAYER, 6965)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     IfPlayerCovenant(2, Covenant.NoCovenant)
-    IfConditionFalse(0, 2)
+    IfConditionFalse(0, input_condition=2)
     AddSpecialEffect(PLAYER, 6966)
     IfCharacterDoesNotHaveSpecialEffect(3, PLAYER, 6965)
-    IfConditionTrue(0, 3)
+    IfConditionTrue(0, input_condition=3)
     CancelSpecialEffect(PLAYER, 6966)
     Restart()
 
@@ -529,12 +543,12 @@ def Event11409999():
     IfPlayerHasWeapon(-1, 503000, including_box=False)
     IfPlayerHasWeapon(-1, 503100, including_box=False)
     IfPlayerHasWeapon(-1, 503200, including_box=False)
-    IfConditionTrue(0, -1)
+    IfConditionTrue(0, input_condition=-1)
     EnableFlag(11512888)
     IfPlayerHasWeapon(-2, 503000, including_box=False)
     IfPlayerHasWeapon(-2, 503100, including_box=False)
     IfPlayerHasWeapon(-2, 503200, including_box=False)
-    IfConditionFalse(0, -2)
+    IfConditionFalse(0, input_condition=-2)
     DisableFlag(11512888)
     Restart()
 
