@@ -276,7 +276,10 @@ def Constructor():
     RunEvent(11029995)
     RunEvent(11029994)
     RunEvent(11029888)
-    RunEvent(11029887)
+    RunEvent(11029887, slot=0, args=(1801,))
+    RunEvent(11029887, slot=1, args=(2221,))
+    RunEvent(11609999)
+    RunEvent(11609998)
 
 
 def Preconstructor():
@@ -402,6 +405,42 @@ def Preconstructor():
     EnableFlag(50006080)
 
 
+def FourKingsSword_Check():
+    """ 11609998: Check 4 Kings Sword """
+    IfFlagOn(-1, 11027994)
+    IfCharacterDoesNotHaveSpecialEffect(-1, PLAYER, 1801)
+    IfConditionTrue(1, input_condition=-1)
+    IfCharacterHasSpecialEffect(1, PLAYER, 2221)
+    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 2200)
+    IfConditionTrue(0, input_condition=1)
+    EnableImmortality(PLAYER)
+    IfCharacterDoesNotHaveSpecialEffect(-2, PLAYER, 2221)
+    IfCharacterHasSpecialEffect(-2, PLAYER, 2200)
+    IfFlagOn(-2, 11027994)
+    IfCharacterHasSpecialEffect(2, PLAYER, 1801)
+    IfFlagOff(2, 11027994)
+    RestartIfConditionTrue(2)
+    IfConditionTrue(0, input_condition=-2)
+    DisableImmortality(PLAYER)
+    Restart()
+
+
+def FourKingsSword_Death():
+    """ 11609999: Death by Abyss """
+    IfCharacterHasSpecialEffect(1, PLAYER, 2221)
+    IfHealthLessThanOrEqual(1, PLAYER, 0.01)
+    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 1801)
+    IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 2200)
+    IfConditionTrue(0, input_condition=1)
+    ResetAnimation(PLAYER, disable_interpolation=True)
+    EnableInvincibility(PLAYER)
+    ForceAnimation(PLAYER, 6084, wait_for_completion=True)
+    Wait(1.0)
+    DisableCharacter(PLAYER)
+    EnableFlag(8120)
+
+
+
 def RoD_GiveItem():
     """ 11029888: Give Ring of Displacement """
     EndIfFlagOff(11027888)
@@ -444,16 +483,16 @@ def RoC_Check():
     Restart()
 
 
-def RoC_Fix():
-    """ 11029887: Prevent possible sequence breaks via RoC's immortality """
+def FallDamage_Fix(sp_effect: int):
+    """ 11029887: Prevent possible sequence break via immortality """
     IfCharacterHasSpecialEffect(1, PLAYER, 32)
-    IfCharacterHasSpecialEffect(1, PLAYER, 1801)
+    IfCharacterHasSpecialEffect(1, PLAYER, sp_effect)
     IfConditionTrue(0, input_condition=1)
-    CancelSpecialEffect(PLAYER, 1801)
+    CancelSpecialEffect(PLAYER, sp_effect)
     IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 32)
     IfHealthGreaterThan(2, PLAYER, 0)
     IfConditionTrue(0, input_condition=2)
-    AddSpecialEffect(PLAYER, 1801)
+    AddSpecialEffect(PLAYER, sp_effect)
     Restart()
 
 
