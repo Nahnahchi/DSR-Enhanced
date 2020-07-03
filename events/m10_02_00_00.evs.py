@@ -75,7 +75,10 @@ def WT_DespawnHumMerchant():
 def RoD_GiveItem():
     """ 11020997: Check if can give Ring of Displacement """
     EndIfThisEventOn()
-    IfCharacterInsideRegion(0, PLAYER, 1022999)
+    IfCharacterInsideRegion(1, PLAYER, 1022999)
+    IfFlagOn(1, 11010700)
+    IfFlagOn(1, 11400200)
+    IfConditionTrue(0, input_condition=1)
     EnableFlag(11027888)
 
 
