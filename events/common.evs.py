@@ -280,6 +280,7 @@ def Constructor():
     RunEvent(11029887, slot=1, args=(2221,))
     RunEvent(11609999)
     RunEvent(11609998)
+    RunEvent(11609997)
 
 
 def Preconstructor():
@@ -403,6 +404,19 @@ def Preconstructor():
     EnableFlag(814)
     EnableFlag(50006071)
     EnableFlag(50006080)
+
+
+def Darksign_Swap():
+    """ 11609997: Swap the original Darksign with the modified one """
+    IfCharacterHasSpecialEffect(0, PLAYER, 2220)
+    SkipLinesIfFlagOn(line_count=2, flag=51600990)
+    RemoveGoodFromPlayer(117, quantity=1)
+    AwardItemLotToHostOnly(9060)
+    IfCharacterDoesNotHaveSpecialEffect(0, PLAYER, 2220)
+    RemoveGoodFromPlayer(120, quantity=1)
+    DisableFlag(51600990)
+    AwardItemLotToHostOnly(9050)
+    Restart()
 
 
 def FourKingsSword_Check():
