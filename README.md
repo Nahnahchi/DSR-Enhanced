@@ -1,5 +1,5 @@
 # Sinners of Lordran
-These are the project files for a Dark Souls REMASTERED overhaul mod called "Sinners of Lordran". This work is somewhat of an unofficial Definitive Edition of the game, it attempts to optimize the in-game encounters, fix game-design inconsistencies/oversights and restore cut content.
+These are the project files for a Dark Souls REMASTERED overhaul mod called "Sinners of Lordran". This work is somewhat of an unofficial Definitive Edition of the game, it attempts to optimize in-game encounters, fix game-design inconsistencies/oversights and restore cut content.
 
 This project was made using [soulstruct](https://github.com/Grimrukh/soulstruct).
 It doesn't contain the edited TAE or sound files, which instead can be found inside the release.
