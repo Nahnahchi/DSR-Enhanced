@@ -266,11 +266,16 @@ def RoBG_Check(ghost_id: int):
     IfCharacterHasSpecialEffect(1, PLAYER, 2180)
     IfConditionTrue(0, 1)
     DisableAI(ghost_id)
+    FadeOutCharacter(ghost_id, 5)
+    Wait(5)
+    DisableCharacter(ghost_id)
     EnableInvincibility(ghost_id)  
     IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 2180)
     IfConditionTrue(0, 2)
-    EnableAI(ghost_id)
+    EnableCharacter(ghost_id)
+    FadeInCharacter(ghost_id, 5)
     DisableInvincibility(ghost_id)
+    EnableAI(ghost_id)
     Restart()
     
 
