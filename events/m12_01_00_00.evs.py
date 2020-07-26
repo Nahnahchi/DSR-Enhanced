@@ -11,8 +11,6 @@ from soulstruct.events.darksouls1 import *
 def Constructor():
     """ 0: Event 0 """
     RunEvent(11210992)
-    RunEvent(11210997)
-    RunEvent(11210998)
     RunEvent(11210999, slot=0, args=(1210999, 0))
     RunEvent(11210999, slot=1, args=(1210924, 0))
     RunEvent(11210700)
@@ -323,21 +321,6 @@ def WT_BossBuff():
     CancelSpecialEffect(6731, 7100)
     CancelSpecialEffect(6732, 7100)
     Restart()
-
-
-def VeryLargeEmber_Disable():
-    """ 11210997: Disable Very Large Ember in Gough's shop """
-    EndIfFlagOn(11210004)
-    EnableFlag(11217980)
-
-
-def VeryLargeEmber_Enable():
-    """ 11210998: Enable Very Large Ember in Gough's shop """
-    EndIfFlagOn(11212998)
-    IfFlagOn(1, 11210004)
-    IfConditionTrue(0, 1)
-    DisableFlag(11217980)
-    EnableFlag(11212998)
 
 
 @RestartOnRest
