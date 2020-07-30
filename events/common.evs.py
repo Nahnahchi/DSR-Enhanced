@@ -513,15 +513,10 @@ def FallDamage_Fix(sp_effect: int):
 @RestartOnRest
 def WT_BuffPlayer():
     """ 11029997: Dark World Tendency buff """
-    SkipLinesIfFlagOn(5, 11027997)
-    IfFlagOn(1, 744)
-    IfFlagOn(1, 742)
-    EndIfConditionFalse(1)
+    EndIfFlagOff(742)
     AddSpecialEffect(PLAYER, 3163)
     EnableFlag(11027997)
-    IfFlagOff(-1, 744)
-    IfFlagOff(-1, 742)
-    IfConditionTrue(0, input_condition=-1)
+    IfFlagOff(0, 742)
     CancelSpecialEffect(PLAYER, 3163)
     CancelSpecialEffect(PLAYER, 3162)
     DisableFlag(11027997)

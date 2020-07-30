@@ -120,6 +120,10 @@ def Constructor():
     RunEvent(11205260, slot=2, args=(1200654, 8.0), arg_types='if')
     RunEvent(11205260, slot=3, args=(1200655, 4.0), arg_types='if')
     RunEvent(11205260, slot=4, args=(1200656, 4.0), arg_types='if')
+    RunEvent(11205260, slot=5, args=(1200900, 4.0), arg_types='if')
+    RunEvent(11205260, slot=6, args=(1200901, 4.0), arg_types='if')
+    RunEvent(11205260, slot=7, args=(1200902, 4.0), arg_types='if')
+    RunEvent(11205260, slot=8, args=(1200903, 4.0), arg_types='if')
     RunEvent(11205190, slot=0, args=(1200250, 1202113, 0.0), arg_types='iif')
     RunEvent(11205190, slot=1, args=(1200251, 1202113, 0.5), arg_types='iif')
     RunEvent(11205190, slot=2, args=(1200252, 1202113, 1.2000000476837158), arg_types='iif')
@@ -282,7 +286,7 @@ def Event11200090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 @RestartOnRest
 def Event11205080():
     """ 11205080: Event 11205080 """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1200900)
     DisableCharacter(1200901)

@@ -66,9 +66,7 @@ def Constructor():
 
 def WT_DespawnHumMerchant():
     """ 11020996: Disable Humanity Merchant """
-    IfFlagOff(-1, 744)
-    IfFlagOff(-1, 742)
-    IfConditionTrue(0, -1)
+    IfFlagOff(0, 742)
     DisableCharacter(1020999)
 
 
@@ -733,7 +731,7 @@ def Event11020530(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     IfInsideMap(3, game_map=FIRELINK_SHRINE)            # Ingward fix
     SkipLinesIfConditionTrue(line_count=1, condition=3) # ^
     Restart()                                           # ^
-    SkipLinesIfFinishedConditionTrue(2, 1)
+    SkipLinesIfFinishedConditionTrue(line_count=2, condition=1)
     Kill(arg_0_3, award_souls=True)
     DisableGravity(arg_0_3)
     DisableFlagRange((arg_4_7, arg_8_11))

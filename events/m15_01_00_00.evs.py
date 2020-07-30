@@ -387,7 +387,7 @@ def Event11510090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 @RestartOnRest
 def WT_SpawnPhantoms():
     """ 11515040: Event 11515040 """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1510900)
     DisableCharacter(1510901)

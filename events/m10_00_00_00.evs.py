@@ -13,6 +13,7 @@ def Constructor():
     RunEvent(11000992)
     RunEvent(11000993)
     RunEvent(11000994)
+    RunEvent(11000998)
     RunEvent(11000999)
     RegisterBonfire(11000992, obj=1001960, reaction_distance=2.0, reaction_angle=180.0, initial_kindle_level=0)
     RegisterLadder(start_climbing_flag=11000010, stop_climbing_flag=11000011, obj=1001140)
@@ -171,6 +172,16 @@ def Anon_Aggro():
     SetTeamTypeAndExitStandbyAnimation(62884, TeamType.HostileAlly)
 
 
+def Channeler_Manage():
+    """ 11000998: Manage the second Channeler """
+    DisableAI(1000301)
+    IfEntityWithinDistance(-1, 1000301, PLAYER, 4)
+    IfAttacked(-1, 1000301, PLAYER)
+    IfCharacterInsideRegion(-1, PLAYER, region=1002999)
+    IfConditionTrue(0, -1)
+    EnableAI(1000301)
+
+
 @RestartOnRest
 def Event11000999():
     """ 11000999: Event 11000999 """
@@ -223,7 +234,7 @@ def Event11000090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 @RestartOnRest
 def WT_SpawnPhantoms():
     """ 11005080: Spawn Red Phantom enemies """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(14, 11007999)
     DisableCharacter(1000900)
     DisableCharacter(1000901)

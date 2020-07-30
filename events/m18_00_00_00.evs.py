@@ -102,7 +102,7 @@ def WT_BossBuff():
 @RestartOnRest
 def WT_SpawnPhantoms():
     """ 11805090: Event 11805090 """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(5, 11007999)
     DisableCharacter(1800900)
     DisableCharacter(1800901)

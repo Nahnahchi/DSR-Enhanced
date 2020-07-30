@@ -210,7 +210,7 @@ def Event11100090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 @RestartOnRest
 def Event11105070():
     """ 11105070: Event 11105070 """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(12, 11007999)
     DisableCharacter(1100900)
     DisableCharacter(1100901)

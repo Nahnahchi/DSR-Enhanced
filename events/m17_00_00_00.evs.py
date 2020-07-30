@@ -153,6 +153,7 @@ def Constructor():
     RunEvent(11700810, slot=13, args=(1700151, 0, 0))
     RunEvent(11700810, slot=14, args=(1700999, 0, 0))
     RunEvent(11700810, slot=15, args=(1700998, 0, 0))
+    RunEvent(11700810, slot=16, args=(1700997, 0, 0))
     RunEvent(11700810, slot=16, args=(6075, 0, 0))
     RunEvent(11705280, slot=0, args=(1700350,))
     RunEvent(11705280, slot=1, args=(1700351,))
@@ -251,6 +252,7 @@ def WT_BossBuff():
     AddSpecialEffect(1700190, 7100)
     AddSpecialEffect(1700191, 7100)
     AddSpecialEffect(1700998, 7100)
+    AddSpecialEffect(1700997, 7100)
     IfFlagOff(2, 11027997)    
     IfConditionTrue(0, 2)
     CancelSpecialEffect(1700700, 7100)
@@ -258,6 +260,7 @@ def WT_BossBuff():
     CancelSpecialEffect(1700190, 7100)
     CancelSpecialEffect(1700191, 7100)
     CancelSpecialEffect(1700998, 7100)
+    CancelSpecialEffect(1700997, 7100)
     Restart()
 
 
@@ -288,7 +291,7 @@ def Giant_WaitPart1(arg_0_3: int):
 def Giant_WaitPart2(arg_0_3: int):
     """ 11705070: Manage the giants tantrum attack [2] """
     IfHasTAEEvent(0, arg_0_3, tae_event_id=1400)
-    Wait(10.0)
+    Wait(5.0)
     EzstateAIRequest(arg_0_3, command_id=1501, slot=0)
     Restart()
 
@@ -348,7 +351,7 @@ def Event11700083(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 @RestartOnRest
 def WT_SpawnPhantoms():
     """ 11705080: Event 11705080 """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1700900)
     DisableCharacter(1700901)

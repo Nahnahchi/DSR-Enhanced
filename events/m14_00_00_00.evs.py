@@ -376,7 +376,7 @@ def Event11400090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
 @RestartOnRest
 def WT_SpawnPhantoms():
     """ 11405090: Spawn Phantom enemies """
-    EndIfThisEventOn()
+    #EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1400900)
     DisableCharacter(1400901)
