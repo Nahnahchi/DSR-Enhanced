@@ -5,7 +5,7 @@ linked:
 strings:
 
 """
-from soulstruct.events.darksouls1 import *
+from soulstruct.darksouls1r.events import *
 
 
 def Constructor():
@@ -14,9 +14,9 @@ def Constructor():
     DisableFlag(760)
     DisableFlag(762)
     DisableFlag(765)
-    RunEvent(260, slot=0, args=(11810000, 10010600, 0.0), arg_types='iif')
-    RunEvent(260, slot=1, args=(257, 10010610, 0.0), arg_types='iif')
-    RunEvent(260, slot=2, args=(710, 10010620, 0.0), arg_types='iif')
+    RunEvent(260, slot=0, args=(11810000, 10010600, 0.0), arg_types="iif")
+    RunEvent(260, slot=1, args=(257, 10010610, 0.0), arg_types="iif")
+    RunEvent(260, slot=2, args=(710, 10010620, 0.0), arg_types="iif")
     RunEvent(761)
     RunEvent(763)
     RunEvent(290)
@@ -113,28 +113,28 @@ def Constructor():
     RunEvent(780, slot=11, args=(1110, 791))
     RunEvent(780, slot=12, args=(1120, 792))
     RunEvent(780, slot=13, args=(1130, 793))
-    RunEvent(870, slot=0, args=(0, 850), arg_types='Bi')
-    RunEvent(870, slot=1, args=(1, 851), arg_types='Bi')
-    RunEvent(870, slot=2, args=(2, 852), arg_types='Bi')
-    RunEvent(870, slot=3, args=(3, 853), arg_types='Bi')
-    RunEvent(870, slot=4, args=(4, 854), arg_types='Bi')
-    RunEvent(870, slot=5, args=(5, 855), arg_types='Bi')
-    RunEvent(870, slot=6, args=(6, 856), arg_types='Bi')
-    RunEvent(870, slot=7, args=(7, 857), arg_types='Bi')
-    RunEvent(870, slot=8, args=(8, 858), arg_types='Bi')
-    RunEvent(870, slot=9, args=(9, 859), arg_types='Bi')
-    RunEvent(840, slot=0, args=(840, 7905, 6370, 4294967295))
-    RunEvent(840, slot=1, args=(841, 7905, 6072, 4294967295))
-    RunEvent(840, slot=2, args=(842, 7905, 6080, 4294967295))
-    RunEvent(840, slot=3, args=(843, 7905, 6001, 4294967295))
+    RunEvent(870, slot=0, args=(0, 850), arg_types="Bi")
+    RunEvent(870, slot=1, args=(1, 851), arg_types="Bi")
+    RunEvent(870, slot=2, args=(2, 852), arg_types="Bi")
+    RunEvent(870, slot=3, args=(3, 853), arg_types="Bi")
+    RunEvent(870, slot=4, args=(4, 854), arg_types="Bi")
+    RunEvent(870, slot=5, args=(5, 855), arg_types="Bi")
+    RunEvent(870, slot=6, args=(6, 856), arg_types="Bi")
+    RunEvent(870, slot=7, args=(7, 857), arg_types="Bi")
+    RunEvent(870, slot=8, args=(8, 858), arg_types="Bi")
+    RunEvent(870, slot=9, args=(9, 859), arg_types="Bi")
+    RunEvent(840, slot=0, args=(840, 7905, 6370, -1))
+    RunEvent(840, slot=1, args=(841, 7905, 6072, -1))
+    RunEvent(840, slot=2, args=(842, 7905, 6080, -1))
+    RunEvent(840, slot=3, args=(843, 7905, 6001, -1))
     RunEvent(840, slot=4, args=(844, 7898, 10000, 7896))
-    RunEvent(840, slot=5, args=(845, 7905, 6340, 4294967295))
-    RunEvent(840, slot=6, args=(846, 7905, 6341, 4294967295))
+    RunEvent(840, slot=5, args=(845, 7905, 6340, -1))
+    RunEvent(840, slot=6, args=(846, 7905, 6341, -1))
     RunEvent(840, slot=7, args=(847, 7913, 10000, 7911))
-    RunEvent(840, slot=8, args=(848, 7905, 6380, 4294967295))
-    RunEvent(840, slot=9, args=(849, 7905, 1400700, 4294967295))
-    RunEvent(840, slot=10, args=(860, 7905, 16969, 4294967295))
-    RunEvent(690, slot=0, args=(600, 4, 16, 1175), arg_types='iIIi')
+    RunEvent(840, slot=8, args=(848, 7905, 6380, -1))
+    RunEvent(840, slot=9, args=(849, 7905, 1400700, -1))
+    RunEvent(840, slot=10, args=(860, 7905, 16969, -1))
+    RunEvent(690, slot=0, args=(600, 4, 16, 1175), arg_types="iIIi")
     RunEvent(719)
     RunEvent(720)
     RunEvent(721)
@@ -152,120 +152,120 @@ def Constructor():
     RunEvent(822)
     RunEvent(823)
     RunEvent(910, slot=0, args=(11400591, 1280))
-    RunEvent(911, slot=0, args=(11010591, 1000, 1), arg_types='iiB')
-    RunEvent(911, slot=1, args=(11510590, 1010, 1), arg_types='iiB')
-    RunEvent(911, slot=2, args=(11700591, 1020, 1), arg_types='iiB')
-    RunEvent(911, slot=3, args=(11000591, 1030, 1), arg_types='iiB')
-    RunEvent(911, slot=4, args=(11400590, 1040, 1), arg_types='iiB')
-    RunEvent(911, slot=5, args=(11410594, 1050, 1), arg_types='iiB')
-    RunEvent(911, slot=6, args=(11020594, 1060, 1), arg_types='iiB')
-    RunEvent(911, slot=7, args=(11020595, 1070, 1), arg_types='iiB')
-    RunEvent(911, slot=8, args=(11810590, 1082, 1), arg_types='iiB')
-    RunEvent(911, slot=9, args=(11810591, 1080, 1), arg_types='iiB')
-    RunEvent(911, slot=10, args=(11510592, 1090, 1), arg_types='iiB')
-    RunEvent(911, slot=11, args=(11600592, 1100, 1), arg_types='iiB')
-    RunEvent(911, slot=12, args=(11020602, 1110, 1), arg_types='iiB')
-    RunEvent(911, slot=13, args=(11010594, 1120, 1), arg_types='iiB')
-    RunEvent(911, slot=14, args=(11010595, 1130, 1), arg_types='iiB')
-    RunEvent(911, slot=15, args=(11020599, 1140, 1), arg_types='iiB')
-    RunEvent(911, slot=16, args=(11020607, 1150, 1), arg_types='iiB')
-    RunEvent(911, slot=17, args=(11200592, 1160, 1), arg_types='iiB')
-    RunEvent(911, slot=18, args=(11200593, 1170, 1), arg_types='iiB')
-    RunEvent(911, slot=19, args=(11200594, 1180, 1), arg_types='iiB')
-    RunEvent(911, slot=20, args=(11300590, 1190, 1), arg_types='iiB')
-    RunEvent(911, slot=21, args=(11300591, 1200, 1), arg_types='iiB')
-    RunEvent(911, slot=22, args=(11310590, 1210, 1), arg_types='iiB')
-    RunEvent(911, slot=23, args=(11310592, 1220, 1), arg_types='iiB')
-    RunEvent(911, slot=24, args=(11310593, 1230, 1), arg_types='iiB')
-    RunEvent(911, slot=25, args=(11310594, 1240, 1), arg_types='iiB')
-    RunEvent(911, slot=26, args=(11320590, 1250, 1), arg_types='iiB')
-    RunEvent(911, slot=27, args=(11320581, 1260, 1), arg_types='iiB')
-    RunEvent(911, slot=28, args=(11320593, 1270, 1), arg_types='iiB')
-    RunEvent(911, slot=29, args=(11400592, 1290, 1), arg_types='iiB')
-    RunEvent(911, slot=30, args=(11400594, 1300, 1), arg_types='iiB')
-    RunEvent(911, slot=31, args=(11400596, 1310, 1), arg_types='iiB')
-    RunEvent(911, slot=32, args=(11400597, 1320, 1), arg_types='iiB')
-    RunEvent(911, slot=33, args=(11400598, 1330, 1), arg_types='iiB')
-    RunEvent(911, slot=34, args=(11400599, 1340, 1), arg_types='iiB')
-    RunEvent(911, slot=35, args=(11510595, 1350, 1), arg_types='iiB')
-    RunEvent(911, slot=36, args=(11510596, 1360, 1), arg_types='iiB')
-    RunEvent(911, slot=37, args=(11510597, 1370, 1), arg_types='iiB')
-    RunEvent(911, slot=38, args=(11600594, 1380, 1), arg_types='iiB')
-    RunEvent(911, slot=39, args=(11600595, 1390, 1), arg_types='iiB')
-    RunEvent(911, slot=40, args=(11600596, 1400, 1), arg_types='iiB')
-    RunEvent(911, slot=41, args=(11010598, 1410, 0), arg_types='iiB')
-    RunEvent(911, slot=42, args=(11210590, 1500, 1), arg_types='iiB')
-    RunEvent(911, slot=43, args=(11210593, 1510, 1), arg_types='iiB')
-    RunEvent(911, slot=44, args=(11210594, 1520, 1), arg_types='iiB')
-    RunEvent(911, slot=45, args=(11600580, 1401, 1), arg_types='iiB')
-    RunEvent(911, slot=46, args=(11600581, 1402, 1), arg_types='iiB')
-    RunEvent(911, slot=47, args=(11600582, 1403, 1), arg_types='iiB')
-    RunEvent(911, slot=48, args=(11600583, 1404, 1), arg_types='iiB')
-    RunEvent(911, slot=49, args=(11020905, 1800, 1), arg_types='iiB')
-    RunEvent(911, slot=50, args=(11510905, 1810, 1), arg_types='iiB')
-    RunEvent(911, slot=51, args=(11010905, 1820, 1), arg_types='iiB')
-    RunEvent(911, slot=52, args=(11600905, 1830, 1), arg_types='iiB')
-    RunEvent(911, slot=53, args=(11320905, 1840, 1), arg_types='iiB')
-    RunEvent(911, slot=54, args=(11300906, 1850, 1), arg_types='iiB')
-    RunEvent(911, slot=55, args=(11200905, 1860, 1), arg_types='iiB')
-    RunEvent(911, slot=56, args=(11510906, 1870, 1), arg_types='iiB')
-    RunEvent(911, slot=57, args=(11400905, 1880, 1), arg_types='iiB')
-    RunEvent(890, slot=0, args=(11310580, 1221, 1), arg_types='iiB')
-    RunEvent(890, slot=1, args=(11510580, 1361, 1), arg_types='iiB')
-    RunEvent(890, slot=2, args=(11510581, 1371, 1), arg_types='iiB')
-    RunEvent(890, slot=3, args=(11320592, 1261, 1), arg_types='iiB')
+    RunEvent(911, slot=0, args=(11010591, 1000, 1), arg_types="iiB")
+    RunEvent(911, slot=1, args=(11510590, 1010, 1), arg_types="iiB")
+    RunEvent(911, slot=2, args=(11700591, 1020, 1), arg_types="iiB")
+    RunEvent(911, slot=3, args=(11000591, 1030, 1), arg_types="iiB")
+    RunEvent(911, slot=4, args=(11400590, 1040, 1), arg_types="iiB")
+    RunEvent(911, slot=5, args=(11410594, 1050, 1), arg_types="iiB")
+    RunEvent(911, slot=6, args=(11020594, 1060, 1), arg_types="iiB")
+    RunEvent(911, slot=7, args=(11020595, 1070, 1), arg_types="iiB")
+    RunEvent(911, slot=8, args=(11810590, 1082, 1), arg_types="iiB")
+    RunEvent(911, slot=9, args=(11810591, 1080, 1), arg_types="iiB")
+    RunEvent(911, slot=10, args=(11510592, 1090, 1), arg_types="iiB")
+    RunEvent(911, slot=11, args=(11600592, 1100, 1), arg_types="iiB")
+    RunEvent(911, slot=12, args=(11020602, 1110, 1), arg_types="iiB")
+    RunEvent(911, slot=13, args=(11010594, 1120, 1), arg_types="iiB")
+    RunEvent(911, slot=14, args=(11010595, 1130, 1), arg_types="iiB")
+    RunEvent(911, slot=15, args=(11020599, 1140, 1), arg_types="iiB")
+    RunEvent(911, slot=16, args=(11020607, 1150, 1), arg_types="iiB")
+    RunEvent(911, slot=17, args=(11200592, 1160, 1), arg_types="iiB")
+    RunEvent(911, slot=18, args=(11200593, 1170, 1), arg_types="iiB")
+    RunEvent(911, slot=19, args=(11200594, 1180, 1), arg_types="iiB")
+    RunEvent(911, slot=20, args=(11300590, 1190, 1), arg_types="iiB")
+    RunEvent(911, slot=21, args=(11300591, 1200, 1), arg_types="iiB")
+    RunEvent(911, slot=22, args=(11310590, 1210, 1), arg_types="iiB")
+    RunEvent(911, slot=23, args=(11310592, 1220, 1), arg_types="iiB")
+    RunEvent(911, slot=24, args=(11310593, 1230, 1), arg_types="iiB")
+    RunEvent(911, slot=25, args=(11310594, 1240, 1), arg_types="iiB")
+    RunEvent(911, slot=26, args=(11320590, 1250, 1), arg_types="iiB")
+    RunEvent(911, slot=27, args=(11320581, 1260, 1), arg_types="iiB")
+    RunEvent(911, slot=28, args=(11320593, 1270, 1), arg_types="iiB")
+    RunEvent(911, slot=29, args=(11400592, 1290, 1), arg_types="iiB")
+    RunEvent(911, slot=30, args=(11400594, 1300, 1), arg_types="iiB")
+    RunEvent(911, slot=31, args=(11400596, 1310, 1), arg_types="iiB")
+    RunEvent(911, slot=32, args=(11400597, 1320, 1), arg_types="iiB")
+    RunEvent(911, slot=33, args=(11400598, 1330, 1), arg_types="iiB")
+    RunEvent(911, slot=34, args=(11400599, 1340, 1), arg_types="iiB")
+    RunEvent(911, slot=35, args=(11510595, 1350, 1), arg_types="iiB")
+    RunEvent(911, slot=36, args=(11510596, 1360, 1), arg_types="iiB")
+    RunEvent(911, slot=37, args=(11510597, 1370, 1), arg_types="iiB")
+    RunEvent(911, slot=38, args=(11600594, 1380, 1), arg_types="iiB")
+    RunEvent(911, slot=39, args=(11600595, 1390, 1), arg_types="iiB")
+    RunEvent(911, slot=40, args=(11600596, 1400, 1), arg_types="iiB")
+    RunEvent(911, slot=41, args=(11010598, 1410, 0), arg_types="iiB")
+    RunEvent(911, slot=42, args=(11210590, 1500, 1), arg_types="iiB")
+    RunEvent(911, slot=43, args=(11210593, 1510, 1), arg_types="iiB")
+    RunEvent(911, slot=44, args=(11210594, 1520, 1), arg_types="iiB")
+    RunEvent(911, slot=45, args=(11600580, 1401, 1), arg_types="iiB")
+    RunEvent(911, slot=46, args=(11600581, 1402, 1), arg_types="iiB")
+    RunEvent(911, slot=47, args=(11600582, 1403, 1), arg_types="iiB")
+    RunEvent(911, slot=48, args=(11600583, 1404, 1), arg_types="iiB")
+    RunEvent(911, slot=49, args=(11020905, 1800, 1), arg_types="iiB")
+    RunEvent(911, slot=50, args=(11510905, 1810, 1), arg_types="iiB")
+    RunEvent(911, slot=51, args=(11010905, 1820, 1), arg_types="iiB")
+    RunEvent(911, slot=52, args=(11600905, 1830, 1), arg_types="iiB")
+    RunEvent(911, slot=53, args=(11320905, 1840, 1), arg_types="iiB")
+    RunEvent(911, slot=54, args=(11300906, 1850, 1), arg_types="iiB")
+    RunEvent(911, slot=55, args=(11200905, 1860, 1), arg_types="iiB")
+    RunEvent(911, slot=56, args=(11510906, 1870, 1), arg_types="iiB")
+    RunEvent(911, slot=57, args=(11400905, 1880, 1), arg_types="iiB")
+    RunEvent(890, slot=0, args=(11310580, 1221, 1), arg_types="iiB")
+    RunEvent(890, slot=1, args=(11510580, 1361, 1), arg_types="iiB")
+    RunEvent(890, slot=2, args=(11510581, 1371, 1), arg_types="iiB")
+    RunEvent(890, slot=3, args=(11320592, 1261, 1), arg_types="iiB")
     RunEvent(960, slot=0, args=(1322, 6190, 6190))
     RunEvent(960, slot=1, args=(1315, 6180, 1100))
     RunEvent(960, slot=2, args=(1402, 6230, 6230))
     RunEvent(960, slot=3, args=(1402, 6230, 6231))
-    RunEvent(8200, slot=0, args=(3, 5500, 50000120, 11010594), arg_types='Biii')
-    RunEvent(8200, slot=1, args=(3, 5510, 50000130, 11010595), arg_types='Biii')
-    RunEvent(8200, slot=2, args=(2, 103, 50000160, 11200592), arg_types='Biii')
-    RunEvent(8200, slot=3, args=(3, 240, 50000170, 11200593), arg_types='Biii')
-    RunEvent(8200, slot=4, args=(2, 124, 50000180, 11200594), arg_types='Biii')
-    RunEvent(8200, slot=5, args=(0, 453000, 50000220, 11310592), arg_types='Biii')
-    RunEvent(8200, slot=6, args=(3, 5100, 50000225, 11310580), arg_types='Biii')
-    RunEvent(8200, slot=7, args=(3, 5110, 50000230, 11310593), arg_types='Biii')
-    RunEvent(8200, slot=8, args=(3, 114, 50000265, 11320581), arg_types='Biii')
-    RunEvent(8200, slot=9, args=(3, 377, 50000260, 11320592), arg_types='Biii')
-    RunEvent(8200, slot=10, args=(3, 378, 50000270, 11320593), arg_types='Biii')
-    RunEvent(8200, slot=11, args=(3, 4500, 50000310, 11400596), arg_types='Biii')
-    RunEvent(8200, slot=12, args=(3, 4520, 50000320, 11400597), arg_types='Biii')
-    RunEvent(8200, slot=13, args=(3, 4510, 50000330, 11400598), arg_types='Biii')
-    RunEvent(8200, slot=14, args=(2, 130, 50000350, 11510595), arg_types='Biii')
-    RunEvent(8200, slot=15, args=(3, 113, 50000360, 11510596), arg_types='Biii')
-    RunEvent(8200, slot=16, args=(2, 102, 50000365, 11510580), arg_types='Biii')
-    RunEvent(8200, slot=17, args=(3, 5910, 50000370, 11510597), arg_types='Biii')
-    RunEvent(8200, slot=18, args=(0, 1366000, 50000375, 11510581), arg_types='Biii')
-    RunEvent(8200, slot=19, args=(0, 904000, 50000380, 11600594), arg_types='Biii')
-    RunEvent(8200, slot=20, args=(3, 102, 50000390, 11600595), arg_types='Biii')
-    RunEvent(8200, slot=21, args=(0, 210000, 50000400, 11600596), arg_types='Biii')
-    RunEvent(8200, slot=22, args=(1, 40000, 50000410, 11600580), arg_types='Biii')
-    RunEvent(8200, slot=23, args=(1, 41000, 50000420, 11600581), arg_types='Biii')
-    RunEvent(8200, slot=24, args=(1, 42000, 50000430, 11600582), arg_types='Biii')
-    RunEvent(8200, slot=25, args=(1, 43000, 50000440, 11600583), arg_types='Biii')
-    RunEvent(8200, slot=26, args=(3, 131, 50000800, 11020905), arg_types='Biii')
-    RunEvent(8200, slot=27, args=(3, 132, 50000810, 11510905), arg_types='Biii')
-    RunEvent(8200, slot=28, args=(3, 133, 50000820, 11010905), arg_types='Biii')
-    RunEvent(8200, slot=29, args=(3, 134, 50000830, 11600905), arg_types='Biii')
-    RunEvent(8200, slot=30, args=(3, 135, 50000840, 11320905), arg_types='Biii')
-    RunEvent(8200, slot=31, args=(3, 136, 50000850, 11300906), arg_types='Biii')
-    RunEvent(8200, slot=32, args=(3, 137, 50000860, 11200905), arg_types='Biii')
-    RunEvent(8200, slot=33, args=(3, 138, 50000870, 11510906), arg_types='Biii')
-    RunEvent(8200, slot=34, args=(3, 139, 50000880, 11400905), arg_types='Biii')
-    RunEvent(8300, slot=0, args=(3, 100, 50000000), arg_types='Bii')
-    RunEvent(8300, slot=1, args=(3, 101, 51100330), arg_types='Bii')
-    RunEvent(8300, slot=2, args=(3, 102, 50000390), arg_types='Bii')
-    RunEvent(8300, slot=3, args=(3, 106, 11017020), arg_types='Bii')
-    RunEvent(8300, slot=4, args=(3, 108, 11607020), arg_types='Bii')
-    RunEvent(8300, slot=5, args=(3, 112, 11407080), arg_types='Bii')
-    RunEvent(8300, slot=6, args=(3, 2508, 11007010), arg_types='Bii')
-    RunEvent(8300, slot=7, args=(3, 385, 11017210), arg_types='Bii')
-    RunEvent(8090, slot=0, args=(3, 510, 11217010), arg_types='Bii')
-    RunEvent(8090, slot=1, args=(3, 511, 11217020), arg_types='Bii')
-    RunEvent(8090, slot=2, args=(3, 512, 11217030), arg_types='Bii')
-    RunEvent(8090, slot=3, args=(3, 513, 11217040), arg_types='Bii')
-    RunEvent(8090, slot=4, args=(3, 514, 11217050), arg_types='Bii')
+    RunEvent(8200, slot=0, args=(3, 5500, 50000120, 11010594), arg_types="Biii")
+    RunEvent(8200, slot=1, args=(3, 5510, 50000130, 11010595), arg_types="Biii")
+    RunEvent(8200, slot=2, args=(2, 103, 50000160, 11200592), arg_types="Biii")
+    RunEvent(8200, slot=3, args=(3, 240, 50000170, 11200593), arg_types="Biii")
+    RunEvent(8200, slot=4, args=(2, 124, 50000180, 11200594), arg_types="Biii")
+    RunEvent(8200, slot=5, args=(0, 453000, 50000220, 11310592), arg_types="Biii")
+    RunEvent(8200, slot=6, args=(3, 5100, 50000225, 11310580), arg_types="Biii")
+    RunEvent(8200, slot=7, args=(3, 5110, 50000230, 11310593), arg_types="Biii")
+    RunEvent(8200, slot=8, args=(3, 114, 50000265, 11320581), arg_types="Biii")
+    RunEvent(8200, slot=9, args=(3, 377, 50000260, 11320592), arg_types="Biii")
+    RunEvent(8200, slot=10, args=(3, 378, 50000270, 11320593), arg_types="Biii")
+    RunEvent(8200, slot=11, args=(3, 4500, 50000310, 11400596), arg_types="Biii")
+    RunEvent(8200, slot=12, args=(3, 4520, 50000320, 11400597), arg_types="Biii")
+    RunEvent(8200, slot=13, args=(3, 4510, 50000330, 11400598), arg_types="Biii")
+    RunEvent(8200, slot=14, args=(2, 130, 50000350, 11510595), arg_types="Biii")
+    RunEvent(8200, slot=15, args=(3, 113, 50000360, 11510596), arg_types="Biii")
+    RunEvent(8200, slot=16, args=(2, 102, 50000365, 11510580), arg_types="Biii")
+    RunEvent(8200, slot=17, args=(3, 5910, 50000370, 11510597), arg_types="Biii")
+    RunEvent(8200, slot=18, args=(0, 1366000, 50000375, 11510581), arg_types="Biii")
+    RunEvent(8200, slot=19, args=(0, 904000, 50000380, 11600594), arg_types="Biii")
+    RunEvent(8200, slot=20, args=(3, 102, 50000390, 11600595), arg_types="Biii")
+    RunEvent(8200, slot=21, args=(0, 210000, 50000400, 11600596), arg_types="Biii")
+    RunEvent(8200, slot=22, args=(1, 40000, 50000410, 11600580), arg_types="Biii")
+    RunEvent(8200, slot=23, args=(1, 41000, 50000420, 11600581), arg_types="Biii")
+    RunEvent(8200, slot=24, args=(1, 42000, 50000430, 11600582), arg_types="Biii")
+    RunEvent(8200, slot=25, args=(1, 43000, 50000440, 11600583), arg_types="Biii")
+    RunEvent(8200, slot=26, args=(3, 131, 50000800, 11020905), arg_types="Biii")
+    RunEvent(8200, slot=27, args=(3, 132, 50000810, 11510905), arg_types="Biii")
+    RunEvent(8200, slot=28, args=(3, 133, 50000820, 11010905), arg_types="Biii")
+    RunEvent(8200, slot=29, args=(3, 134, 50000830, 11600905), arg_types="Biii")
+    RunEvent(8200, slot=30, args=(3, 135, 50000840, 11320905), arg_types="Biii")
+    RunEvent(8200, slot=31, args=(3, 136, 50000850, 11300906), arg_types="Biii")
+    RunEvent(8200, slot=32, args=(3, 137, 50000860, 11200905), arg_types="Biii")
+    RunEvent(8200, slot=33, args=(3, 138, 50000870, 11510906), arg_types="Biii")
+    RunEvent(8200, slot=34, args=(3, 139, 50000880, 11400905), arg_types="Biii")
+    RunEvent(8300, slot=0, args=(3, 100, 50000000), arg_types="Bii")
+    RunEvent(8300, slot=1, args=(3, 101, 51100330), arg_types="Bii")
+    RunEvent(8300, slot=2, args=(3, 102, 50000390), arg_types="Bii")
+    RunEvent(8300, slot=3, args=(3, 106, 11017020), arg_types="Bii")
+    RunEvent(8300, slot=4, args=(3, 108, 11607020), arg_types="Bii")
+    RunEvent(8300, slot=5, args=(3, 112, 11407080), arg_types="Bii")
+    RunEvent(8300, slot=6, args=(3, 2508, 11007010), arg_types="Bii")
+    RunEvent(8300, slot=7, args=(3, 385, 11017210), arg_types="Bii")
+    RunEvent(8090, slot=0, args=(3, 510, 11217010), arg_types="Bii")
+    RunEvent(8090, slot=1, args=(3, 511, 11217020), arg_types="Bii")
+    RunEvent(8090, slot=2, args=(3, 512, 11217030), arg_types="Bii")
+    RunEvent(8090, slot=3, args=(3, 513, 11217040), arg_types="Bii")
+    RunEvent(8090, slot=4, args=(3, 514, 11217050), arg_types="Bii")
     RunEvent(11219998)
     RunEvent(11409999)
     RunEvent(11709997)
@@ -409,13 +409,13 @@ def Preconstructor():
 def Darksign_Swap():
     """ 11609997: Swap the original Darksign with the modified one """
     IfCharacterHasSpecialEffect(0, PLAYER, 2220)
-    SkipLinesIfFlagOn(line_count=2, flag=51600990)
+    SkipLinesIfFlagOn(2, 51600990)
     RemoveGoodFromPlayer(117, quantity=1)
-    AwardItemLotToHostOnly(9060)
+    AwardItemLot(9060, host_only=True)
     IfCharacterDoesNotHaveSpecialEffect(0, PLAYER, 2220)
     RemoveGoodFromPlayer(120, quantity=1)
     DisableFlag(51600990)
-    AwardItemLotToHostOnly(9050)
+    AwardItemLot(9050, host_only=True)
     Restart()
 
 
@@ -442,7 +442,7 @@ def FourKingsSword_Check():
 def FourKingsSword_Death():
     """ 11609999: Death by Abyss """
     IfCharacterHasSpecialEffect(1, PLAYER, 2221)
-    IfHealthLessThanOrEqual(1, PLAYER, 0.01)
+    IfHealthLessThanOrEqual(1, PLAYER, 0.009999999776482582)
     IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 1801)
     IfCharacterDoesNotHaveSpecialEffect(1, PLAYER, 2200)
     IfConditionTrue(0, input_condition=1)
@@ -454,11 +454,10 @@ def FourKingsSword_Death():
     EnableFlag(8120)
 
 
-
 def RoD_GiveItem():
     """ 11029888: Give Ring of Displacement """
     EndIfFlagOff(11027888)
-    AwardItemLotToHostOnly(1020330)
+    AwardItemLot(1020330, host_only=True)
     DisableFlag(11027888)
 
 
@@ -467,7 +466,7 @@ def RoC_Recharge():
     """ 11029994: Recharge the Ring of Condemnation """
     IfFlagOn(0, 11027994)
     IfCharacterHasSpecialEffect(-1, PLAYER, 100)
-    IfHealthEqual(-1, PLAYER, 0)
+    IfHealthEqual(-1, PLAYER, 0.0)
     IfConditionTrue(0, input_condition=-1)
     DisableFlag(11027994)
 
@@ -476,10 +475,18 @@ def RoC_Recharge():
 def RoC_ShootBullet():
     """ 11029995: Ring of Condemnation effect """
     IfCharacterHasSpecialEffect(1, PLAYER, 1801)
-    IfHealthLessThanOrEqual(1, PLAYER, 0.01)
+    IfHealthLessThanOrEqual(1, PLAYER, 0.009999999776482582)
     IfFlagOff(1, 11027994)
     IfConditionTrue(0, input_condition=1)
-    ShootProjectile(PLAYER, PLAYER, 220, 1001)
+    ShootProjectile(
+        owner_entity=PLAYER,
+        projectile_id=10000,
+        model_point=220,
+        behavior_id=1001,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     Wait(0.5)
     EnableFlag(11027994)
 
@@ -497,16 +504,16 @@ def RoC_Check():
     Restart()
 
 
-def FallDamage_Fix(sp_effect: int):
+def FallDamage_Fix(_, arg_0_3: int):
     """ 11029887: Prevent possible sequence break via immortality """
     IfCharacterHasSpecialEffect(1, PLAYER, 32)
-    IfCharacterHasSpecialEffect(1, PLAYER, sp_effect)
+    IfCharacterHasSpecialEffect(1, PLAYER, arg_0_3)
     IfConditionTrue(0, input_condition=1)
-    CancelSpecialEffect(PLAYER, sp_effect)
+    CancelSpecialEffect(PLAYER, arg_0_3)
     IfCharacterDoesNotHaveSpecialEffect(2, PLAYER, 32)
-    IfHealthGreaterThan(2, PLAYER, 0)
+    IfHealthGreaterThan(2, PLAYER, 0.0)
     IfConditionTrue(0, input_condition=2)
-    AddSpecialEffect(PLAYER, sp_effect)
+    AddSpecialEffect(PLAYER, arg_0_3)
     Restart()
 
 
@@ -540,27 +547,27 @@ def GiveKeyToTheSeal_Temp():
     IfFlagOn(1, 1315)
     IfPlayerDoesNotHaveGood(1, 2013, including_box=True)
     IfConditionTrue(0, input_condition=1)
-    AwardItemLot(6180, host_only=True)    
+    AwardItemLot(6180, host_only=True)
 
 
 def CleansingShield_Talk():
     """ 11219998: Play Artorias's dialogue """
     EndIfFlagOn(11212997)
     IfCharacterHasSpecialEffect(1, PLAYER, 3322)
-    IfInsideMap(1, OOLACILE)
+    IfInsideMap(1, game_map=OOLACILE)
     IfConditionTrue(0, input_condition=1)
-    Wait(5)
-    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000100)
-    Wait(2.1)
-    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000110)
-    Wait(3.6)
-    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000120)
-    Wait(6.3)
-    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000130)
-    Wait(0.1)
-    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000140)
-    Wait(8.4)
-    PlaySoundEffect(PLAYER, SoundType.v_Voice, 257000150)
+    Wait(5.0)
+    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.v_Voice, sound_id=257000100)
+    Wait(2.0999999046325684)
+    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.v_Voice, sound_id=257000110)
+    Wait(3.5999999046325684)
+    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.v_Voice, sound_id=257000120)
+    Wait(6.300000190734863)
+    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.v_Voice, sound_id=257000130)
+    Wait(0.10000000149011612)
+    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.v_Voice, sound_id=257000140)
+    Wait(8.399999618530273)
+    PlaySoundEffect(anchor_entity=PLAYER, sound_type=SoundType.v_Voice, sound_id=257000150)
     EnableFlag(11212997)
 
 
@@ -675,7 +682,7 @@ def Event710():
     EnableFlag(710)
 
 
-def Event711(arg_0_3: int, arg_4_7: int):
+def Event711(_, arg_0_3: int, arg_4_7: int):
     """ 711: Event 711 """
     EndIfThisEventSlotOn()
     IfPlayerHasGood(0, arg_0_3, including_box=False)
@@ -706,7 +713,7 @@ def Event716():
     EnableFlag(716)
 
 
-def Event8131(arg_0_3: int, arg_4_7: int):
+def Event8131(_, arg_0_3: int, arg_4_7: int):
     """ 8131: Event 8131 """
     EndIfThisEventSlotOn()
     IfPlayerHasGood(-1, arg_0_3, including_box=False)
@@ -852,14 +859,14 @@ def Event731():
     Restart()
 
 
-def Event250(arg_0_3: int, arg_4_7: int):
+def Event250(_, arg_0_3: int, arg_4_7: int):
     """ 250: Event 250 """
     EndIfThisEventSlotOn()
     IfPlayerHasGood(0, arg_0_3, including_box=False)
     EnableFlag(arg_4_7)
 
 
-def Event350(arg_0_3: int, arg_4_7: int):
+def Event350(_, arg_0_3: int, arg_4_7: int):
     """ 350: Event 350 """
     SkipLinesIfThisEventSlotOff(2)
     IfPlayerHasGood(1, arg_4_7, including_box=False)
@@ -868,7 +875,7 @@ def Event350(arg_0_3: int, arg_4_7: int):
     RemoveGoodFromPlayer(arg_4_7, quantity=1)
 
 
-def Event780(arg_0_3: int, arg_4_7: int):
+def Event780(_, arg_0_3: int, arg_4_7: int):
     """ 780: Event 780 """
     DisableFlag(arg_4_7)
     IfPlayerHasGood(0, arg_0_3, including_box=False)
@@ -877,7 +884,7 @@ def Event780(arg_0_3: int, arg_4_7: int):
     Restart()
 
 
-def Event870(arg_0_0: uchar, arg_4_7: int):
+def Event870(_, arg_0_0: uchar, arg_4_7: int):
     """ 870: Event 870 """
     IfPlayerCovenant(0, arg_0_0)
     EnableFlag(arg_4_7)
@@ -887,7 +894,7 @@ def Event870(arg_0_0: uchar, arg_4_7: int):
     Restart()
 
 
-def Event260(arg_0_3: int, arg_4_7: int, arg_8_11: float):
+def Event260(_, arg_0_3: int, arg_4_7: int, arg_8_11: float):
     """ 260: Event 260 """
     EndIfFlagOn(arg_0_3)
     IfFlagOn(0, arg_0_3)
@@ -896,7 +903,7 @@ def Event260(arg_0_3: int, arg_4_7: int, arg_8_11: float):
     DisplayStatus(arg_4_7, pad_enabled=True)
 
 
-def Event970(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event970(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 970: Event 970 """
     EndIfFlagOn(arg_0_3)
     IfFlagOn(0, arg_0_3)
@@ -910,7 +917,7 @@ def Event970(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     AwardItemLot(arg_12_15, host_only=True)
 
 
-def Event911(arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
+def Event911(_, arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
     """ 911: Event 911 """
     EndIfFlagOn(arg_0_3)
     IfFlagOn(0, arg_0_3)
@@ -920,7 +927,7 @@ def Event911(arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
     Restart()
 
 
-def Event890(arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
+def Event890(_, arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
     """ 890: Event 890 """
     EndIfFlagOn(arg_0_3)
     IfFlagOn(0, arg_0_3)
@@ -930,7 +937,7 @@ def Event890(arg_0_3: int, arg_4_7: int, arg_8_8: uchar):
     Restart()
 
 
-def Event960(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event960(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 960: Event 960 """
     EndIfThisEventSlotOn()
     IfFlagOn(1, arg_0_3)
@@ -939,7 +946,7 @@ def Event960(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     AwardItemLot(arg_8_11, host_only=True)
 
 
-def Event8200(arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event8200(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 8200: Event 8200 """
     EndIfFlagOn(arg_8_11)
     IfNewGameCycleGreaterThanOrEqual(1, completion_count=1)
@@ -950,7 +957,7 @@ def Event8200(arg_0_0: uchar, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     EnableFlag(arg_12_15)
 
 
-def Event8300(arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
+def Event8300(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
     """ 8300: Event 8300 """
     EndIfFlagOn(arg_8_11)
     IfNewGameCycleGreaterThanOrEqual(1, completion_count=1)
@@ -960,7 +967,7 @@ def Event8300(arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
     EnableFlag(arg_8_11)
 
 
-def Event8090(arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
+def Event8090(_, arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
     """ 8090: Event 8090 """
     EndIfFlagOn(arg_8_11)
     IfNewGameCycleGreaterThanOrEqual(1, completion_count=1)
@@ -970,7 +977,7 @@ def Event8090(arg_0_0: uchar, arg_4_7: int, arg_8_11: int):
     EnableFlag(arg_8_11)
 
 
-def Event910(arg_0_3: int, arg_4_7: int):
+def Event910(_, arg_0_3: int, arg_4_7: int):
     """ 910: Event 910 """
     SkipLinesIfFlagOn(2, arg_0_3)
     IfFlagOn(0, arg_0_3)
@@ -979,7 +986,7 @@ def Event910(arg_0_3: int, arg_4_7: int):
     Restart()
 
 
-def Event690(arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
+def Event690(_, arg_0_3: int, arg_4_7: uint, arg_8_11: uint, arg_12_15: int):
     """ 690: Event 690 """
     SkipLinesIfThisEventSlotOn(1)
     IfFlagOn(0, arg_12_15)
@@ -1147,7 +1154,7 @@ def Event754():
     DisableFlag(754)
     AddSpecialEffect(PLAYER, 4600)
     AddSpecialEffect(PLAYER, 4601)
-    CreateTemporaryFX(22715, anchor_entity=10000, anchor_type=CoordEntityType.Character, model_point=7)
+    CreateTemporaryVFX(22715, anchor_entity=PLAYER, anchor_type=CoordEntityType.Character, model_point=7)
     Restart()
 
 
@@ -1410,7 +1417,7 @@ def Event810():
     EnableFlag(810)
 
 
-def Event812(arg_0_3: int):
+def Event812(_, arg_0_3: int):
     """ 812: Event 812 """
     EndIfThisEventSlotOn()
     IfFlagOn(0, arg_0_3)
@@ -1437,7 +1444,7 @@ def Event823():
     Restart()
 
 
-def Event840(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event840(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 840: Event 840 """
     DisableFlag(arg_0_3)
     IfFlagOn(0, arg_0_3)

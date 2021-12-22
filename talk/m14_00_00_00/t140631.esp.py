@@ -1,5 +1,4 @@
-from soulstruct.esd import State
-from soulstruct.esd.functions import *
+from soulstruct.darksouls1r.ezstate.esd import *
 
 
 class State_0(State):
@@ -78,7 +77,7 @@ class State_6(State):
     """ 6: No description. """
 
     def previous_states(self):
-        return [State_2, State_4, State_5, State_11, State_20, State_23, State_26, State_27, State_36, State_44, State_46, State_47, State_49, State_50, State_51, State_52, State_53, State_54, State_57, State_59, State_60, State_63]
+        return [State_2, State_4, State_5, State_11, State_20, State_23, State_26, State_27, State_36, State_44, State_46, State_47, State_49, State_50, State_51, State_52, State_53, State_54, State_57, State_58, State_59, State_60, State_63]
 
     def enter(self):
         DebugEvent(message='unknow')
@@ -310,7 +309,7 @@ class State_19(State):
     """ 19: No description. """
 
     def previous_states(self):
-        return [State_22, State_25, State_45]
+        return [State_22, State_25, State_45, State_58]
 
     def enter(self):
         AddTalkListData(menu_index=1, menu_text=15000011, required_flag=-1)
@@ -950,7 +949,7 @@ class State_57(State):
 
 
 class State_58(State):
-    """ 58: Chaos Blade quest [before]. """
+    """ 58: No description. """
 
     def previous_states(self):
         return [State_19]
@@ -966,7 +965,7 @@ class State_58(State):
 
 
 class State_59(State):
-    """ 59: Chaos Blade quest [start]. """
+    """ 59: No description. """
 
     def previous_states(self):
         return [State_6]
@@ -982,7 +981,7 @@ class State_59(State):
 
 
 class State_60(State):
-    """ 60: Chaos Blade quest [prompt] """
+    """ 60: No description. """
 
     def previous_states(self):
         return [State_59]
@@ -1000,7 +999,7 @@ class State_60(State):
 
 
 class State_61(State):
-    """ 61: Chaos Blade quest [YES answer] """
+    """ 61: No description. """
 
     def previous_states(self):
         return [State_60]
@@ -1016,7 +1015,7 @@ class State_61(State):
 
 
 class State_62(State):
-    """ 62: Chaos Blade quest [NO answer] """
+    """ 62: No description. """
 
     def previous_states(self):
         return [State_60]
@@ -1030,7 +1029,7 @@ class State_62(State):
 
 
 class State_63(State):
-    """ 63: Chaos Blade quest [YES answer, award] """
+    """ 63: No description. """
 
     def previous_states(self):
         return [State_61]
@@ -1043,7 +1042,7 @@ class State_63(State):
 
 
 class State_64(State):
-    """ 64: Chaos Blade quest [YES answer, end] """
+    """ 64: No description. """
 
     def previous_states(self):
         return [State_6]
@@ -1057,7 +1056,7 @@ class State_64(State):
 
 
 class State_65(State):
-    """ 65: Chaos Blade quest [aggro] """
+    """ 65: No description. """
 
     def previous_states(self):
         return [State_62, State_64]
@@ -1076,7 +1075,7 @@ class State_65(State):
 
 
 class State_66(State):
-    """ 66: Chaos Blade quest [player dead, YES answer] """
+    """ 66: No description. """
 
     def previous_states(self):
         return [State_65]
@@ -1088,7 +1087,7 @@ class State_66(State):
 
 
 class State_67(State):
-    """ 67: Chaos Blade quest [player dead, NO answer] """
+    """ 67: No description. """
 
     def previous_states(self):
         return [State_65]
@@ -1101,11 +1100,10 @@ class State_67(State):
 
 
 class State_68(State):
-    """ 68: Chaos Blade quest [Shiva dead] """
+    """ 68: No description. """
 
     def previous_states(self):
         return [State_65]
 
     def enter(self):
         ForceEndTalk(unk1=0)
-

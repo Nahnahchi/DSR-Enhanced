@@ -1,5 +1,4 @@
-from soulstruct.esd import State
-from soulstruct.esd.functions import *
+from soulstruct.darksouls1r.ezstate.esd import *
 
 
 class State_0(State):
@@ -582,9 +581,6 @@ class State_35(State):
 
     def test(self):
         return State_23
-        # UNREACHABLE:
-        # if 1:
-        #     return State_23
 
 
 class State_36(State):

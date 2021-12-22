@@ -5,7 +5,7 @@ linked:
 strings:
 
 """
-from soulstruct.events.darksouls1 import *
+from soulstruct.darksouls1r.events import *
 
 
 def Constructor():
@@ -23,7 +23,7 @@ def Constructor():
     DisableFlag(11505360)
     SkipLinesIfClient(2)
     DisableObject(1501994)
-    DeleteFX(1501995, erase_root_only=False)
+    DeleteVFX(1501995, erase_root_only=False)
     DisableCollision(1503210)
     DisableObject(1501800)
     DisableObject(1501801)
@@ -127,7 +127,7 @@ def Constructor():
     RunEvent(11505111, slot=3, args=(11505114, 1502703, 4))
     RunEvent(11505111, slot=4, args=(11505115, 1502704, 5))
     RunEvent(11505111, slot=5, args=(11505116, 1502705, 6))
-    RunEvent(11505111, slot=6, args=(11505117, 1502710, 4294967295))
+    RunEvent(11505111, slot=6, args=(11505117, 1502710, -1))
     RunEvent(11505060, slot=0, args=(1500100,))
     RunEvent(11505060, slot=1, args=(1500101,))
     RunEvent(11505060, slot=2, args=(1500102,))
@@ -141,7 +141,7 @@ def Constructor():
     SkipLinesIfFlagOff(4, 11)
     RunEvent(11505392)
     DisableObject(1501990)
-    DeleteFX(1501991, erase_root_only=False)
+    DeleteVFX(1501991, erase_root_only=False)
     SkipLines(9)
     RunEvent(11505390)
     RunEvent(11505391)
@@ -213,7 +213,7 @@ def Preconstructor():
     DisableCharacter(6280)
     SkipLinesIfFlagOn(1, 11500200)
     SkipLines(1)
-    Move(6280, destination=1502510, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1503300)
+    Move(6280, destination=1502510, destination_type=CoordEntityType.Region, set_draw_parent=1503300)
     SkipLinesIfFlagRangeAnyOn(1, (1491, 1492))
     SkipLines(2)
     Kill(1500120, award_souls=False)
@@ -232,14 +232,14 @@ def Preconstructor():
 
 def WT_BossBuff():
     """ 11500992: Dark World Tendency boss buff """
-    IfFlagOn(1, 11027997)    
-    IfConditionTrue(0, 1)
+    IfFlagOn(1, 11027997)
+    IfConditionTrue(0, input_condition=1)
     AddSpecialEffect(1500800, 7100)
     AddSpecialEffect(1500100, 7100)
     AddSpecialEffect(1500101, 7100)
     AddSpecialEffect(1500102, 7100)
-    IfFlagOff(2, 11027997)    
-    IfConditionTrue(0, 2)
+    IfFlagOff(2, 11027997)
+    IfConditionTrue(0, input_condition=2)
     CancelSpecialEffect(1500800, 7100)
     CancelSpecialEffect(1500100, 7100)
     CancelSpecialEffect(1500101, 7100)
@@ -253,34 +253,43 @@ def Event1000000000():
     SetNetworkUpdateRate(1500100, is_fixed=True, update_rate=CharacterUpdateRate.Always)
 
 
-def Event11500090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500090(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500090: Event 11500090 """
     SkipLinesIfThisEventSlotOff(3)
     DisableObject(arg_0_3)
-    DeleteFX(arg_4_7, erase_root_only=False)
+    DeleteVFX(arg_4_7, erase_root_only=False)
     End()
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=arg_8_11, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, model_point=0, human_or_hollow_only=True, 
-                            line_intersects=arg_0_3)
-    IfDialogPromptActivated(2, prompt_text=10010407, anchor_entity=arg_12_15, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, model_point=0, human_or_hollow_only=True, 
-                            line_intersects=arg_0_3)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=arg_8_11,
+        anchor_type=CoordEntityType.Region,
+        model_point=0,
+        line_intersects=arg_0_3,
+    )
+    IfActionButton(
+        2,
+        prompt_text=10010407,
+        anchor_entity=arg_12_15,
+        anchor_type=CoordEntityType.Region,
+        model_point=0,
+        line_intersects=arg_0_3,
+    )
     IfConditionTrue(-1, input_condition=1)
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(0, input_condition=-1)
     SkipLinesIfFinishedConditionTrue(2, 2)
-    Move(PLAYER, destination=arg_8_11, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(PLAYER, destination=arg_8_11, destination_type=CoordEntityType.Region, short_move=True)
     SkipLines(1)
-    Move(PLAYER, destination=arg_12_15, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(PLAYER, destination=arg_12_15, destination_type=CoordEntityType.Region, short_move=True)
     ForceAnimation(PLAYER, 7410)
     DisableObject(arg_0_3)
-    DeleteFX(arg_4_7, erase_root_only=True)
+    DeleteVFX(arg_4_7, erase_root_only=True)
 
 
 @RestartOnRest
-def WT_SpawnPhantoms():
+def Event11505090():
     """ 11505090: Event 11505090 """
-    #EndIfThisEventOn()
     SkipLinesIfFlagOn(10, 11007999)
     DisableCharacter(1500900)
     DisableCharacter(1500901)
@@ -292,42 +301,19 @@ def WT_SpawnPhantoms():
     DisableCharacter(1500907)
     DisableCharacter(1500908)
     DisableCharacter(1500909)
-    #IfFlagOn(0, 11500050)
-    #EndIfFlagOn(735)
-    #EnableFlag(5000)
-    IfFlagOn(-1, 744)
     IfFlagOn(-1, 742)
     IfFlagOff(1, 11007999)
-    IfConditionTrue(1, -1)
+    IfConditionTrue(1, input_condition=-1)
     EndIfConditionFalse(1)
     EnableFlag(11007999)
-    EnableCharacter(1500900)
-    EnableCharacter(1500901)
-    EnableCharacter(1500902)
-    EnableCharacter(1500903)
-    EnableCharacter(1500904)
-    EnableCharacter(1500905)
-    EnableCharacter(1500906)
-    EnableCharacter(1500907)
-    EnableCharacter(1500908)
-    EnableCharacter(1500909)
 
 
 @RestartOnRest
-def WT_KillPhantoms():
+def Event11505091():
     """ 11505091: Event 11505091 """
-    #IfFlagOn(-1, 11505095)
-    #IfFlagOn(-1, 735)
-    #IfConditionTrue(0, input_condition=-1)
-    #SkipLinesIfFlagOff(1, 735)
-    #DisableFlag(735)
-    #DisableFlag(11500050)
-    #DisableFlag(11505095)
-    #EnableFlag(5001)
-    IfFlagOff(1, 744)
     IfFlagOff(1, 742)
     IfFlagOn(1, 11007999)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     DisableFlag(11007999)
     Kill(1500900, award_souls=False)
     Kill(1500901, award_souls=False)
@@ -391,50 +377,199 @@ def Event11505092():
 
 def Event11505300():
     """ 11505300: Event 11505300 """
-    CreateHazard(11505301, 1501850, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505302, 1501851, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505303, 1501852, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505304, 1501853, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505305, 1501854, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505306, 1501855, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505307, 1501856, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505308, 1501857, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505309, 1501858, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505310, 1501859, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505311, 1501860, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505312, 1501861, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505313, 1501862, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505314, 1501863, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505315, 1501864, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505316, 1501865, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505317, 1501866, model_point=101, behavior_param_id=5040, target_type=DamageTargetType.Character, 
-                 radius=0.30000001192092896, life=0.0, repetition_time=2.0)
-    CreateHazard(11505290, 1501010, model_point=101, behavior_param_id=5060, target_type=DamageTargetType.Character, 
-                 radius=1.2000000476837158, life=0.0, repetition_time=0.5)
+    CreateHazard(
+        11505301,
+        1501850,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505302,
+        1501851,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505303,
+        1501852,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505304,
+        1501853,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505305,
+        1501854,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505306,
+        1501855,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505307,
+        1501856,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505308,
+        1501857,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505309,
+        1501858,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505310,
+        1501859,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505311,
+        1501860,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505312,
+        1501861,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505313,
+        1501862,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505314,
+        1501863,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505315,
+        1501864,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505316,
+        1501865,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505317,
+        1501866,
+        model_point=101,
+        behavior_param_id=5040,
+        target_type=DamageTargetType.Character,
+        radius=0.30000001192092896,
+        life=0.0,
+        repetition_time=2.0,
+    )
+    CreateHazard(
+        11505290,
+        1501010,
+        model_point=101,
+        behavior_param_id=5060,
+        target_type=DamageTargetType.Character,
+        radius=1.2000000476837158,
+        life=0.0,
+        repetition_time=0.5,
+    )
 
 
 def Event11505390():
     """ 11505390: Event 11505390 """
     IfFlagOff(1, 11)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1502998, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=1501990, 
-                            boss_version=True)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1502998,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=1501990,
+        boss_version=True,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1502997)
     ForceAnimation(PLAYER, 7410)
@@ -446,8 +581,14 @@ def Event11505391():
     IfFlagOff(1, 11)
     IfFlagOn(1, 11505393)
     IfCharacterType(1, PLAYER, CharacterType.WhitePhantom)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1502998, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=False, line_intersects=1501990)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1502998,
+        anchor_type=CoordEntityType.Region,
+        trigger_attribute=TriggerAttribute.All,
+        line_intersects=1501990,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1502997)
     ForceAnimation(PLAYER, 7410)
@@ -490,13 +631,13 @@ def Event11505392():
 
 def Event11500001():
     """ 11500001: Event 11500001 """
-    DeleteFX(1503010, erase_root_only=False)
+    DeleteVFX(1503010, erase_root_only=False)
     IfCharacterDead(0, 1500800)
     EnableFlag(11)
     KillBoss(1500800)
     DisableObject(1501990)
-    DeleteFX(1501991, erase_root_only=True)
-    CreateFX(1503010)
+    DeleteVFX(1501991, erase_root_only=True)
+    CreateVFX(1503010)
     AICommand(1500100, command_id=10, slot=0)
     ReplanAI(1500100)
     DisableFlag(11807020)
@@ -545,22 +686,38 @@ def Event11505351():
     EndIfFlagOn(11)
     EnableNetworkSync()
     IfFlagOff(0, 11505355)
-    CreateNPCPart(1500800, npc_part_id=2320, part_index=NPCPartType.Part2, part_health=200, damage_correction=1.0, 
-                  body_damage_correction=1.0, is_invincible=False, start_in_stop_state=False)
-    SetNPCPartEffects(1500800, npc_part_id=2320, material_special_effect_id=56, material_fx_id=56)
+    CreateNPCPart(
+        1500800,
+        npc_part_id=2320,
+        part_index=NPCPartType.Part2,
+        part_health=200,
+        damage_correction=1.0,
+        body_damage_correction=1.0,
+        is_invincible=False,
+        start_in_stop_state=False,
+    )
+    SetNPCPartEffects(1500800, npc_part_id=2320, material_sfx_id=56, material_vfx_id=56)
     IfCharacterPartHealthLessThanOrEqual(0, 1500800, npc_part_id=2320, value=0)
     EzstateAIRequest(1500800, command_id=1300, slot=0)
     IfHasTAEEvent(0, 1500800, tae_event_id=1204)
     EnableFlag(11505355)
-    CreateNPCPart(1500800, npc_part_id=2321, part_index=NPCPartType.Part2, part_health=100, damage_correction=1.0, 
-                  body_damage_correction=1.0, is_invincible=False, start_in_stop_state=False)
-    SetNPCPartEffects(1500800, npc_part_id=2321, material_special_effect_id=56, material_fx_id=56)
+    CreateNPCPart(
+        1500800,
+        npc_part_id=2321,
+        part_index=NPCPartType.Part2,
+        part_health=100,
+        damage_correction=1.0,
+        body_damage_correction=1.0,
+        is_invincible=False,
+        start_in_stop_state=False,
+    )
+    SetNPCPartEffects(1500800, npc_part_id=2321, material_sfx_id=56, material_vfx_id=56)
     DisableNetworkSync()
     Wait(15.0)
     EnableNetworkSync()
     DisableFlag(11505355)
-    RestartEvent(11505352, slot=0)
-    SetNPCPartHealth(1500800, npc_part_id=2321, desired_hp=-1, overwrite_max=False)
+    RestartEvent(11505352)
+    SetNPCPartHealth(1500800, npc_part_id=2321, desired_health=-1, overwrite_max=False)
     EzstateAIRequest(1500800, command_id=1303, slot=0)
     Restart()
 
@@ -574,7 +731,7 @@ def Event11505352():
     IfFlagOn(1, 11505355)
     IfCharacterPartHealthLessThanOrEqual(1, 1500800, npc_part_id=2321, value=0)
     IfConditionTrue(0, input_condition=1)
-    RestartEvent(11505351, slot=0)
+    RestartEvent(11505351)
     EzstateAIRequest(1500800, command_id=1301, slot=0)
     IfHasTAEEvent(0, 1500800, tae_event_id=1203)
     DisableNetworkSync()
@@ -655,8 +812,16 @@ def Event11500791():
     ForceAnimation(1500110, 500, wait_for_completion=True)
     ForceAnimation(1500110, 603, wait_for_completion=True)
     EnableAI(1500110)
-    CreateHazard(11505200, 1501800, model_point=101, behavior_param_id=5050, target_type=DamageTargetType.Character, 
-                 radius=1.7000000476837158, life=1.0, repetition_time=0.0)
+    CreateHazard(
+        11505200,
+        1501800,
+        model_point=101,
+        behavior_param_id=5050,
+        target_type=DamageTargetType.Character,
+        radius=1.7000000476837158,
+        life=1.0,
+        repetition_time=0.0,
+    )
     ForceAnimation(1501800, 12, wait_for_completion=True)
     DisableObject(1501800)
 
@@ -669,19 +834,19 @@ def Event11500795():
     DisableObject(1501800)
     EnableObject(1501804)
     SkipLinesIfFlagOff(3, 11500812)
-    RunEvent(11500700, slot=0, args=(11505200, 1501804, 1, 2.5, 1501812, 11505210), arg_types='iiifii')
+    RunEvent(11500700, slot=0, args=(11505200, 1501804, 1, 2.5, 1501812, 11505210), arg_types="iiifii")
     IfFlagOff(0, 11505210)
     Restart()
     SkipLinesIfFlagOn(3, 11500803)
-    RunEvent(11500700, slot=10, args=(11505200, 1501804, 2, 7.5, 1501813, 11505210), arg_types='iiifii')
+    RunEvent(11500700, slot=10, args=(11505200, 1501804, 2, 7.5, 1501813, 11505210), arg_types="iiifii")
     IfFlagOff(0, 11505210)
     Restart()
     SkipLinesIfFlagOff(3, 11500806)
-    RunEvent(11500700, slot=20, args=(11505200, 1501804, 3, 7.5, 1501810, 11505210), arg_types='iiifii')
+    RunEvent(11500700, slot=20, args=(11505200, 1501804, 3, 7.5, 1501810, 11505210), arg_types="iiifii")
     IfFlagOff(0, 11505210)
     Restart()
     SkipLinesIfFlagOn(3, 11500830)
-    RunEvent(11500700, slot=30, args=(11505200, 1501804, 4, 12.5, 1501811, 11505210), arg_types='iiifii')
+    RunEvent(11500700, slot=30, args=(11505200, 1501804, 4, 12.5, 1501811, 11505210), arg_types="iiifii")
     IfFlagOff(0, 11505210)
     Restart()
     SkipLinesIfFlagOn(3, 11500821)
@@ -696,7 +861,7 @@ def Event11500795():
     RunEvent(11500750, slot=2, args=(11505200, 1501803, 7, 1503202, 1501811, 11505210, 11500823, 1501804))
     IfFlagOff(0, 11505210)
     Restart()
-    RunEvent(11500700, slot=40, args=(11505200, 1501804, 8, 18.5, 1501811, 11505210), arg_types='iiifii')
+    RunEvent(11500700, slot=40, args=(11505200, 1501804, 8, 18.5, 1501811, 11505210), arg_types="iiifii")
     IfFlagOff(0, 11505210)
     Restart()
 
@@ -709,19 +874,19 @@ def Event11500796():
     DisableObject(1501800)
     EnableObject(1501805)
     SkipLinesIfFlagOff(3, 11500812)
-    RunEvent(11500700, slot=1, args=(11505201, 1501805, 1, 2.5, 1501812, 11505211), arg_types='iiifii')
+    RunEvent(11500700, slot=1, args=(11505201, 1501805, 1, 2.5, 1501812, 11505211), arg_types="iiifii")
     IfFlagOff(0, 11505211)
     Restart()
     SkipLinesIfFlagOn(3, 11500803)
-    RunEvent(11500700, slot=11, args=(11505201, 1501805, 2, 7.5, 1501813, 11505211), arg_types='iiifii')
+    RunEvent(11500700, slot=11, args=(11505201, 1501805, 2, 7.5, 1501813, 11505211), arg_types="iiifii")
     IfFlagOff(0, 11505211)
     Restart()
     SkipLinesIfFlagOff(3, 11500806)
-    RunEvent(11500700, slot=21, args=(11505201, 1501805, 3, 7.5, 1501810, 11505211), arg_types='iiifii')
+    RunEvent(11500700, slot=21, args=(11505201, 1501805, 3, 7.5, 1501810, 11505211), arg_types="iiifii")
     IfFlagOff(0, 11505211)
     Restart()
     SkipLinesIfFlagOn(3, 11500830)
-    RunEvent(11500700, slot=31, args=(11505201, 1501805, 4, 12.5, 1501811, 11505211), arg_types='iiifii')
+    RunEvent(11500700, slot=31, args=(11505201, 1501805, 4, 12.5, 1501811, 11505211), arg_types="iiifii")
     IfFlagOff(0, 11505211)
     Restart()
     SkipLinesIfFlagOn(3, 11500821)
@@ -736,7 +901,7 @@ def Event11500796():
     RunEvent(11500750, slot=2, args=(11505201, 1501803, 7, 1503202, 1501811, 11505211, 11500823, 1501805))
     IfFlagOff(0, 11505211)
     Restart()
-    RunEvent(11500700, slot=41, args=(11505201, 1501805, 8, 18.5, 1501811, 11505211), arg_types='iiifii')
+    RunEvent(11500700, slot=41, args=(11505201, 1501805, 8, 18.5, 1501811, 11505211), arg_types="iiifii")
     IfFlagOff(0, 11505211)
     Restart()
 
@@ -749,19 +914,19 @@ def Event11500797():
     DisableObject(1501800)
     EnableObject(1501806)
     SkipLinesIfFlagOff(3, 11500812)
-    RunEvent(11500700, slot=2, args=(11505202, 1501806, 1, 2.5, 1501812, 11505212), arg_types='iiifii')
+    RunEvent(11500700, slot=2, args=(11505202, 1501806, 1, 2.5, 1501812, 11505212), arg_types="iiifii")
     IfFlagOff(0, 11505212)
     Restart()
     SkipLinesIfFlagOn(3, 11500803)
-    RunEvent(11500700, slot=12, args=(11505202, 1501806, 2, 7.5, 1501813, 11505212), arg_types='iiifii')
+    RunEvent(11500700, slot=12, args=(11505202, 1501806, 2, 7.5, 1501813, 11505212), arg_types="iiifii")
     IfFlagOff(0, 11505212)
     Restart()
     SkipLinesIfFlagOff(3, 11500806)
-    RunEvent(11500700, slot=22, args=(11505202, 1501806, 3, 7.5, 1501810, 11505212), arg_types='iiifii')
+    RunEvent(11500700, slot=22, args=(11505202, 1501806, 3, 7.5, 1501810, 11505212), arg_types="iiifii")
     IfFlagOff(0, 11505212)
     Restart()
     SkipLinesIfFlagOn(3, 11500830)
-    RunEvent(11500700, slot=32, args=(11505202, 1501806, 4, 12.5, 1501811, 11505212), arg_types='iiifii')
+    RunEvent(11500700, slot=32, args=(11505202, 1501806, 4, 12.5, 1501811, 11505212), arg_types="iiifii")
     IfFlagOff(0, 11505212)
     Restart()
     SkipLinesIfFlagOn(3, 11500821)
@@ -776,7 +941,7 @@ def Event11500797():
     RunEvent(11500750, slot=2, args=(11505202, 1501803, 7, 1503202, 1501811, 11505212, 11500823, 1501806))
     IfFlagOff(0, 11505212)
     Restart()
-    RunEvent(11500700, slot=42, args=(11505202, 1501806, 8, 18.5, 1501811, 11505212), arg_types='iiifii')
+    RunEvent(11500700, slot=42, args=(11505202, 1501806, 8, 18.5, 1501811, 11505212), arg_types="iiifii")
     IfFlagOff(0, 11505212)
     Restart()
 
@@ -789,19 +954,19 @@ def Event11500798():
     DisableObject(1501800)
     EnableObject(1501807)
     SkipLinesIfFlagOff(3, 11500812)
-    RunEvent(11500700, slot=3, args=(11505203, 1501807, 1, 2.5, 1501812, 11505213), arg_types='iiifii')
+    RunEvent(11500700, slot=3, args=(11505203, 1501807, 1, 2.5, 1501812, 11505213), arg_types="iiifii")
     IfFlagOff(0, 11505213)
     Restart()
     SkipLinesIfFlagOn(3, 11500803)
-    RunEvent(11500700, slot=13, args=(11505203, 1501807, 2, 7.5, 1501813, 11505213), arg_types='iiifii')
+    RunEvent(11500700, slot=13, args=(11505203, 1501807, 2, 7.5, 1501813, 11505213), arg_types="iiifii")
     IfFlagOff(0, 11505213)
     Restart()
     SkipLinesIfFlagOff(3, 11500806)
-    RunEvent(11500700, slot=23, args=(11505203, 1501807, 3, 7.5, 1501810, 11505213), arg_types='iiifii')
+    RunEvent(11500700, slot=23, args=(11505203, 1501807, 3, 7.5, 1501810, 11505213), arg_types="iiifii")
     IfFlagOff(0, 11505213)
     Restart()
     SkipLinesIfFlagOn(3, 11500830)
-    RunEvent(11500700, slot=33, args=(11505203, 1501807, 4, 12.5, 1501811, 11505213), arg_types='iiifii')
+    RunEvent(11500700, slot=33, args=(11505203, 1501807, 4, 12.5, 1501811, 11505213), arg_types="iiifii")
     IfFlagOff(0, 11505213)
     Restart()
     SkipLinesIfFlagOn(3, 11500821)
@@ -816,17 +981,25 @@ def Event11500798():
     RunEvent(11500750, slot=2, args=(11505203, 1501803, 7, 1503202, 1501811, 11505213, 11500823, 1501807))
     IfFlagOff(0, 11505213)
     Restart()
-    RunEvent(11500700, slot=43, args=(11505203, 1501807, 8, 18.5, 1501811, 11505213), arg_types='iiifii')
+    RunEvent(11500700, slot=43, args=(11505203, 1501807, 8, 18.5, 1501811, 11505213), arg_types="iiifii")
     IfFlagOff(0, 11505213)
     Restart()
 
 
-def Event11500700(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: float, arg_16_19: int, arg_20_23: int):
+def Event11500700(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: float, arg_16_19: int, arg_20_23: int):
     """ 11500700: Event 11500700 """
     DisableCollision(1503210)
     ForceAnimation(arg_16_19, 1)
-    CreateHazard(arg_0_3, arg_4_7, model_point=101, behavior_param_id=5050, target_type=DamageTargetType.Character, 
-                 radius=1.7000000476837158, life=arg_12_15, repetition_time=0.20000000298023224)
+    CreateHazard(
+        arg_0_3,
+        arg_4_7,
+        model_point=101,
+        behavior_param_id=5050,
+        target_type=DamageTargetType.Character,
+        radius=1.7000000476837158,
+        life=arg_12_15,
+        repetition_time=0.20000000298023224,
+    )
     ForceAnimation(arg_4_7, arg_8_11, wait_for_completion=True)
     RemoveObjectFlag(arg_0_3)
     DisableObject(arg_4_7)
@@ -834,16 +1007,33 @@ def Event11500700(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: float, a
     DisableFlag(arg_20_23)
 
 
-def Event11500750(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int, arg_20_23: int, 
-                  arg_24_27: int, arg_28_31: int):
+def Event11500750(
+    _,
+    arg_0_3: int,
+    arg_4_7: int,
+    arg_8_11: int,
+    arg_12_15: int,
+    arg_16_19: int,
+    arg_20_23: int,
+    arg_24_27: int,
+    arg_28_31: int,
+):
     """ 11500750: Event 11500750 """
     DisableCollision(1503210)
     EnableFlag(arg_24_27)
     EnableObject(arg_4_7)
     DisableObject(arg_28_31)
     ForceAnimation(arg_16_19, 1)
-    CreateHazard(arg_0_3, arg_4_7, model_point=101, behavior_param_id=5050, target_type=DamageTargetType.Character, 
-                 radius=1.7000000476837158, life=12.5, repetition_time=0.20000000298023224)
+    CreateHazard(
+        arg_0_3,
+        arg_4_7,
+        model_point=101,
+        behavior_param_id=5050,
+        target_type=DamageTargetType.Character,
+        radius=1.7000000476837158,
+        life=12.5,
+        repetition_time=0.20000000298023224,
+    )
     ForceAnimation(arg_4_7, arg_8_11, wait_for_completion=True)
     EnableCollision(arg_12_15)
     RemoveObjectFlag(arg_0_3)
@@ -873,11 +1063,27 @@ def Event11500850():
     """ 11500850: Event 11500850 """
     DisableFlag(11505250)
     IfFlagOff(1, 11505250)
-    IfDialogPromptActivated(1, prompt_text=10010502, anchor_entity=1501790, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=104, human_or_hollow_only=False)
+    IfActionButton(
+        1,
+        prompt_text=10010502,
+        anchor_entity=1501790,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=104,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfFlagOff(2, 11505250)
-    IfDialogPromptActivated(2, prompt_text=10010502, anchor_entity=1501790, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=102, human_or_hollow_only=False)
+    IfActionButton(
+        2,
+        prompt_text=10010502,
+        anchor_entity=1501790,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=102,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfConditionTrue(-1, input_condition=1)
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(0, input_condition=-1)
@@ -888,7 +1094,7 @@ def Event11500850():
     SkipLinesIfFinishedConditionFalse(23, 1)
     Move(PLAYER, destination=1501790, destination_type=CoordEntityType.Object, model_point=101, short_move=True)
     ForceAnimation(PLAYER, 8020)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     SkipLinesIfFlagOff(4, 11500812)
     DisableFlag(11500812)
     DisableFlag(11500803)
@@ -912,7 +1118,7 @@ def Event11500850():
     RestartIfFinishedConditionFalse(2)
     Move(PLAYER, destination=1501790, destination_type=CoordEntityType.Object, model_point=103, short_move=True)
     ForceAnimation(PLAYER, 8021)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     SkipLinesIfFlagOff(4, 11500812)
     DisableFlag(11500812)
     EnableFlag(11500809)
@@ -958,18 +1164,18 @@ def Event11505255():
     EnableFlag(11505251)
     DisableFlag(11505252)
     SkipLinesIfFlagOn(5, 11500803)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     EnableFlag(11500803)
     EnableFlag(11500809)
     ForceAnimation(1501790, 0, wait_for_completion=True)
     ForceAnimation(1501790, 1, wait_for_completion=True)
     SkipLinesIfFlagOff(4, 11500806)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     DisableFlag(11500806)
     EnableFlag(11500809)
     ForceAnimation(1501790, 1, wait_for_completion=True)
     SkipLinesIfFlagOff(4, 11500812)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     DisableFlag(11500812)
     EnableFlag(11500809)
     ForceAnimation(1501790, 5, wait_for_completion=True)
@@ -977,18 +1183,18 @@ def Event11505255():
     DisableFlag(11505251)
     EnableFlag(11505252)
     SkipLinesIfFlagOff(5, 11500809)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     DisableFlag(11500809)
     DisableFlag(11500803)
     ForceAnimation(1501790, 6, wait_for_completion=True)
     ForceAnimation(1501790, 7, wait_for_completion=True)
     SkipLinesIfFlagOff(4, 11500806)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     DisableFlag(11500806)
     DisableFlag(11500803)
     ForceAnimation(1501790, 7, wait_for_completion=True)
     SkipLinesIfFlagOff(4, 11500812)
-    CreateTemporaryFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
+    CreateTemporaryVFX(150001, anchor_entity=1501790, anchor_type=CoordEntityType.Object, model_point=-1)
     DisableFlag(11500812)
     DisableFlag(11500803)
     ForceAnimation(1501790, 3, wait_for_completion=True)
@@ -1004,7 +1210,7 @@ def Event11500840():
     Restart()
 
 
-def Event11500841(arg_0_3: int):
+def Event11500841(_, arg_0_3: int):
     """ 11500841: Event 11500841 """
     IfHost(1)
     IfFlagOn(1, 11505240)
@@ -1153,15 +1359,26 @@ def Event11500102():
     End()
     IfThisEventOff(1)
     IfPlayerHasGood(1, 2003, including_box=False)
-    IfDialogPromptActivated(1, prompt_text=10010400, anchor_entity=1501011, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=2.0, model_point=105, human_or_hollow_only=True)
+    IfActionButton(
+        1,
+        prompt_text=10010400,
+        anchor_entity=1501011,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        model_point=105,
+    )
     IfConditionTrue(0, input_condition=1)
     Move(PLAYER, destination=1501011, destination_type=CoordEntityType.Object, model_point=120, short_move=True)
     ForceAnimation(PLAYER, 7111)
     ForceAnimation(1501011, 10)
     EndIfClient()
-    DisplayDialog(10010862, anchor_entity=-1, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        10010862,
+        anchor_entity=-1,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
 
 
 def Event11500103():
@@ -1169,11 +1386,23 @@ def Event11500103():
     DisableNetworkSync()
     IfFlagOff(1, 11500102)
     IfPlayerDoesNotHaveGood(1, 2003, including_box=False)
-    IfDialogPromptActivated(1, prompt_text=10010400, anchor_entity=1501011, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=2.0, model_point=105, human_or_hollow_only=False)
+    IfActionButton(
+        1,
+        prompt_text=10010400,
+        anchor_entity=1501011,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        model_point=105,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfConditionTrue(0, input_condition=1)
-    DisplayDialog(10010163, anchor_entity=-1, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        10010163,
+        anchor_entity=-1,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     Restart()
 
 
@@ -1181,11 +1410,24 @@ def Event11500106():
     """ 11500106: Event 11500106 """
     DisableNetworkSync()
     IfFlagOff(1, 11500105)
-    IfDialogPromptActivated(1, prompt_text=10010400, anchor_entity=1501001, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=101, human_or_hollow_only=False)
+    IfActionButton(
+        1,
+        prompt_text=10010400,
+        anchor_entity=1501001,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=101,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfConditionTrue(0, input_condition=1)
-    DisplayDialog(10010161, anchor_entity=1501001, display_distance=3.0, button_type=ButtonType.OK_or_Cancel, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        10010161,
+        anchor_entity=1501001,
+        display_distance=3.0,
+        button_type=ButtonType.OK_or_Cancel,
+        number_buttons=NumberButtons.NoButton,
+    )
     Restart()
 
 
@@ -1195,8 +1437,16 @@ def Event11500107():
     EndOfAnimation(1501001, 0)
     End()
     IfFlagOff(1, 11500105)
-    IfDialogPromptActivated(1, prompt_text=10010400, anchor_entity=1501001, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=100, human_or_hollow_only=False)
+    IfActionButton(
+        1,
+        prompt_text=10010400,
+        anchor_entity=1501001,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=100,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfConditionTrue(0, input_condition=1)
     EnableFlag(11500105)
     Move(PLAYER, destination=1501001, destination_type=CoordEntityType.Object, model_point=120, short_move=True)
@@ -1204,7 +1454,7 @@ def Event11500107():
     ForceAnimation(1501001, 0)
 
 
-def Event11500110(arg_0_3: int, arg_4_7: int):
+def Event11500110(_, arg_0_3: int, arg_4_7: int):
     """ 11500110: Event 11500110 """
     SkipLinesIfThisEventSlotOff(3)
     EndOfAnimation(arg_0_3, 0)
@@ -1215,14 +1465,24 @@ def Event11500110(arg_0_3: int, arg_4_7: int):
     EndIfClient()
     IfPlayerHasGood(1, 2003, including_box=False)
     SkipLinesIfConditionTrue(2, 1)
-    DisplayDialog(10010883, anchor_entity=arg_0_3, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        10010883,
+        anchor_entity=arg_0_3,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     SkipLines(1)
-    DisplayDialog(10010862, anchor_entity=arg_0_3, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        10010862,
+        anchor_entity=arg_0_3,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
 
 
-def Event11505270(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int, arg_20_23: int):
+def Event11505270(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int, arg_20_23: int):
     """ 11505270: Event 11505270 """
     SkipLinesIfFlagOff(2, arg_20_23)
     EndOfAnimation(arg_4_7, 0)
@@ -1231,18 +1491,39 @@ def Event11505270(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg
     IfObjectDamagedBy(-1, arg_4_7, attacker=-1)
     IfConditionTrue(0, input_condition=-1)
     EnableFlag(arg_20_23)
-    CreateTemporaryFX(150005, anchor_entity=arg_4_7, anchor_type=CoordEntityType.Object, model_point=101)
-    DeleteFX(arg_8_11, erase_root_only=False)
+    CreateTemporaryVFX(150005, anchor_entity=arg_4_7, anchor_type=CoordEntityType.Object, model_point=101)
+    DeleteVFX(arg_8_11, erase_root_only=False)
     ForceAnimation(arg_4_7, 0, wait_for_completion=True)
     SkipLinesIfEqual(5, left=arg_20_23, right=11505284)
-    ShootProjectile(owner_entity=1500200, projectile_id=arg_12_15, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=arg_16_19, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=arg_12_15,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=arg_16_19,
+        launch_angle_z=0,
+    )
     Wait(0.699999988079071)
-    ShootProjectile(owner_entity=1500200, projectile_id=arg_12_15, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=arg_16_19, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=arg_12_15,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=arg_16_19,
+        launch_angle_z=0,
+    )
     Wait(0.699999988079071)
-    ShootProjectile(owner_entity=1500200, projectile_id=arg_12_15, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=arg_16_19, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=arg_12_15,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=arg_16_19,
+        launch_angle_z=0,
+    )
     IfTrueFlagCountGreaterThanOrEqual(0, 2, (11505280, 11505285))
     DisableFlag(arg_20_23)
     ForceAnimation(arg_4_7, 1, wait_for_completion=True)
@@ -1253,32 +1534,116 @@ def Event11505260():
     """ 11505260: Event 11505260 """
     IfFlagOn(0, 11505284)
     Wait(0.699999988079071)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501214, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501215, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501216, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501217, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501214,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501215,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501216,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501217,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
     Wait(0.699999988079071)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501214, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501215, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501216, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501217, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501214,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501215,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501216,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501217,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
     Wait(0.699999988079071)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501214, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501215, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501216, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
-    ShootProjectile(owner_entity=1500200, projectile_id=1501217, model_point=101, behavior_id=5070, launch_angle_x=0, 
-                    launch_angle_y=180, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501214,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501215,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501216,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1501217,
+        model_point=101,
+        behavior_id=5070,
+        launch_angle_x=0,
+        launch_angle_y=180,
+        launch_angle_z=0,
+    )
     IfFlagOff(0, 11505284)
     Restart()
 
@@ -1289,7 +1654,7 @@ def Event11505050():
     EndIfThisEventOn()
     DisableAI(1500101)
     IfCharacterInsideRegion(-1, PLAYER, region=1502101)
-    IfAttacked(-1, 1500101, attacking_character=PLAYER)
+    IfAttacked(-1, 1500101, attacker=PLAYER)
     IfConditionTrue(0, input_condition=-1)
     EnableFlag(11505050)
     IfFlagOff(0, 11505052)
@@ -1305,7 +1670,7 @@ def Event11505051():
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(0, input_condition=-1)
     EndIfFinishedConditionTrue(1)
-    Move(1500101, destination=1502100, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1500101, destination=1502100, destination_type=CoordEntityType.Region, short_move=True)
     ForceAnimation(1500101, 9001, wait_for_completion=True)
     DisableFlag(11505052)
     Restart()
@@ -1355,77 +1720,126 @@ def Event11505110():
     IfConditionTrue(-1, input_condition=7)
     IfConditionTrue(0, input_condition=-1)
     SkipLinesIfFinishedConditionFalse(8, 6)
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5305, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5305,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
     SkipLinesIfFinishedConditionFalse(8, 5)
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5304, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5304,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
     SkipLinesIfFinishedConditionFalse(8, 4)
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5303, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5303,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
     SkipLinesIfFinishedConditionFalse(8, 3)
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5302, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5302,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
     SkipLinesIfFinishedConditionFalse(8, 2)
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5301, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5301,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
     SkipLinesIfFinishedConditionFalse(8, 1)
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5300, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5300,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
-    ShootProjectile(owner_entity=1500200, projectile_id=1500100, model_point=50, behavior_id=5304, launch_angle_x=0, 
-                    launch_angle_y=0, launch_angle_z=0)
+    ShootProjectile(
+        owner_entity=1500200,
+        projectile_id=1500100,
+        model_point=50,
+        behavior_id=5304,
+        launch_angle_x=0,
+        launch_angle_y=0,
+        launch_angle_z=0,
+    )
     DisableFlagRange((11505111, 11505116))
     AICommand(1500100, command_id=-1, slot=2)
     DisableFlag(11505105)
-    RestartEvent(11505102, slot=0)
+    RestartEvent(11505102)
     Wait(1.0)
     DisableFlag(11505100)
     Restart()
 
 
-def Event11505111(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11505111(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11505111: Event 11505111 """
     IfFlagOff(1, 11505100)
     IfFlagOff(1, 11505105)
@@ -1472,7 +1886,7 @@ def Event11505102():
 
 
 @RestartOnRest
-def Event11505060(arg_0_3: int):
+def Event11505060(_, arg_0_3: int):
     """ 11505060: Event 11505060 """
     IfHasTAEEvent(0, arg_0_3, tae_event_id=500)
     EzstateAIRequest(arg_0_3, command_id=1500, slot=0)
@@ -1481,7 +1895,7 @@ def Event11505060(arg_0_3: int):
 
 
 @RestartOnRest
-def Event11505070(arg_0_3: int):
+def Event11505070(_, arg_0_3: int):
     """ 11505070: Event 11505070 """
     DisableNetworkSync()
     IfHasTAEEvent(0, arg_0_3, tae_event_id=1400)
@@ -1496,7 +1910,7 @@ def Event11505080():
     SkipLinesIfThisEventOff(2)
     ResetStandbyAnimationSettings(1500122)
     End()
-    IfAttacked(-1, 1500122, attacking_character=PLAYER)
+    IfAttacked(-1, 1500122, attacker=PLAYER)
     IfHealthNotEqual(-1, 1500122, 1.0)
     IfConditionTrue(0, input_condition=-1)
     ResetStandbyAnimationSettings(1500122)
@@ -1511,12 +1925,24 @@ def Event11505010():
     IfCharacterHasSpecialEffect(1, 1500010, 5421)
     IfCharacterType(2, PLAYER, CharacterType.BlackPhantom)
     IfConditionFalse(1, input_condition=2)
-    IfDialogPromptActivated(1, prompt_text=10010400, anchor_entity=1500010, anchor_type=CoordEntityType.Character, 
-                            facing_angle=45.0, max_distance=1.2000000476837158, model_point=7, 
-                            human_or_hollow_only=False)
+    IfActionButton(
+        1,
+        prompt_text=10010400,
+        anchor_entity=1500010,
+        anchor_type=CoordEntityType.Character,
+        facing_angle=45.0,
+        max_distance=1.2000000476837158,
+        model_point=7,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfConditionTrue(0, input_condition=1)
-    Move(PLAYER, destination=1500010, destination_type=CoordEntityType.Character, model_point=100, 
-         copy_draw_parent=1500010)
+    Move(
+        PLAYER,
+        destination=1500010,
+        destination_type=CoordEntityType.Character,
+        model_point=100,
+        copy_draw_parent=1500010,
+    )
     ForceAnimation(PLAYER, 7521)
     AICommand(1500010, command_id=10, slot=0)
     ReplanAI(1500010)
@@ -1529,7 +1955,7 @@ def Event11505010():
 def Event11505011():
     """ 11505011: Event 11505011 """
     IfCharacterDoesNotHaveSpecialEffect(1, 1500010, 5420)
-    IfAttacked(1, 1500010, attacking_character=PLAYER)
+    IfAttacked(1, 1500010, attacker=PLAYER)
     IfConditionTrue(0, input_condition=1)
     CancelSpecialEffect(1500010, 3150)
     CancelSpecialEffect(1500010, 3151)
@@ -1617,7 +2043,7 @@ def Event11505014():
     AddSpecialEffect(1500010, 5421)
     ClearTargetList(1500010)
     ReplanAI(1500010)
-    Move(1500010, destination=1502010, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1500010, destination=1502010, destination_type=CoordEntityType.Region, short_move=True)
     IfCharacterBackreadEnabled(0, 1500010)
     Restart()
 
@@ -1649,24 +2075,35 @@ def Event11500210():
     IfInsideMap(0, game_map=SENS_FORTRESS)
     IfTimeElapsed(0, 5.0)
     IfFlagOn(0, 11)
-    IfDialogPromptActivated(0, prompt_text=10010120, anchor_entity=1502505, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True)
+    IfActionButton(0, prompt_text=10010120, anchor_entity=1502505, anchor_type=CoordEntityType.Region)
     DisableBackread(1500201)
     WaitFrames(1)
     SkipLinesIfFlagOn(2, 11510400)
-    PlayCutscene(150000, skippable=True, fade_out=False, player_id=PLAYER, move_to_region=1502501, 
-                 move_to_map=ANOR_LONDO)
+    PlayCutscene(
+        150000,
+        skippable=True,
+        fade_out=False,
+        player_id=PLAYER,
+        move_to_region=1502501,
+        move_to_map=ANOR_LONDO,
+    )
     SkipLines(2)
     SetMapDrawParamSlot(15, slot=2)
-    PlayCutscene(150002, skippable=True, fade_out=False, player_id=PLAYER, move_to_region=1502501, 
-                 move_to_map=ANOR_LONDO)
+    PlayCutscene(
+        150002,
+        skippable=True,
+        fade_out=False,
+        player_id=PLAYER,
+        move_to_region=1502501,
+        move_to_map=ANOR_LONDO,
+    )
     WaitFrames(1)
     AwardAchievement(33)
     Restart()
 
 
 @RestartOnRest
-def Event11500860(arg_0_3: int):
+def Event11500860(_, arg_0_3: int):
     """ 11500860: Event 11500860 """
     SkipLinesIfThisEventSlotOff(3)
     DisableCharacter(arg_0_3)
@@ -1676,7 +2113,7 @@ def Event11500860(arg_0_3: int):
     End()
 
 
-def Event11500600(arg_0_3: int, arg_4_7: int):
+def Event11500600(_, arg_0_3: int, arg_4_7: int):
     """ 11500600: Event 11500600 """
     SkipLinesIfThisEventSlotOff(4)
     EndOfAnimation(arg_0_3, 0)
@@ -1689,11 +2126,11 @@ def Event11500600(arg_0_3: int, arg_4_7: int):
     EnableTreasure(arg_0_3)
 
 
-def Event11500510(arg_0_3: int, arg_4_7: int):
+def Event11500510(_, arg_0_3: int, arg_4_7: int):
     """ 11500510: Event 11500510 """
     IfHealthLessThanOrEqual(1, arg_0_3, 0.8999999761581421)
     IfHealthGreaterThan(1, arg_0_3, 0.0)
-    IfAttacked(1, arg_0_3, attacking_character=PLAYER)
+    IfAttacked(1, arg_0_3, attacker=PLAYER)
     IfFlagOn(2, arg_4_7)
     IfThisEventSlotOn(2)
     IfFlagOn(3, arg_4_7)
@@ -1710,7 +2147,7 @@ def Event11500510(arg_0_3: int, arg_4_7: int):
     SaveRequest()
 
 
-def Event11500520(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500520(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500520: Event 11500520 """
     SkipLinesIfThisEventSlotOff(2)
     DropMandatoryTreasure(arg_0_3)
@@ -1731,7 +2168,7 @@ def Event11500530():
     DisableFlag(71500021)
 
 
-def Event11500531(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500531(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500531: Event 11500531 """
     IfFlagOff(1, 1096)
     IfFlagOn(1, 1090)
@@ -1742,7 +2179,7 @@ def Event11500531(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     EnableFlag(arg_12_15)
 
 
-def Event11500532(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500532(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500532: Event 11500532 """
     IfFlagOff(1, 1096)
     IfFlagOn(1, 1092)
@@ -1754,7 +2191,7 @@ def Event11500532(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     DisableCharacter(arg_0_3)
 
 
-def Event11500533(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500533(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500533: Event 11500533 """
     IfFlagOff(1, 1114)
     IfFlagOn(1, 1113)
@@ -1766,7 +2203,7 @@ def Event11500533(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     EnableCharacter(arg_0_3)
 
 
-def Event11500534(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500534(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500534: Event 11500534 """
     IfFlagOff(1, 1512)
     IfFlagOn(1, 1490)
@@ -1775,13 +2212,13 @@ def Event11500534(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     IfConditionTrue(0, input_condition=1)
     DisableFlagRange((arg_4_7, arg_8_11))
     EnableFlag(arg_12_15)
-    Move(arg_0_3, destination=1502510, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1503300)
+    Move(arg_0_3, destination=1502510, destination_type=CoordEntityType.Region, set_draw_parent=1503300)
     SetNest(arg_0_3, 1502510)
     Kill(1500120, award_souls=False)
     Kill(1500121, award_souls=False)
 
 
-def Event11500535(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500535(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500535: Event 11500535 """
     IfFlagOff(1, 1512)
     IfFlagOn(1, 1490)
@@ -1790,13 +2227,13 @@ def Event11500535(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     IfConditionTrue(0, input_condition=1)
     DisableFlagRange((arg_4_7, arg_8_11))
     EnableFlag(arg_12_15)
-    Move(arg_0_3, destination=1502510, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1503300)
+    Move(arg_0_3, destination=1502510, destination_type=CoordEntityType.Region, set_draw_parent=1503300)
     SetNest(arg_0_3, 1502510)
     Kill(1500120, award_souls=False)
     Kill(1500121, award_souls=False)
 
 
-def Event11500536(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11500536(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11500536: Event 11500536 """
     IfHost(1)
     IfFlagOff(1, 1512)
@@ -1835,7 +2272,7 @@ def Event11505030():
     PlaceSummonSign(SummonSignType.BlueEyeSign, 6510, region=1502000, summon_flag=11505031, dismissal_flag=11505033)
 
 
-def Event11505990(arg_0_3: int, arg_4_7: int):
+def Event11505990(_, arg_0_3: int, arg_4_7: int):
     """ 11505990: Event 11505990 """
     IfFlagOn(0, arg_0_3)
     EraseNPCSummonSign(summoned_character=arg_4_7)
@@ -1853,7 +2290,7 @@ def Event11505029():
     SkipLinesIfConditionTrue(1, 2)
     DisableCharacter(6510)
     EndIfFlagOn(11)
-    IfMultiplayerCount(condition=1, arg1=4, arg2=3)
+    IfMultiplayerCount(1, arg1=4, arg2=3)
     IfHost(1)
     IfFlagOff(1, 11505031)
     IfFlagOff(1, 11505033)
@@ -1880,14 +2317,19 @@ def Event11505032():
     ReplanAI(6510)
 
 
-def Event11505843(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11505843(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11505843: Event 11505843 """
     IfHost(1)
     IfMultiplayer(1)
     IfFlagOn(1, arg_0_3)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=arg_8_11, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=arg_4_7, 
-                            boss_version=True)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=arg_8_11,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=arg_4_7,
+        boss_version=True,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, arg_12_15)
     ForceAnimation(PLAYER, 7410, wait_for_completion=True)
@@ -1895,7 +2337,7 @@ def Event11505843(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     Restart()
 
 
-def Event11505846(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11505846(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11505846: Event 11505846 """
     IfMultiplayer(-1)
     IfUnknownPlayerType5(-1)
@@ -1903,11 +2345,11 @@ def Event11505846(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     IfFlagOn(1, arg_0_3)
     IfConditionTrue(0, input_condition=1)
     EnableObject(arg_4_7)
-    CreateFX(arg_8_11)
+    CreateVFX(arg_8_11)
     IfUnknownPlayerType5(3)
     IfConditionFalse(2, input_condition=3)
     IfSingleplayer(2)
     IfConditionTrue(0, input_condition=2)
     DisableObject(arg_4_7)
-    DeleteFX(arg_8_11, erase_root_only=True)
+    DeleteVFX(arg_8_11, erase_root_only=True)
     Restart()

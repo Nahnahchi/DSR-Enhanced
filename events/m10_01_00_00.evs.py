@@ -5,7 +5,7 @@ linked:
 strings:
 
 """
-from soulstruct.events.darksouls1 import *
+from soulstruct.darksouls1r.events import *
 
 
 def Constructor():
@@ -15,35 +15,36 @@ def Constructor():
     RunEvent(11010997)
     RunEvent(11010998)
     RunEvent(11010999)
+    CapraDemon_Start()
     DisableFlag(11010580)
     SkipLinesIfFlagOff(2, 61010610)
     EndOfAnimation(1011101, 2)
     EnableNavmeshType(1013100, NavmeshType.Solid)
     SkipLinesIfClient(24)
     DisableObject(1011994)
-    DeleteFX(1011995, erase_root_only=False)
+    DeleteVFX(1011995, erase_root_only=False)
     DisableObject(1011996)
-    DeleteFX(1011997, erase_root_only=False)
+    DeleteVFX(1011997, erase_root_only=False)
     DisableObject(1011998)
-    DeleteFX(1011999, erase_root_only=False)
+    DeleteVFX(1011999, erase_root_only=False)
     DisableObject(1011988)
-    DeleteFX(1011989, erase_root_only=False)
+    DeleteVFX(1011989, erase_root_only=False)
     DisableObject(1011986)
-    DeleteFX(1011987, erase_root_only=False)
+    DeleteVFX(1011987, erase_root_only=False)
     DisableObject(1011984)
-    DeleteFX(1011985, erase_root_only=False)
+    DeleteVFX(1011985, erase_root_only=False)
     DisableObject(1011982)
-    DeleteFX(1011983, erase_root_only=False)
+    DeleteVFX(1011983, erase_root_only=False)
     DisableObject(1011980)
-    DeleteFX(1011981, erase_root_only=False)
+    DeleteVFX(1011981, erase_root_only=False)
     DisableObject(1011978)
-    DeleteFX(1011979, erase_root_only=False)
+    DeleteVFX(1011979, erase_root_only=False)
     DisableObject(1011976)
-    DeleteFX(1011977, erase_root_only=False)
+    DeleteVFX(1011977, erase_root_only=False)
     DisableObject(1011974)
-    DeleteFX(1011975, erase_root_only=False)
+    DeleteVFX(1011975, erase_root_only=False)
     DisableObject(1011972)
-    DeleteFX(1011973, erase_root_only=False)
+    DeleteVFX(1011973, erase_root_only=False)
     RunEvent(11010090, slot=0, args=(1011700, 1011701, 1012600, 1012601))
     RunEvent(11010090, slot=1, args=(1011702, 1011703, 1012602, 1012603))
     RunEvent(11015070)
@@ -66,8 +67,8 @@ def Constructor():
     RunEvent(11010190, slot=0, args=(11010190, 10010876, 1011308, 10010883, 2017))
     RunEvent(11010190, slot=1, args=(11010191, 10010878, 1011315, 10010883, 2019))
     RunEvent(11010190, slot=2, args=(11010192, 10010878, 1011316, 10010883, 2019))
-    RunEvent(11010101, slot=0, args=(1011320, 1, 101, 121, 7110), arg_types='iihii')
-    RunEvent(11010102, slot=0, args=(11010142, 1011320, 100), arg_types='iih')
+    RunEvent(11010101, slot=0, args=(1011320, 1, 101, 121, 7110), arg_types="iihii")
+    RunEvent(11010102, slot=0, args=(11010142, 1011320, 100), arg_types="iih")
     RunEvent(11015185)
     RunEvent(11010611)
     RunEvent(11010600)
@@ -89,9 +90,9 @@ def Constructor():
     SkipLinesIfFlagOff(6, 3)
     RunEvent(11015392)
     DisableObject(1011990)
-    DeleteFX(1011991, erase_root_only=False)
+    DeleteVFX(1011991, erase_root_only=False)
     DisableObject(1011992)
-    DeleteFX(1011993, erase_root_only=False)
+    DeleteVFX(1011993, erase_root_only=False)
     SkipLines(11)
     RunEvent(11010000)
     RunEvent(11015390)
@@ -104,15 +105,15 @@ def Constructor():
     RunEvent(11015396)
     RunEvent(11010750, slot=0, args=(1010800, 53500000))
     RunEvent(11010750, slot=1, args=(1010801, 53500100))
-    RunEvent(11015397, slot=0, args=(1010800, 5350, 5350, 1010810), arg_types='ihii')
+    RunEvent(11015397, slot=0, args=(1010800, 5350, 5350, 1010810), arg_types="ihii")
     RunEvent(11015398, slot=0, args=(1010801, 1010811))
     DisableSoundEvent(1013802)
     SkipLinesIfFlagOff(6, 11010901)
     RunEvent(11010901)
     DisableObject(1011890)
-    DeleteFX(1011891, erase_root_only=False)
+    DeleteVFX(1011891, erase_root_only=False)
     DisableObject(1011892)
-    DeleteFX(1011893, erase_root_only=False)
+    DeleteVFX(1011893, erase_root_only=False)
     SkipLines(8)
     RunEvent(11015380)
     RunEvent(11015381)
@@ -126,7 +127,7 @@ def Constructor():
     SkipLinesIfFlagOff(4, 11010902)
     RunEvent(11010902)
     DisableObject(1011790)
-    DeleteFX(1011791, erase_root_only=False)
+    DeleteVFX(1011791, erase_root_only=False)
     SkipLines(7)
     RunEvent(11015370)
     RunEvent(11015371)
@@ -167,12 +168,12 @@ def Constructor():
     RunEvent(11010200, slot=7, args=(80, 7008))
     RunEvent(11010200, slot=8, args=(90, 7009))
     RunEvent(11010200, slot=9, args=(100, 7011))
-    RunEvent(11015250, slot=0, args=(1010250, 1010250, 5.0, 0.0), arg_types='iiff')
-    RunEvent(11015250, slot=1, args=(1010251, 1010250, 5.5, 0.0), arg_types='iiff')
-    RunEvent(11015250, slot=2, args=(1010260, 1010260, 5.0, 0.0), arg_types='iiff')
-    RunEvent(11015250, slot=3, args=(1010261, 1010260, 4.0, 0.0), arg_types='iiff')
-    RunEvent(11015250, slot=4, args=(1010262, 1010260, 3.0, 0.0), arg_types='iiff')
-    RunEvent(11015250, slot=5, args=(1010263, 1010260, 3.0, 0.0), arg_types='iiff')
+    RunEvent(11015250, slot=0, args=(1010250, 1010250, 5.0, 0.0), arg_types="iiff")
+    RunEvent(11015250, slot=1, args=(1010251, 1010250, 5.5, 0.0), arg_types="iiff")
+    RunEvent(11015250, slot=2, args=(1010260, 1010260, 5.0, 0.0), arg_types="iiff")
+    RunEvent(11015250, slot=3, args=(1010261, 1010260, 4.0, 0.0), arg_types="iiff")
+    RunEvent(11015250, slot=4, args=(1010262, 1010260, 3.0, 0.0), arg_types="iiff")
+    RunEvent(11015250, slot=5, args=(1010263, 1010260, 3.0, 0.0), arg_types="iiff")
     RunEvent(11010130, slot=0, args=(1011250, 1010150, 1012150))
     RunEvent(11010130, slot=1, args=(1011251, 1010151, 1012150))
     RunEvent(11010130, slot=2, args=(1011252, 1010152, 1012150))
@@ -224,7 +225,7 @@ def Preconstructor():
     DisableCharacter(6001)
     SkipLinesIfFlagOn(1, 11510594)
     SkipLines(1)
-    Move(6001, destination=1012530, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1013050)
+    Move(6001, destination=1012530, destination_type=CoordEntityType.Region, set_draw_parent=1013050)
     RunEvent(11010510, slot=0, args=(6001, 1004))
     RunEvent(11010520, slot=0, args=(6001, 1000, 1029, 1005))
     RunEvent(11010530, slot=0, args=(6001, 1000, 1029, 1001))
@@ -273,21 +274,33 @@ def Preconstructor():
 
 def WT_BossBuff():
     """ 11010992: Dark World Tendency boss buff """
-    IfFlagOn(1, 11027997)    
-    IfConditionTrue(0, 1)
+    IfFlagOn(1, 11027997)
+    IfConditionTrue(0, input_condition=1)
     AddSpecialEffect(1010700, 7100)
     AddSpecialEffect(1010750, 7100)
     AddSpecialEffect(1010800, 7100)
     AddSpecialEffect(1010801, 7100)
     AddSpecialEffect(1010802, 7100)
-    IfFlagOff(2, 11027997)    
-    IfConditionTrue(0, 2)
+    IfFlagOff(2, 11027997)
+    IfConditionTrue(0, input_condition=2)
     CancelSpecialEffect(1010700, 7100)
     CancelSpecialEffect(1010750, 7100)
     CancelSpecialEffect(1010800, 7100)
     CancelSpecialEffect(1010801, 7100)
     CancelSpecialEffect(1010802, 7100)
     Restart()
+
+
+def CapraDemon_Start():
+    """ 11010993: Start CD bossfight """
+    IfPlayerInsideRegion(0, region=1012886)
+    DisableObject(1011790)
+    ForceAnimation(entity=1010750, animation_id=200, loop=True)
+    PlaySoundEffect(anchor_entity=1010750, sound_type=SoundType.s_SFX, sound_id=777777773)
+    Wait(1.5)
+    EnableObject(1011790)
+    Wait(1.5)
+    ForceAnimation(entity=1010750, animation_id=-1)
 
 
 def Anon_Despawn():
@@ -299,16 +312,16 @@ def Anon_Despawn():
     IfFlagOn(-1, 11017910)
     IfFlagOn(-1, 11017920)
     IfFlagOn(-1, 11017930)
-    IfConditionTrue(0, -1)
+    IfConditionTrue(0, input_condition=-1)
     EnableFlag(11012998)
 
 
 def Anon_Aggro():
     """ 11010997: Make the Anonymous hostile """
     SkipLinesIfFlagOn(5, 11012997)
-    IfAttacked(1, 62880, attacking_character=10000)
+    IfAttacked(1, 62880, attacker=PLAYER)
     IfHealthLessThanOrEqual(1, 62880, 0.75)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     EnableFlag(11012997)
     EnableFlag(744)
     SetTeamTypeAndExitStandbyAnimation(62880, TeamType.HostileAlly)
@@ -341,40 +354,73 @@ def Event11010008():
     RegisterLadder(start_climbing_flag=11010030, stop_climbing_flag=11010031, obj=1011150)
     RegisterLadder(start_climbing_flag=11010032, stop_climbing_flag=11010033, obj=1011151)
     RegisterLadder(start_climbing_flag=11010034, stop_climbing_flag=11010035, obj=1011152)
-    CreateHazard(11010300, 1011450, model_point=200, behavior_param_id=5000, target_type=DamageTargetType.Character, 
-                 radius=1.2000000476837158, life=0.0, repetition_time=1.0)
-    CreateHazard(11010308, 1011407, model_point=100, behavior_param_id=5000, target_type=DamageTargetType.Character, 
-                 radius=0.699999988079071, life=0.0, repetition_time=1.0)
-    CreateHazard(11010309, 1011408, model_point=100, behavior_param_id=5000, target_type=DamageTargetType.Character, 
-                 radius=0.699999988079071, life=0.0, repetition_time=1.0)
+    CreateHazard(
+        11010300,
+        1011450,
+        model_point=200,
+        behavior_param_id=5000,
+        target_type=DamageTargetType.Character,
+        radius=1.2000000476837158,
+        life=0.0,
+        repetition_time=1.0,
+    )
+    CreateHazard(
+        11010308,
+        1011407,
+        model_point=100,
+        behavior_param_id=5000,
+        target_type=DamageTargetType.Character,
+        radius=0.699999988079071,
+        life=0.0,
+        repetition_time=1.0,
+    )
+    CreateHazard(
+        11010309,
+        1011408,
+        model_point=100,
+        behavior_param_id=5000,
+        target_type=DamageTargetType.Character,
+        radius=0.699999988079071,
+        life=0.0,
+        repetition_time=1.0,
+    )
 
 
-def Event11010090(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010090(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010090: Event 11010090 """
     SkipLinesIfThisEventSlotOff(3)
     DisableObject(arg_0_3)
-    DeleteFX(arg_4_7, erase_root_only=False)
+    DeleteVFX(arg_4_7, erase_root_only=False)
     End()
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=arg_8_11, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=arg_0_3)
-    IfDialogPromptActivated(2, prompt_text=10010407, anchor_entity=arg_12_15, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=arg_0_3)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=arg_8_11,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=arg_0_3,
+    )
+    IfActionButton(
+        2,
+        prompt_text=10010407,
+        anchor_entity=arg_12_15,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=arg_0_3,
+    )
     IfConditionTrue(-1, input_condition=1)
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(0, input_condition=-1)
     SkipLinesIfFinishedConditionTrue(2, 2)
-    Move(PLAYER, destination=arg_8_11, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(PLAYER, destination=arg_8_11, destination_type=CoordEntityType.Region, short_move=True)
     SkipLines(1)
-    Move(PLAYER, destination=arg_12_15, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(PLAYER, destination=arg_12_15, destination_type=CoordEntityType.Region, short_move=True)
     ForceAnimation(PLAYER, 7410)
     DisableObject(arg_0_3)
-    DeleteFX(arg_4_7, erase_root_only=True)
+    DeleteVFX(arg_4_7, erase_root_only=True)
 
 
 @RestartOnRest
-def WT_SpawnPhantoms():
-    """ 11015070: Spawn Phantom enemies """
-    #EndIfThisEventOn()
+def Event11015070():
+    """ 11015070: Event 11015070 """
     SkipLinesIfFlagOn(13, 11007999)
     DisableCharacter(1010900)
     DisableCharacter(1010901)
@@ -389,45 +435,19 @@ def WT_SpawnPhantoms():
     DisableCharacter(1010910)
     DisableCharacter(1010911)
     DisableCharacter(1010912)
-    #IfFlagOn(0, 11010050)
-    #EndIfFlagOn(735)
-    #EnableFlag(5000)
-    IfFlagOn(-1, 744)
     IfFlagOn(-1, 742)
     IfFlagOff(1, 11007999)
-    IfConditionTrue(1, -1)
+    IfConditionTrue(1, input_condition=-1)
     EndIfConditionFalse(1)
     EnableFlag(11007999)
-    EnableCharacter(1010900)
-    EnableCharacter(1010901)
-    EnableCharacter(1010902)
-    EnableCharacter(1010903)
-    EnableCharacter(1010904)
-    EnableCharacter(1010905)
-    EnableCharacter(1010906)
-    EnableCharacter(1010907)
-    EnableCharacter(1010908)
-    EnableCharacter(1010909)
-    EnableCharacter(1010910)
-    EnableCharacter(1010911)
-    EnableCharacter(1010912)
 
 
 @RestartOnRest
-def WT_KillPhantoms():
-    """ 11015071: Kill Phantom enemies """
-    #IfFlagOn(-1, 11015075)
-    #IfFlagOn(-1, 735)
-    #IfConditionTrue(0, input_condition=-1)
-    #SkipLinesIfFlagOff(1, 735)
-    #DisableFlag(735)
-    #DisableFlag(11010050)
-    #DisableFlag(11015075)
-    #EnableFlag(5001)
-    IfFlagOff(1, 744)
+def Event11015071():
+    """ 11015071: Event 11015071 """
     IfFlagOff(1, 742)
     IfFlagOn(1, 11007999)
-    IfConditionTrue(0, 1)
+    IfConditionTrue(0, input_condition=1)
     DisableFlag(11007999)
     Kill(1010900, award_souls=False)
     Kill(1010901, award_souls=False)
@@ -522,9 +542,14 @@ def Event11010000():
 def Event11015390():
     """ 11015390: Event 11015390 """
     IfFlagOff(1, 3)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1012998, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=1011990, 
-                            boss_version=True)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1012998,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=1011990,
+        boss_version=True,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1012997)
     ForceAnimation(PLAYER, 7410)
@@ -536,8 +561,14 @@ def Event11015391():
     IfFlagOff(1, 3)
     IfFlagOn(1, 11015393)
     IfCharacterType(1, PLAYER, CharacterType.WhitePhantom)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1012998, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=False, line_intersects=1011990)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1012998,
+        anchor_type=CoordEntityType.Region,
+        trigger_attribute=TriggerAttribute.All,
+        line_intersects=1011990,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1012997)
     ForceAnimation(PLAYER, 7410)
@@ -596,9 +627,9 @@ def Event11010001():
     PlaySoundEffect(anchor_entity=1010801, sound_type=SoundType.s_SFX, sound_id=777777777)
     KillBoss(1010800)
     DisableObject(1011990)
-    DeleteFX(1011991, erase_root_only=True)
+    DeleteVFX(1011991, erase_root_only=True)
     DisableObject(1011992)
-    DeleteFX(1011993, erase_root_only=True)
+    DeleteVFX(1011993, erase_root_only=True)
 
 
 def Event11015394():
@@ -635,7 +666,7 @@ def Event11015396():
     DisableHealthBar(1010801)
     IfHealthLessThanOrEqual(0, 1010800, 0.6000000238418579)
     ResetStandbyAnimationSettings(1010801)
-    Move(1010801, destination=1012650, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010801, destination=1012650, destination_type=CoordEntityType.Region, short_move=True)
     ForceAnimation(1010801, 7001, wait_for_completion=True)
     DisableInvincibility(1010801)
     EnableAI(1010801)
@@ -643,7 +674,7 @@ def Event11015396():
 
 
 @RestartOnRest
-def Event11015397(arg_0_3: int, arg_4_5: short, arg_8_11: int, arg_12_15: int):
+def Event11015397(_, arg_0_3: int, arg_4_5: short, arg_8_11: int, arg_12_15: int):
     """ 11015397: Event 11015397 """
     DisableCharacter(arg_12_15)
     SkipLinesIfThisEventSlotOff(5)
@@ -655,16 +686,29 @@ def Event11015397(arg_0_3: int, arg_4_5: short, arg_8_11: int, arg_12_15: int):
     IfFlagOn(1, 11015392)
     IfCharacterBackreadEnabled(1, arg_0_3)
     IfConditionTrue(0, input_condition=1)
-    CreateNPCPart(arg_0_3, npc_part_id=arg_4_5, part_index=NPCPartType.Part1, part_health=65, damage_correction=1.0, 
-                  body_damage_correction=1.0, is_invincible=False, start_in_stop_state=False)
+    CreateNPCPart(
+        arg_0_3,
+        npc_part_id=arg_4_5,
+        part_index=NPCPartType.Part1,
+        part_health=65,
+        damage_correction=1.0,
+        body_damage_correction=1.0,
+        is_invincible=False,
+        start_in_stop_state=False,
+    )
     IfCharacterPartHealthLessThanOrEqual(2, arg_0_3, npc_part_id=arg_8_11, value=0)
     IfHealthLessThanOrEqual(3, arg_0_3, 0.0)
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(-1, input_condition=3)
     IfConditionTrue(0, input_condition=-1)
     EndIfFinishedConditionTrue(3)
-    Move(arg_12_15, destination=arg_0_3, destination_type=CoordEntityType.Character, model_point=130, 
-         copy_draw_parent=arg_0_3)
+    Move(
+        arg_12_15,
+        destination=arg_0_3,
+        destination_type=CoordEntityType.Character,
+        model_point=130,
+        copy_draw_parent=arg_0_3,
+    )
     EnableCharacter(arg_12_15)
     ResetAnimation(arg_0_3, disable_interpolation=False)
     ForceAnimation(arg_0_3, 8000)
@@ -681,7 +725,7 @@ def Event11015397(arg_0_3: int, arg_4_5: short, arg_8_11: int, arg_12_15: int):
 
 
 @RestartOnRest
-def Event11015398(arg_0_3: int, arg_4_7: int):
+def Event11015398(_, arg_0_3: int, arg_4_7: int):
     """ 11015398: Event 11015398 """
     DisableCharacter(arg_4_7)
     IfCharacterBackreadEnabled(0, arg_0_3)
@@ -689,7 +733,7 @@ def Event11015398(arg_0_3: int, arg_4_7: int):
     SetCollisionMask(arg_0_3, bit_index=2, switch_type=OnOffChange.Off)
 
 
-def Event11010750(arg_0_3: int, arg_4_7: int):
+def Event11010750(_, arg_0_3: int, arg_4_7: int):
     """ 11010750: Event 11010750 """
     IfFlagOff(1, 3)
     IfCharacterAlive(1, arg_0_3)
@@ -704,9 +748,14 @@ def Event11010750(arg_0_3: int, arg_4_7: int):
 def Event11015380():
     """ 11015380: Event 11015380 """
     IfFlagOff(1, 11010901)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1012898, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=1011890, 
-                            boss_version=True)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1012898,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=1011890,
+        boss_version=True,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1012897)
     ForceAnimation(PLAYER, 7410)
@@ -718,8 +767,14 @@ def Event11015381():
     IfFlagOff(1, 11010901)
     IfFlagOn(1, 11015383)
     IfCharacterType(1, PLAYER, CharacterType.WhitePhantom)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1012898, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=False, line_intersects=1011890)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1012898,
+        anchor_type=CoordEntityType.Region,
+        trigger_attribute=TriggerAttribute.All,
+        line_intersects=1011890,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1012897)
     ForceAnimation(PLAYER, 7410)
@@ -747,7 +802,7 @@ def Event11015382():
     DisableAI(1010700)
     SetStandbyAnimationSettings(1010700, standby_animation=9001)
     DisableHealthBar(1010700)
-    IfAttacked(1, 1010700, attacking_character=PLAYER)
+    IfAttacked(1, 1010700, attacker=PLAYER)
     IfHost(2)
     IfCharacterInsideRegion(2, PLAYER, region=1012701)
     IfConditionTrue(-1, input_condition=1)
@@ -791,9 +846,9 @@ def Event11015386():
     IfConditionTrue(-1, input_condition=2)
     IfConditionTrue(0, input_condition=-1)
     SkipLinesIfFinishedConditionTrue(2, 2)
-    Move(1010700, destination=1012741, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010700, destination=1012741, destination_type=CoordEntityType.Region, short_move=True)
     SkipLines(1)
-    Move(1010700, destination=1012740, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010700, destination=1012740, destination_type=CoordEntityType.Region, short_move=True)
     Restart()
 
 
@@ -811,17 +866,22 @@ def Event11010901():
     EnableFlag(11010901)
     KillBoss(1010700)
     DisableObject(1011890)
-    DeleteFX(1011891, erase_root_only=True)
+    DeleteVFX(1011891, erase_root_only=True)
     DisableObject(1011892)
-    DeleteFX(1011893, erase_root_only=True)
+    DeleteVFX(1011893, erase_root_only=True)
 
 
 def Event11015370():
     """ 11015370: Event 11015370 """
     IfFlagOff(1, 11010902)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1012888, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=1011790, 
-                            boss_version=True)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1012888,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=1011790,
+        boss_version=True,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1012887)
     ForceAnimation(PLAYER, 7410, wait_for_completion=True)
@@ -833,8 +893,14 @@ def Event11015371():
     IfFlagOff(1, 11010902)
     IfFlagOn(1, 11015373)
     IfCharacterType(1, PLAYER, CharacterType.WhitePhantom)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=1012888, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=False, line_intersects=1011790)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=1012888,
+        anchor_type=CoordEntityType.Region,
+        trigger_attribute=TriggerAttribute.All,
+        line_intersects=1011790,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, 1012887)
     ForceAnimation(PLAYER, 7410)
@@ -847,6 +913,7 @@ def Event11015373():
     IfFlagOff(1, 11010902)
     IfCharacterInsideRegion(1, PLAYER, region=1012886)
     IfConditionTrue(0, input_condition=1)
+    Wait(3.0)
     SkipLinesIfClient(1)
     NotifyBossBattleStart()
     ActivateMultiplayerBuffs(1010750)
@@ -908,7 +975,7 @@ def Event11010902():
     EnableFlag(11010902)
     KillBoss(1010750)
     DisableObject(1011790)
-    DeleteFX(1011791, erase_root_only=True)
+    DeleteVFX(1011791, erase_root_only=True)
 
 
 @RestartOnRest
@@ -925,7 +992,7 @@ def Event11010903():
 def Event11015110():
     """ 11015110: Event 11015110 """
     SkipLinesIfThisEventOff(2)
-    PostDestruction(1011103, slot=1)
+    PostDestruction(1011103)
     End()
     DisableAI(1010102)
     IfEntityWithinDistance(1, PLAYER, 1010102, radius=5.0)
@@ -944,7 +1011,7 @@ def Event11015111():
     EndIfThisEventOn()
     DisableAI(1010110)
     IfCharacterInsideRegion(1, PLAYER, region=1012110)
-    IfAttacked(2, 1010110, attacking_character=PLAYER)
+    IfAttacked(2, 1010110, attacker=PLAYER)
     IfEntityWithinDistance(3, 1010110, PLAYER, radius=2.0)
     IfConditionTrue(-1, input_condition=1)
     IfConditionTrue(-1, input_condition=2)
@@ -961,7 +1028,7 @@ def Event11015113():
     EndIfThisEventOn()
     DisableAI(1010200)
     IfCharacterInsideRegion(-1, PLAYER, region=1012050)
-    IfAttacked(-1, 1010200, attacking_character=PLAYER)
+    IfAttacked(-1, 1010200, attacker=PLAYER)
     IfEntityWithinDistance(-1, 1010200, PLAYER, radius=5.0)
     IfConditionTrue(0, input_condition=-1)
     EnableAI(1010200)
@@ -972,7 +1039,7 @@ def Event11015112():
     """ 11015112: Event 11015112 """
     EndIfThisEventOn()
     DisableAI(1010111)
-    IfAttacked(-3, 1010111, attacking_character=PLAYER)
+    IfAttacked(-3, 1010111, attacker=PLAYER)
     IfCharacterInsideRegion(-3, PLAYER, region=1012122)
     IfConditionTrue(1, input_condition=-3)
     IfCharacterInsideRegion(2, PLAYER, region=1012121)
@@ -985,7 +1052,7 @@ def Event11015112():
     AICommand(1010111, command_id=10, slot=0)
     ReplanAI(1010111)
     IfCharacterInsideRegion(-2, PLAYER, region=1012122)
-    IfAttacked(-2, 1010111, attacking_character=PLAYER)
+    IfAttacked(-2, 1010111, attacker=PLAYER)
     IfConditionTrue(0, input_condition=-2)
     AICommand(1010111, command_id=-1, slot=0)
     ReplanAI(1010111)
@@ -1029,7 +1096,7 @@ def Event11010111():
     """ 11010111: Event 11010111 """
     EndIfThisEventOn()
     DisableAI(1010130)
-    IfAttacked(1, 1010130, attacking_character=PLAYER)
+    IfAttacked(1, 1010130, attacker=PLAYER)
     IfCharacterInsideRegion(2, PLAYER, region=1012170)
     IfConditionTrue(-1, input_condition=1)
     IfConditionTrue(-1, input_condition=2)
@@ -1041,7 +1108,7 @@ def Event11010111():
     DisableObjectActivation(1011318, obj_act_id=-1, relative_index=1)
     DisableObjectActivation(1011318, obj_act_id=-1, relative_index=2)
     DisableObjectActivation(1011318, obj_act_id=-1, relative_index=3)
-    Move(1010130, destination=1012171, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010130, destination=1012171, destination_type=CoordEntityType.Region, short_move=True)
     ForceAnimation(1010130, 7000)
     Wait(0.20000000298023224)
     ForceAnimation(1011318, 2, wait_for_completion=True)
@@ -1061,45 +1128,74 @@ def Event11010120():
     EndOfAnimation(1011102, 0)
     End()
     DisableAI(1010103)
-    IfAttacked(-1, 1010103, attacking_character=PLAYER)
+    IfAttacked(-1, 1010103, attacker=PLAYER)
     IfCharacterInsideRegion(-1, PLAYER, region=1012101)
     IfConditionTrue(0, input_condition=-1)
     DisableNetworkSync()
     ResetAnimation(1010103, disable_interpolation=False)
     ForceAnimation(1010103, 3006)
     Wait(0.5)
-    CreateObjectFX(100100, obj=1011102, model_point=1)
+    CreateObjectVFX(100100, obj=1011102, model_point=1)
     ForceAnimation(1011102, 0)
     Wait(0.5)
     EnableAI(1010103)
-    CreateHazard(11010121, 1011102, model_point=1, behavior_param_id=5020, target_type=DamageTargetType.Character, 
-                 radius=0.6000000238418579, life=3.0, repetition_time=0.0)
+    CreateHazard(
+        11010121,
+        1011102,
+        model_point=1,
+        behavior_param_id=5020,
+        target_type=DamageTargetType.Character,
+        radius=0.6000000238418579,
+        life=3.0,
+        repetition_time=0.0,
+    )
     Wait(3.0)
-    DeleteObjectFX(1011102, erase_root=True)
+    DeleteObjectVFX(1011102, erase_root=True)
 
 
-def Event11010101(arg_0_3: int, arg_4_7: int, arg_8_9: short, arg_12_15: int, arg_16_19: int):
+def Event11010101(_, arg_0_3: int, arg_4_7: int, arg_8_9: short, arg_12_15: int, arg_16_19: int):
     """ 11010101: Event 11010101 """
     SkipLinesIfThisEventSlotOff(2)
     EndOfAnimation(arg_0_3, arg_4_7)
     End()
-    IfDialogPromptActivated(0, prompt_text=10010400, anchor_entity=arg_0_3, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=arg_8_9, human_or_hollow_only=False)
+    IfActionButton(
+        0,
+        prompt_text=10010400,
+        anchor_entity=arg_0_3,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=arg_8_9,
+        trigger_attribute=TriggerAttribute.All,
+    )
     Move(PLAYER, destination=arg_0_3, destination_type=CoordEntityType.Object, model_point=arg_12_15, short_move=True)
     ForceAnimation(PLAYER, arg_16_19)
     ForceAnimation(arg_0_3, arg_4_7)
 
 
-def Event11010102(arg_0_3: int, arg_4_7: int, arg_8_9: short):
+def Event11010102(_, arg_0_3: int, arg_4_7: int, arg_8_9: short):
     """ 11010102: Event 11010102 """
     DisableNetworkSync()
     IfFlagOn(-1, arg_0_3)
-    IfDialogPromptActivated(-1, prompt_text=10010400, anchor_entity=arg_4_7, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=arg_8_9, human_or_hollow_only=False)
+    IfActionButton(
+        -1,
+        prompt_text=10010400,
+        anchor_entity=arg_4_7,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=arg_8_9,
+        trigger_attribute=TriggerAttribute.All,
+    )
     IfConditionTrue(0, input_condition=-1)
     EndIfFlagOn(arg_0_3)
-    DisplayDialog(10010161, anchor_entity=arg_4_7, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        10010161,
+        anchor_entity=arg_4_7,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     Restart()
 
 
@@ -1108,7 +1204,7 @@ def Event11010125():
     """ 11010125: Event 11010125 """
     EndIfThisEventOn()
     DisableCharacter(1010104)
-    Move(1010104, destination=1012130, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010104, destination=1012130, destination_type=CoordEntityType.Region, short_move=True)
     IfThisEventOn(0)
     EnableCharacter(1010104)
 
@@ -1122,7 +1218,7 @@ def Event11010126():
 
 
 @RestartOnRest
-def Event11010130(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11010130(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11010130: Event 11010130 """
     SkipLinesIfThisEventSlotOff(2)
     EndOfAnimation(arg_0_3, 2)
@@ -1136,7 +1232,7 @@ def Event11010130(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     ForceAnimation(arg_0_3, 2)
 
 
-def Event11010150(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11010150(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11010150: Event 11010150 """
     DisableNetworkSync()
     SkipLinesIfFlagOn(4, arg_0_3)
@@ -1152,7 +1248,7 @@ def Event11010150(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     Restart()
 
 
-def Event11010160(arg_0_3: int, arg_4_7: int):
+def Event11010160(_, arg_0_3: int, arg_4_7: int):
     """ 11010160: Event 11010160 """
     SkipLinesIfThisEventSlotOff(5)
     DisableObjectActivation(arg_4_7, obj_act_id=-1, relative_index=0)
@@ -1169,16 +1265,21 @@ def Event11010160(arg_0_3: int, arg_4_7: int):
     DisableObjectActivation(arg_4_7, obj_act_id=-1, relative_index=3)
 
 
-def Event11010180(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11010180(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11010180: Event 11010180 """
     EndIfThisEventSlotOn()
     IfObjectActivated(0, obj_act_id=arg_0_3)
     EndIfClient()
-    DisplayDialog(arg_4_7, anchor_entity=arg_8_11, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        arg_4_7,
+        anchor_entity=arg_8_11,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
 
 
-def Event11010170(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11010170(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11010170: Event 11010170 """
     SkipLinesIfThisEventSlotOff(5)
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=0)
@@ -1189,8 +1290,13 @@ def Event11010170(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     IfObjectActivated(0, obj_act_id=arg_0_3)
     EnableFlag(arg_0_3)
     EndIfClient()
-    DisplayDialog(arg_4_7, anchor_entity=arg_8_11, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        arg_4_7,
+        anchor_entity=arg_8_11,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     Wait(2.0)
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=0)
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=1)
@@ -1198,21 +1304,31 @@ def Event11010170(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=3)
 
 
-def Event11010140(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int):
+def Event11010140(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int):
     """ 11010140: Event 11010140 """
     EndIfThisEventSlotOn()
     IfObjectActivated(0, obj_act_id=arg_0_3)
     EndIfClient()
     IfPlayerHasGood(1, arg_16_19, including_box=False)
     SkipLinesIfConditionTrue(2, 1)
-    DisplayDialog(arg_12_15, anchor_entity=arg_8_11, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        arg_12_15,
+        anchor_entity=arg_8_11,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     SkipLines(1)
-    DisplayDialog(arg_4_7, anchor_entity=arg_8_11, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        arg_4_7,
+        anchor_entity=arg_8_11,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
 
 
-def Event11010190(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int):
+def Event11010190(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int):
     """ 11010190: Event 11010190 """
     SkipLinesIfThisEventSlotOff(5)
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=0)
@@ -1225,11 +1341,21 @@ def Event11010190(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg
     EndIfClient()
     IfPlayerHasGood(1, arg_16_19, including_box=False)
     SkipLinesIfConditionTrue(2, 1)
-    DisplayDialog(arg_12_15, anchor_entity=arg_8_11, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        arg_12_15,
+        anchor_entity=arg_8_11,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     SkipLines(1)
-    DisplayDialog(arg_4_7, anchor_entity=arg_8_11, display_distance=3.0, button_type=ButtonType.Yes_or_No, 
-                  number_buttons=NumberButtons.NoButton)
+    DisplayDialog(
+        arg_4_7,
+        anchor_entity=arg_8_11,
+        display_distance=3.0,
+        button_type=ButtonType.Yes_or_No,
+        number_buttons=NumberButtons.NoButton,
+    )
     Wait(2.0)
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=0)
     DisableObjectActivation(arg_8_11, obj_act_id=-1, relative_index=1)
@@ -1243,8 +1369,16 @@ def Event11010100():
     EndOfAnimation(1011149, 0)
     RegisterLadder(start_climbing_flag=11010028, stop_climbing_flag=11010029, obj=1011149)
     End()
-    IfDialogPromptActivated(0, prompt_text=10010500, anchor_entity=1011149, anchor_type=CoordEntityType.Object, 
-                            facing_angle=60.0, max_distance=1.5, model_point=194, human_or_hollow_only=False)
+    IfActionButton(
+        0,
+        prompt_text=10010500,
+        anchor_entity=1011149,
+        anchor_type=CoordEntityType.Object,
+        facing_angle=60.0,
+        max_distance=1.5,
+        model_point=194,
+        trigger_attribute=TriggerAttribute.All,
+    )
     EnableFlag(11010100)
     Move(PLAYER, destination=1011149, destination_type=CoordEntityType.Object, model_point=192, short_move=True)
     ForceAnimation(PLAYER, 8005)
@@ -1253,7 +1387,7 @@ def Event11010100():
     RegisterLadder(start_climbing_flag=11010028, stop_climbing_flag=11010029, obj=1011149)
 
 
-def Event11010400(arg_0_3: int, arg_4_7: int):
+def Event11010400(_, arg_0_3: int, arg_4_7: int):
     """ 11010400: Event 11010400 """
     SkipLinesIfThisEventSlotOff(3)
     EndOfAnimation(arg_0_3, 101)
@@ -1267,7 +1401,7 @@ def Event11010400(arg_0_3: int, arg_4_7: int):
 
 
 @RestartOnRest
-def Event11015250(arg_0_3: int, arg_4_7: int, arg_8_11: float, arg_12_15: float):
+def Event11015250(_, arg_0_3: int, arg_4_7: int, arg_8_11: float, arg_12_15: float):
     """ 11015250: Event 11015250 """
     SkipLinesIfThisEventSlotOff(2)
     ResetStandbyAnimationSettings(arg_0_3)
@@ -1343,12 +1477,36 @@ def Event11010601():
     IfFlagOn(0, 11010605)
     DisableFlag(11010605)
     Wait(0.5)
-    CreateHazard(11010602, 1011101, model_point=42, behavior_param_id=5010, target_type=DamageTargetType.Character, 
-                 radius=0.6000000238418579, life=0.5, repetition_time=0.0)
-    CreateHazard(11010603, 1011101, model_point=43, behavior_param_id=5010, target_type=DamageTargetType.Character, 
-                 radius=0.6000000238418579, life=0.5, repetition_time=0.0)
-    CreateHazard(11010604, 1011101, model_point=44, behavior_param_id=5010, target_type=DamageTargetType.Character, 
-                 radius=0.6000000238418579, life=0.5, repetition_time=0.0)
+    CreateHazard(
+        11010602,
+        1011101,
+        model_point=42,
+        behavior_param_id=5010,
+        target_type=DamageTargetType.Character,
+        radius=0.6000000238418579,
+        life=0.5,
+        repetition_time=0.0,
+    )
+    CreateHazard(
+        11010603,
+        1011101,
+        model_point=43,
+        behavior_param_id=5010,
+        target_type=DamageTargetType.Character,
+        radius=0.6000000238418579,
+        life=0.5,
+        repetition_time=0.0,
+    )
+    CreateHazard(
+        11010604,
+        1011101,
+        model_point=44,
+        behavior_param_id=5010,
+        target_type=DamageTargetType.Character,
+        radius=0.6000000238418579,
+        life=0.5,
+        repetition_time=0.0,
+    )
     Restart()
 
 
@@ -1383,7 +1541,7 @@ def Event11010609():
 def Event11010607():
     """ 11010607: Event 11010607 """
     SkipLinesIfThisEventOff(3)
-    Move(6010, destination=1012201, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(6010, destination=1012201, destination_type=CoordEntityType.Region, short_move=True)
     SetNest(6010, 1012201)
     End()
     IfCharacterInsideRegion(1, 6010, region=1012771)
@@ -1451,7 +1609,7 @@ def Event11015170():
 
 
 @RestartOnRest
-def Event11010860(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11010860(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11010860: Event 11010860 """
     SkipLinesIfThisEventSlotOff(3)
     DisableCharacter(arg_0_3)
@@ -1466,7 +1624,7 @@ def Event11010860(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     End()
 
 
-def Event11010650(arg_0_3: int, arg_4_7: int):
+def Event11010650(_, arg_0_3: int, arg_4_7: int):
     """ 11010650: Event 11010650 """
     SkipLinesIfThisEventSlotOff(4)
     EndOfAnimation(arg_0_3, 0)
@@ -1491,7 +1649,7 @@ def Event11010899():
     SkipLinesIfConditionFalse(6, 1)
     DisableFlag(11015310)
     EnableCharacter(1010300)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1013211)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, set_draw_parent=1013211)
     SetStandbyAnimationSettings(1010300, standby_animation=7006)
     DisableCharacterCollision(1010300)
     DisableGravity(1010300)
@@ -1499,7 +1657,7 @@ def Event11010899():
     IfFlagOn(2, 11015311)
     SkipLinesIfConditionFalse(4, 2)
     EnableCharacter(1010300)
-    Move(1010300, destination=1012320, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012320, destination_type=CoordEntityType.Region, short_move=True)
     ResetStandbyAnimationSettings(1010300)
     SetNest(1010300, 1012340)
     RunEvent(11010805, slot=0, args=(11015320, 11015325, 7004, 11015350))
@@ -1570,7 +1728,7 @@ def Event11010790():
     SetNetworkUpdateRate(1010302, is_fixed=True, update_rate=CharacterUpdateRate.Always)
     DisableCollision(1013200)
     EnableCharacter(1010302)
-    Move(1010302, destination=1012300, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010302, destination=1012300, destination_type=CoordEntityType.Region, short_move=True)
     ForceAnimation(1010302, 7012, wait_for_completion=True)
     DisableCharacter(1010302)
     EnableCollision(1013200)
@@ -1592,11 +1750,11 @@ def Event11010791():
     EnableFlag(11010791)
     EnableFlag(11010780)
     EnableCharacter(1010300)
-    Move(1010300, destination=1012302, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012302, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(1010300, standby_animation=7006)
     ForceAnimation(1010300, 7005)
     WaitFrames(395)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, short_move=True)
     DisableFlag(11015310)
 
 
@@ -1630,11 +1788,19 @@ def Event11015301():
     SetCollisionMask(1010300, bit_index=1, switch_type=OnOffChange.Off)
     AICommand(1010300, command_id=20, slot=0)
     End()
-    CreateNPCPart(1010300, npc_part_id=3430, part_index=NPCPartType.Part1, part_health=200, damage_correction=1.0, 
-                  body_damage_correction=1.0, is_invincible=False, start_in_stop_state=False)
+    CreateNPCPart(
+        1010300,
+        npc_part_id=3430,
+        part_index=NPCPartType.Part1,
+        part_health=200,
+        damage_correction=1.0,
+        body_damage_correction=1.0,
+        is_invincible=False,
+        start_in_stop_state=False,
+    )
     IfCharacterPartHealthLessThanOrEqual(1, 1010300, npc_part_id=3430, value=0)
     IfFlagOff(1, 11015300)
-    IfAttacked(1, 1010300, attacking_character=PLAYER)
+    IfAttacked(1, 1010300, attacker=PLAYER)
     IfHealthGreaterThanOrEqual(1, 1010300, 0.10000000149011612)
     IfCharacterDead(2, 1010300)
     IfConditionTrue(-1, input_condition=1)
@@ -1648,8 +1814,13 @@ def Event11015301():
     IfHasTAEEvent(0, 1010300, tae_event_id=400)
     SetDisplayMask(1010300, bit_index=0, switch_type=OnOffChange.On)
     SetCollisionMask(1010300, bit_index=1, switch_type=OnOffChange.Off)
-    Move(1010301, destination=1010300, destination_type=CoordEntityType.Character, model_point=66, 
-         copy_draw_parent=1010300)
+    Move(
+        1010301,
+        destination=1010300,
+        destination_type=CoordEntityType.Character,
+        model_point=66,
+        copy_draw_parent=1010300,
+    )
     EnableCharacter(1010301)
     ForceAnimation(1010301, 8100)
     AICommand(1010300, command_id=20, slot=0)
@@ -1710,7 +1881,7 @@ def Event11015302():
     Restart()
 
 
-def Event11010805(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010805(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010805: Event 11010805 """
     IfHost(1)
     IfFlagOn(1, 11015310)
@@ -1720,7 +1891,7 @@ def Event11010805(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     IfConditionTrue(0, input_condition=1)
     RestartIfFlagOn(11015311)
     SkipLinesIfClient(1)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, short_move=True)
     SkipLinesIfNotEqual(2, left=arg_8_11, right=7011)
     EnableFlag(11015312)
     AddSpecialEffect(1010300, 4160)
@@ -1737,7 +1908,7 @@ def Event11010805(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     SkipLinesIfNotEqual(1, left=arg_8_11, right=7011)
     WaitFrames(192)
     CancelSpecialEffect(1010300, 4160)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, short_move=True)
     DisableFlagRange((11015350, 11015354))
     DisableFlagRange((11015320, 11015339))
     DisableFlag(arg_12_15)
@@ -1746,7 +1917,7 @@ def Event11010805(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     Restart()
 
 
-def Event11010800(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010800(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010800: Event 11010800 """
     IfHost(1)
     IfFlagOn(1, 11015310)
@@ -1759,7 +1930,7 @@ def Event11010800(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     EnableCharacterCollision(1010300)
     EnableGravity(1010300)
     SkipLinesIfClient(1)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, short_move=True)
     ResetStandbyAnimationSettings(1010300)
     SetBackreadStateAlternate(1010300, state=True)
     SetNetworkUpdateRate(1010300, is_fixed=True, update_rate=CharacterUpdateRate.Always)
@@ -1776,8 +1947,16 @@ def Event11010800(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     Restart()
 
 
-def Event11010890(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int, arg_16_19: int, arg_20_23: int, 
-                  arg_24_27: int):
+def Event11010890(
+    _,
+    arg_0_3: int,
+    arg_4_7: int,
+    arg_8_11: int,
+    arg_12_15: int,
+    arg_16_19: int,
+    arg_20_23: int,
+    arg_24_27: int,
+):
     """ 11010890: Event 11010890 """
     IfFlagOn(1, 11015313)
     IfFlagOn(2, 11015313)
@@ -1842,7 +2021,7 @@ def Event11015303():
     EnableFlag(11015306)
     Restart()
     DisableFlag(11015306)
-    RestartEvent(11015304, slot=0)
+    RestartEvent(11015304)
     Restart()
 
 
@@ -1862,7 +2041,7 @@ def Event11010850():
     IfFlagOn(1, 11010791)
     IfFlagOff(1, 11015311)
     IfHealthGreaterThanOrEqual(1, 1010300, 0.10000000149011612)
-    IfAttacked(1, 1010300, attacking_character=PLAYER)
+    IfAttacked(1, 1010300, attacker=PLAYER)
     IfConditionTrue(0, input_condition=1)
     EnableFlag(11015317)
     Restart()
@@ -1886,7 +2065,7 @@ def Event11010851():
     EnableFlag(11015316)
     Restart()
     DisableFlag(11015316)
-    RestartEvent(11010852, slot=0)
+    RestartEvent(11010852)
     Restart()
 
 
@@ -1914,11 +2093,11 @@ def Event11015307():
     ReplanAI(1010300)
     SetNest(1010300, 1012320)
     IfHasTAEEvent(0, 1010300, tae_event_id=700)
-    Move(1010300, destination=1012340, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012340, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(1010300, standby_animation=7006)
     ForceAnimation(1010300, 7016)
     WaitFrames(110)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, short_move=True)
     AICommand(1010300, command_id=-1, slot=1)
     DisableAI(1010300)
     ClearTargetList(1010300)
@@ -1975,7 +2154,7 @@ def Event11010782():
     SetNetworkUpdateRate(1010300, is_fixed=True, update_rate=CharacterUpdateRate.Always)
     ForceAnimation(1010300, 7013, wait_for_completion=True)
     DisableCharacter(1010300)
-    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1013210)
+    Move(1010300, destination=1012310, destination_type=CoordEntityType.Region, set_draw_parent=1013210)
 
 
 def Event11010783():
@@ -1999,7 +2178,7 @@ def Event11010783():
     Restart()
 
 
-def Event11010200(arg_0_3: int, arg_4_7: int):
+def Event11010200(_, arg_0_3: int, arg_4_7: int):
     """ 11010200: Event 11010200 """
     IfCharacterBackreadEnabled(1, 1010300)
     IfHasTAEEvent(1, 1010300, tae_event_id=arg_0_3)
@@ -2009,11 +2188,11 @@ def Event11010200(arg_0_3: int, arg_4_7: int):
     Restart()
 
 
-def Event11010510(arg_0_3: int, arg_4_7: int):
+def Event11010510(_, arg_0_3: int, arg_4_7: int):
     """ 11010510: Event 11010510 """
     IfHealthLessThanOrEqual(1, arg_0_3, 0.8999999761581421)
     IfHealthGreaterThan(1, arg_0_3, 0.0)
-    IfAttacked(1, arg_0_3, attacking_character=PLAYER)
+    IfAttacked(1, arg_0_3, attacker=PLAYER)
     IfFlagOn(2, arg_4_7)
     IfThisEventSlotOn(2)
     IfFlagOn(3, arg_4_7)
@@ -2035,7 +2214,7 @@ def Event11010510(arg_0_3: int, arg_4_7: int):
     Restart()
 
 
-def Event11010520(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010520(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010520: Event 11010520 """
     SkipLinesIfThisEventSlotOff(2)
     DropMandatoryTreasure(arg_0_3)
@@ -2045,14 +2224,14 @@ def Event11010520(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     EnableFlag(arg_12_15)
 
 
-def Event11010501(arg_0_3: int, arg_4_7: int):
+def Event11010501(_, arg_0_3: int, arg_4_7: int):
     """ 11010501: Event 11010501 """
     IfFlagOff(1, 1176)
     IfFlagOff(1, 1179)
     IfFlagOn(1, 1175)
     IfHealthLessThanOrEqual(1, arg_0_3, 0.8999999761581421)
     IfHealthGreaterThan(1, arg_0_3, 0.0)
-    IfAttacked(1, arg_0_3, attacking_character=PLAYER)
+    IfAttacked(1, arg_0_3, attacker=PLAYER)
     IfFlagOn(2, arg_4_7)
     IfThisEventOn(2)
     IfConditionTrue(-1, input_condition=1)
@@ -2069,7 +2248,7 @@ def Event11010501(arg_0_3: int, arg_4_7: int):
     Restart()
 
 
-def Event11010530(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010530(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010530: Event 11010530 """
     IfFlagOff(1, 1004)
     IfFlagOn(1, 1000)
@@ -2080,7 +2259,7 @@ def Event11010530(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     EnableCharacter(arg_0_3)
 
 
-def Event11010531(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010531(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010531: Event 11010531 """
     IfFlagOff(1, 1004)
     IfFlagOn(1, 1008)
@@ -2088,12 +2267,12 @@ def Event11010531(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     IfConditionTrue(0, input_condition=1)
     DisableFlagRange((arg_4_7, arg_8_11))
     EnableFlag(arg_12_15)
-    Move(arg_0_3, destination=1012530, destination_type=CoordEntityType.Region, model_point=-1, set_draw_parent=1013050)
+    Move(arg_0_3, destination=1012530, destination_type=CoordEntityType.Region, set_draw_parent=1013050)
     SetNest(arg_0_3, 1012530)
     EnableCharacter(arg_0_3)
 
 
-def Event11010532(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010532(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010532: Event 11010532 """
     IfFlagOff(1, 1114)
     IfFlagOn(1, 1110)
@@ -2104,7 +2283,7 @@ def Event11010532(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     ResetStandbyAnimationSettings(arg_0_3)
 
 
-def Event11010533(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010533(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010533: Event 11010533 """
     IfFlagOff(1, 1176)
     IfFlagOff(1, 1179)
@@ -2117,7 +2296,7 @@ def Event11010533(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     ClearEventValue(600, bit_count=4)
 
 
-def Event11010534(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010534(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010534: Event 11010534 """
     IfFlagOff(1, 1176)
     IfFlagOff(1, 1179)
@@ -2140,7 +2319,7 @@ def Event11010534(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     DisableCharacter(arg_0_3)
 
 
-def Event11010535(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010535(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010535: Event 11010535 """
     IfFlagOff(1, 1176)
     IfFlagOn(-7, 1175)
@@ -2159,7 +2338,7 @@ def Event11010535(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     DropMandatoryTreasure(arg_0_3)
 
 
-def Event11010537(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010537(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010537: Event 11010537 """
     IfFlagOff(1, 1176)
     IfFlagOff(1, 1179)
@@ -2219,7 +2398,7 @@ def Event11010539():
     EnableFlag(815)
 
 
-def Event11010550(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010550(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010550: Event 11010550 """
     IfFlagOff(1, 1574)
     IfFlagOn(1, 1570)
@@ -2243,7 +2422,7 @@ def Event11010551():
     EnableObjectActivation(1011308, obj_act_id=-1, relative_index=1)
 
 
-def Event11010552(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11010552(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11010552: Event 11010552 """
     IfFlagOff(1, 1574)
     IfFlagOn(1, 1570)
@@ -2258,7 +2437,7 @@ def Event11010552(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     DisableCharacter(arg_0_3)
 
 
-def Event11010581(arg_0_3: int):
+def Event11010581(_, arg_0_3: int):
     """ 11010581: Event 11010581 """
     EndIfThisEventOn()
     IfFlagOn(0, 11010700)
@@ -2285,19 +2464,19 @@ def Event11010583():
     IfFlagOn(0, 744)
     IfFlagOff(0, 744)
     Wait(1.0)
-    Move(6001, destination=1012010, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(6001, destination=1012010, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(6001, standby_animation=7845)
-    Move(6040, destination=1012011, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
-    Move(6072, destination=1012012, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(6040, destination=1012011, destination_type=CoordEntityType.Region, short_move=True)
+    Move(6072, destination=1012012, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(6072, standby_animation=7880)
-    Move(6190, destination=1012013, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(6190, destination=1012013, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(6190, standby_animation=9000)
     DisableFlag(11015090)
     RestoreObject(1011010)
-    RestartEvent(11015090, slot=0)
-    Move(6230, destination=1012014, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    RestartEvent(11015090)
+    Move(6230, destination=1012014, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(6230, standby_animation=9000)
-    Move(6300, destination=1012015, destination_type=CoordEntityType.Region, model_point=-1, short_move=True)
+    Move(6300, destination=1012015, destination_type=CoordEntityType.Region, short_move=True)
     SetStandbyAnimationSettings(6300, standby_animation=7825)
     Restart()
 
@@ -2342,7 +2521,7 @@ def Event11010585():
 
 
 @RestartOnRest
-def Event11015090(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11015090(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11015090: Event 11015090 """
     EndIfFlagOn(arg_0_3)
     EndIfFlagOn(arg_4_7)
@@ -2352,7 +2531,7 @@ def Event11015090(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     IfConditionTrue(0, input_condition=-1)
     DisableObjectInvulnerability(arg_8_11)
     WaitFrames(1)
-    DestroyObject(arg_8_11, slot=1)
+    DestroyObject(arg_8_11)
     PlaySoundEffect(anchor_entity=arg_8_11, sound_type=SoundType.o_Object, sound_id=125200000)
     EnableFlag(11015090)
     IfFlagOn(0, 703)
@@ -2371,7 +2550,7 @@ def Event11015100():
     SkipLinesIfConditionTrue(1, 2)
     DisableCharacter(6540)
     EndIfFlagOn(3)
-    IfMultiplayerCount(condition=1, arg1=5, arg2=2)
+    IfMultiplayerCount(1, arg1=5, arg2=2)
     IfHost(1)
     IfCharacterHuman(1, PLAYER)
     IfFlagOff(1, 11015102)
@@ -2413,7 +2592,7 @@ def Event11015103():
     SkipLinesIfConditionTrue(1, 2)
     DisableCharacter(6590)
     EndIfFlagOn(3)
-    IfMultiplayerCount(condition=1, arg1=5, arg2=2)
+    IfMultiplayerCount(1, arg1=5, arg2=2)
     IfHost(1)
     IfCharacterHuman(1, PLAYER)
     IfFlagOff(1, 11015105)
@@ -2462,7 +2641,7 @@ def Event11015900():
     SkipLinesIfConditionTrue(1, 2)
     DisableCharacter(6540)
     EndIfFlagOn(3)
-    IfMultiplayerCount(condition=1, arg1=4, arg2=3)
+    IfMultiplayerCount(1, arg1=4, arg2=3)
     IfHost(1)
     IfCharacterHuman(1, PLAYER)
     IfFlagOff(1, 11015102)
@@ -2490,7 +2669,7 @@ def Event11015901():
     SkipLinesIfConditionTrue(1, 2)
     DisableCharacter(6590)
     EndIfFlagOn(3)
-    IfMultiplayerCount(condition=1, arg1=4, arg2=3)
+    IfMultiplayerCount(1, arg1=4, arg2=3)
     IfHost(1)
     IfCharacterHuman(1, PLAYER)
     IfFlagOff(1, 11015105)
@@ -2507,7 +2686,7 @@ def Event11015901():
     PlaceSummonSign(SummonSignType.BlueEyeSign, 6590, region=1012001, summon_flag=11015105, dismissal_flag=11015107)
 
 
-def Event11015990(arg_0_3: int, arg_4_7: int):
+def Event11015990(_, arg_0_3: int, arg_4_7: int):
     """ 11015990: Event 11015990 """
     IfFlagOn(0, arg_0_3)
     EraseNPCSummonSign(summoned_character=arg_4_7)
@@ -2515,14 +2694,19 @@ def Event11015990(arg_0_3: int, arg_4_7: int):
     Restart()
 
 
-def Event11015843(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
+def Event11015843(_, arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     """ 11015843: Event 11015843 """
     IfHost(1)
     IfMultiplayer(1)
     IfFlagOn(1, arg_0_3)
-    IfDialogPromptActivated(1, prompt_text=10010403, anchor_entity=arg_8_11, anchor_type=CoordEntityType.Region, 
-                            facing_angle=0.0, max_distance=0.0, human_or_hollow_only=True, line_intersects=arg_4_7, 
-                            boss_version=True)
+    IfActionButton(
+        1,
+        prompt_text=10010403,
+        anchor_entity=arg_8_11,
+        anchor_type=CoordEntityType.Region,
+        line_intersects=arg_4_7,
+        boss_version=True,
+    )
     IfConditionTrue(0, input_condition=1)
     RotateToFaceEntity(PLAYER, arg_12_15)
     ForceAnimation(PLAYER, 7410, wait_for_completion=True)
@@ -2530,7 +2714,7 @@ def Event11015843(arg_0_3: int, arg_4_7: int, arg_8_11: int, arg_12_15: int):
     Restart()
 
 
-def Event11015846(arg_0_3: int, arg_4_7: int, arg_8_11: int):
+def Event11015846(_, arg_0_3: int, arg_4_7: int, arg_8_11: int):
     """ 11015846: Event 11015846 """
     IfMultiplayer(-1)
     IfUnknownPlayerType5(-1)
@@ -2538,11 +2722,11 @@ def Event11015846(arg_0_3: int, arg_4_7: int, arg_8_11: int):
     IfFlagOn(1, arg_0_3)
     IfConditionTrue(0, input_condition=1)
     EnableObject(arg_4_7)
-    CreateFX(arg_8_11)
+    CreateVFX(arg_8_11)
     IfUnknownPlayerType5(3)
     IfConditionFalse(2, input_condition=3)
     IfSingleplayer(2)
     IfConditionTrue(0, input_condition=2)
     DisableObject(arg_4_7)
-    DeleteFX(arg_8_11, erase_root_only=True)
+    DeleteVFX(arg_8_11, erase_root_only=True)
     Restart()

@@ -1,30 +1,29 @@
-from soulstruct.esd import State
-from soulstruct.esd.functions import *
+from soulstruct.darksouls1r.ezstate.esd import *
 
 
 class State_0(State):
-    """ 0: Chaos Blade quest [start] """
-    
+    """ 0: No description. """
+
     def test(self):
-        return State_3
+        return State_6
 
 
 class State_1(State):
-    """ 1: Chaos Blade quest [player dead] """
-    
+    """ 1: No description. """
+
     def previous_states(self):
-        return [State_3]
+        return [State_2]
 
     def enter(self):
         TalkToPlayer(conversation=41011200, unk1=-1, unk2=-1)
 
 
 class State_2(State):
-    """ 2: Chaos Blade quest [mock] """
-    
+    """ 2: No description. """
+
     def previous_states(self):
-        return [State_3]
-    
+        return [State_6]
+
     def enter(self):
         TalkToPlayer(conversation=41011500, unk1=-1, unk2=-1)
 
@@ -35,8 +34,8 @@ class State_2(State):
             return State_1
 
 
-class State_3(State):
-    """ 6: Chaos Blade quest [continue] """
+class State_6(State):
+    """ 6: No description. """
 
     def previous_states(self):
         return [State_0]
@@ -47,10 +46,10 @@ class State_3(State):
 
 
 class State_4(State):
-    """ 4: Chaos Blade quest [Shiva dead] """
-    
+    """ 4: No description. """
+
     def previous_states(self):
         return [State_2]
-    
+
     def enter(self):
         ForceEndTalk(unk1=0)

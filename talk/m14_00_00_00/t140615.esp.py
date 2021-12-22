@@ -1,5 +1,4 @@
-from soulstruct.esd import State
-from soulstruct.esd.functions import *
+from soulstruct.darksouls1r.ezstate.esd import *
 
 
 class State_0(State):
@@ -400,9 +399,6 @@ class State_23(State):
 
     def test(self):
         return State_13
-        # UNREACHABLE:
-        # if GetDistanceToPlayer() >= 8:
-        #     return State_25
 
 
 class State_24(State):
@@ -439,7 +435,7 @@ class State_25(State):
     """ 25: No description. """
 
     def previous_states(self):
-        return [State_0, State_2, State_9, State_10, State_14, State_17, State_23, State_26, State_27, State_28, State_31, State_32, State_34, State_37, State_38, State_43, State_48, State_66, State_69, State_71, State_73, State_74, State_75, State_76, State_77, State_78, State_79, State_80, State_86, State_88, State_202, State_205]
+        return [State_0, State_2, State_9, State_10, State_14, State_17, State_26, State_27, State_28, State_31, State_34, State_37, State_38, State_43, State_48, State_66, State_69, State_71, State_73, State_74, State_75, State_76, State_77, State_78, State_79, State_80, State_86, State_88, State_202, State_205]
 
     def enter(self):
         DebugEvent(message='待機')
@@ -570,9 +566,6 @@ class State_32(State):
 
     def test(self):
         return State_13
-        # UNREACHABLE:
-        # if GetDistanceToPlayer() >= 8:
-        #     return State_25
 
 
 class State_33(State):
