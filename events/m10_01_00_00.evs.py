@@ -16,6 +16,7 @@ def Constructor():
     RunEvent(11010998)
     RunEvent(11010999)
     CapraDemon_Start()
+    CapraDemon_End()
     DisableFlag(11010580)
     SkipLinesIfFlagOff(2, 61010610)
     EndOfAnimation(1011101, 2)
@@ -133,8 +134,8 @@ def Constructor():
     RunEvent(11015371)
     RunEvent(11015373)
     RunEvent(11015372)
-    RunEvent(11015374)
-    RunEvent(11015375)
+    #RunEvent(11015374)
+    #RunEvent(11015375)
     RunEvent(11010902)
     SkipLinesIfFlagOff(2, 11010900)
     RunEvent(11010900)
@@ -194,6 +195,7 @@ def Constructor():
     RunEvent(11010400, slot=4, args=(1011654, 1011504))
     RunEvent(11010650, slot=0, args=(1011670, 11010650))
     RunEvent(11010650, slot=1, args=(1011671, 11010651))
+    RunEvent(11010650, slot=2, args=(1011672, 11010652))
     RunEvent(11015846, slot=0, args=(11010901, 1011890, 1011891))
     RunEvent(11015843, slot=0, args=(11010901, 1011890, 1012898, 1012897))
     RunEvent(11015846, slot=1, args=(11010902, 1011790, 1011791))
@@ -293,14 +295,36 @@ def WT_BossBuff():
 
 def CapraDemon_Start():
     """ 11010993: Start CD bossfight """
+    DeleteVFX(1012980, erase_root_only=False)
+    DisableObject(1012791)
+    DeleteVFX(1012981, erase_root_only=False)
+    DisableObject(1012792)
+    EndIfFlagOn(11010902)
     IfPlayerInsideRegion(0, region=1012886)
+    DisableAI(1019777)
     DisableObject(1011790)
     ForceAnimation(entity=1010750, animation_id=200, loop=True)
     PlaySoundEffect(anchor_entity=1010750, sound_type=SoundType.s_SFX, sound_id=777777773)
     Wait(1.5)
     EnableObject(1011790)
+    CreateVFX(1012980)
+    EnableObject(1012791)
+    CreateVFX(1012981)
+    EnableObject(1012792)
     Wait(1.5)
     ForceAnimation(entity=1010750, animation_id=-1)
+
+
+def CapraDemon_End():
+    """ 11010991: Delete VFX """
+    EndIfFlagOn(11010902)
+    IfFlagOn(0, 11010902)
+    DeleteVFX(1012980)
+    DisableObject(1012791)
+    DeleteVFX(1012981)
+    DisableObject(1012792)
+    EnableAI(1019777)
+    DisableSoundEvent(1013803)
 
 
 def Anon_Despawn():
@@ -923,13 +947,14 @@ def Event11015373():
 @RestartOnRest
 def Event11015372():
     """ 11015372: Event 11015372 """
-    SkipLinesIfThisEventOn(5)
     DisableAI(1010750)
-    IfFlagOn(1, 11015373)
-    IfCharacterInsideRegion(1, PLAYER, region=1012880)
+    IfFlagOff(1, 11010902)
+    IfCharacterInsideRegion(1, PLAYER, region=1012886)
     IfConditionTrue(0, input_condition=1)
+    Wait(3.0)
     EnableAI(1010750)
     EnableBossHealthBar(1010750, name=2240, slot=0)
+    EnableSoundEvent(1013803)
 
 
 def Event11015374():
