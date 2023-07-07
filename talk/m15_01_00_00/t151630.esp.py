@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -58,7 +59,7 @@ class State_4(State):
 
     def enter(self):
         DisplayOneLineHelp(text_id=-1)
-        TalkToPlayer(conversation=40020200, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=40020200, unk1=-1, unk2=-1)
         SetFlagState(flag=11510598, state=1)
         SetFlagState(flag=8103, state=1)
         SetFlagState(flag=8104, state=1)
@@ -94,7 +95,7 @@ class State_6(State):
 
     def enter(self):
         DisplayOneLineHelp(text_id=-1)
-        TalkToPlayer(conversation=40020300, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=40020300, unk1=-1, unk2=-1)
         SetFlagState(flag=11510598, state=1)
         SetFlagState(flag=8104, state=1)
         ForceCloseMenu()

@@ -1,0 +1,33 @@
+{
+    "binder_type": "BND3",
+    "signature": "07D7R6",
+    "flags": 46,
+    "big_endian": false,
+    "bit_big_endian": false,
+    "dcx_type": "DCX_DFLT_10000_24_9",
+    "entries": {
+        "1": "Subtitles",
+        "2": "SoapstoneMessages",
+        "3": "OpeningSubtitles",
+        "30": "EventText",
+        "70": "IngameMenus",
+        "76": "MenuText_Common",
+        "77": "MenuText_Other",
+        "78": "MenuDialogs",
+        "79": "KeyGuide",
+        "80": "MenuHelpSnippets",
+        "81": "ContextualHelp",
+        "90": "TextTagPlaceholders",
+        "91": "DebugTags_Win32",
+        "92": "SystemMessages_Win32",
+        "101": "EventTextPatch",
+        "102": "MenuDialogsPatch",
+        "103": "SystemMessages_Win32Patch",
+        "104": "SubtitlesPatch",
+        "107": "SoapstoneMessagesPatch",
+        "121": "MenuHelpSnippetsPatch",
+        "122": "KeyGuidePatch",
+        "123": "MenuText_OtherPatch",
+        "124": "MenuText_CommonPatch"
+    }
+}

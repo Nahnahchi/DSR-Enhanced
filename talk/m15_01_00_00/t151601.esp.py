@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -28,7 +29,7 @@ class State_2(State):
         return [State_8]
 
     def enter(self):
-        TalkToPlayer(conversation=11000600, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000600, unk1=-1, unk2=-1)
         SetFlagState(flag=71510079, state=1)
         ForceCloseMenu()
 
@@ -88,7 +89,7 @@ class State_6(State):
         return [State_8]
 
     def enter(self):
-        TalkToPlayer(conversation=11000500, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000500, unk1=-1, unk2=-1)
         SetFlagState(flag=71510075, state=1)
         ForceCloseMenu()
 
@@ -108,7 +109,7 @@ class State_7(State):
         return [State_48]
 
     def enter(self):
-        TalkToPlayer(conversation=11001300, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11001300, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -270,7 +271,7 @@ class State_15(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000000, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -304,7 +305,7 @@ class State_17(State):
         return [State_35]
 
     def enter(self):
-        TalkToPlayer(conversation=11000700, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000700, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         ForceCloseMenu()
 
@@ -322,7 +323,7 @@ class State_18(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000100, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -341,7 +342,7 @@ class State_19(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000200, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000200, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -374,7 +375,7 @@ class State_21(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000300, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000300, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -407,7 +408,7 @@ class State_23(State):
         return [State_48]
 
     def enter(self):
-        TalkToPlayer(conversation=11000400, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000400, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -456,7 +457,7 @@ class State_26(State):
         return [State_44]
 
     def enter(self):
-        TalkToPlayer(conversation=11000800, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000800, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=71510090, state=1)
 
@@ -472,7 +473,7 @@ class State_27(State):
         return [State_48]
 
     def enter(self):
-        TalkToPlayer(conversation=11001400, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11001400, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -517,7 +518,7 @@ class State_30(State):
         return [State_8]
 
     def enter(self):
-        TalkToPlayer(conversation=11000510, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000510, unk1=-1, unk2=-1)
         SetFlagState(flag=71510076, state=1)
         ForceCloseMenu()
 
@@ -550,7 +551,7 @@ class State_32(State):
         return [State_8]
 
     def enter(self):
-        TalkToPlayer(conversation=11000520, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000520, unk1=-1, unk2=-1)
         SetFlagState(flag=71510077, state=1)
         ForceCloseMenu()
 
@@ -583,7 +584,7 @@ class State_34(State):
         return [State_8]
 
     def enter(self):
-        TalkToPlayer(conversation=11000530, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000530, unk1=-1, unk2=-1)
         SetFlagState(flag=71510078, state=1)
         ForceCloseMenu()
 
@@ -616,7 +617,7 @@ class State_36(State):
         return [State_35]
 
     def enter(self):
-        TalkToPlayer(conversation=11000750, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000750, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         ForceCloseMenu()
 
@@ -634,7 +635,7 @@ class State_37(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11001200, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11001200, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -653,7 +654,7 @@ class State_38(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000900, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000900, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11510591, state=1)
         SetFlagState(flag=71510087, state=1)
@@ -703,7 +704,7 @@ class State_41(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11001100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11001100, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -735,7 +736,7 @@ class State_43(State):
         return [State_44]
 
     def enter(self):
-        TalkToPlayer(conversation=11001000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11001000, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=71510091, state=1)
 
@@ -822,9 +823,9 @@ class State_49(State):
         return [State_52, State_55]
 
     def enter(self):
-        AddTalkListData(menu_index=3, menu_text=15000230, required_flag=716)
-        AddTalkListData(menu_index=1, menu_text=15000000, required_flag=-1)
-        AddTalkListData(menu_index=4, menu_text=15000005, required_flag=-1)
+        AddTalkListData(menu_index=3, menu_text_id=15000230, required_flag=716)
+        AddTalkListData(menu_index=1, menu_text_id=15000000, required_flag=-1)
+        AddTalkListData(menu_index=4, menu_text_id=15000005, required_flag=-1)
         ShowShopMessage(0, 0, 0)
 
     def test(self):
@@ -956,7 +957,7 @@ class State_58(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000020, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000020, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -991,7 +992,7 @@ class State_60(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000120, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000120, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -1010,7 +1011,7 @@ class State_61(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000340, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000340, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -1042,7 +1043,7 @@ class State_63(State):
         return [State_9]
 
     def enter(self):
-        TalkToPlayer(conversation=11000320, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000320, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -1075,7 +1076,7 @@ class State_65(State):
         return [State_48]
 
     def enter(self):
-        TalkToPlayer(conversation=11000120, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=11000120, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):

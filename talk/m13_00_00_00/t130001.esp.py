@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -69,18 +70,18 @@ class State_4(State):
         ShowShopMessage(0, 0, 0)
         DebugEvent(message='篝火リスト')
         RequestSave(0)
-        AddTalkListData(menu_index=9, menu_text=15000005, required_flag=-1)
-        AddTalkListData(menu_index=1, menu_text=15000100, required_flag=11810000)
-        AddTalkListData(menu_index=2, menu_text=15000111, required_flag=250)
-        AddTalkListData(menu_index=3, menu_text=15000112, required_flag=251)
-        AddTalkListData(menu_index=4, menu_text=15000120, required_flag=252)
-        AddTalkListData(menu_index=5, menu_text=15000130, required_flag=719)
-        AddTalkListData(menu_index=10, menu_text=15000220, required_flag=258)
-        AddTalkListData(menu_index=7, menu_text=15000150, required_flag=710)
-        AddTalkListData(menu_index=12, menu_text=15000150, required_flag=717)
-        AddTalkListData(menu_index=6, menu_text=10010744, required_flag=69696969)
-        AddTalkListData(menu_index=8, menu_text=15000170, required_flag=11810000)
-        AddTalkListData(menu_index=11, menu_text=15000270, required_flag=11810000)
+        AddTalkListData(menu_index=9, menu_text_id=15000005, required_flag=-1)
+        AddTalkListData(menu_index=1, menu_text_id=15000100, required_flag=11810000)
+        AddTalkListData(menu_index=2, menu_text_id=15000111, required_flag=250)
+        AddTalkListData(menu_index=3, menu_text_id=15000112, required_flag=251)
+        AddTalkListData(menu_index=4, menu_text_id=15000120, required_flag=252)
+        AddTalkListData(menu_index=5, menu_text_id=15000130, required_flag=719)
+        AddTalkListData(menu_index=10, menu_text_id=15000220, required_flag=258)
+        AddTalkListData(menu_index=7, menu_text_id=15000150, required_flag=710)
+        AddTalkListData(menu_index=12, menu_text_id=15000150, required_flag=717)
+        AddTalkListData(menu_index=6, menu_text_id=10010744, required_flag=69696969)
+        AddTalkListData(menu_index=8, menu_text_id=15000170, required_flag=11810000)
+        AddTalkListData(menu_index=11, menu_text_id=15000270, required_flag=11810000)
 
     def test(self):
         if CompareBonfireState(0) == 1 or IsPlayerDead() == 1:

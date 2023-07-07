@@ -1,0 +1,160 @@
+{
+    "param_type": "HIT_MTRL_PARAM_ST",
+    "big_endian": false,
+    "unknown": 0,
+    "paramdef_data_version": 2,
+    "flags1": 2,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "0": {
+            "RawName": "b'\\x83_\\x83~\\x81['",
+            "Name": "\u30c0\u30df\u30fc"
+        },
+        "1": {
+            "RawName": "b'\\x90\\xce\\x8d\\xde\\x81i\\x89\\xae\\x8aO\\x81j'",
+            "Name": "\u77f3\u6750\uff08\u5c4b\u5916\uff09"
+        },
+        "2": {
+            "RawName": "b'\\x90\\xce\\x8d\\xde\\x81i\\x89\\xae\\x93\\xe0\\x81j'",
+            "Name": "\u77f3\u6750\uff08\u5c4b\u5185\uff09"
+        },
+        "3": {
+            "RawName": "b'\\x93y'",
+            "Name": "\u571f"
+        },
+        "4": {
+            "RawName": "b'\\x96\\xd8\\x8d\\xde'",
+            "Name": "\u6728\u6750"
+        },
+        "5": {
+            "RawName": "b'\\x91\\x90'",
+            "Name": "\u8349"
+        },
+        "6": {
+            "RawName": "b'\\x8d\\xbb\\x97\\x98'",
+            "Name": "\u7802\u5229"
+        },
+        "7": {
+            "RawName": "b'\\x90\\xe1'",
+            "Name": "\u96ea",
+            "FootEffectHeightType": 2,
+            "FootEffectDirectionType": 1
+        },
+        "8": {
+            "RawName": "b'\\x95X'",
+            "Name": "\u6c37"
+        },
+        "9": {
+            "RawName": "b'\\x93S'",
+            "Name": "\u9244"
+        },
+        "10": {
+            "RawName": "b'\\x8d\\xbb'",
+            "Name": "\u7802"
+        },
+        "11": {
+            "RawName": "b'\\x8d\\x9c'",
+            "Name": "\u9aa8"
+        },
+        "12": {
+            "RawName": "b'\\x8aD'",
+            "Name": "\u7070"
+        },
+        "14": {
+            "RawName": "b'\\x95\\x85\\x94s\\x82\\xb5\\x82\\xbd\\x96\\xd8'",
+            "Name": "\u8150\u6557\u3057\u305f\u6728"
+        },
+        "15": {
+            "RawName": "b'\\x8b\\x90\\x96\\xd8'",
+            "Name": "\u5de8\u6728"
+        },
+        "17": {
+            "RawName": "b'\\x90\\xe1\\x81i\\x82\\xa0\\x82\\xb5\\x82\\xa0\\x82\\xc6\\x82\\xc2\\x82\\xa9\\x82\\xc8\\x82\\xa2\\x8f\\xea\\x8f\\x8a\\x97p\\x81j'",
+            "Name": "\u96ea\uff08\u3042\u3057\u3042\u3068\u3064\u304b\u306a\u3044\u5834\u6240\u7528\uff09",
+            "FootEffectHeightType": 2,
+            "FootEffectDirectionType": 1
+        },
+        "19": {
+            "RawName": "b'\\x90\\x85\\x81i\\x8a\\x8a\\x82\\xe8\\x8d~\\x82\\xe8\\x81j'",
+            "Name": "\u6c34\uff08\u6ed1\u308a\u964d\u308a\uff09",
+            "SoundRadiusMultiplier": 3.0,
+            "FootEffectHeightType": 2,
+            "TerrainHeightType": 1
+        },
+        "20": {
+            "RawName": "b'\\x90\\x85\\x81i\\x90\\x85\\x97\\xad\\x82\\xe8\\x92\\xf6\\x93x\\x81j'",
+            "Name": "\u6c34\uff08\u6c34\u6e9c\u308a\u7a0b\u5ea6\uff09",
+            "SoundRadiusMultiplier": 3.0,
+            "FootEffectHeightType": 1,
+            "TerrainHeightType": 1
+        },
+        "21": {
+            "RawName": "b'\\x90\\x85\\x81i\\x91\\xab\\x8e\\xf1\\x92\\xf6\\x93x\\x81j'",
+            "Name": "\u6c34\uff08\u8db3\u9996\u7a0b\u5ea6\uff09",
+            "SoundRadiusMultiplier": 3.0,
+            "SpecialEffect1": 4100,
+            "FootEffectHeightType": 1,
+            "TerrainHeightType": 1
+        },
+        "22": {
+            "RawName": "b'\\x94S\\x89t'",
+            "Name": "\u7c98\u6db2",
+            "FootEffectHeightType": 2,
+            "FootEffectDirectionType": 1
+        },
+        "23": {
+            "RawName": "b'\\x93\\xc5\\x8f\\xc0'",
+            "Name": "\u6bd2\u6cbc",
+            "SpecialEffect1": 4100,
+            "SpecialEffect2": 4020,
+            "FootEffectHeightType": 1,
+            "TerrainHeightType": 1
+        },
+        "24": {
+            "RawName": "b'\\x93D'",
+            "Name": "\u6ce5",
+            "SpecialEffect1": 4100,
+            "FootEffectHeightType": 1,
+            "TerrainHeightType": 1
+        },
+        "25": {
+            "RawName": "b'\\x83R\\x81[\\x83\\x8b\\x83^\\x81[\\x83\\x8b'",
+            "Name": "\u30b3\u30fc\u30eb\u30bf\u30fc\u30eb",
+            "SpecialEffect1": 4100,
+            "FootEffectHeightType": 2,
+            "FootEffectDirectionType": 1,
+            "TerrainHeightType": 1
+        },
+        "26": {
+            "RawName": "b'\\x83L\\x83\\x81\\x83\\x89\\x8f\\xc0'",
+            "Name": "\u30ad\u30e1\u30e9\u6cbc",
+            "FootEffectHeightType": 1,
+            "TerrainHeightType": 1
+        },
+        "27": {
+            "RawName": "b'\\x97n\\x8a\\xe2'",
+            "Name": "\u6eb6\u5ca9",
+            "SpecialEffect1": 4030,
+            "SpecialEffect2": 4031,
+            "FootEffectHeightType": 1,
+            "TerrainHeightType": 1
+        },
+        "28": {
+            "RawName": "b'\\xe3O\\x9f~'",
+            "Name": "\u7d68\u6bef"
+        },
+        "29": {
+            "RawName": "b'\\x8b\\xf3\\x83f\\x81[\\x83^\\x89\\xbd\\x82\\xe0\\x8fo\\x82\\xc8\\x82\\xa2\\x97p'",
+            "Name": "\u7a7a\u30c7\u30fc\u30bf\u4f55\u3082\u51fa\u306a\u3044\u7528"
+        },
+        "34": {
+            "RawName": "b'\\x96\\xd8\\x8d\\xde'",
+            "Name": "\u6728\u6750"
+        },
+        "40": {
+            "RawName": "b'\\x83h\\x83{\\x83\\x93SFX\\x97p'",
+            "Name": "\u30c9\u30dc\u30f3SFX\u7528"
+        }
+    }
+}

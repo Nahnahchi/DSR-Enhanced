@@ -1,0 +1,85 @@
+{
+    "binder_type": "BND3",
+    "signature": "10B20L16",
+    "flags": 46,
+    "big_endian": false,
+    "bit_big_endian": false,
+    "use_id_prefix": false,
+    "dcx_type": "DCX_DFLT_10000_24_9",
+    "entries": {
+        "N:\\FRPG\\data\\INTERROOT_x64\\script\\ai\\out\\bin": [
+            {
+                "flags": 2,
+                "id": 1068,
+                "name": "353000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1096,
+                "name": "227000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1097,
+                "name": "228000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1106,
+                "name": "325000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1121,
+                "name": "327000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1132,
+                "name": "330000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1134,
+                "name": "349000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1135,
+                "name": "349100_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1136,
+                "name": "279000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1159,
+                "name": "006290_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1160,
+                "name": "006280_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 9999,
+                "name": "006570_battle.lua"
+            }
+        ],
+        "N:\\FRPG\\data\\INTERROOT_x64\\script": [
+            {
+                "flags": 2,
+                "id": 1000000,
+                "name": "m13_02_00_00.luagnl"
+            },
+            {
+                "flags": 2,
+                "id": 1000001,
+                "name": "m13_02_00_00.luainfo"
+            }
+        ]
+    }
+}

@@ -1,0 +1,558 @@
+{
+    "param_type": "MENU_PARAM_COLOR_TABLE_ST",
+    "big_endian": false,
+    "unknown": 1,
+    "paramdef_data_version": 1,
+    "flags1": 2,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "0": {
+            "RawName": "b'\\x8eg\\x97p\\x82\\xb5\\x82\\xc8\\x82\\xa2'",
+            "Name": "\u4f7f\u7528\u3057\u306a\u3044",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 0
+        },
+        "1": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x83e\\x83L\\x83X\\x83g_\\x92\\x83\\x90F'",
+            "Name": "\u901a\u5e38\u30c6\u30ad\u30b9\u30c8_\u8336\u8272",
+            "RedChannel": 240,
+            "GreenChannel": 240,
+            "BlueChannel": 240
+        },
+        "2": {
+            "RawName": "b'\\x83C\\x83\\x93\\x83x\\x83\\x93\\x83g\\x83\\x8a\\x82\\xc5\\x91I\\x91\\xf0\\x92\\x86\\x82\\xcc\\x83A\\x83C\\x83R\\x83\\x93\\x90F'",
+            "Name": "\u30a4\u30f3\u30d9\u30f3\u30c8\u30ea\u3067\u9078\u629e\u4e2d\u306e\u30a2\u30a4\u30b3\u30f3\u8272",
+            "RedChannel": 210,
+            "GreenChannel": 140,
+            "BlueChannel": 100
+        },
+        "3": {
+            "RawName": "b'\\x83p\\x83\\x89\\x83\\x81\\x81[\\x83^\\x83e\\x83L\\x83X\\x83g\\x81i\\x92\\xca\\x8f\\xed\\x81j'",
+            "Name": "\u30d1\u30e9\u30e1\u30fc\u30bf\u30c6\u30ad\u30b9\u30c8\uff08\u901a\u5e38\uff09",
+            "RedChannel": 240,
+            "GreenChannel": 240,
+            "BlueChannel": 240
+        },
+        "4": {
+            "RawName": "b'\\x83p\\x83\\x89\\x83\\x81\\x81[\\x83^\\x83e\\x83L\\x83X\\x83g\\x81i\\x97\\xc7\\x82\\xa2\\x81j'",
+            "Name": "\u30d1\u30e9\u30e1\u30fc\u30bf\u30c6\u30ad\u30b9\u30c8\uff08\u826f\u3044\uff09",
+            "RedChannel": 30,
+            "GreenChannel": 130,
+            "BlueChannel": 210,
+            "AlphaChannel": 128
+        },
+        "5": {
+            "RawName": "b'\\x83p\\x83\\x89\\x83\\x81\\x81[\\x83^\\x83e\\x83L\\x83X\\x83g\\x81i\\x88\\xab\\x82\\xa2\\x81j'",
+            "Name": "\u30d1\u30e9\u30e1\u30fc\u30bf\u30c6\u30ad\u30b9\u30c8\uff08\u60aa\u3044\uff09",
+            "RedChannel": 230,
+            "GreenChannel": 80,
+            "BlueChannel": 30
+        },
+        "6": {
+            "RawName": "b'\\x83C\\x83\\x93\\x83t\\x83H\\x83\\x81\\x81[\\x83V\\x83\\x87\\x83\\x93\\x83^\\x83C\\x83g\\x83\\x8b'",
+            "Name": "\u30a4\u30f3\u30d5\u30a9\u30e1\u30fc\u30b7\u30e7\u30f3\u30bf\u30a4\u30c8\u30eb",
+            "GreenChannel": 150,
+            "BlueChannel": 100
+        },
+        "7": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x83e\\x83L\\x83X\\x83g_\\x94\\x92'",
+            "Name": "\u901a\u5e38\u30c6\u30ad\u30b9\u30c8_\u767d",
+            "RedChannel": 240,
+            "GreenChannel": 240,
+            "BlueChannel": 240
+        },
+        "8": {
+            "RawName": "b'\\x83X\\x83N\\x83\\x8d\\x81[\\x83X\\x83o\\x81[\\x94w\\x8ci\\x90F'",
+            "Name": "\u30b9\u30af\u30ed\u30fc\u30b9\u30d0\u30fc\u80cc\u666f\u8272",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 150
+        },
+        "9": {
+            "RawName": "b'\\x94w\\x8ci\\x83v\\x83\\x8c\\x81[\\x83g(\\x94Z\\x93x\\x92\\xb2\\x90\\xae)'",
+            "Name": "\u80cc\u666f\u30d7\u30ec\u30fc\u30c8(\u6fc3\u5ea6\u8abf\u6574)",
+            "AlphaChannel": 100
+        },
+        "10": {
+            "RawName": "b'\\x94w\\x8ci\\x83v\\x83\\x8c\\x81[\\x83g(\\x90F\\x92\\xb2\\x90\\xae)'",
+            "Name": "\u80cc\u666f\u30d7\u30ec\u30fc\u30c8(\u8272\u8abf\u6574)",
+            "RedChannel": 10,
+            "GreenChannel": 8,
+            "BlueChannel": 5
+        },
+        "11": {
+            "RawName": "b'\\x88\\xea\\x8ds\\x83w\\x83\\x8b\\x83v'",
+            "Name": "\u4e00\u884c\u30d8\u30eb\u30d7",
+            "RedChannel": 35,
+            "GreenChannel": 31,
+            "BlueChannel": 26,
+            "AlphaChannel": 245
+        },
+        "12": {
+            "RawName": "b'\\x83L\\x81[\\x83K\\x83C\\x83h'",
+            "Name": "\u30ad\u30fc\u30ac\u30a4\u30c9",
+            "RedChannel": 10,
+            "GreenChannel": 8,
+            "BlueChannel": 5,
+            "AlphaChannel": 100
+        },
+        "13": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30d7\u30ec\u30fc\u30c8",
+            "BlueChannel": 235
+        },
+        "14": {
+            "RawName": "b'\\x94\\xbc\\x93\\xa7\\x96\\xbe\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u534a\u900f\u660e\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 220
+        },
+        "15": {
+            "RawName": "b'\\x94\\xbc\\x93\\xa7\\x96\\xbe\\x83O\\x83\\x89\\x83f\\x81[\\x83V\\x83\\x87\\x83\\x93\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u534a\u900f\u660e\u30b0\u30e9\u30c7\u30fc\u30b7\u30e7\u30f3\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0
+        },
+        "16": {
+            "RawName": "b'\\x83X\\x83N\\x83\\x8d\\x81[\\x83\\x8b\\x83o\\x81['",
+            "Name": "\u30b9\u30af\u30ed\u30fc\u30eb\u30d0\u30fc",
+            "RedChannel": 70,
+            "GreenChannel": 26,
+            "BlueChannel": 5
+        },
+        "17": {
+            "RawName": "b'\\x8c\\x8c\\x95\\xb6\\x8e\\x9a\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u8840\u6587\u5b57\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 100,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 128
+        },
+        "18": {
+            "RawName": "b'SOS\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "SOS\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 80,
+            "BlueChannel": 100,
+            "AlphaChannel": 128
+        },
+        "19": {
+            "RawName": "b'\\x8d\\x80\\x96\\xda\\x83w\\x83\\x8b\\x83v\\x83u\\x83\\x89\\x83b\\x83N\\x83A\\x83E\\x83g'",
+            "Name": "\u9805\u76ee\u30d8\u30eb\u30d7\u30d6\u30e9\u30c3\u30af\u30a2\u30a6\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 200
+        },
+        "20": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83A\\x83E\\x83g'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30a2\u30a6\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 200
+        },
+        "21": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x81[\\x83A\\x83E\\x83g'",
+            "Name": "\u30b0\u30ec\u30fc\u30a2\u30a6\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 200
+        },
+        "22": {
+            "RawName": "b'\\x83\\x89\\x83C\\x83\\x93'",
+            "Name": "\u30e9\u30a4\u30f3",
+            "RedChannel": 40,
+            "GreenChannel": 36,
+            "BlueChannel": 33
+        },
+        "23": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81i\\x83C\\x83\\x93\\x83Q\\x81[\\x83\\x80\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08\u30a4\u30f3\u30b2\u30fc\u30e0\uff09",
+            "RedChannel": 225,
+            "BlueChannel": 245
+        },
+        "24": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81i\\x83L\\x83\\x83\\x83\\x93\\x83v\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08\u30ad\u30e3\u30f3\u30d7\uff09",
+            "GreenChannel": 235,
+            "BlueChannel": 185
+        },
+        "25": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81i\\x8c\\x8c\\x95\\xb6\\x8e\\x9a\\x93\\xfc\\x97\\xcd\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08\u8840\u6587\u5b57\u5165\u529b\uff09",
+            "GreenChannel": 105,
+            "BlueChannel": 75
+        },
+        "26": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81iSOS\\x93\\xfc\\x97\\xcd\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08SOS\u5165\u529b\uff09",
+            "RedChannel": 155,
+            "GreenChannel": 225
+        },
+        "27": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81i\\x83v\\x83\\x8c\\x83C\\x83\\x84\\x81[\\x95]\\x89\\xbf\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08\u30d7\u30ec\u30a4\u30e4\u30fc\u8a55\u4fa1\uff09"
+        },
+        "28": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81i\\x83^\\x83C\\x83g\\x83\\x8b\\x83\\x81\\x83j\\x83\\x85\\x81[\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08\u30bf\u30a4\u30c8\u30eb\u30e1\u30cb\u30e5\u30fc\uff09",
+            "RedChannel": 225,
+            "BlueChannel": 225
+        },
+        "29": {
+            "RawName": "b'\\x83\\x81\\x83j\\x83\\x85\\x81[\\x83^\\x83u\\x81i\\x83V\\x83\\x87\\x83b\\x83v\\x81j'",
+            "Name": "\u30e1\u30cb\u30e5\u30fc\u30bf\u30d6\uff08\u30b7\u30e7\u30c3\u30d7\uff09",
+            "RedChannel": 225,
+            "GreenChannel": 225
+        },
+        "30": {
+            "RawName": "b'HP\\x83o\\x81['",
+            "Name": "HP\u30d0\u30fc",
+            "RedChannel": 171,
+            "GreenChannel": 33,
+            "BlueChannel": 31
+        },
+        "31": {
+            "RawName": "b'MP\\x83o\\x81['",
+            "Name": "MP\u30d0\u30fc",
+            "RedChannel": 29,
+            "GreenChannel": 62,
+            "BlueChannel": 162
+        },
+        "32": {
+            "RawName": "b'SP\\x83o\\x81['",
+            "Name": "SP\u30d0\u30fc",
+            "RedChannel": 77,
+            "GreenChannel": 136,
+            "BlueChannel": 53
+        },
+        "33": {
+            "RawName": "b'\\x95\\xcf\\x93\\xae\\x92l\\x83o\\x81['",
+            "Name": "\u5909\u52d5\u5024\u30d0\u30fc",
+            "RedChannel": 171,
+            "GreenChannel": 101,
+            "BlueChannel": 31
+        },
+        "34": {
+            "RawName": "b'\\x83o\\x81[\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u30d0\u30fc\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 95,
+            "GreenChannel": 95,
+            "BlueChannel": 95
+        },
+        "35": {
+            "RawName": "b'\\x8dU\\x8c\\x82\\x97\\xcd/\\x96h\\x8c\\xe4\\x97\\xcd\\x83o\\x81['",
+            "Name": "\u653b\u6483\u529b/\u9632\u5fa1\u529b\u30d0\u30fc",
+            "RedChannel": 143,
+            "GreenChannel": 29,
+            "BlueChannel": 24
+        },
+        "36": {
+            "RawName": "b'\\x8dU\\x8c\\x82\\x97\\xcd/\\x96h\\x8c\\xe4\\x97\\xcd\\x83o\\x81[\\x81i\\x95t\\x89\\xc1\\x8c\\xf8\\x89\\xca\\x81j'",
+            "Name": "\u653b\u6483\u529b/\u9632\u5fa1\u529b\u30d0\u30fc\uff08\u4ed8\u52a0\u52b9\u679c\uff09",
+            "RedChannel": 87,
+            "GreenChannel": 126,
+            "BlueChannel": 0
+        },
+        "37": {
+            "RawName": "b'\\x8dU\\x8c\\x82\\x97\\xcd/\\x96h\\x8c\\xe4\\x97\\xcd\\x83o\\x81[\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u653b\u6483\u529b/\u9632\u5fa1\u529b\u30d0\u30fc\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 165
+        },
+        "38": {
+            "RawName": "b'\\x83I\\x83v\\x83V\\x83\\x87\\x83\\x93\\x83o\\x81['",
+            "Name": "\u30aa\u30d7\u30b7\u30e7\u30f3\u30d0\u30fc",
+            "RedChannel": 85,
+            "GreenChannel": 0,
+            "BlueChannel": 0
+        },
+        "39": {
+            "RawName": "b'\\x83^\\x81[\\x83Q\\x83b\\x83g\\x83T\\x83C\\x83g'",
+            "Name": "\u30bf\u30fc\u30b2\u30c3\u30c8\u30b5\u30a4\u30c8",
+            "AlphaChannel": 128
+        },
+        "40": {
+            "RawName": "b'\\x94\\xbc\\x93\\xa7\\x96\\xbe\\x95\\xb6\\x8e\\x9a\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x96\\xbe\\x81j'",
+            "Name": "\u534a\u900f\u660e\u6587\u5b57\u30d7\u30ec\u30fc\u30c8\uff08\u660e\uff09",
+            "RedChannel": 30,
+            "GreenChannel": 28,
+            "BlueChannel": 23,
+            "AlphaChannel": 100
+        },
+        "41": {
+            "RawName": "b'\\x94\\xbc\\x93\\xa7\\x96\\xbe\\x95\\xb6\\x8e\\x9a\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x88\\xc3\\x81j'",
+            "Name": "\u534a\u900f\u660e\u6587\u5b57\u30d7\u30ec\u30fc\u30c8\uff08\u6697\uff09",
+            "RedChannel": 10,
+            "GreenChannel": 8,
+            "BlueChannel": 5,
+            "AlphaChannel": 100
+        },
+        "42": {
+            "RawName": "b'\\x83{\\x83^\\x83\\x93\\x83v\\x83\\x8c\\x81[\\x83g'",
+            "Name": "\u30dc\u30bf\u30f3\u30d7\u30ec\u30fc\u30c8",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 180
+        },
+        "43": {
+            "RawName": "b'\\x83I\\x83v\\x83V\\x83\\x87\\x83\\x93\\x83\\x89\\x83C\\x83\\x93'",
+            "Name": "\u30aa\u30d7\u30b7\u30e7\u30f3\u30e9\u30a4\u30f3",
+            "RedChannel": 40,
+            "GreenChannel": 36,
+            "BlueChannel": 33
+        },
+        "44": {
+            "RawName": "b'\\x91I\\x91\\xf0\\x8d\\x80\\x96\\xda\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x96\\xbe\\x81j'",
+            "Name": "\u9078\u629e\u9805\u76ee\u30d7\u30ec\u30fc\u30c8\uff08\u660e\uff09"
+        },
+        "45": {
+            "RawName": "b'\\x91I\\x91\\xf0\\x8d\\x80\\x96\\xda\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x88\\xc3\\x81j'",
+            "Name": "\u9078\u629e\u9805\u76ee\u30d7\u30ec\u30fc\u30c8\uff08\u6697\uff09",
+            "RedChannel": 200,
+            "GreenChannel": 200,
+            "BlueChannel": 200
+        },
+        "46": {
+            "RawName": "b'\\x91I\\x91\\xf0\\x8d\\x80\\x96\\xda\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x8c\\x88\\x92\\xe8\\x83{\\x83^\\x83\\x93\\x81j'",
+            "Name": "\u9078\u629e\u9805\u76ee\u30d7\u30ec\u30fc\u30c8\uff08\u6c7a\u5b9a\u30dc\u30bf\u30f3\uff09",
+            "BlueChannel": 225
+        },
+        "47": {
+            "RawName": "b'\\x94\\xbc\\x93\\xa7\\x96\\xbe\\x83O\\x83\\x89\\x83f\\x81[\\x83V\\x83\\x87\\x83\\x93\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x83{\\x83^\\x83\\x93\\x81j'",
+            "Name": "\u534a\u900f\u660e\u30b0\u30e9\u30c7\u30fc\u30b7\u30e7\u30f3\u30d7\u30ec\u30fc\u30c8\uff08\u30dc\u30bf\u30f3\uff09",
+            "RedChannel": 0,
+            "GreenChannel": 0,
+            "BlueChannel": 0,
+            "AlphaChannel": 200
+        },
+        "48": {
+            "RawName": "b'\\x91\\xe5\\x83v\\x83\\x8c\\x81[\\x83g\\x81i\\x88\\xc3\\x81j'",
+            "Name": "\u5927\u30d7\u30ec\u30fc\u30c8\uff08\u6697\uff09",
+            "RedChannel": 200,
+            "GreenChannel": 200,
+            "BlueChannel": 200
+        },
+        "49": {
+            "RawName": "b'\\x83t\\x83\\x8c\\x81[\\x83\\x80\\x81i\\x88\\xc3\\x81j'",
+            "Name": "\u30d5\u30ec\u30fc\u30e0\uff08\u6697\uff09",
+            "RedChannel": 200,
+            "GreenChannel": 200,
+            "BlueChannel": 200
+        },
+        "50": {
+            "RawName": "b'\\x83X\\x83L\\x83\\x8bslot'",
+            "Name": "\u30b9\u30ad\u30ebslot",
+            "RedChannel": 200,
+            "GreenChannel": 200,
+            "BlueChannel": 200,
+            "AlphaChannel": 170
+        },
+        "51": {
+            "RawName": "b'\\x83X\\x83y\\x83\\x8bslot'",
+            "Name": "\u30b9\u30da\u30ebslot",
+            "AlphaChannel": 170
+        },
+        "52": {
+            "RawName": "b'\\x94\\x92'",
+            "Name": "\u767d"
+        },
+        "53": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x83e\\x83L\\x83X\\x83g_\\x8d\\x95'",
+            "Name": "\u901a\u5e38\u30c6\u30ad\u30b9\u30c8_\u9ed2",
+            "RedChannel": 20,
+            "GreenChannel": 10,
+            "BlueChannel": 0
+        },
+        "60": {
+            "RawName": "b'FE\\x90l\\x8a\\xd4\\x90\\xab\\x90\\x94\\x92l\\x81@\\x96S\\x8e\\xd2\\x8e\\x9e\\x83O\\x83\\x8c\\x81[\\x83A\\x83E\\x83g\\x97p'",
+            "Name": "FE\u4eba\u9593\u6027\u6570\u5024\u3000\u4ea1\u8005\u6642\u30b0\u30ec\u30fc\u30a2\u30a6\u30c8\u7528",
+            "RedChannel": 80,
+            "GreenChannel": 80,
+            "BlueChannel": 80
+        },
+        "61": {
+            "RawName": "b'\\x83e\\x83X\\x83g\\x83J\\x83\\x89\\x81[11'",
+            "Name": "\u30c6\u30b9\u30c8\u30ab\u30e9\u30fc11",
+            "RedChannel": 0,
+            "BlueChannel": 0
+        },
+        "62": {
+            "RawName": "b'\\x83e\\x83X\\x83g\\x83J\\x83\\x89\\x81[12'",
+            "Name": "\u30c6\u30b9\u30c8\u30ab\u30e9\u30fc12",
+            "RedChannel": 0,
+            "BlueChannel": 0
+        },
+        "63": {
+            "RawName": "b'\\x83e\\x83X\\x83g\\x83J\\x83\\x89\\x81[13'",
+            "Name": "\u30c6\u30b9\u30c8\u30ab\u30e9\u30fc13",
+            "RedChannel": 0,
+            "BlueChannel": 0
+        },
+        "64": {
+            "RawName": "b'\\x83e\\x83X\\x83g\\x83J\\x83\\x89\\x81[14'",
+            "Name": "\u30c6\u30b9\u30c8\u30ab\u30e9\u30fc14",
+            "RedChannel": 0,
+            "BlueChannel": 0
+        },
+        "65": {
+            "RawName": "b'\\x83e\\x83L\\x83X\\x83g\\x83J\\x83\\x89\\x81[\\x81@\\x90\\xc2'",
+            "Name": "\u30c6\u30ad\u30b9\u30c8\u30ab\u30e9\u30fc\u3000\u9752",
+            "RedChannel": 0,
+            "GreenChannel": 75
+        },
+        "66": {
+            "RawName": "b'\\x83e\\x83L\\x83X\\x83g\\x83J\\x83\\x89\\x81[\\x81@\\x90\\xd4'",
+            "Name": "\u30c6\u30ad\u30b9\u30c8\u30ab\u30e9\u30fc\u3000\u8d64",
+            "RedChannel": 180,
+            "GreenChannel": 0,
+            "BlueChannel": 0
+        },
+        "36901": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F01'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827201",
+            "RedChannel": 60,
+            "GreenChannel": 60,
+            "BlueChannel": 50
+        },
+        "36902": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F02'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827202",
+            "RedChannel": 110,
+            "GreenChannel": 90,
+            "BlueChannel": 50
+        },
+        "36903": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F03'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827203",
+            "RedChannel": 160,
+            "GreenChannel": 130,
+            "BlueChannel": 80
+        },
+        "36904": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F04'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827204",
+            "RedChannel": 190,
+            "GreenChannel": 100,
+            "BlueChannel": 60
+        },
+        "36905": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F05'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827205",
+            "RedChannel": 90,
+            "GreenChannel": 100,
+            "BlueChannel": 120
+        },
+        "36906": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F06'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827206",
+            "RedChannel": 160,
+            "GreenChannel": 160,
+            "BlueChannel": 170
+        },
+        "36907": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F07'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827207",
+            "RedChannel": 250,
+            "GreenChannel": 210,
+            "BlueChannel": 130
+        },
+        "36908": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F08'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827208"
+        },
+        "36909": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F09'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827209",
+            "RedChannel": 130,
+            "GreenChannel": 100,
+            "BlueChannel": 130
+        },
+        "36910": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b-\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x94\\xaf\\x90F10'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb-\u9854\u4f5c\u6210\u7528\u9aea\u827210",
+            "RedChannel": 250,
+            "GreenChannel": 100,
+            "BlueChannel": 60
+        },
+        "37901": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F01'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827201",
+            "RedChannel": 60,
+            "GreenChannel": 60,
+            "BlueChannel": 50
+        },
+        "37902": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F02'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827202",
+            "RedChannel": 110,
+            "GreenChannel": 90,
+            "BlueChannel": 50
+        },
+        "37903": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F03'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827203",
+            "RedChannel": 160,
+            "GreenChannel": 130,
+            "BlueChannel": 80
+        },
+        "37904": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F04'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827204",
+            "RedChannel": 190,
+            "GreenChannel": 100,
+            "BlueChannel": 60
+        },
+        "37905": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F05'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827205",
+            "RedChannel": 90,
+            "GreenChannel": 100,
+            "BlueChannel": 120
+        },
+        "37906": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F06'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827206",
+            "RedChannel": 160,
+            "GreenChannel": 160,
+            "BlueChannel": 170
+        },
+        "37907": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F07'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827207",
+            "RedChannel": 250,
+            "GreenChannel": 210,
+            "BlueChannel": 130
+        },
+        "37908": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F08'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827208"
+        },
+        "37909": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F09'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827209",
+            "RedChannel": 130,
+            "GreenChannel": 100,
+            "BlueChannel": 130
+        },
+        "37910": {
+            "RawName": "b'\\x83^\\x83C\\x83g\\x83\\x8b\\x8a\\xe7\\x8d\\xec\\x90\\xac\\x97p\\x93\\xb5\\x90F10'",
+            "Name": "\u30bf\u30a4\u30c8\u30eb\u9854\u4f5c\u6210\u7528\u77b3\u827210",
+            "RedChannel": 250,
+            "GreenChannel": 100,
+            "BlueChannel": 60
+        }
+    }
+}

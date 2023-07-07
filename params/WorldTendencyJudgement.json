@@ -1,0 +1,390 @@
+{
+    "param_type": "QWC_JUDGE_PARAM_ST",
+    "big_endian": false,
+    "unknown": 1,
+    "paramdef_data_version": 1,
+    "flags1": 2,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "0": {
+            "RawName": "b'\\x83e\\x83X\\x83g\\x97p'",
+            "Name": "\u30c6\u30b9\u30c8\u7528",
+            "PcJudgeUnderWB": 0,
+            "PcJudgeTopWB": 0,
+            "PcJudgeUnderLR": 0,
+            "PcJudgeTopLR": 0,
+            "AreaJudgeUnderWB": 0,
+            "AreaJudgeTopWB": 0,
+            "AreaJudgeUnderLR": 0,
+            "AreaJudgeTopLR": 0
+        },
+        "1000": {
+            "RawName": "b'\\x93G\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xaa'",
+            "Name": "\u6575\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09\u2191",
+            "AreaJudgeTopWB": -50
+        },
+        "1001": {
+            "RawName": "b'\\x93G\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xaa'",
+            "Name": "\u6575\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09\u2191",
+            "AreaJudgeTopWB": -100
+        },
+        "1002": {
+            "RawName": "b'\\x93G\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV3\\x81j\\x81\\xaa'",
+            "Name": "\u6575\u304c\u5f37\u304f\u306a\u308b\uff08LV3\uff09\u2191",
+            "AreaJudgeTopWB": -150
+        },
+        "1100": {
+            "RawName": "b'\\x93G\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xab'",
+            "Name": "\u6575\u304c\u5f31\u304f\u306a\u308b\uff08LV1\uff09\u2193",
+            "AreaJudgeUnderWB": 50
+        },
+        "1101": {
+            "RawName": "b'\\x93G\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xab'",
+            "Name": "\u6575\u304c\u5f31\u304f\u306a\u308b\uff08LV2\uff09\u2193",
+            "AreaJudgeUnderWB": 100
+        },
+        "1102": {
+            "RawName": "b'\\x93G\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV3\\x81j\\x81\\xab'",
+            "Name": "\u6575\u304c\u5f31\u304f\u306a\u308b\uff08LV3\uff09\u2193",
+            "AreaJudgeUnderWB": 150
+        },
+        "1103": {
+            "RawName": "b'\\x93G\\x82\\xcc\\x83G\\x83\\x8a\\x83A\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u306e\u30a8\u30ea\u30a2\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "AreaJudgeUnderWB": -49,
+            "AreaJudgeTopWB": 49
+        },
+        "1200": {
+            "RawName": "b'\\x8e\\xe8\\x82\\xc9\\x93\\xfc\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xe0\\x91\\x9d\\x82\\xa6\\x82\\xe9\\x81iLV1\\x81j\\x81\\xaa'",
+            "Name": "\u624b\u306b\u5165\u308b\u30bd\u30a6\u30eb\u3082\u5897\u3048\u308b\uff08LV1\uff09\u2191",
+            "AreaJudgeTopWB": -50
+        },
+        "1201": {
+            "RawName": "b'\\x8e\\xe8\\x82\\xc9\\x93\\xfc\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xe0\\x91\\x9d\\x82\\xa6\\x82\\xe9\\x81iLV2\\x81j\\x81\\xaa'",
+            "Name": "\u624b\u306b\u5165\u308b\u30bd\u30a6\u30eb\u3082\u5897\u3048\u308b\uff08LV2\uff09\u2191",
+            "AreaJudgeTopWB": -100
+        },
+        "1202": {
+            "RawName": "b'\\x8e\\xe8\\x82\\xc9\\x93\\xfc\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xe0\\x91\\x9d\\x82\\xa6\\x82\\xe9\\x81iLV3\\x81j\\x81\\xaa'",
+            "Name": "\u624b\u306b\u5165\u308b\u30bd\u30a6\u30eb\u3082\u5897\u3048\u308b\uff08LV3\uff09\u2191",
+            "AreaJudgeTopWB": -150
+        },
+        "1300": {
+            "RawName": "b'\\x8e\\xe8\\x82\\xc9\\x93\\xfc\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xe0\\x8c\\xb8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xab'",
+            "Name": "\u624b\u306b\u5165\u308b\u30bd\u30a6\u30eb\u3082\u6e1b\u308b\uff08LV1\uff09\u2193",
+            "AreaJudgeUnderWB": 50
+        },
+        "1301": {
+            "RawName": "b'\\x8e\\xe8\\x82\\xc9\\x93\\xfc\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xe0\\x8c\\xb8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xab'",
+            "Name": "\u624b\u306b\u5165\u308b\u30bd\u30a6\u30eb\u3082\u6e1b\u308b\uff08LV2\uff09\u2193",
+            "AreaJudgeUnderWB": 100
+        },
+        "1302": {
+            "RawName": "b'\\x8e\\xe8\\x82\\xc9\\x93\\xfc\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xe0\\x8c\\xb8\\x82\\xe9\\x81iLV3\\x81j\\x81\\xab'",
+            "Name": "\u624b\u306b\u5165\u308b\u30bd\u30a6\u30eb\u3082\u6e1b\u308b\uff08LV3\uff09\u2193",
+            "AreaJudgeUnderWB": 150
+        },
+        "1400": {
+            "RawName": "b'\\x93G\\x82\\xcc\\x97\\x8e\\x82\\xc6\\x82\\xb7\\x83A\\x83C\\x83e\\x83\\x80\\x82\\xaa\\x95\\xcf\\x89\\xbb\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u306e\u843d\u3068\u3059\u30a2\u30a4\u30c6\u30e0\u304c\u5909\u5316\u3059\u308b",
+            "AreaJudgeTopWB": -100
+        },
+        "1500": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xaa'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09\u2191",
+            "AreaJudgeUnderWB": 100
+        },
+        "1501": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xaa'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09\u2191",
+            "AreaJudgeUnderWB": 150
+        },
+        "1600": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xab'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f31\u304f\u306a\u308b\uff08LV1\uff09\u2193",
+            "AreaJudgeTopWB": -100
+        },
+        "1601": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xab'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f31\u304f\u306a\u308b\uff08LV2\uff09\u2193",
+            "AreaJudgeTopWB": -150
+        },
+        "1602": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xcc\\x83G\\x83\\x8a\\x83A\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u306e\u30a8\u30ea\u30a2\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "AreaJudgeUnderWB": -49,
+            "AreaJudgeTopWB": 49
+        },
+        "1700": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xaa'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09\u2191",
+            "AreaJudgeTopWB": -100
+        },
+        "1701": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xaa'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09\u2191",
+            "AreaJudgeTopWB": -150
+        },
+        "1702": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xcc\\x83G\\x83\\x8a\\x83A\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u306e\u30a8\u30ea\u30a2\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "AreaJudgeUnderWB": -49,
+            "AreaJudgeTopWB": 49
+        },
+        "1800": {
+            "RawName": "b'\\x83}\\x83\\x8b\\x83`\\x82\\xcc\\x83z\\x83\\x8f\\x83C\\x83g\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j\\x81\\xaa'",
+            "Name": "\u30de\u30eb\u30c1\u306e\u30db\u30ef\u30a4\u30c8\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09\u2191",
+            "AreaJudgeUnderWB": 100
+        },
+        "1801": {
+            "RawName": "b'\\x83}\\x83\\x8b\\x83`\\x82\\xcc\\x83z\\x83\\x8f\\x83C\\x83g\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j\\x81\\xaa'",
+            "Name": "\u30de\u30eb\u30c1\u306e\u30db\u30ef\u30a4\u30c8\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09\u2191",
+            "AreaJudgeUnderWB": 150
+        },
+        "1802": {
+            "RawName": "b'\\x83}\\x83\\x8b\\x83`\\x82\\xcc\\x83z\\x83\\x8f\\x83C\\x83g\\x83S\\x81[\\x83X\\x83g\\x82\\xcc\\x83G\\x83\\x8a\\x83A\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30de\u30eb\u30c1\u306e\u30db\u30ef\u30a4\u30c8\u30b4\u30fc\u30b9\u30c8\u306e\u30a8\u30ea\u30a2\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "AreaJudgeUnderWB": -49,
+            "AreaJudgeTopWB": 49
+        },
+        "1900": {
+            "RawName": "b'\\x92\\xc7\\x89\\xc1\\x95\\xf3\\x8e\\x80\\x91\\xcc\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9\\x81iLV1\\x81j'",
+            "Name": "\u8ffd\u52a0\u5b9d\u6b7b\u4f53\u304c\u767b\u5834\u3059\u308b\uff08LV1\uff09",
+            "AreaJudgeUnderWB": 100
+        },
+        "1901": {
+            "RawName": "b'\\x92\\xc7\\x89\\xc1\\x95\\xf3\\x8e\\x80\\x91\\xcc\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9\\x81iLV2\\x81j'",
+            "Name": "\u8ffd\u52a0\u5b9d\u6b7b\u4f53\u304c\u767b\u5834\u3059\u308b\uff08LV2\uff09",
+            "AreaJudgeUnderWB": 150
+        },
+        "2000": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09",
+            "PcJudgeUnderWB": 100
+        },
+        "2001": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09",
+            "PcJudgeUnderWB": 180
+        },
+        "2100": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f31\u304f\u306a\u308b\uff08LV1\uff09",
+            "PcJudgeTopWB": -100
+        },
+        "2101": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8e\\xe3\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u304c\u5f31\u304f\u306a\u308b\uff08LV2\uff09",
+            "PcJudgeTopWB": -180
+        },
+        "2102": {
+            "RawName": "b'\\x83O\\x83\\x8c\\x83C\\x83S\\x81[\\x83X\\x83g\\x82\\xcc\\x83v\\x83\\x8c\\x83C\\x83\\x84\\x81[\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30b0\u30ec\u30a4\u30b4\u30fc\u30b9\u30c8\u306e\u30d7\u30ec\u30a4\u30e4\u30fc\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "PcJudgeUnderWB": -49,
+            "PcJudgeTopWB": 49
+        },
+        "2200": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09",
+            "PcJudgeTopWB": -100
+        },
+        "2201": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09",
+            "PcJudgeTopWB": -180
+        },
+        "2202": {
+            "RawName": "b'\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xcc\\x83v\\x83\\x8c\\x83C\\x83\\x84\\x81[\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u306e\u30d7\u30ec\u30a4\u30e4\u30fc\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "PcJudgeUnderWB": -49,
+            "PcJudgeTopWB": 49
+        },
+        "2300": {
+            "RawName": "b'\\x83}\\x83\\x8b\\x83`\\x82\\xcc\\x83z\\x83\\x8f\\x83C\\x83g\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV1\\x81j'",
+            "Name": "\u30de\u30eb\u30c1\u306e\u30db\u30ef\u30a4\u30c8\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV1\uff09",
+            "PcJudgeUnderWB": 100
+        },
+        "2301": {
+            "RawName": "b'\\x83}\\x83\\x8b\\x83`\\x82\\xcc\\x83z\\x83\\x8f\\x83C\\x83g\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x8b\\xad\\x82\\xad\\x82\\xc8\\x82\\xe9\\x81iLV2\\x81j'",
+            "Name": "\u30de\u30eb\u30c1\u306e\u30db\u30ef\u30a4\u30c8\u30b4\u30fc\u30b9\u30c8\u304c\u5f37\u304f\u306a\u308b\uff08LV2\uff09",
+            "PcJudgeUnderWB": 180
+        },
+        "2302": {
+            "RawName": "b'\\x83}\\x83\\x8b\\x83`\\x82\\xcc\\x83z\\x83\\x8f\\x83C\\x83g\\x83S\\x81[\\x83X\\x83g\\x82\\xcc\\x83v\\x83\\x8c\\x83C\\x83\\x84\\x81[\\x95\\xcf\\x89\\xbb\\x82\\xf0\\x89\\xf0\\x8f\\x9c\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30de\u30eb\u30c1\u306e\u30db\u30ef\u30a4\u30c8\u30b4\u30fc\u30b9\u30c8\u306e\u30d7\u30ec\u30a4\u30e4\u30fc\u5909\u5316\u3092\u89e3\u9664\u3059\u308b",
+            "PcJudgeUnderWB": -49,
+            "PcJudgeTopWB": 49
+        },
+        "10100": {
+            "RawName": "b'\\x90\\xb9\\x8e\\xd2\\x83E\\x83\\x8b\\x83x\\x83C\\x83\\x93\\x82\\xaa\\x97\\xe2\\x82\\xbd\\x82\\xad\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u8056\u8005\u30a6\u30eb\u30d9\u30a4\u30f3\u304c\u51b7\u305f\u304f\u306a\u308b",
+            "PcJudgeTopLR": -100
+        },
+        "10200": {
+            "RawName": "b'\\x90_\\x82\\xcc\\x90M\\x93k\\x82\\xbb\\x82\\xcc2\\x82\\xaa\\x97\\xe2\\x82\\xbd\\x82\\xad\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u795e\u306e\u4fe1\u5f92\u305d\u306e2\u304c\u51b7\u305f\u304f\u306a\u308b",
+            "PcJudgeTopLR": -100
+        },
+        "10300": {
+            "RawName": "b'\\x8c\\xab\\x8e\\xd2\\x83\\x8d\\x83K\\x81[\\x83\\x93\\x82\\xaa\\x97\\xe2\\x82\\xbd\\x82\\xad\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u8ce2\u8005\u30ed\u30ac\u30fc\u30f3\u304c\u51b7\u305f\u304f\u306a\u308b",
+            "PcJudgeUnderLR": 100
+        },
+        "10400": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x82\\xcc\\x93k\\x82\\xaa\\x97\\xe2\\x82\\xbd\\x82\\xad\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u9b54\u8853\u306e\u5f92\u304c\u51b7\u305f\u304f\u306a\u308b",
+            "PcJudgeUnderLR": 100
+        },
+        "10500": {
+            "RawName": "b'\\x97v\\x90l\\x82\\xaa\\x8ew\\x97\\xd6\\x82\\xf0\\x82\\xa0\\x82\\xb0\\x82\\xbd\\x82\\xad\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u8981\u4eba\u304c\u6307\u8f2a\u3092\u3042\u3052\u305f\u304f\u306a\u308b",
+            "PcJudgeUnderWB": 180
+        },
+        "10600": {
+            "RawName": "b'\\x83\\x81\\x83t\\x83B\\x83X\\x83g\\x83t\\x83F\\x83\\x8c\\x83X\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb5\\x82\\xbd\\x82\\xad\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u30e1\u30d5\u30a3\u30b9\u30c8\u30d5\u30a7\u30ec\u30b9\u304c\u767b\u5834\u3057\u305f\u304f\u306a\u308b",
+            "PcJudgeTopWB": -180
+        },
+        "20100": {
+            "RawName": "b'\\x93G\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -100
+        },
+        "20200": {
+            "RawName": "b'\\x8dz\\x90\\xce\\x82\\xcc\\x90\\xb8\\x97\\xec\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u9271\u77f3\u306e\u7cbe\u970a\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -150
+        },
+        "20300": {
+            "RawName": "b'\\x92f\\x8d\\xdf\\x8e\\xd2\\x83~\\x83\\x89\\x83\\x8b\\x83_\\x82\\xcc\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u65ad\u7f6a\u8005\u30df\u30e9\u30eb\u30c0\u306e\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -180
+        },
+        "20400": {
+            "RawName": "b'\\x94\\xf2\\x97\\xb3\\x82\\xaa\\x82\\xa2\\x82\\xc8\\x82\\xad\\x82\\xc8\\x82\\xc1\\x82\\xc4\\x82\\xa2\\x82\\xe9'",
+            "Name": "\u98db\u7adc\u304c\u3044\u306a\u304f\u306a\u3063\u3066\u3044\u308b",
+            "AreaJudgeUnderWB": 150
+        },
+        "20500": {
+            "RawName": "b'\\x92f\\x8d\\xdf\\x8e\\xd2\\x83~\\x83\\x89\\x83\\x8b\\x83_\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u65ad\u7f6a\u8005\u30df\u30e9\u30eb\u30c0\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "20600": {
+            "RawName": "b'\\x8f\\x88\\x8cY\\x8f\\xea\\x82\\xcc\\x94\\xe0\\x82\\xaa\\x8aJ\\x82\\xa2\\x82\\xc4\\x82\\xa2\\x82\\xe9'",
+            "Name": "\u51e6\u5211\u5834\u306e\u6249\u304c\u958b\u3044\u3066\u3044\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "30100": {
+            "RawName": "b'\\x93G\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -100
+        },
+        "30110": {
+            "RawName": "b'\\x8dz\\x90\\xce\\x82\\xcc\\x90\\xb8\\x97\\xec\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u9271\u77f3\u306e\u7cbe\u970a\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -150
+        },
+        "30120": {
+            "RawName": "b'\\x83}\\x83X\\x83^\\x81[\\x83T\\x83c\\x83L\\x82\\xcc\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30de\u30b9\u30bf\u30fc\u30b5\u30c4\u30ad\u306e\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -180
+        },
+        "30130": {
+            "RawName": "b'\\x83}\\x83X\\x83^\\x81[\\x83T\\x83c\\x83L\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30de\u30b9\u30bf\u30fc\u30b5\u30c4\u30ad\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "30140": {
+            "RawName": "b'\\x81u\\x90\\xbd\\x81v\\x82\\xcc\\x95\\xf3\\x8e\\x80\\x91\\xcc\\x82\\xaa\\x8e\\xe6\\x93\\xbe\\x89\\xc2\\x94\\\\\\x82\\xc9\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u300c\u8aa0\u300d\u306e\u5b9d\u6b7b\u4f53\u304c\u53d6\u5f97\u53ef\u80fd\u306b\u306a\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "40100": {
+            "RawName": "b'\\x93G\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -100
+        },
+        "40110": {
+            "RawName": "b'\\x8dz\\x90\\xce\\x82\\xcc\\x90\\xb8\\x97\\xec\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u9271\u77f3\u306e\u7cbe\u970a\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -150
+        },
+        "40120": {
+            "RawName": "b'\\x83\\x94\\x83B\\x83\\x89\\x83C\\x83f\\x83\\x8b\\x82\\xcc\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30f4\u30a3\u30e9\u30a4\u30c7\u30eb\u306e\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -180
+        },
+        "40130": {
+            "RawName": "b'\\x83K\\x83\\x8c\\x83L\\x82\\xaa\\x8f\\xc1\\x82\\xa6\\x82\\xe9'",
+            "Name": "\u30ac\u30ec\u30ad\u304c\u6d88\u3048\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "40140": {
+            "RawName": "b'\\x98S\\x8f\\xe9\\x82Q\\x8aK\\x82\\xcc\\x8c\\xae\\x8fo\\x8c\\xbb'",
+            "Name": "\u7262\u57ce\uff12\u968e\u306e\u9375\u51fa\u73fe",
+            "AreaJudgeUnderWB": 100
+        },
+        "40150": {
+            "RawName": "b'\\x93S\\x82\\xcc\\x94\\xc2\\x8fo\\x8c\\xbb'",
+            "Name": "\u9244\u306e\u677f\u51fa\u73fe",
+            "AreaJudgeUnderWB": 180
+        },
+        "50100": {
+            "RawName": "b'\\x93G\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -100
+        },
+        "50110": {
+            "RawName": "b'\\x8dz\\x90\\xce\\x82\\xcc\\x90\\xb8\\x97\\xec\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u9271\u77f3\u306e\u7cbe\u970a\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -150
+        },
+        "50120": {
+            "RawName": "b'\\x83Z\\x83\\x8c\\x83\\x93\\x82\\xcc\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30bb\u30ec\u30f3\u306e\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -180
+        },
+        "50130": {
+            "RawName": "b'\\x83Z\\x83\\x8c\\x83\\x93\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u30bb\u30ec\u30f3\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "50140": {
+            "RawName": "b'\\x83S\\x81[\\x83\\x8b\\x83h\\x83\\x89\\x83\\x93\\x82\\xcc\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x93o\\x8f\\xea'",
+            "Name": "\u30b4\u30fc\u30eb\u30c9\u30e9\u30f3\u306e\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u767b\u5834",
+            "AreaJudgeUnderWB": 180
+        },
+        "50150": {
+            "RawName": "b'\\x95s\\x8f\\xf2\\x92\\xf2\\x8eq'",
+            "Name": "\u4e0d\u6d44\u68af\u5b50",
+            "AreaJudgeUnderWB": 150
+        },
+        "60100": {
+            "RawName": "b'\\x93G\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u6575\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -100
+        },
+        "60110": {
+            "RawName": "b'\\x8dz\\x90\\xce\\x82\\xcc\\x90\\xb8\\x97\\xec\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u9271\u77f3\u306e\u7cbe\u970a\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -150
+        },
+        "60120": {
+            "RawName": "b'\\x95\\xfa\\x98Q\\x8e\\xd2\\x83n\\x81[\\x83t\\x83n\\x83\\x93\\x83h\\x82\\xcc\\x83u\\x83\\x89\\x83b\\x83N\\x83S\\x81[\\x83X\\x83g\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u653e\u6d6a\u8005\u30cf\u30fc\u30d5\u30cf\u30f3\u30c9\u306e\u30d6\u30e9\u30c3\u30af\u30b4\u30fc\u30b9\u30c8\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeTopWB": -180
+        },
+        "60130": {
+            "RawName": "b'\\x95\\xfa\\x98Q\\x8e\\xd2\\x83n\\x81[\\x83t\\x83n\\x83\\x93\\x83h\\x82\\xaa\\x93o\\x8f\\xea\\x82\\xb7\\x82\\xe9'",
+            "Name": "\u653e\u6d6a\u8005\u30cf\u30fc\u30d5\u30cf\u30f3\u30c9\u304c\u767b\u5834\u3059\u308b",
+            "AreaJudgeUnderWB": 180
+        },
+        "60140": {
+            "RawName": "b'\\x8c\\xc5\\x92\\xe8\\x95\\xf3\\x97\\xb3\\x8d\\x9c\\x8d\\xd3\\x82\\xab\\x82\\xcc\\x8f\\xea\\x8f\\x8a\\x82\\xc9\\x8ds\\x82\\xaf\\x82\\xe9\\x82\\xe6\\x82\\xa4\\x82\\xc9\\x82\\xc8\\x82\\xe9'",
+            "Name": "\u56fa\u5b9a\u5b9d\u7adc\u9aa8\u7815\u304d\u306e\u5834\u6240\u306b\u884c\u3051\u308b\u3088\u3046\u306b\u306a\u308b",
+            "AreaJudgeUnderWB": 180
+        }
+    }
+}

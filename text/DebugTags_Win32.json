@@ -1,0 +1,15 @@
+{
+    "dcx_type": "Null",
+    "path": null,
+    "entries": {
+        "10": "TEST_WIN32",
+        "10000": "Movement",
+        "10001": "<?mouseMove?>",
+        "10002": "<?attackL?>",
+        "10003": "<?subAttackL?>",
+        "10004": "<?subAttackR?>",
+        "10005": "LIVE",
+        "10006": "Character name"
+    },
+    "version": 1
+}

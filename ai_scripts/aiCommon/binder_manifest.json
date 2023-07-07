@@ -1,0 +1,425 @@
+{
+    "binder_type": "BND3",
+    "signature": "07D7R6",
+    "flags": 46,
+    "big_endian": false,
+    "bit_big_endian": false,
+    "use_id_prefix": false,
+    "dcx_type": "DCX_DFLT_10000_24_9",
+    "entries": {
+        "N:\\FRPG\\data\\INTERROOT_x64\\script\\ai\\out\\bin": [
+            {
+                "flags": 2,
+                "id": 1000,
+                "name": "goal_list.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1001,
+                "name": "logic_list.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1002,
+                "name": "ai_define.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1003,
+                "name": "event_list.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1004,
+                "name": "common_battle_func.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1005,
+                "name": "common_logic_func.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1006,
+                "name": "common_func2.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1007,
+                "name": "common_func.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1008,
+                "name": "approach_target.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1009,
+                "name": "attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1010,
+                "name": "attack_tunable_spin.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1011,
+                "name": "combo_attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1012,
+                "name": "combo_attack_success_angle180.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1013,
+                "name": "combo_attack_tunable_spin.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1014,
+                "name": "combo_final.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1015,
+                "name": "combo_repeat.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1016,
+                "name": "combo_repeat_success_angle180.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1017,
+                "name": "come_down.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1018,
+                "name": "common_attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1019,
+                "name": "goal_list_dlc.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1020,
+                "name": "continue_attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1021,
+                "name": "default_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1022,
+                "name": "door_act.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1023,
+                "name": "fall.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1024,
+                "name": "gaurd_break_attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1025,
+                "name": "if.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1026,
+                "name": "ladder_act.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1027,
+                "name": "landing.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1028,
+                "name": "non_battle_act.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1029,
+                "name": "nonspinning_attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1030,
+                "name": "347100_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1031,
+                "name": "normal.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1032,
+                "name": "npc_subgoals.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1033,
+                "name": "obj_act.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1034,
+                "name": "specialTurn.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1035,
+                "name": "409000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1036,
+                "name": "team_call_help.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1037,
+                "name": "team_reply_help.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1038,
+                "name": "template.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1039,
+                "name": "top_goal.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1040,
+                "name": "turn.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1041,
+                "name": "turnaround.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1042,
+                "name": "use_item.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1043,
+                "name": "walk_around.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1044,
+                "name": "keep_dist_yaxis.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1045,
+                "name": "pursuit.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1046,
+                "name": "approach_setting_direction.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1047,
+                "name": "nonspinning_combo_attack.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1048,
+                "name": "nonspinning_combo_repeat.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1049,
+                "name": "nonspinning_combo_final.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1050,
+                "name": "001540_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1051,
+                "name": "combo_tunable_success_angle180.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1052,
+                "name": "010000_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1053,
+                "name": "010001_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1054,
+                "name": "011000_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1055,
+                "name": "gaurd_break_tunable.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1056,
+                "name": "410000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1057,
+                "name": "411000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1058,
+                "name": "411000_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1059,
+                "name": "450000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1060,
+                "name": "413000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1061,
+                "name": "412000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1062,
+                "name": "417000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1063,
+                "name": "417100_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1064,
+                "name": "417200_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1065,
+                "name": "418000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1066,
+                "name": "452000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1067,
+                "name": "347101_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1068,
+                "name": "415000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1069,
+                "name": "415000_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1070,
+                "name": "416000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1071,
+                "name": "451000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1072,
+                "name": "006740_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1073,
+                "name": "330000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1074,
+                "name": "349000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1075,
+                "name": "349100_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1076,
+                "name": "334000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1077,
+                "name": "278000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1078,
+                "name": "419000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 9999,
+                "name": "006370_battle.lua"
+            }
+        ],
+        "N:\\FRPG\\data\\INTERROOT_x64\\script": [
+            {
+                "flags": 2,
+                "id": 1000000,
+                "name": "aiCommon.luagnl"
+            },
+            {
+                "flags": 2,
+                "id": 1000001,
+                "name": "aiCommon.luainfo"
+            }
+        ]
+    }
+}

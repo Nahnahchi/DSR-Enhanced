@@ -1,0 +1,3509 @@
+{
+    "param_type": "SHOP_LINEUP_PARAM",
+    "big_endian": false,
+    "unknown": 1,
+    "paramdef_data_version": 1,
+    "flags1": 2,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "1": {
+            "RawName": "b'\\x8f\\xc1\\x82\\xb7\\x82\\xd7\\x82\\xa9\\x82\\xe7\\x82\\xb8'",
+            "Name": "\u6d88\u3059\u3079\u304b\u3089\u305a",
+            "ItemID": 240,
+            "SoulCost": 100,
+            "ItemType": 3
+        },
+        "1100": {
+            "RawName": "b'106\\x9e\\xf2\\x82\\xcc\\x8f\\x95\\x8c\\xbe\\x82\\xcc\\x82\\xeb\\x82\\xa4\\x90\\xce'",
+            "Name": "106\u6a59\u306e\u52a9\u8a00\u306e\u308d\u3046\u77f3",
+            "ItemID": 106,
+            "SoulCost": 100,
+            "QuantityFlag": 11017020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1101": {
+            "RawName": "b'280\\x8fC\\x97\\x9d\\x82\\xcc\\x8c\\xf5\\x95\\xb2'",
+            "Name": "280\u4fee\u7406\u306e\u5149\u7c89",
+            "ItemID": 280,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "1102": {
+            "RawName": "b'290\\x93\\x8a\\x82\\xb0\\x83i\\x83C\\x83t'",
+            "Name": "290\u6295\u3052\u30ca\u30a4\u30d5",
+            "ItemID": 290,
+            "SoulCost": 10,
+            "ItemType": 3
+        },
+        "1103": {
+            "RawName": "b'292\\x89\\xce\\x89\\x8a\\x92\\xd9'",
+            "Name": "292\u706b\u708e\u58f7",
+            "ItemID": 292,
+            "SoulCost": 50,
+            "ItemType": 3
+        },
+        "1104": {
+            "RawName": "b'296\\x95X\\x8c\\x8b\\x89\\xf2'",
+            "Name": "296\u6c37\u7d50\u584a",
+            "ItemID": 296,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "1105": {
+            "RawName": "b'2021\\x96\\xaf\\x89\\xc6\\x82\\xcc\\x8c\\xae'",
+            "Name": "2021\u6c11\u5bb6\u306e\u9375",
+            "ItemID": 2021,
+            "SoulCost": 1000,
+            "QuantityFlag": 11017030,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1106": {
+            "RawName": "b'2602\\x8fC\\x97\\x9d\\x94\\xa0'",
+            "Name": "2602\u4fee\u7406\u7bb1",
+            "ItemID": 2602,
+            "SoulCost": 3000,
+            "QuantityFlag": 11017040,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1107": {
+            "RawName": "b'100000\\x83_\\x83K\\x81['",
+            "Name": "100000\u30c0\u30ac\u30fc",
+            "ItemID": 100000,
+            "SoulCost": 300
+        },
+        "1108": {
+            "RawName": "b'200000\\x83V\\x83\\x87\\x81[\\x83g\\x83\\\\\\x81[\\x83h'",
+            "Name": "200000\u30b7\u30e7\u30fc\u30c8\u30bd\u30fc\u30c9",
+            "ItemID": 200000,
+            "SoulCost": 600
+        },
+        "1110": {
+            "RawName": "b'400000\\x83V\\x83~\\x83^\\x81['",
+            "Name": "400000\u30b7\u30df\u30bf\u30fc",
+            "ItemID": 400000,
+            "SoulCost": 600
+        },
+        "1111": {
+            "RawName": "b'601000\\x83\\x8c\\x83C\\x83s\\x83A'",
+            "Name": "601000\u30ec\u30a4\u30d4\u30a2",
+            "ItemID": 601000,
+            "SoulCost": 600
+        },
+        "1112": {
+            "RawName": "b'700000\\x83n\\x83\\x93\\x83h\\x83A\\x83N\\x83X'",
+            "Name": "700000\u30cf\u30f3\u30c9\u30a2\u30af\u30b9",
+            "ItemID": 700000,
+            "SoulCost": 450
+        },
+        "1113": {
+            "RawName": "b'800000\\x83N\\x83\\x89\\x83u'",
+            "Name": "800000\u30af\u30e9\u30d6",
+            "ItemID": 800000,
+            "SoulCost": 150
+        },
+        "1114": {
+            "RawName": "b'809000\\x8b\\xad\\x89\\xbb\\x83N\\x83\\x89\\x83u'",
+            "Name": "809000\u5f37\u5316\u30af\u30e9\u30d6",
+            "ItemID": 809000,
+            "SoulCost": 350
+        },
+        "1115": {
+            "RawName": "b'1000000\\x83X\\x83s\\x83A'",
+            "Name": "1000000\u30b9\u30d4\u30a2",
+            "ItemID": 1000000,
+            "SoulCost": 600
+        },
+        "1116": {
+            "RawName": "b'1200000\\x83V\\x83\\x87\\x81[\\x83g\\x83{\\x83E'",
+            "Name": "1200000\u30b7\u30e7\u30fc\u30c8\u30dc\u30a6",
+            "ItemID": 1200000,
+            "SoulCost": 1000
+        },
+        "1117": {
+            "RawName": "b'1400000\\x91o\\x92\\xb9\\x82\\xcc\\x96\\xd8\\x8f\\x82'",
+            "Name": "1400000\u53cc\u9ce5\u306e\u6728\u76fe",
+            "ItemID": 1400000,
+            "SoulCost": 400
+        },
+        "1118": {
+            "RawName": "b'1403000\\x83X\\x83\\x82\\x81[\\x83\\x8b\\x83\\x8c\\x83U\\x81[\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1403000\u30b9\u30e2\u30fc\u30eb\u30ec\u30b6\u30fc\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1403000,
+            "SoulCost": 600
+        },
+        "1119": {
+            "RawName": "b'1405000\\x83o\\x83b\\x83N\\x83\\x89\\x81['",
+            "Name": "1405000\u30d0\u30c3\u30af\u30e9\u30fc",
+            "ItemID": 1405000,
+            "SoulCost": 800
+        },
+        "1120": {
+            "RawName": "b'1408000\\x83\\x8c\\x83U\\x81[\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1408000\u30ec\u30b6\u30fc\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1408000,
+            "SoulCost": 800
+        },
+        "1121": {
+            "RawName": "b'1450000\\x83q\\x81[\\x83^\\x81[\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1450000\u30d2\u30fc\u30bf\u30fc\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1450000,
+            "SoulCost": 1000
+        },
+        "1122": {
+            "RawName": "b'1460000\\x90\\xed\\x8em\\x82\\xcc\\x89~\\x8f\\x82'",
+            "Name": "1460000\u6226\u58eb\u306e\u5186\u76fe",
+            "ItemID": 1460000,
+            "SoulCost": 800
+        },
+        "1123": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "1124": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "1125": {
+            "RawName": "b'2006000\\x88\\xc0\\x82\\xa2\\x96\\xee'",
+            "Name": "2006000\u5b89\u3044\u77e2",
+            "ItemID": 2006000,
+            "SoulCost": 3
+        },
+        "1126": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "1127": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "1128": {
+            "RawName": "b'2103000\\x88\\xc0\\x82\\xa2\\x91\\xbe\\x96\\xee'",
+            "Name": "2103000\u5b89\u3044\u592a\u77e2",
+            "ItemID": 2103000,
+            "SoulCost": 10
+        },
+        "1129": {
+            "RawName": "b'\\x83`\\x83F\\x83C\\x83\\x93\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c1\u30a7\u30a4\u30f3\u88c5\u5099",
+            "ItemID": 170000,
+            "SoulCost": 500,
+            "ItemType": 1
+        },
+        "1130": {
+            "RawName": "b'\\x83`\\x83F\\x83C\\x83\\x93\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c1\u30a7\u30a4\u30f3\u88c5\u5099",
+            "ItemID": 171000,
+            "SoulCost": 800,
+            "ItemType": 1
+        },
+        "1131": {
+            "RawName": "b'\\x83`\\x83F\\x83C\\x83\\x93\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c1\u30a7\u30a4\u30f3\u88c5\u5099",
+            "ItemID": 172000,
+            "SoulCost": 500,
+            "ItemType": 1
+        },
+        "1132": {
+            "RawName": "b'\\x83`\\x83F\\x83C\\x83\\x93\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c1\u30a7\u30a4\u30f3\u88c5\u5099",
+            "ItemID": 173000,
+            "SoulCost": 500,
+            "ItemType": 1
+        },
+        "1133": {
+            "RawName": "b'2608\\x92\\xea\\x82\\xc8\\x82\\xb5\\x82\\xcc\\x96\\xd8\\x94\\xa0'",
+            "Name": "2608\u5e95\u306a\u3057\u306e\u6728\u7bb1",
+            "ItemID": 2608,
+            "SoulCost": 1000,
+            "QuantityFlag": 11007010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1134": {
+            "RawName": "b'385Dried finger'",
+            "Name": "385Dried finger",
+            "ItemID": 385,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017210,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1200": {
+            "RawName": "b'270\\x8c\\x8c\\x90\\xd4\\x82\\xcc\\x91\\xdb\\x8b\\xca'",
+            "Name": "270\u8840\u8d64\u306e\u82d4\u7389",
+            "ItemID": 270,
+            "SoulCost": 300,
+            "ItemType": 3
+        },
+        "1201": {
+            "RawName": "b'271\\x93\\xc5\\x8e\\x87\\x82\\xcc\\x91\\xdb\\x8b\\xca'",
+            "Name": "271\u6bd2\u7d2b\u306e\u82d4\u7389",
+            "ItemID": 271,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "1202": {
+            "RawName": "b'272\\x93\\xc5\\x8e\\x87\\x82\\xcc\\x89\\xd4\\x91\\xdb\\x8b\\xca'",
+            "Name": "272\u6bd2\u7d2b\u306e\u82b1\u82d4\u7389",
+            "ItemID": 272,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "1203": {
+            "RawName": "b'Green Moss Clump'",
+            "Name": "Green Moss Clump",
+            "ItemID": 273,
+            "SoulCost": 100,
+            "ItemType": 3
+        },
+        "1204": {
+            "RawName": "b'291\\x93\\xc5\\x93\\x8a\\x82\\xb0\\x83i\\x83C\\x83t'",
+            "Name": "291\u6bd2\u6295\u3052\u30ca\u30a4\u30d5",
+            "ItemID": 291,
+            "SoulCost": 100,
+            "ItemType": 3
+        },
+        "1205": {
+            "RawName": "b'293\\x95\\xb3\\x92c\\x8eq'",
+            "Name": "293\u7cde\u56e3\u5b50",
+            "ItemID": 293,
+            "SoulCost": 200,
+            "ItemType": 3
+        },
+        "1206": {
+            "RawName": "b'294\\x97U\\x82\\xa2\\x93\\xaa\\x8aW'",
+            "Name": "294\u8a98\u3044\u982d\u84cb",
+            "ItemID": 294,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "1207": {
+            "RawName": "b'310\\x92Y\\x8f\\xbc\\x8e\\x89'",
+            "Name": "310\u70ad\u677e\u8102",
+            "ItemID": 310,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "1208": {
+            "RawName": "b'312\\x88\\xea\\x8e\\x9e\\x82\\xcc\\x8e\\xf4\\x82\\xa2'",
+            "Name": "312\u4e00\u6642\u306e\u546a\u3044",
+            "ItemID": 312,
+            "SoulCost": 4000,
+            "QuantityFlag": 11017190,
+            "InitialQuantity": 4,
+            "ItemType": 3
+        },
+        "1209": {
+            "RawName": "b'313\\x95\\x85\\x82\\xea\\x8f\\xbc\\x8e\\x89'",
+            "Name": "313\u8150\u308c\u677e\u8102",
+            "ItemID": 313,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "1210": {
+            "RawName": "b'330\\x8bA\\x8a\\xd2\\x82\\xcc\\x8d\\x9c\\x95\\xd0'",
+            "Name": "330\u5e30\u9084\u306e\u9aa8\u7247",
+            "ItemID": 330,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "1211": {
+            "RawName": "b'370\\x8e\\xb5\\x90F\\x90\\xce'",
+            "Name": "370\u4e03\u8272\u77f3",
+            "ItemID": 370,
+            "SoulCost": 10,
+            "ItemType": 3
+        },
+        "1212": {
+            "RawName": "b'500\\x90l\\x8a\\xd4\\x90\\xab'",
+            "Name": "500\u4eba\u9593\u6027",
+            "ItemID": 500,
+            "SoulCost": 5000,
+            "QuantityFlag": 11027020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1213": {
+            "RawName": "b'2003000\\x89\\xce\\x96\\xee'",
+            "Name": "2003000\u706b\u77e2",
+            "ItemID": 2003000,
+            "SoulCost": 100
+        },
+        "1214": {
+            "RawName": "b'2004000\\x93\\xc5\\x96\\xee'",
+            "Name": "2004000\u6bd2\u77e2",
+            "ItemID": 2004000,
+            "SoulCost": 100
+        },
+        "1215": {
+            "RawName": "b'274\\x89\\xf0\\x8e\\xf4\\x90\\xce'",
+            "Name": "274\u89e3\u546a\u77f3",
+            "ItemID": 274,
+            "SoulCost": 6000,
+            "ItemType": 3
+        },
+        "1216": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "1217": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "1218": {
+            "RawName": "b'2006000\\x88\\xc0\\x82\\xa2\\x96\\xee'",
+            "Name": "2006000\u5b89\u3044\u77e2",
+            "ItemID": 2006000,
+            "SoulCost": 3
+        },
+        "1219": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "1220": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "1221": {
+            "RawName": "b'2103000\\x88\\xc0\\x82\\xa2\\x91\\xbe\\x96\\xee'",
+            "Name": "2103000\u5b89\u3044\u592a\u77e2",
+            "ItemID": 2103000,
+            "SoulCost": 10
+        },
+        "1400": {
+            "RawName": "b'1000\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x8c\\x87\\x95\\xd0'",
+            "Name": "1000\u6954\u77f3\u306e\u6b20\u7247",
+            "ItemID": 1000,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "1401": {
+            "RawName": "b'2002\\x83A\\x83\\x8b\\x83g\\x83\\x8a\\x83E\\x83X\\x82\\xcc\\x96\\xe4\\x8f\\xcd'",
+            "Name": "2002\u30a2\u30eb\u30c8\u30ea\u30a6\u30b9\u306e\u7d0b\u7ae0",
+            "ItemID": 2002,
+            "SoulCost": 20000,
+            "QuantityFlag": 11017140,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1402": {
+            "RawName": "b'2600\\x95\\x90\\x8a\\xed\\x82\\xcc\\x92b\\x8e\\xa1\\x94\\xa0'",
+            "Name": "2600\u6b66\u5668\u306e\u935b\u6cbb\u7bb1",
+            "ItemID": 2600,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017150,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1403": {
+            "RawName": "b'2601\\x96h\\x8b\\xef\\x82\\xcc\\x92b\\x8e\\xa1\\x94\\xa0'",
+            "Name": "2601\u9632\u5177\u306e\u935b\u6cbb\u7bb1",
+            "ItemID": 2601,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017160,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1404": {
+            "RawName": "b'2602\\x8fC\\x97\\x9d\\x94\\xa0'",
+            "Name": "2602\u4fee\u7406\u7bb1",
+            "ItemID": 2602,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017170,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1405": {
+            "RawName": "b'201000\\x83\\x8d\\x83\\x93\\x83O\\x83\\\\\\x81[\\x83h'",
+            "Name": "201000\u30ed\u30f3\u30b0\u30bd\u30fc\u30c9",
+            "ItemID": 201000,
+            "SoulCost": 1000
+        },
+        "1406": {
+            "RawName": "b'202000\\x83u\\x83\\x8d\\x81[\\x83h\\x83\\\\\\x81[\\x83h'",
+            "Name": "202000\u30d6\u30ed\u30fc\u30c9\u30bd\u30fc\u30c9",
+            "ItemID": 202000,
+            "SoulCost": 1000
+        },
+        "1407": {
+            "RawName": "b'300000\\x83o\\x83X\\x83^\\x81[\\x83h\\x83\\\\\\x81[\\x83h'",
+            "Name": "300000\u30d0\u30b9\u30bf\u30fc\u30c9\u30bd\u30fc\u30c9",
+            "ItemID": 300000,
+            "SoulCost": 3000
+        },
+        "1408": {
+            "RawName": "b'701000\\x83o\\x83g\\x83\\x8b\\x83A\\x83N\\x83X'",
+            "Name": "701000\u30d0\u30c8\u30eb\u30a2\u30af\u30b9",
+            "ItemID": 701000,
+            "SoulCost": 1000
+        },
+        "1409": {
+            "RawName": "b'803000\\x83E\\x83H\\x81[\\x83s\\x83b\\x83N'",
+            "Name": "803000\u30a6\u30a9\u30fc\u30d4\u30c3\u30af",
+            "ItemID": 803000,
+            "SoulCost": 800
+        },
+        "1410": {
+            "RawName": "b'901000\\x83Z\\x83X\\x83^\\x83X'",
+            "Name": "901000\u30bb\u30b9\u30bf\u30b9",
+            "ItemID": 901000,
+            "SoulCost": 200
+        },
+        "1411": {
+            "RawName": "b'1050000\\x83p\\x83C\\x83N'",
+            "Name": "1050000\u30d1\u30a4\u30af",
+            "ItemID": 1050000,
+            "SoulCost": 2000
+        },
+        "1412": {
+            "RawName": "b'1402000\\x83\\x89\\x81[\\x83W\\x83\\x8c\\x83U\\x81[\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1402000\u30e9\u30fc\u30b8\u30ec\u30b6\u30fc\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1402000,
+            "SoulCost": 800
+        },
+        "1413": {
+            "RawName": "b'1452000\\x93\\x83\\x82\\xcc\\x83J\\x83C\\x83g\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1452000\u5854\u306e\u30ab\u30a4\u30c8\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1452000,
+            "SoulCost": 1000
+        },
+        "1414": {
+            "RawName": "b'1477000\\x91o\\x8e\\xd6\\x82\\xcc\\x83J\\x83C\\x83g\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1477000\u53cc\u86c7\u306e\u30ab\u30a4\u30c8\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1477000,
+            "SoulCost": 1000
+        },
+        "1415": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "1416": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "1417": {
+            "RawName": "b'2006000\\x88\\xc0\\x82\\xa2\\x96\\xee'",
+            "Name": "2006000\u5b89\u3044\u77e2",
+            "ItemID": 2006000,
+            "SoulCost": 3
+        },
+        "1418": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "1419": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "1420": {
+            "RawName": "b'2103000\\x88\\xc0\\x82\\xa2\\x91\\xbe\\x96\\xee'",
+            "Name": "2103000\u5b89\u3044\u592a\u77e2",
+            "ItemID": 2103000,
+            "SoulCost": 10
+        },
+        "1500": {
+            "RawName": "b'311\\x89\\xa9\\x8b\\xe0\\x8f\\xbc\\x8e\\x89'",
+            "Name": "311\u9ec4\u91d1\u677e\u8102",
+            "ItemID": 311,
+            "SoulCost": 1000,
+            "QuantityFlag": 11007000,
+            "InitialQuantity": 3,
+            "ItemType": 3
+        },
+        "1501": {
+            "RawName": "b'2608\\x92\\xea\\x82\\xc8\\x82\\xb5\\x82\\xcc\\x96\\xd8\\x94\\xa0'",
+            "Name": "2608\u5e95\u306a\u3057\u306e\u6728\u7bb1",
+            "ItemID": 2608,
+            "SoulCost": 1000,
+            "QuantityFlag": 11007010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1502": {
+            "RawName": "b'205000\\x8c\\x8b\\x8f\\xbb\\x92\\xbc\\x8c\\x95'",
+            "Name": "205000\u7d50\u6676\u76f4\u5263",
+            "ItemID": 205000,
+            "SoulCost": 4000
+        },
+        "1503": {
+            "RawName": "b'304000\\x8c\\x8b\\x8f\\xbb\\x91\\xe5\\x8c\\x95'",
+            "Name": "304000\u7d50\u6676\u5927\u5263",
+            "ItemID": 304000,
+            "SoulCost": 6000
+        },
+        "1504": {
+            "RawName": "b'1471000\\x8c\\x8b\\x8f\\xbb\\x82\\xcc\\x8f\\x82'",
+            "Name": "1471000\u7d50\u6676\u306e\u76fe",
+            "ItemID": 1471000,
+            "SoulCost": 4000
+        },
+        "1505": {
+            "RawName": "b'\\x83g\\x83\\x8a\\x83b\\x83N\\x83X\\x83^\\x81[\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c8\u30ea\u30c3\u30af\u30b9\u30bf\u30fc\u88c5\u5099",
+            "ItemID": 110000,
+            "SoulCost": 12000,
+            "ItemType": 1
+        },
+        "1506": {
+            "RawName": "b'\\x83g\\x83\\x8a\\x83b\\x83N\\x83X\\x83^\\x81[\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c8\u30ea\u30c3\u30af\u30b9\u30bf\u30fc\u88c5\u5099",
+            "ItemID": 111000,
+            "SoulCost": 15000,
+            "ItemType": 1
+        },
+        "1507": {
+            "RawName": "b'\\x83g\\x83\\x8a\\x83b\\x83N\\x83X\\x83^\\x81[\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c8\u30ea\u30c3\u30af\u30b9\u30bf\u30fc\u88c5\u5099",
+            "ItemID": 112000,
+            "SoulCost": 10000,
+            "ItemType": 1
+        },
+        "1508": {
+            "RawName": "b'\\x83g\\x83\\x8a\\x83b\\x83N\\x83X\\x83^\\x81[\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30c8\u30ea\u30c3\u30af\u30b9\u30bf\u30fc\u88c5\u5099",
+            "ItemID": 113000,
+            "SoulCost": 10000,
+            "ItemType": 1
+        },
+        "1509": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "1510": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "1511": {
+            "RawName": "b'2006000\\x88\\xc0\\x82\\xa2\\x96\\xee'",
+            "Name": "2006000\u5b89\u3044\u77e2",
+            "ItemID": 2006000,
+            "SoulCost": 3
+        },
+        "1512": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "1513": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "1514": {
+            "RawName": "b'2103000\\x88\\xc0\\x82\\xa2\\x91\\xbe\\x96\\xee'",
+            "Name": "2103000\u5b89\u3044\u592a\u77e2",
+            "ItemID": 2103000,
+            "SoulCost": 10
+        },
+        "1515": {
+            "RawName": "b'Silver Coin'",
+            "Name": "Silver Coin",
+            "ItemID": 382,
+            "SoulCost": 2000,
+            "QuantityFlag": 11007030,
+            "InitialQuantity": 20,
+            "ItemType": 3
+        },
+        "1550": {
+            "RawName": "b'470000\\x83S\\x81[\\x83\\x8c\\x83\\x80\\x83w\\x83\\x8b\\x83\\x80'",
+            "Name": "470000\u30b4\u30fc\u30ec\u30e0\u30d8\u30eb\u30e0",
+            "ItemID": 470000,
+            "SoulCost": 5000,
+            "QuantityFlag": 11807020,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1551": {
+            "RawName": "b'471000\\x83S\\x81[\\x83\\x8c\\x83\\x80\\x83A\\x81[\\x83}\\x81['",
+            "Name": "471000\u30b4\u30fc\u30ec\u30e0\u30a2\u30fc\u30de\u30fc",
+            "ItemID": 471000,
+            "SoulCost": 7000,
+            "QuantityFlag": 11807030,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1552": {
+            "RawName": "b'472000\\x83S\\x81[\\x83\\x8c\\x83\\x80\\x83K\\x83\\x93\\x83g\\x83\\x8c\\x83b\\x83g'",
+            "Name": "472000\u30b4\u30fc\u30ec\u30e0\u30ac\u30f3\u30c8\u30ec\u30c3\u30c8",
+            "ItemID": 472000,
+            "SoulCost": 5000,
+            "QuantityFlag": 11807040,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1553": {
+            "RawName": "b'473000\\x83S\\x81[\\x83\\x8c\\x83\\x80\\x83\\x8c\\x83M\\x83\\x93\\x83X'",
+            "Name": "473000\u30b4\u30fc\u30ec\u30e0\u30ec\u30ae\u30f3\u30b9",
+            "ItemID": 473000,
+            "SoulCost": 5000,
+            "QuantityFlag": 11807050,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1554": {
+            "RawName": "b'80000\\x83X\\x83\\x82\\x83E\\x82\\xcc\\x8a\\x95'",
+            "Name": "80000\u30b9\u30e2\u30a6\u306e\u515c",
+            "ItemID": 80000,
+            "SoulCost": 6000,
+            "QuantityFlag": 11807060,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1555": {
+            "RawName": "b'81000\\x83X\\x83\\x82\\x83E\\x82\\xcc\\x8aZ'",
+            "Name": "81000\u30b9\u30e2\u30a6\u306e\u93a7",
+            "ItemID": 81000,
+            "SoulCost": 7000,
+            "QuantityFlag": 11807070,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1556": {
+            "RawName": "b'82000\\x83X\\x83\\x82\\x83E\\x82\\xcc\\x8e\\xe8\\x8db'",
+            "Name": "82000\u30b9\u30e2\u30a6\u306e\u624b\u7532",
+            "ItemID": 82000,
+            "SoulCost": 5000,
+            "QuantityFlag": 11807080,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1557": {
+            "RawName": "b'83000\\x83X\\x83\\x82\\x83E\\x82\\xcc\\x91\\xab\\x8db'",
+            "Name": "83000\u30b9\u30e2\u30a6\u306e\u8db3\u7532",
+            "ItemID": 83000,
+            "SoulCost": 5000,
+            "QuantityFlag": 11807090,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1558": {
+            "RawName": "b'270000\\x83I\\x81[\\x83\\x93\\x83X\\x83^\\x83C\\x83\\x93\\x82\\xcc\\x8a\\x95'",
+            "Name": "270000\u30aa\u30fc\u30f3\u30b9\u30bf\u30a4\u30f3\u306e\u515c",
+            "ItemID": 270000,
+            "SoulCost": 7000,
+            "QuantityFlag": 11807100,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1559": {
+            "RawName": "b'271000\\x83I\\x81[\\x83\\x93\\x83X\\x83^\\x83C\\x83\\x93\\x82\\xcc\\x8aZ'",
+            "Name": "271000\u30aa\u30fc\u30f3\u30b9\u30bf\u30a4\u30f3\u306e\u93a7",
+            "ItemID": 271000,
+            "SoulCost": 8000,
+            "QuantityFlag": 11807110,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1560": {
+            "RawName": "b'272000\\x83I\\x81[\\x83\\x93\\x83X\\x83^\\x83C\\x83\\x93\\x82\\xcc\\x8e\\xe8\\x8db'",
+            "Name": "272000\u30aa\u30fc\u30f3\u30b9\u30bf\u30a4\u30f3\u306e\u624b\u7532",
+            "ItemID": 272000,
+            "SoulCost": 6000,
+            "QuantityFlag": 11807120,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1561": {
+            "RawName": "b'273000\\x83I\\x81[\\x83\\x93\\x83X\\x83^\\x83C\\x83\\x93\\x82\\xcc\\x91\\xab\\x8db'",
+            "Name": "273000\u30aa\u30fc\u30f3\u30b9\u30bf\u30a4\u30f3\u306e\u8db3\u7532",
+            "ItemID": 273000,
+            "SoulCost": 6000,
+            "QuantityFlag": 11807130,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1562": {
+            "RawName": "b'540000\\x89A\\x82\\xcc\\x91\\xbe\\x97z\\x82\\xcc\\x89\\xa4\\x8a\\xa5'",
+            "Name": "540000\u9670\u306e\u592a\u967d\u306e\u738b\u51a0",
+            "ItemID": 540000,
+            "SoulCost": 10000,
+            "QuantityFlag": 11807230,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1563": {
+            "RawName": "b'541000\\x8c\\x8e\\x8c\\xf5\\x82\\xcc\\x92\\xb7\\x88\\xdf'",
+            "Name": "541000\u6708\u5149\u306e\u9577\u8863",
+            "ItemID": 541000,
+            "SoulCost": 10000,
+            "QuantityFlag": 11807170,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1564": {
+            "RawName": "b'542000\\x8c\\x8e\\x8c\\xf5\\x82\\xcc\\x92\\xb7\\x8e\\xe8\\x91\\xdc'",
+            "Name": "542000\u6708\u5149\u306e\u9577\u624b\u888b",
+            "ItemID": 542000,
+            "SoulCost": 10000,
+            "QuantityFlag": 11807180,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1565": {
+            "RawName": "b'543000\\x8c\\x8e\\x8c\\xf5\\x82\\xcc\\x8d\\x98\\x8a\\xaa\\x82\\xab'",
+            "Name": "543000\u6708\u5149\u306e\u8170\u5dfb\u304d",
+            "ItemID": 543000,
+            "SoulCost": 10000,
+            "QuantityFlag": 11807190,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1566": {
+            "RawName": "b'550000\\x91\\xe5\\x89\\xa4\\x82\\xcc\\x89\\xa4\\x8a\\xa5'",
+            "Name": "550000\u5927\u738b\u306e\u738b\u51a0",
+            "ItemID": 550000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11807240,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1567": {
+            "RawName": "b'551000\\x91\\xe5\\x89\\xa4\\x82\\xcc\\x92\\xb7\\x88\\xdf'",
+            "Name": "551000\u5927\u738b\u306e\u9577\u8863",
+            "ItemID": 551000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11807200,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1568": {
+            "RawName": "b'552000\\x91\\xe5\\x89\\xa4\\x82\\xcc\\x98r\\x97\\xd6'",
+            "Name": "552000\u5927\u738b\u306e\u8155\u8f2a",
+            "ItemID": 552000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11807210,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1569": {
+            "RawName": "b'553000\\x91\\xe5\\x89\\xa4\\x82\\xcc\\x8br\\x97\\xd6'",
+            "Name": "553000\u5927\u738b\u306e\u811a\u8f2a",
+            "ItemID": 553000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11807220,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1580": {
+            "RawName": "b'2100\\x96\\x9c\\x94\\\\\\x8c\\xae'",
+            "Name": "2100\u4e07\u80fd\u9375",
+            "ItemID": 2100,
+            "SoulCost": 5000,
+            "QuantityFlag": 11007020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1581": {
+            "RawName": "b'660000\\x83A\\x83\\x8b\\x83g\\x83\\x8a\\x83E\\x83X\\x82\\xcc\\x8a\\x95'",
+            "Name": "660000\u30a2\u30eb\u30c8\u30ea\u30a6\u30b9\u306e\u515c",
+            "ItemID": 660000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11217060,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1582": {
+            "RawName": "b'661000\\x83A\\x83\\x8b\\x83g\\x83\\x8a\\x83E\\x83X\\x82\\xcc\\x8aZ'",
+            "Name": "661000\u30a2\u30eb\u30c8\u30ea\u30a6\u30b9\u306e\u93a7",
+            "ItemID": 661000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11217070,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1583": {
+            "RawName": "b'662000\\x83A\\x83\\x8b\\x83g\\x83\\x8a\\x83E\\x83X\\x82\\xcc\\x8e\\xe8\\x8db'",
+            "Name": "662000\u30a2\u30eb\u30c8\u30ea\u30a6\u30b9\u306e\u624b\u7532",
+            "ItemID": 662000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11217080,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1584": {
+            "RawName": "b'663000\\x83A\\x83\\x8b\\x83g\\x83\\x8a\\x83E\\x83X\\x82\\xcc\\x91\\xab\\x8db'",
+            "Name": "663000\u30a2\u30eb\u30c8\u30ea\u30a6\u30b9\u306e\u8db3\u7532",
+            "ItemID": 663000,
+            "SoulCost": 20000,
+            "QuantityFlag": 11217090,
+            "InitialQuantity": 1,
+            "ItemType": 1
+        },
+        "1600": {
+            "RawName": "b'109\\x8e\\x80\\x82\\xcc\\x93\\xb5'",
+            "Name": "109\u6b7b\u306e\u77b3",
+            "ItemID": 109,
+            "SoulCost": 3000,
+            "QuantityFlag": 11307000,
+            "InitialQuantity": 6,
+            "ItemType": 3
+        },
+        "1601": {
+            "RawName": "b'240\\x8f\\x97\\x90_\\x82\\xcc\\x8fj\\x95\\x9f'",
+            "Name": "240\u5973\u795e\u306e\u795d\u798f",
+            "ItemID": 240,
+            "SoulCost": 20000,
+            "QuantityFlag": 11027040,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1602": {
+            "RawName": "b'370\\x8e\\xb5\\x90F\\x90\\xce'",
+            "Name": "370\u4e03\u8272\u77f3",
+            "ItemID": 370,
+            "SoulCost": 10,
+            "ItemType": 3
+        },
+        "1603": {
+            "RawName": "b'500\\x90l\\x8a\\xd4\\x90\\xab'",
+            "Name": "500\u4eba\u9593\u6027",
+            "ItemID": 500,
+            "SoulCost": 10000,
+            "QuantityFlag": 11027050,
+            "InitialQuantity": 3,
+            "ItemType": 3
+        },
+        "1604": {
+            "RawName": "b'501\\x90l\\x8a\\xd4\\x90\\xab\\x82\\xcc\\x91o\\x8eq'",
+            "Name": "501\u4eba\u9593\u6027\u306e\u53cc\u5b50",
+            "ItemID": 501,
+            "SoulCost": 20000,
+            "QuantityFlag": 11307010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1605": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x89\\xf1\\x95\\x9c5000'",
+            "Name": "\u5947\u8de1\uff1a\u56de\u5fa95000",
+            "ItemID": 5000,
+            "SoulCost": 5000,
+            "QuantityFlag": 11027090,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1606": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8c\\xc0\\x82\\xe7\\x82\\xea\\x82\\xbd\\x91\\xe5\\x89\\xf1\\x95\\x9c5020'",
+            "Name": "\u5947\u8de1\uff1a\u9650\u3089\u308c\u305f\u5927\u56de\u5fa95020",
+            "ItemID": 5020,
+            "SoulCost": 10000,
+            "QuantityFlag": 11027100,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "1607": {
+            "RawName": "b'702000\\x83N\\x83\\x8c\\x83Z\\x83\\x93\\x83g\\x83A\\x83N\\x83X'",
+            "Name": "702000\u30af\u30ec\u30bb\u30f3\u30c8\u30a2\u30af\u30b9",
+            "ItemID": 702000,
+            "SoulCost": 10000,
+            "QuantityFlag": 11307020,
+            "InitialQuantity": 1
+        },
+        "1608": {
+            "RawName": "b'801000\\x83\\x81\\x83C\\x83X'",
+            "Name": "801000\u30e1\u30a4\u30b9",
+            "ItemID": 801000,
+            "SoulCost": 3000
+        },
+        "1609": {
+            "RawName": "b'1361000\\x91e\\x95z\\x82\\xcc\\x83^\\x83\\x8a\\x83X\\x83}\\x83\\x93'",
+            "Name": "1361000\u7c97\u5e03\u306e\u30bf\u30ea\u30b9\u30de\u30f3",
+            "ItemID": 1361000,
+            "SoulCost": 1000
+        },
+        "1610": {
+            "RawName": "b'1362000\\x83\\\\\\x83\\x8b\\x83\\x8d\\x83\\x93\\x83h\\x82\\xcc\\x83^\\x83\\x8a\\x83X\\x83}\\x83\\x93'",
+            "Name": "1362000\u30bd\u30eb\u30ed\u30f3\u30c9\u306e\u30bf\u30ea\u30b9\u30de\u30f3",
+            "ItemID": 1362000,
+            "SoulCost": 5000
+        },
+        "1611": {
+            "RawName": "b'590000\\x95\\x83\\x82\\xcc\\x89\\xbc\\x96\\xca'",
+            "Name": "590000\u7236\u306e\u4eee\u9762",
+            "ItemID": 590000,
+            "SoulCost": 8000,
+            "ItemType": 1
+        },
+        "1612": {
+            "RawName": "b'600000\\x95\\xea\\x82\\xcc\\x89\\xbc\\x96\\xca'",
+            "Name": "600000\u6bcd\u306e\u4eee\u9762",
+            "ItemID": 600000,
+            "SoulCost": 8000,
+            "ItemType": 1
+        },
+        "1613": {
+            "RawName": "b'610000\\x8eq\\x82\\xcc\\x89\\xbc\\x96\\xca'",
+            "Name": "610000\u5b50\u306e\u4eee\u9762",
+            "ItemID": 610000,
+            "SoulCost": 8000,
+            "ItemType": 1
+        },
+        "1614": {
+            "RawName": "b'Elite Cleric Helm'",
+            "Name": "Elite Cleric Helm",
+            "ItemID": 650000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "1615": {
+            "RawName": "b'Elite Cleric Armor'",
+            "Name": "Elite Cleric Armor",
+            "ItemID": 651000,
+            "SoulCost": 7000,
+            "ItemType": 1
+        },
+        "1616": {
+            "RawName": "b'Elite Cleric Gauntlets'",
+            "Name": "Elite Cleric Gauntlets",
+            "ItemID": 652000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "1617": {
+            "RawName": "b'Elite Cleric Leggings'",
+            "Name": "Elite Cleric Leggings",
+            "ItemID": 653000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "1700": {
+            "RawName": "b'145\\x93\\x8c\\x82\\xcc\\x96\\xd8\\x96\\xda\\x8ew\\x97\\xd6'",
+            "Name": "145\u6771\u306e\u6728\u76ee\u6307\u8f2a",
+            "ItemID": 145,
+            "SoulCost": 10000,
+            "QuantityFlag": 11407000,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "1701": {
+            "RawName": "b'303000\\x83t\\x83\\x89\\x83\\x93\\x83x\\x83\\x8b\\x83W\\x83F'",
+            "Name": "303000\u30d5\u30e9\u30f3\u30d9\u30eb\u30b8\u30a7",
+            "ItemID": 303000,
+            "SoulCost": 10000
+        },
+        "1702": {
+            "RawName": "b'306000\\x90\\xce\\x82\\xcc\\x91\\xe5\\x8c\\x95'",
+            "Name": "306000\u77f3\u306e\u5927\u5263",
+            "ItemID": 306000,
+            "SoulCost": 15000
+        },
+        "1703": {
+            "RawName": "b'352000\\x83f\\x81[\\x83\\x82\\x83\\x93\\x82\\xcc\\x91\\xe5\\xe7\\xeb'",
+            "Name": "352000\u30c7\u30fc\u30e2\u30f3\u306e\u5927\u9248",
+            "ItemID": 352000,
+            "SoulCost": 10000
+        },
+        "1704": {
+            "RawName": "b'402000\\x83V\\x83\\x87\\x81[\\x83e\\x83\\x8b'",
+            "Name": "402000\u30b7\u30e7\u30fc\u30c6\u30eb",
+            "ItemID": 402000,
+            "SoulCost": 10000
+        },
+        "1705": {
+            "RawName": "b'500000\\x91\\xc5\\x93\\x81'",
+            "Name": "500000\u6253\u5200",
+            "ItemID": 500000,
+            "SoulCost": 5000
+        },
+        "1706": {
+            "RawName": "b'501000\\x95\\xa8\\x8a\\xb1\\x82\\xb5\\x8a\\xc6'",
+            "Name": "501000\u7269\u5e72\u3057\u7aff",
+            "ItemID": 501000,
+            "SoulCost": 20000
+        },
+        "1707": {
+            "RawName": "b'751000\\x83f\\x81[\\x83\\x82\\x83\\x93\\x82\\xcc\\x91\\xe5\\x95\\x80'",
+            "Name": "751000\u30c7\u30fc\u30e2\u30f3\u306e\u5927\u65a7",
+            "ItemID": 751000,
+            "SoulCost": 10000
+        },
+        "1708": {
+            "RawName": "b'902000\\x82\\xa9\\x82\\xac\\x92\\xdc'",
+            "Name": "902000\u304b\u304e\u722a",
+            "ItemID": 902000,
+            "SoulCost": 5000
+        },
+        "1709": {
+            "RawName": "b'1003000\\x83f\\x81[\\x83\\x82\\x83\\x93\\x82\\xcc\\x91\\x84'",
+            "Name": "1003000\u30c7\u30fc\u30e2\u30f3\u306e\u69cd",
+            "ItemID": 1003000,
+            "SoulCost": 15000
+        },
+        "2000": {
+            "RawName": "b'3000\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee'",
+            "Name": "3000\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u77e2",
+            "ItemID": 3000,
+            "SoulCost": 1000,
+            "QuantityFlag": 11027130,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2001": {
+            "RawName": "b'3010\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee'",
+            "Name": "3010\u9b54\u8853\uff1a\u5f37\u3044\u30bd\u30a6\u30eb\u306e\u77e2",
+            "ItemID": 3010,
+            "SoulCost": 6000,
+            "QuantityFlag": 11027140,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2002": {
+            "RawName": "b'3020\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "3020\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u592a\u77e2",
+            "ItemID": 3020,
+            "SoulCost": 2000,
+            "QuantityFlag": 11027150,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2003": {
+            "RawName": "b'3030\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "3030\u9b54\u8853\uff1a\u5f37\u3044\u30bd\u30a6\u30eb\u306e\u592a\u77e2",
+            "ItemID": 3030,
+            "SoulCost": 8000,
+            "QuantityFlag": 11027160,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2004": {
+            "RawName": "b'3100\\x96\\x82\\x8fp\\x81F\\x96\\x82\\x96@\\x82\\xcc\\x95\\x90\\x8a\\xed'",
+            "Name": "3100\u9b54\u8853\uff1a\u9b54\u6cd5\u306e\u6b66\u5668",
+            "ItemID": 3100,
+            "SoulCost": 3000,
+            "QuantityFlag": 11027170,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2005": {
+            "RawName": "b'3300\\x96\\x82\\x8fp\\x81F\\x96\\x82\\x96@\\x82\\xcc\\x8f\\x82'",
+            "Name": "3300\u9b54\u8853\uff1a\u9b54\u6cd5\u306e\u76fe",
+            "ItemID": 3300,
+            "SoulCost": 3000,
+            "QuantityFlag": 11027180,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2006": {
+            "RawName": "b'3520\\x96\\x82\\x8fp\\x81F\\x89\\xb9\\x91\\x97\\x82\\xe8'",
+            "Name": "3520\u9b54\u8853\uff1a\u97f3\u9001\u308a",
+            "ItemID": 3520,
+            "SoulCost": 1000,
+            "QuantityFlag": 11027190,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2007": {
+            "RawName": "b'3540\\x96\\x82\\x8fp\\x81F\\x97\\x8e\\x89\\xba\\x90\\xa7\\x8c\\xe4'",
+            "Name": "3540\u9b54\u8853\uff1a\u843d\u4e0b\u5236\u5fa1",
+            "ItemID": 3540,
+            "SoulCost": 1500,
+            "QuantityFlag": 11027200,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2008": {
+            "RawName": "b'115\\x96i\\x82\\xa6\\x82\\xe9\\x97\\xb3\\x88\\xf3\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "115\u5420\u3048\u308b\u7adc\u5370\u306e\u6307\u8f2a",
+            "ItemID": 115,
+            "SoulCost": 20000,
+            "QuantityFlag": 11027210,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "2009": {
+            "RawName": "b'141\\x98\\xc8\\x82\\xde\\x97\\xb3\\x88\\xf3\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "141\u4f47\u3080\u7adc\u5370\u306e\u6307\u8f2a",
+            "ItemID": 141,
+            "SoulCost": 20000,
+            "QuantityFlag": 11027220,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "2010": {
+            "RawName": "b'1300000\\x96\\x82\\x8fp\\x8et\\x82\\xcc\\x8f\\xf1'",
+            "Name": "1300000\u9b54\u8853\u5e2b\u306e\u6756",
+            "ItemID": 1300000,
+            "SoulCost": 500
+        },
+        "2020": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x92\\xc7\\x94\\xf6\\x82\\xb7\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x89\\xf23040'",
+            "Name": "\u9b54\u8853\uff1a\u8ffd\u5c3e\u3059\u308b\u30bd\u30a6\u30eb\u306e\u584a3040",
+            "ItemID": 3040,
+            "SoulCost": 20000,
+            "QuantityFlag": 11027230,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2021": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\x843060'",
+            "Name": "\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u69cd3060",
+            "ItemID": 3060,
+            "SoulCost": 40000,
+            "QuantityFlag": 11027240,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2100": {
+            "RawName": "b'3000\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee'",
+            "Name": "3000\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u77e2",
+            "ItemID": 3000,
+            "SoulCost": 2000,
+            "QuantityFlag": 11607120,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2101": {
+            "RawName": "b'3020\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "3020\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u592a\u77e2",
+            "ItemID": 3020,
+            "SoulCost": 4000,
+            "QuantityFlag": 11607130,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2102": {
+            "RawName": "b'1300000\\x96\\x82\\x8fp\\x8et\\x82\\xcc\\x8f\\xf1'",
+            "Name": "1300000\u9b54\u8853\u5e2b\u306e\u6756",
+            "ItemID": 1300000,
+            "SoulCost": 500
+        },
+        "2103": {
+            "RawName": "b'Mage Smith Hat'",
+            "Name": "Mage Smith Hat",
+            "ItemID": 370000,
+            "SoulCost": 500,
+            "ItemType": 1
+        },
+        "2104": {
+            "RawName": "b'Mage Smith Coat'",
+            "Name": "Mage Smith Coat",
+            "ItemID": 371000,
+            "SoulCost": 1000,
+            "ItemType": 1
+        },
+        "2105": {
+            "RawName": "b'Mage Smith Gauntlets'",
+            "Name": "Mage Smith Gauntlets",
+            "ItemID": 372000,
+            "SoulCost": 500,
+            "ItemType": 1
+        },
+        "2106": {
+            "RawName": "b'Mage Smith Boots'",
+            "Name": "Mage Smith Boots",
+            "ItemID": 373000,
+            "SoulCost": 700,
+            "ItemType": 1
+        },
+        "2200": {
+            "RawName": "b'3400\\x96\\x82\\x8fp\\x81F\\x8c\\xa9\\x82\\xa6\\x82\\xc8\\x82\\xa2\\x95\\x90\\x8a\\xed'",
+            "Name": "3400\u9b54\u8853\uff1a\u898b\u3048\u306a\u3044\u6b66\u5668",
+            "ItemID": 3400,
+            "SoulCost": 2000,
+            "QuantityFlag": 11207000,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2201": {
+            "RawName": "b'3410\\x96\\x82\\x8fp\\x81F\\x8c\\xa9\\x82\\xa6\\x82\\xc8\\x82\\xa2\\x91\\xcc'",
+            "Name": "3410\u9b54\u8853\uff1a\u898b\u3048\u306a\u3044\u4f53",
+            "ItemID": 3410,
+            "SoulCost": 2000,
+            "QuantityFlag": 11207010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2202": {
+            "RawName": "b'3500\\x96\\x82\\x8fp\\x81F\\x8f\\xc6\\x82\\xe7\\x82\\xb7\\x8c\\xf5'",
+            "Name": "3500\u9b54\u8853\uff1a\u7167\u3089\u3059\u5149",
+            "ItemID": 3500,
+            "SoulCost": 1000,
+            "QuantityFlag": 11207020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2203": {
+            "RawName": "b'3530\\x96\\x82\\x8fp\\x81F\\x8fC\\x95\\x9c'",
+            "Name": "3530\u9b54\u8853\uff1a\u4fee\u5fa9",
+            "ItemID": 3530,
+            "SoulCost": 10000,
+            "QuantityFlag": 11207030,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2204": {
+            "RawName": "b'3550\\x96\\x82\\x8fp\\x81F\\x8b[\\x91\\xd4'",
+            "Name": "3550\u9b54\u8853\uff1a\u64ec\u614b",
+            "ItemID": 3550,
+            "SoulCost": 3000,
+            "QuantityFlag": 11207040,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2205": {
+            "RawName": "b'1305000\\x83E\\x81[\\x83\\x89\\x83V\\x81[\\x83\\x8b\\x82\\xcc\\x94\\x92\\x8e}'",
+            "Name": "1305000\u30a6\u30fc\u30e9\u30b7\u30fc\u30eb\u306e\u767d\u679d",
+            "ItemID": 1305000,
+            "SoulCost": 1000
+        },
+        "2206": {
+            "RawName": "b'Enchanted Ember'",
+            "Name": "Enchanted Ember",
+            "ItemID": 807,
+            "SoulCost": 10000,
+            "QuantityFlag": 50000521,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2400": {
+            "RawName": "b'3600\\x96\\x82\\x8fp\\x81F\\x89\\xf0\\x8e\\xf4'",
+            "Name": "3600\u9b54\u8853\uff1a\u89e3\u546a",
+            "ItemID": 3600,
+            "SoulCost": 5000,
+            "QuantityFlag": 11607000,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "2401": {
+            "RawName": "b'312\\x88\\xea\\x8e\\x9e\\x82\\xcc\\x8e\\xf4\\x82\\xa2'",
+            "Name": "312\u4e00\u6642\u306e\u546a\u3044",
+            "ItemID": 312,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "3000": {
+            "RawName": "b'4000\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x8b\\x85'",
+            "Name": "4000\u546a\u8853\uff1a\u706b\u7403",
+            "ItemID": 4000,
+            "SoulCost": 800,
+            "QuantityFlag": 11407030,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3001": {
+            "RawName": "b'4010\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x82\\xcc\\x8b\\xca'",
+            "Name": "4010\u546a\u8853\uff1a\u706b\u306e\u7389",
+            "ItemID": 4010,
+            "SoulCost": 8000,
+            "QuantityFlag": 11407040,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3002": {
+            "RawName": "b'4100\\x8e\\xf4\\x8fp\\x81F\\x94\\xad\\x89\\xce'",
+            "Name": "4100\u546a\u8853\uff1a\u767a\u706b",
+            "ItemID": 4100,
+            "SoulCost": 500,
+            "QuantityFlag": 11407050,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3003": {
+            "RawName": "b'4300\\x8e\\xf4\\x8fp\\x81F\\x93S\\x82\\xcc\\x91\\xcc'",
+            "Name": "4300\u546a\u8853\uff1a\u9244\u306e\u4f53",
+            "ItemID": 4300,
+            "SoulCost": 2000,
+            "QuantityFlag": 11407060,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3004": {
+            "RawName": "b'4310\\x8e\\xf4\\x8fp\\x81F\\x8c\\x83\\x82\\xb5\\x82\\xa2\\x94\\xad\\x8a\\xbe'",
+            "Name": "4310\u546a\u8853\uff1a\u6fc0\u3057\u3044\u767a\u6c57",
+            "ItemID": 4310,
+            "SoulCost": 2000,
+            "QuantityFlag": 11407070,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3200": {
+            "RawName": "b'\\x8f]\\x8e\\xd2\\x88\\xea\\x97\\x97112'",
+            "Name": "\u5f93\u8005\u4e00\u89a7112",
+            "ItemID": 112,
+            "SoulCost": 500,
+            "QuantityFlag": 11407080,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3210": {
+            "RawName": "b'275\\x82\\xbd\\x82\\xdc\\x82\\xb2\\x82\\xad\\x82\\xbe\\x82\\xb5'",
+            "Name": "275\u305f\u307e\u3054\u304f\u3060\u3057",
+            "ItemID": 275,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "3211": {
+            "RawName": "b'4200\\x8e\\xf4\\x8fp\\x81F\\x93\\xc5\\x82\\xcc\\x96\\xb6'",
+            "Name": "4200\u546a\u8853\uff1a\u6bd2\u306e\u9727",
+            "ItemID": 4200,
+            "SoulCost": 10000,
+            "QuantityFlag": 11407090,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3212": {
+            "RawName": "b'4210\\x8e\\xf4\\x8fp\\x81F\\x96\\xd2\\x93\\xc5\\x82\\xcc\\x96\\xb6'",
+            "Name": "4210\u546a\u8853\uff1a\u731b\u6bd2\u306e\u9727",
+            "ItemID": 4210,
+            "SoulCost": 25000,
+            "QuantityFlag": 11407100,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3400": {
+            "RawName": "b'4000\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x8b\\x85'",
+            "Name": "4000\u546a\u8853\uff1a\u706b\u7403",
+            "ItemID": 4000,
+            "SoulCost": 800,
+            "QuantityFlag": 11407120,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3401": {
+            "RawName": "b'4010\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x82\\xcc\\x8b\\xca'",
+            "Name": "4010\u546a\u8853\uff1a\u706b\u306e\u7389",
+            "ItemID": 4010,
+            "SoulCost": 8000,
+            "QuantityFlag": 11407130,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3402": {
+            "RawName": "b'4020\\x8e\\xf4\\x8fp\\x81F\\x91\\xe5\\x89\\xce\\x8b\\x85'",
+            "Name": "4020\u546a\u8853\uff1a\u5927\u706b\u7403",
+            "ItemID": 4020,
+            "SoulCost": 20000,
+            "QuantityFlag": 11407150,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3403": {
+            "RawName": "b'4030\\x8e\\xf4\\x8fp\\x81F\\x89\\x8a\\x82\\xcc\\x97\\x92'",
+            "Name": "4030\u546a\u8853\uff1a\u708e\u306e\u5d50",
+            "ItemID": 4030,
+            "SoulCost": 30000,
+            "QuantityFlag": 11407160,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3404": {
+            "RawName": "b'4060\\x8e\\xf4\\x8fp\\x81F\\x82\\xc8\\x82\\xac\\x95\\xa5\\x82\\xa4\\x89\\x8a'",
+            "Name": "4060\u546a\u8853\uff1a\u306a\u304e\u6255\u3046\u708e",
+            "ItemID": 4060,
+            "SoulCost": 10000,
+            "QuantityFlag": 11407170,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3405": {
+            "RawName": "b'4100\\x8e\\xf4\\x8fp\\x81F\\x94\\xad\\x89\\xce'",
+            "Name": "4100\u546a\u8853\uff1a\u767a\u706b",
+            "ItemID": 4100,
+            "SoulCost": 500,
+            "QuantityFlag": 11407140,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3406": {
+            "RawName": "b'4110\\x8e\\xf4\\x8fp\\x81F\\x91\\xe5\\x94\\xad\\x89\\xce'",
+            "Name": "4110\u546a\u8853\uff1a\u5927\u767a\u706b",
+            "ItemID": 4110,
+            "SoulCost": 5000,
+            "QuantityFlag": 11407180,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "3407": {
+            "RawName": "b'4360\\x8e\\xf4\\x8fp\\x81F\\x95s\\x8e\\x80\\x82\\xcc\\x96\\xa3\\x97\\xb9'",
+            "Name": "4360\u546a\u8853\uff1a\u4e0d\u6b7b\u306e\u9b45\u4e86",
+            "ItemID": 4360,
+            "SoulCost": 10000,
+            "QuantityFlag": 11407190,
+            "InitialQuantity": 0,
+            "ItemType": 3
+        },
+        "4000": {
+            "RawName": "b'5000\\x8a\\xef\\x90\\xd5\\x81F\\x89\\xf1\\x95\\x9c'",
+            "Name": "5000\u5947\u8de1\uff1a\u56de\u5fa9",
+            "ItemID": 5000,
+            "SoulCost": 400,
+            "QuantityFlag": 11027260,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4001": {
+            "RawName": "b'5020\\x8a\\xef\\x90\\xd5\\x81F\\x8c\\xc0\\x82\\xe7\\x82\\xea\\x82\\xbd\\x91\\xe5\\x89\\xf1\\x95\\x9c'",
+            "Name": "5020\u5947\u8de1\uff1a\u9650\u3089\u308c\u305f\u5927\u56de\u5fa9",
+            "ItemID": 5020,
+            "SoulCost": 1000,
+            "QuantityFlag": 11027270,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4002": {
+            "RawName": "b'5210\\x8a\\xef\\x90\\xd5\\x81F\\x8bA\\x8a\\xd2'",
+            "Name": "5210\u5947\u8de1\uff1a\u5e30\u9084",
+            "ItemID": 5210,
+            "SoulCost": 800,
+            "QuantityFlag": 11027280,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4003": {
+            "RawName": "b'5300\\x8a\\xef\\x90\\xd5\\x81F\\x83t\\x83H\\x81[\\x83X'",
+            "Name": "5300\u5947\u8de1\uff1a\u30d5\u30a9\u30fc\u30b9",
+            "ItemID": 5300,
+            "SoulCost": 400,
+            "QuantityFlag": 11027290,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4004": {
+            "RawName": "b'5400\\x8a\\xef\\x90\\xd5\\x81F\\x8f\\x95\\x8c\\xbe\\x8b\\x81\\x82\\xdf'",
+            "Name": "5400\u5947\u8de1\uff1a\u52a9\u8a00\u6c42\u3081",
+            "ItemID": 5400,
+            "SoulCost": 200,
+            "QuantityFlag": 11017180,
+            "InitialQuantity": 0,
+            "ItemType": 3
+        },
+        "4005": {
+            "RawName": "b'1360000\\x83^\\x83\\x8a\\x83X\\x83}\\x83\\x93'",
+            "Name": "1360000\u30bf\u30ea\u30b9\u30de\u30f3",
+            "ItemID": 1360000,
+            "SoulCost": 1000
+        },
+        "4200": {
+            "RawName": "b'240\\x8f\\x97\\x90_\\x82\\xcc\\x8fj\\x95\\x9f'",
+            "Name": "240\u5973\u795e\u306e\u795d\u798f",
+            "ItemID": 240,
+            "SoulCost": 1000,
+            "QuantityFlag": 11017050,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4201": {
+            "RawName": "b'5000\\x8a\\xef\\x90\\xd5\\x81F\\x89\\xf1\\x95\\x9c'",
+            "Name": "5000\u5947\u8de1\uff1a\u56de\u5fa9",
+            "ItemID": 5000,
+            "SoulCost": 1000,
+            "QuantityFlag": 11017060,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4202": {
+            "RawName": "b'5020\\x8a\\xef\\x90\\xd5\\x81F\\x8c\\xc0\\x82\\xe7\\x82\\xea\\x82\\xbd\\x91\\xe5\\x89\\xf1\\x95\\x9c'",
+            "Name": "5020\u5947\u8de1\uff1a\u9650\u3089\u308c\u305f\u5927\u56de\u5fa9",
+            "ItemID": 5020,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017070,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4203": {
+            "RawName": "b'5210\\x8a\\xef\\x90\\xd5\\x81F\\x8bA\\x8a\\xd2'",
+            "Name": "5210\u5947\u8de1\uff1a\u5e30\u9084",
+            "ItemID": 5210,
+            "SoulCost": 1000,
+            "QuantityFlag": 11017080,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4204": {
+            "RawName": "b'5300\\x8a\\xef\\x90\\xd5\\x81F\\x83t\\x83H\\x81[\\x83X'",
+            "Name": "5300\u5947\u8de1\uff1a\u30d5\u30a9\u30fc\u30b9",
+            "ItemID": 5300,
+            "SoulCost": 1000,
+            "QuantityFlag": 11017090,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4205": {
+            "RawName": "b'5010\\x8a\\xef\\x90\\xd5\\x81F\\x91\\xe5\\x89\\xf1\\x95\\x9c'",
+            "Name": "5010\u5947\u8de1\uff1a\u5927\u56de\u5fa9",
+            "ItemID": 5010,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017100,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4206": {
+            "RawName": "b'5310\\x8a\\xef\\x90\\xd5\\x81F\\x90_\\x82\\xcc\\x93{\\x82\\xe8'",
+            "Name": "5310\u5947\u8de1\uff1a\u795e\u306e\u6012\u308a",
+            "ItemID": 5310,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017110,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4207": {
+            "RawName": "b'5400\\x8a\\xef\\x90\\xd5\\x81F\\x8f\\x95\\x8c\\xbe\\x8b\\x81\\x82\\xdf'",
+            "Name": "5400\u5947\u8de1\uff1a\u52a9\u8a00\u6c42\u3081",
+            "ItemID": 5400,
+            "SoulCost": 500,
+            "QuantityFlag": 11017120,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4208": {
+            "RawName": "b'5600\\x8a\\xef\\x90\\xd5\\x81F\\x96\\x82\\x96@\\x96h\\x8c\\xec'",
+            "Name": "5600\u5947\u8de1\uff1a\u9b54\u6cd5\u9632\u8b77",
+            "ItemID": 5600,
+            "SoulCost": 6000,
+            "QuantityFlag": 11017130,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4209": {
+            "RawName": "b'1360000\\x83^\\x83\\x8a\\x83X\\x83}\\x83\\x93'",
+            "Name": "1360000\u30bf\u30ea\u30b9\u30de\u30f3",
+            "ItemID": 1360000,
+            "SoulCost": 200
+        },
+        "4400": {
+            "RawName": "b'108\\x8d\\xdf\\x90l\\x88\\xea\\x97\\x97'",
+            "Name": "108\u7f6a\u4eba\u4e00\u89a7",
+            "ItemID": 108,
+            "SoulCost": 1000,
+            "QuantityFlag": 11607020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4401": {
+            "RawName": "b'274\\x89\\xf0\\x8e\\xf4\\x90\\xce'",
+            "Name": "274\u89e3\u546a\u77f3",
+            "ItemID": 274,
+            "SoulCost": 3000,
+            "QuantityFlag": 11607110,
+            "InitialQuantity": 5,
+            "ItemType": 3
+        },
+        "4402": {
+            "RawName": "b'373\\x8d\\x90\\x8d\\xdf\\x95\\x84'",
+            "Name": "373\u544a\u7f6a\u7b26",
+            "ItemID": 373,
+            "SoulCost": 200,
+            "ItemType": 3
+        },
+        "4403": {
+            "RawName": "b'5700\\x8a\\xef\\x90\\xd5\\x81F\\x88\\xf6\\x89\\xca\\x89\\x9e\\x95\\xf1'",
+            "Name": "5700\u5947\u8de1\uff1a\u56e0\u679c\u5fdc\u5831",
+            "ItemID": 5700,
+            "SoulCost": 4000,
+            "QuantityFlag": 11607030,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "4404": {
+            "RawName": "b'1367000\\x83x\\x83\\x8b\\x83J\\x82\\xcc\\x83^\\x83\\x8a\\x83X\\x83}\\x83\\x93'",
+            "Name": "1367000\u30d9\u30eb\u30ab\u306e\u30bf\u30ea\u30b9\u30de\u30f3",
+            "ItemID": 1367000,
+            "SoulCost": 5000
+        },
+        "4405": {
+            "RawName": "b'109\\x8c\\x8c\\x99\\xf9\\x82\\xdd\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "109\u8840\u54ac\u307f\u306e\u6307\u8f2a",
+            "ItemID": 109,
+            "SoulCost": 6000,
+            "QuantityFlag": 11607050,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "4406": {
+            "RawName": "b'110\\x93\\xc5\\x99\\xf9\\x82\\xdd\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "110\u6bd2\u54ac\u307f\u306e\u6307\u8f2a",
+            "ItemID": 110,
+            "SoulCost": 8000,
+            "QuantityFlag": 11607060,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "4407": {
+            "RawName": "b'126\\x8b]\\x90\\xb5\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "126\u72a0\u7272\u306e\u6307\u8f2a",
+            "ItemID": 126,
+            "SoulCost": 5000,
+            "QuantityFlag": 11607080,
+            "InitialQuantity": 10,
+            "ItemType": 2
+        },
+        "4408": {
+            "RawName": "b'330\\x8bA\\x8a\\xd2\\x82\\xcc\\x8d\\x9c\\x95\\xd0'",
+            "Name": "330\u5e30\u9084\u306e\u9aa8\u7247",
+            "ItemID": 330,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "5000": {
+            "RawName": "b'3000\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee'",
+            "Name": "3000\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u77e2",
+            "ItemID": 3000,
+            "SoulCost": 1000,
+            "QuantityFlag": 11707000,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5001": {
+            "RawName": "b'3010\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee'",
+            "Name": "3010\u9b54\u8853\uff1a\u5f37\u3044\u30bd\u30a6\u30eb\u306e\u77e2",
+            "ItemID": 3010,
+            "SoulCost": 6000,
+            "QuantityFlag": 11707010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5002": {
+            "RawName": "b'3020\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "3020\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u592a\u77e2",
+            "ItemID": 3020,
+            "SoulCost": 2000,
+            "QuantityFlag": 11707020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5003": {
+            "RawName": "b'3030\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "3030\u9b54\u8853\uff1a\u5f37\u3044\u30bd\u30a6\u30eb\u306e\u592a\u77e2",
+            "ItemID": 3030,
+            "SoulCost": 8000,
+            "QuantityFlag": 11707030,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5004": {
+            "RawName": "b'3040\\x96\\x82\\x8fp\\x81F\\x92\\xc7\\x94\\xf6\\x82\\xb7\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x89\\xf2'",
+            "Name": "3040\u9b54\u8853\uff1a\u8ffd\u5c3e\u3059\u308b\u30bd\u30a6\u30eb\u306e\u584a",
+            "ItemID": 3040,
+            "SoulCost": 20000,
+            "QuantityFlag": 11707060,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5005": {
+            "RawName": "b'3060\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\x84'",
+            "Name": "3060\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u69cd",
+            "ItemID": 3060,
+            "SoulCost": 40000,
+            "QuantityFlag": 11707070,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5006": {
+            "RawName": "b'3100\\x96\\x82\\x8fp\\x81F\\x96\\x82\\x96@\\x82\\xcc\\x95\\x90\\x8a\\xed'",
+            "Name": "3100\u9b54\u8853\uff1a\u9b54\u6cd5\u306e\u6b66\u5668",
+            "ItemID": 3100,
+            "SoulCost": 3000,
+            "QuantityFlag": 11707040,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5007": {
+            "RawName": "b'3300\\x96\\x82\\x8fp\\x81F\\x96\\x82\\x96@\\x82\\xcc\\x8f\\x82'",
+            "Name": "3300\u9b54\u8853\uff1a\u9b54\u6cd5\u306e\u76fe",
+            "ItemID": 3300,
+            "SoulCost": 3000,
+            "QuantityFlag": 11707050,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5020": {
+            "RawName": "b'3050\\x96\\x82\\x8fp\\x81F\\x92\\xc7\\x94\\xf6\\x82\\xb7\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x8c\\x8b\\x8f\\xbb\\x89\\xf2'",
+            "Name": "3050\u9b54\u8853\uff1a\u8ffd\u5c3e\u3059\u308b\u30bd\u30a6\u30eb\u306e\u7d50\u6676\u584a",
+            "ItemID": 3050,
+            "SoulCost": 30000,
+            "QuantityFlag": 11707090,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5021": {
+            "RawName": "b'3070\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x8c\\x8b\\x8f\\xbb\\x91\\x84'",
+            "Name": "3070\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u7d50\u6676\u69cd",
+            "ItemID": 3070,
+            "SoulCost": 50000,
+            "QuantityFlag": 11707100,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5022": {
+            "RawName": "b'3120\\x96\\x82\\x8fp\\x81F\\x8c\\x8b\\x8f\\xbb\\x96\\x82\\x96@\\x82\\xcc\\x95\\x90\\x8a\\xed'",
+            "Name": "3120\u9b54\u8853\uff1a\u7d50\u6676\u9b54\u6cd5\u306e\u6b66\u5668",
+            "ItemID": 3120,
+            "SoulCost": 20000,
+            "QuantityFlag": 11707110,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "5300": {
+            "RawName": "b'260\\x97\\xce\\x89\\xd4\\x91\\x90'",
+            "Name": "260\u7dd1\u82b1\u8349",
+            "ItemID": 260,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "5301": {
+            "RawName": "b'297\\x8d\\x95\\x82\\xa2\\x89\\xce\\x89\\x8a\\x92\\xd9'",
+            "Name": "297\u9ed2\u3044\u706b\u708e\u58f7",
+            "ItemID": 297,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "5302": {
+            "RawName": "b'1000\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x8c\\x87\\x95\\xd0'",
+            "Name": "1000\u6954\u77f3\u306e\u6b20\u7247",
+            "ItemID": 1000,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "5303": {
+            "RawName": "b'1010\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x91\\xe5\\x8c\\x87\\x95\\xd0'",
+            "Name": "1010\u6954\u77f3\u306e\u5927\u6b20\u7247",
+            "ItemID": 1010,
+            "SoulCost": 4000,
+            "ItemType": 3
+        },
+        "5304": {
+            "RawName": "b'1020\\x97\\xce\\x9e\\xb6\\x82\\xcc\\x91\\xe5\\x8c\\x87\\x95\\xd0'",
+            "Name": "1020\u7dd1\u6954\u306e\u5927\u6b20\u7247",
+            "ItemID": 1020,
+            "SoulCost": 5000,
+            "ItemType": 3
+        },
+        "5306": {
+            "RawName": "b'106\\x97\\x8b\\x95\\xfb\\x90\\xce\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "106\u96f7\u65b9\u77f3\u306e\u6307\u8f2a",
+            "ItemID": 106,
+            "SoulCost": 5000,
+            "QuantityFlag": 11507030,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "5307": {
+            "RawName": "b'107\\x96\\x82\\x96@\\x95\\xfb\\x90\\xce\\x82\\xcc\\x8ew\\x97\\xd6'",
+            "Name": "107\u9b54\u6cd5\u65b9\u77f3\u306e\u6307\u8f2a",
+            "ItemID": 107,
+            "SoulCost": 5000,
+            "QuantityFlag": 11507040,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "5308": {
+            "RawName": "b'351000\\x83O\\x83\\x8c\\x81[\\x83g\\x83\\\\\\x81[\\x83h'",
+            "Name": "351000\u30b0\u30ec\u30fc\u30c8\u30bd\u30fc\u30c9",
+            "ItemID": 351000,
+            "SoulCost": 8000
+        },
+        "5309": {
+            "RawName": "b'750000\\x83O\\x83\\x8c\\x81[\\x83g\\x83A\\x83N\\x83X'",
+            "Name": "750000\u30b0\u30ec\u30fc\u30c8\u30a2\u30af\u30b9",
+            "ItemID": 750000,
+            "SoulCost": 8000
+        },
+        "5310": {
+            "RawName": "b'1455000\\x83o\\x83\\x8b\\x83f\\x83\\x8b\\x82\\xcc\\x8f\\x82'",
+            "Name": "1455000\u30d0\u30eb\u30c7\u30eb\u306e\u76fe",
+            "ItemID": 1455000,
+            "SoulCost": 4000
+        },
+        "5311": {
+            "RawName": "b'1501000\\x83^\\x83\\x8f\\x81[\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1501000\u30bf\u30ef\u30fc\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1501000,
+            "SoulCost": 8000
+        },
+        "5312": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "5313": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "5314": {
+            "RawName": "b'2002000\\x89H\\x8d\\xaa\\x96\\xee'",
+            "Name": "2002000\u7fbd\u6839\u77e2",
+            "ItemID": 2002000,
+            "SoulCost": 100
+        },
+        "5315": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "5316": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "5317": {
+            "RawName": "b'2102000\\x83X\\x83i\\x83C\\x83p\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2102000\u30b9\u30ca\u30a4\u30d1\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2102000,
+            "SoulCost": 250
+        },
+        "5318": {
+            "RawName": "b'\\x83J\\x83^\\x83\\x8a\\x83i\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30ab\u30bf\u30ea\u30ca\u88c5\u5099",
+            "ItemID": 10000,
+            "SoulCost": 10000,
+            "ItemType": 1
+        },
+        "5319": {
+            "RawName": "b'\\x83J\\x83^\\x83\\x8a\\x83i\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30ab\u30bf\u30ea\u30ca\u88c5\u5099",
+            "ItemID": 11000,
+            "SoulCost": 10000,
+            "ItemType": 1
+        },
+        "5320": {
+            "RawName": "b'\\x83J\\x83^\\x83\\x8a\\x83i\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30ab\u30bf\u30ea\u30ca\u88c5\u5099",
+            "ItemID": 12000,
+            "SoulCost": 7000,
+            "ItemType": 1
+        },
+        "5321": {
+            "RawName": "b'\\x83J\\x83^\\x83\\x8a\\x83i\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30ab\u30bf\u30ea\u30ca\u88c5\u5099",
+            "ItemID": 13000,
+            "SoulCost": 7000,
+            "ItemType": 1
+        },
+        "5322": {
+            "RawName": "b'\\x8d|\\x93S\\x91\\x95\\x94\\xf5'",
+            "Name": "\u92fc\u9244\u88c5\u5099",
+            "ItemID": 490000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "5323": {
+            "RawName": "b'\\x8d|\\x93S\\x91\\x95\\x94\\xf5'",
+            "Name": "\u92fc\u9244\u88c5\u5099",
+            "ItemID": 491000,
+            "SoulCost": 8000,
+            "ItemType": 1
+        },
+        "5324": {
+            "RawName": "b'\\x8d|\\x93S\\x91\\x95\\x94\\xf5'",
+            "Name": "\u92fc\u9244\u88c5\u5099",
+            "ItemID": 492000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "5325": {
+            "RawName": "b'\\x8d|\\x93S\\x91\\x95\\x94\\xf5'",
+            "Name": "\u92fc\u9244\u88c5\u5099",
+            "ItemID": 493000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "5326": {
+            "RawName": "b'\\x83o\\x83\\x8b\\x83f\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30d0\u30eb\u30c7\u30eb\u88c5\u5099",
+            "ItemID": 510000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "5327": {
+            "RawName": "b'\\x83o\\x83\\x8b\\x83f\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30d0\u30eb\u30c7\u30eb\u88c5\u5099",
+            "ItemID": 511000,
+            "SoulCost": 8000,
+            "ItemType": 1
+        },
+        "5328": {
+            "RawName": "b'\\x83o\\x83\\x8b\\x83f\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30d0\u30eb\u30c7\u30eb\u88c5\u5099",
+            "ItemID": 512000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "5329": {
+            "RawName": "b'\\x83o\\x83\\x8b\\x83f\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30d0\u30eb\u30c7\u30eb\u88c5\u5099",
+            "ItemID": 513000,
+            "SoulCost": 5000,
+            "ItemType": 1
+        },
+        "5330": {
+            "RawName": "b'Red Herb'",
+            "Name": "Red Herb",
+            "ItemID": 261,
+            "SoulCost": 1000,
+            "ItemType": 3
+        },
+        "6100": {
+            "RawName": "b'111\\x82\\xd0\\x82\\xd1\\x8a\\x84\\x82\\xea\\x82\\xbd\\x90\\xd4\\x82\\xa2\\x93\\xb5\\x82\\xcc\\x83I\\x81[\\x83u'",
+            "Name": "111\u3072\u3073\u5272\u308c\u305f\u8d64\u3044\u77b3\u306e\u30aa\u30fc\u30d6",
+            "ItemID": 111,
+            "SoulCost": 3000,
+            "ItemType": 3
+        },
+        "6200": {
+            "RawName": "b'1101000\\x8b\\x90\\x90l\\x82\\xcc\\x83n\\x83\\x8b\\x83o\\x81[\\x83h'",
+            "Name": "1101000\u5de8\u4eba\u306e\u30cf\u30eb\u30d0\u30fc\u30c9",
+            "ItemID": 1101000,
+            "SoulCost": 5000
+        },
+        "6201": {
+            "RawName": "b'1502000\\x83Z\\x83\\x93\\x83`\\x83l\\x83\\x8b\\x83V\\x81[\\x83\\x8b\\x83h'",
+            "Name": "1502000\u30bb\u30f3\u30c1\u30cd\u30eb\u30b7\u30fc\u30eb\u30c9",
+            "ItemID": 1502000,
+            "SoulCost": 10000
+        },
+        "6202": {
+            "RawName": "b'2005000\\x8c\\x8e\\x8c\\xf5\\x96\\xee'",
+            "Name": "2005000\u6708\u5149\u77e2",
+            "ItemID": 2005000,
+            "SoulCost": 500
+        },
+        "6203": {
+            "RawName": "b'2007000\\x97\\xb3\\x8e\\xeb\\x82\\xe8\\x82\\xcc\\x91\\xe5\\x96\\xee'",
+            "Name": "2007000\u7adc\u72e9\u308a\u306e\u5927\u77e2",
+            "ItemID": 2007000,
+            "SoulCost": 500
+        },
+        "6204": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "6205": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "6206": {
+            "RawName": "b'2002000\\x89H\\x8d\\xaa\\x96\\xee'",
+            "Name": "2002000\u7fbd\u6839\u77e2",
+            "ItemID": 2002000,
+            "SoulCost": 100
+        },
+        "6207": {
+            "RawName": "b'2104000\\x97\\x8b\\x82\\xcc\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2104000\u96f7\u306e\u30dc\u30eb\u30c8",
+            "ItemID": 2104000,
+            "SoulCost": 700
+        },
+        "6208": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "6209": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "6210": {
+            "RawName": "b'2102000\\x83X\\x83i\\x83C\\x83p\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2102000\u30b9\u30ca\u30a4\u30d1\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2102000,
+            "SoulCost": 250
+        },
+        "6211": {
+            "RawName": "b'\\x83Z\\x83\\x93\\x83`\\x83l\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30bb\u30f3\u30c1\u30cd\u30eb\u88c5\u5099",
+            "ItemID": 530000,
+            "SoulCost": 6000,
+            "ItemType": 1
+        },
+        "6212": {
+            "RawName": "b'\\x83Z\\x83\\x93\\x83`\\x83l\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30bb\u30f3\u30c1\u30cd\u30eb\u88c5\u5099",
+            "ItemID": 531000,
+            "SoulCost": 8000,
+            "ItemType": 1
+        },
+        "6213": {
+            "RawName": "b'\\x83Z\\x83\\x93\\x83`\\x83l\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30bb\u30f3\u30c1\u30cd\u30eb\u88c5\u5099",
+            "ItemID": 532000,
+            "SoulCost": 6000,
+            "ItemType": 1
+        },
+        "6214": {
+            "RawName": "b'\\x83Z\\x83\\x93\\x83`\\x83l\\x83\\x8b\\x91\\x95\\x94\\xf5'",
+            "Name": "\u30bb\u30f3\u30c1\u30cd\u30eb\u88c5\u5099",
+            "ItemID": 533000,
+            "SoulCost": 6000,
+            "ItemType": 1
+        },
+        "6215": {
+            "RawName": "b'2600\\x95\\x90\\x8a\\xed\\x82\\xcc\\x92b\\x8e\\xa1\\x94\\xa0'",
+            "Name": "2600\u6b66\u5668\u306e\u935b\u6cbb\u7bb1",
+            "ItemID": 2600,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017150,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6216": {
+            "RawName": "b'2601\\x96h\\x8b\\xef\\x82\\xcc\\x92b\\x8e\\xa1\\x94\\xa0'",
+            "Name": "2601\u9632\u5177\u306e\u935b\u6cbb\u7bb1",
+            "ItemID": 2601,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017160,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6217": {
+            "RawName": "b'2602\\x8fC\\x97\\x9d\\x94\\xa0'",
+            "Name": "2602\u4fee\u7406\u7bb1",
+            "ItemID": 2602,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017170,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6218": {
+            "RawName": "b'1000\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x8c\\x87\\x95\\xd0'",
+            "Name": "1000\u6954\u77f3\u306e\u6b20\u7247",
+            "ItemID": 1000,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "6219": {
+            "RawName": "b'1010\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x91\\xe5\\x8c\\x87\\x95\\xd0'",
+            "Name": "1010\u6954\u77f3\u306e\u5927\u6b20\u7247",
+            "ItemID": 1010,
+            "SoulCost": 3800,
+            "ItemType": 3
+        },
+        "6220": {
+            "RawName": "b'1020\\x97\\xce\\x9e\\xb6\\x82\\xcc\\x91\\xe5\\x8c\\x87\\x95\\xd0'",
+            "Name": "1020\u7dd1\u6954\u306e\u5927\u6b20\u7247",
+            "ItemID": 1020,
+            "SoulCost": 4800,
+            "ItemType": 3
+        },
+        "6221": {
+            "RawName": "b'1130\\x8c\\xf5\\x82\\xe9\\x9e\\xb6\\x90\\xce'",
+            "Name": "1130\u5149\u308b\u6954\u77f3",
+            "ItemID": 1130,
+            "SoulCost": 8000,
+            "ItemType": 3
+        },
+        "6222": {
+            "RawName": "b'Gargoyle Helm'",
+            "Name": "Gargoyle Helm",
+            "ItemID": 630000,
+            "SoulCost": 2000,
+            "ItemType": 1
+        },
+        "6223": {
+            "RawName": "b'Gargoyle Hallberd'",
+            "Name": "Gargoyle Hallberd",
+            "ItemID": 1103000,
+            "SoulCost": 3000
+        },
+        "6224": {
+            "RawName": "b'Gargoyle Shield'",
+            "Name": "Gargoyle Shield",
+            "ItemID": 1478000,
+            "SoulCost": 2500
+        },
+        "6300": {
+            "RawName": "b'330\\x8bA\\x8a\\xd2\\x82\\xcc\\x8d\\x9c\\x95\\xd0'",
+            "Name": "330\u5e30\u9084\u306e\u9aa8\u7247",
+            "ItemID": 330,
+            "SoulCost": 500,
+            "ItemType": 3
+        },
+        "6301": {
+            "RawName": "b'1000\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x8c\\x87\\x95\\xd0'",
+            "Name": "1000\u6954\u77f3\u306e\u6b20\u7247",
+            "ItemID": 1000,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "6302": {
+            "RawName": "b'2600\\x95\\x90\\x8a\\xed\\x82\\xcc\\x92b\\x8e\\xa1\\x94\\xa0'",
+            "Name": "2600\u6b66\u5668\u306e\u935b\u6cbb\u7bb1",
+            "ItemID": 2600,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017150,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6303": {
+            "RawName": "b'2601\\x96h\\x8b\\xef\\x82\\xcc\\x92b\\x8e\\xa1\\x94\\xa0'",
+            "Name": "2601\u9632\u5177\u306e\u935b\u6cbb\u7bb1",
+            "ItemID": 2601,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017160,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6304": {
+            "RawName": "b'2602\\x8fC\\x97\\x9d\\x94\\xa0'",
+            "Name": "2602\u4fee\u7406\u7bb1",
+            "ItemID": 2602,
+            "SoulCost": 2000,
+            "QuantityFlag": 11017170,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6305": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 10
+        },
+        "6306": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 50
+        },
+        "6307": {
+            "RawName": "b'2006000\\x88\\xc0\\x82\\xa2\\x96\\xee'",
+            "Name": "2006000\u5b89\u3044\u77e2",
+            "ItemID": 2006000,
+            "SoulCost": 3
+        },
+        "6308": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 30
+        },
+        "6309": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 100
+        },
+        "6310": {
+            "RawName": "b'2103000\\x88\\xc0\\x82\\xa2\\x91\\xbe\\x96\\xee'",
+            "Name": "2103000\u5b89\u3044\u592a\u77e2",
+            "ItemID": 2103000,
+            "SoulCost": 10
+        },
+        "6311": {
+            "RawName": "b'Fire Arrow'",
+            "Name": "Fire Arrow",
+            "ItemID": 2003000,
+            "SoulCost": 20
+        },
+        "6410": {
+            "RawName": "b'260\\x97\\xce\\x89\\xd4\\x91\\x90'",
+            "Name": "260\u7dd1\u82b1\u8349",
+            "ItemID": 260,
+            "SoulCost": 1200,
+            "ItemType": 3
+        },
+        "6411": {
+            "RawName": "b'Red Herb'",
+            "Name": "Red Herb",
+            "ItemID": 261,
+            "SoulCost": 1200,
+            "ItemType": 3
+        },
+        "6412": {
+            "RawName": "b'270\\x8c\\x8c\\x90\\xd4\\x82\\xcc\\x91\\xdb\\x8b\\xca'",
+            "Name": "270\u8840\u8d64\u306e\u82d4\u7389",
+            "ItemID": 270,
+            "SoulCost": 400,
+            "ItemType": 3
+        },
+        "6413": {
+            "RawName": "b'271\\x93\\xc5\\x8e\\x87\\x82\\xcc\\x91\\xdb\\x8b\\xca'",
+            "Name": "271\u6bd2\u7d2b\u306e\u82d4\u7389",
+            "ItemID": 271,
+            "SoulCost": 600,
+            "ItemType": 3
+        },
+        "6414": {
+            "RawName": "b'272\\x93\\xc5\\x8e\\x87\\x82\\xcc\\x89\\xd4\\x91\\xdb\\x8b\\xca'",
+            "Name": "272\u6bd2\u7d2b\u306e\u82b1\u82d4\u7389",
+            "ItemID": 272,
+            "SoulCost": 1500,
+            "ItemType": 3
+        },
+        "6415": {
+            "RawName": "b'Green Moss Clump'",
+            "Name": "Green Moss Clump",
+            "ItemID": 273,
+            "SoulCost": 300,
+            "ItemType": 3
+        },
+        "6416": {
+            "RawName": "b'290\\x93\\x8a\\x82\\xb0\\x83i\\x83C\\x83t'",
+            "Name": "290\u6295\u3052\u30ca\u30a4\u30d5",
+            "ItemID": 290,
+            "SoulCost": 30,
+            "ItemType": 3
+        },
+        "6417": {
+            "RawName": "b'292\\x89\\xce\\x89\\x8a\\x92\\xd9'",
+            "Name": "292\u706b\u708e\u58f7",
+            "ItemID": 292,
+            "SoulCost": 100,
+            "ItemType": 3
+        },
+        "6418": {
+            "RawName": "b'294\\x97U\\x82\\xa2\\x93\\xaa\\x8aW'",
+            "Name": "294\u8a98\u3044\u982d\u84cb",
+            "ItemID": 294,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "6419": {
+            "RawName": "b'296\\x95X\\x8c\\x8b\\x89\\xf2'",
+            "Name": "296\u6c37\u7d50\u584a",
+            "ItemID": 296,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "6420": {
+            "RawName": "b'297\\x8d\\x95\\x82\\xa2\\x89\\xce\\x89\\x8a\\x92\\xd9'",
+            "Name": "297\u9ed2\u3044\u706b\u708e\u58f7",
+            "ItemID": 297,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "6421": {
+            "RawName": "b'330\\x8bA\\x8a\\xd2\\x82\\xcc\\x8d\\x9c\\x95\\xd0'",
+            "Name": "330\u5e30\u9084\u306e\u9aa8\u7247",
+            "ItemID": 330,
+            "SoulCost": 600,
+            "ItemType": 3
+        },
+        "6422": {
+            "RawName": "b'500\\x90l\\x8a\\xd4\\x90\\xab'",
+            "Name": "500\u4eba\u9593\u6027",
+            "ItemID": 500,
+            "SoulCost": 10000,
+            "QuantityFlag": 11217100,
+            "InitialQuantity": 13,
+            "ItemType": 3
+        },
+        "6423": {
+            "RawName": "b'Restless Humanities'",
+            "Name": "Restless Humanities",
+            "ItemID": 350,
+            "SoulCost": 12000,
+            "QuantityFlag": 11217800,
+            "InitialQuantity": 8,
+            "ItemType": 3
+        },
+        "6424": {
+            "RawName": "b'2000000\\x83m\\x81[\\x83}\\x83\\x8b\\x96\\xee'",
+            "Name": "2000000\u30ce\u30fc\u30de\u30eb\u77e2",
+            "ItemID": 2000000,
+            "SoulCost": 20
+        },
+        "6425": {
+            "RawName": "b'2001000\\x91\\xe5\\x82\\xab\\x82\\xc8\\x96\\xee'",
+            "Name": "2001000\u5927\u304d\u306a\u77e2",
+            "ItemID": 2001000,
+            "SoulCost": 100
+        },
+        "6426": {
+            "RawName": "b'2002000\\x89H\\x8d\\xaa\\x96\\xee'",
+            "Name": "2002000\u7fbd\u6839\u77e2",
+            "ItemID": 2002000,
+            "SoulCost": 200
+        },
+        "6427": {
+            "RawName": "b'2100000\\x95\\x81\\x92\\xca\\x82\\xcc\\x91\\xbe\\x96\\xee'",
+            "Name": "2100000\u666e\u901a\u306e\u592a\u77e2",
+            "ItemID": 2100000,
+            "SoulCost": 50
+        },
+        "6428": {
+            "RawName": "b'2101000\\x83w\\x83r\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2101000\u30d8\u30d3\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2101000,
+            "SoulCost": 150
+        },
+        "6429": {
+            "RawName": "b'2102000\\x83X\\x83i\\x83C\\x83p\\x81[\\x83{\\x83\\x8b\\x83g'",
+            "Name": "2102000\u30b9\u30ca\u30a4\u30d1\u30fc\u30dc\u30eb\u30c8",
+            "ItemID": 2102000,
+            "SoulCost": 400
+        },
+        "6430": {
+            "RawName": "b\"Elizabeth's Mushroom\"",
+            "Name": "Elizabeth's Mushroom",
+            "ItemID": 230,
+            "SoulCost": 12500,
+            "QuantityFlag": 11217900,
+            "InitialQuantity": 5,
+            "ItemType": 3
+        },
+        "6431": {
+            "RawName": "b'Poison Arrow'",
+            "Name": "Poison Arrow",
+            "ItemID": 2004000,
+            "SoulCost": 120
+        },
+        "6500": {
+            "RawName": "b'280\\x8fC\\x97\\x9d\\x82\\xcc\\x8c\\xf5\\x95\\xb2'",
+            "Name": "280\u4fee\u7406\u306e\u5149\u7c89",
+            "ItemID": 280,
+            "SoulCost": 300,
+            "ItemType": 3
+        },
+        "6501": {
+            "RawName": "b'311\\x89\\xa9\\x8b\\xe0\\x8f\\xbc\\x8e\\x89'",
+            "Name": "311\u9ec4\u91d1\u677e\u8102",
+            "ItemID": 311,
+            "SoulCost": 1000,
+            "QuantityFlag": 11217000,
+            "InitialQuantity": 6,
+            "ItemType": 3
+        },
+        "6502": {
+            "RawName": "b'3400\\x96\\x82\\x8fp\\x81F\\x8c\\xa9\\x82\\xa6\\x82\\xc8\\x82\\xa2\\x95\\x90\\x8a\\xed'",
+            "Name": "3400\u9b54\u8853\uff1a\u898b\u3048\u306a\u3044\u6b66\u5668",
+            "ItemID": 3400,
+            "SoulCost": 2000,
+            "QuantityFlag": 11207000,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6503": {
+            "RawName": "b'3410\\x96\\x82\\x8fp\\x81F\\x8c\\xa9\\x82\\xa6\\x82\\xc8\\x82\\xa2\\x91\\xcc'",
+            "Name": "3410\u9b54\u8853\uff1a\u898b\u3048\u306a\u3044\u4f53",
+            "ItemID": 3410,
+            "SoulCost": 2000,
+            "QuantityFlag": 11207010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6504": {
+            "RawName": "b'3500\\x96\\x82\\x8fp\\x81F\\x8f\\xc6\\x82\\xe7\\x82\\xb7\\x8c\\xf5'",
+            "Name": "3500\u9b54\u8853\uff1a\u7167\u3089\u3059\u5149",
+            "ItemID": 3500,
+            "SoulCost": 1000,
+            "QuantityFlag": 11207020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6505": {
+            "RawName": "b'3530\\x96\\x82\\x8fp\\x81F\\x8fC\\x95\\x9c'",
+            "Name": "3530\u9b54\u8853\uff1a\u4fee\u5fa9",
+            "ItemID": 3530,
+            "SoulCost": 10000,
+            "QuantityFlag": 11207030,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6506": {
+            "RawName": "b'3550\\x96\\x82\\x8fp\\x81F\\x8b[\\x91\\xd4'",
+            "Name": "3550\u9b54\u8853\uff1a\u64ec\u614b",
+            "ItemID": 3550,
+            "SoulCost": 3000,
+            "QuantityFlag": 11207040,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6507": {
+            "RawName": "b'1305000\\x83E\\x81[\\x83\\x89\\x83V\\x81[\\x83\\x8b\\x82\\xcc\\x94\\x92\\x8e}'",
+            "Name": "1305000\u30a6\u30fc\u30e9\u30b7\u30fc\u30eb\u306e\u767d\u679d",
+            "ItemID": 1305000,
+            "SoulCost": 1000
+        },
+        "6508": {
+            "RawName": "b'Enchanted Ember'",
+            "Name": "Enchanted Ember",
+            "ItemID": 807,
+            "SoulCost": 10000,
+            "QuantityFlag": 50000521,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6600": {
+            "RawName": "b'293\\x95\\xb3\\x92c\\x8eq'",
+            "Name": "293\u7cde\u56e3\u5b50",
+            "ItemID": 293,
+            "SoulCost": 200,
+            "ItemType": 3
+        },
+        "6601": {
+            "RawName": "b'330\\x8bA\\x8a\\xd2\\x82\\xcc\\x8d\\x9c\\x95\\xd0'",
+            "Name": "330\u5e30\u9084\u306e\u9aa8\u7247",
+            "ItemID": 330,
+            "SoulCost": 300,
+            "ItemType": 3
+        },
+        "6602": {
+            "RawName": "b'370\\x8e\\xb5\\x90F\\x90\\xce'",
+            "Name": "370\u4e03\u8272\u77f3",
+            "ItemID": 370,
+            "SoulCost": 10,
+            "ItemType": 3
+        },
+        "6603": {
+            "RawName": "b'510\\x90l\\x96\\xca\\x81u\\x82\\xb1\\x82\\xf1\\x82\\xc9\\x82\\xbf\\x82\\xcd\\x81v'",
+            "Name": "510\u4eba\u9762\u300c\u3053\u3093\u306b\u3061\u306f\u300d",
+            "ItemID": 510,
+            "SoulCost": 5,
+            "QuantityFlag": 11217010,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6604": {
+            "RawName": "b'511\\x90l\\x96\\xca\\x81u\\x82\\xa0\\x82\\xe8\\x82\\xaa\\x82\\xc6\\x82\\xa4\\x81v'",
+            "Name": "511\u4eba\u9762\u300c\u3042\u308a\u304c\u3068\u3046\u300d",
+            "ItemID": 511,
+            "SoulCost": 5,
+            "QuantityFlag": 11217020,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6608": {
+            "RawName": "b'1000\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x8c\\x87\\x95\\xd0'",
+            "Name": "1000\u6954\u77f3\u306e\u6b20\u7247",
+            "ItemID": 1000,
+            "SoulCost": 800,
+            "ItemType": 3
+        },
+        "6609": {
+            "RawName": "b'1010\\x9e\\xb6\\x90\\xce\\x82\\xcc\\x91\\xe5\\x8c\\x87\\x95\\xd0'",
+            "Name": "1010\u6954\u77f3\u306e\u5927\u6b20\u7247",
+            "ItemID": 1010,
+            "SoulCost": 3800,
+            "ItemType": 3
+        },
+        "6610": {
+            "RawName": "b'1020\\x97\\xce\\x9e\\xb6\\x82\\xcc\\x91\\xe5\\x8c\\x87\\x95\\xd0'",
+            "Name": "1020\u7dd1\u6954\u306e\u5927\u6b20\u7247",
+            "ItemID": 1020,
+            "SoulCost": 4800,
+            "ItemType": 3
+        },
+        "6611": {
+            "RawName": "b'2008000\\x83S\\x81[\\x82\\xcc\\x91\\xe5\\x96\\xee'",
+            "Name": "2008000\u30b4\u30fc\u306e\u5927\u77e2",
+            "ItemID": 2008000,
+            "SoulCost": 650
+        },
+        "6700": {
+            "RawName": "b'Light Crossbow'",
+            "Name": "Light Crossbow",
+            "ItemID": 1250000,
+            "SoulCost": 600,
+            "QuantityFlag": 11017900,
+            "InitialQuantity": 1
+        },
+        "6701": {
+            "RawName": "b'Charcoal Pine Resin'",
+            "Name": "Charcoal Pine Resin",
+            "ItemID": 310,
+            "SoulCost": 500,
+            "QuantityFlag": 11017910,
+            "InitialQuantity": 3,
+            "ItemType": 3
+        },
+        "6702": {
+            "RawName": "b'Black Firebomb'",
+            "Name": "Black Firebomb",
+            "ItemID": 297,
+            "SoulCost": 200,
+            "QuantityFlag": 11017920,
+            "InitialQuantity": 5,
+            "ItemType": 3
+        },
+        "6703": {
+            "RawName": "b'Purple Moss'",
+            "Name": "Purple Moss",
+            "ItemID": 271,
+            "SoulCost": 400,
+            "QuantityFlag": 11017930,
+            "InitialQuantity": 2,
+            "ItemType": 3
+        },
+        "6704": {
+            "RawName": "b'Green Moss'",
+            "Name": "Green Moss",
+            "ItemID": 273,
+            "SoulCost": 50,
+            "QuantityFlag": 11017950,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6705": {
+            "RawName": "b'Silver Serpent Ring'",
+            "Name": "Silver Serpent Ring",
+            "ItemID": 122,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017940,
+            "ItemType": 2
+        },
+        "6710": {
+            "RawName": "b'Raw Club'",
+            "Name": "Raw Club",
+            "ItemID": 800300,
+            "SoulCost": 700,
+            "QuantityFlag": 11307900,
+            "InitialQuantity": 1
+        },
+        "6711": {
+            "RawName": "b'Silver Serpent Ring'",
+            "Name": "Silver Serpent Ring",
+            "ItemID": 122,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017940,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "6712": {
+            "RawName": "b'Alluring Skull'",
+            "Name": "Alluring Skull",
+            "ItemID": 294,
+            "SoulCost": 50,
+            "ItemType": 3
+        },
+        "6713": {
+            "RawName": "b'Divine Blessing'",
+            "Name": "Divine Blessing",
+            "ItemID": 240,
+            "SoulCost": 6000,
+            "QuantityFlag": 11307910,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6714": {
+            "RawName": "b'Transient Curse'",
+            "Name": "Transient Curse",
+            "ItemID": 312,
+            "SoulCost": 1000,
+            "QuantityFlag": 11307920,
+            "InitialQuantity": 3,
+            "ItemType": 3
+        },
+        "6720": {
+            "RawName": "b'Silver Serpent Ring'",
+            "Name": "Silver Serpent Ring",
+            "ItemID": 122,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017940,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "6721": {
+            "RawName": "b'Souvenir of Reprisal'",
+            "Name": "Souvenir of Reprisal",
+            "ItemID": 374,
+            "SoulCost": 1000,
+            "QuantityFlag": 11517900,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6722": {
+            "RawName": "b'Gold Coin'",
+            "Name": "Gold Coin",
+            "ItemID": 383,
+            "SoulCost": 2000,
+            "QuantityFlag": 11517910,
+            "InitialQuantity": 3,
+            "ItemType": 3
+        },
+        "6723": {
+            "RawName": "b'Repair Powder'",
+            "Name": "Repair Powder",
+            "ItemID": 280,
+            "SoulCost": 400,
+            "QuantityFlag": 11517920,
+            "InitialQuantity": 5,
+            "ItemType": 3
+        },
+        "6724": {
+            "RawName": "b'Crystal Scythe'",
+            "Name": "Crystal Scythe",
+            "ItemID": 1107100,
+            "SoulCost": 5000,
+            "QuantityFlag": 11517930,
+            "InitialQuantity": 1
+        },
+        "6730": {
+            "RawName": "b'Short Bow'",
+            "Name": "Short Bow",
+            "ItemID": 1200000,
+            "SoulCost": 1000,
+            "QuantityFlag": 11417900,
+            "InitialQuantity": 1
+        },
+        "6731": {
+            "RawName": "b'Firebomb'",
+            "Name": "Firebomb",
+            "ItemID": 292,
+            "SoulCost": 30,
+            "ItemType": 3
+        },
+        "6732": {
+            "RawName": "b'Silver Serpent Ring'",
+            "Name": "Silver Serpent Ring",
+            "ItemID": 122,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017940,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "6740": {
+            "RawName": "b'Silver Serpent Ring'",
+            "Name": "Silver Serpent Ring",
+            "ItemID": 122,
+            "SoulCost": 10000,
+            "QuantityFlag": 11017940,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "6741": {
+            "RawName": "b'Titanite Shard'",
+            "Name": "Titanite Shard",
+            "ItemID": 1000,
+            "SoulCost": 700,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6742": {
+            "RawName": "b'Large Titanite Shard'",
+            "Name": "Large Titanite Shard",
+            "ItemID": 1010,
+            "SoulCost": 4000,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6743": {
+            "RawName": "b'Green Titanite Shard'",
+            "Name": "Green Titanite Shard",
+            "ItemID": 1020,
+            "SoulCost": 4100,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6744": {
+            "RawName": "b'Titanite Chunk'",
+            "Name": "Titanite Chunk",
+            "ItemID": 1030,
+            "SoulCost": 5000,
+            "QuantityFlag": 11007900,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6745": {
+            "RawName": "b'Blue Titanite Chunk'",
+            "Name": "Blue Titanite Chunk",
+            "ItemID": 1040,
+            "SoulCost": 5000,
+            "QuantityFlag": 11007910,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6746": {
+            "RawName": "b'White Titanite Chunk'",
+            "Name": "White Titanite Chunk",
+            "ItemID": 1050,
+            "SoulCost": 5000,
+            "QuantityFlag": 11007920,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6747": {
+            "RawName": "b'Demon Titanite'",
+            "Name": "Demon Titanite",
+            "ItemID": 1120,
+            "SoulCost": 7000,
+            "ItemType": 3
+        },
+        "6800": {
+            "RawName": "b'Rubbish'",
+            "Name": "Rubbish",
+            "ItemID": 380,
+            "SoulCost": 1,
+            "ItemType": 3
+        },
+        "6801": {
+            "RawName": "b'Copper Coin'",
+            "Name": "Copper Coin",
+            "ItemID": 381,
+            "SoulCost": 1000,
+            "QuantityFlag": 11707910,
+            "InitialQuantity": 5,
+            "ItemType": 3
+        },
+        "6802": {
+            "RawName": "b'Pendant'",
+            "Name": "Pendant",
+            "ItemID": 376,
+            "SoulCost": 100,
+            "QuantityFlag": 11707900,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6803": {
+            "RawName": "b'Soul of a Lost Undead'",
+            "Name": "Soul of a Lost Undead",
+            "ItemID": 400,
+            "SoulCost": 200,
+            "QuantityFlag": 11707920,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6804": {
+            "RawName": "b'Archive Tower Cell Key'",
+            "Name": "Archive Tower Cell Key",
+            "ItemID": 2004,
+            "SoulCost": 100000,
+            "QuantityFlag": 51700990,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6805": {
+            "RawName": "b'Transcient Curse'",
+            "Name": "Transcient Curse",
+            "ItemID": 312,
+            "SoulCost": 1400,
+            "ItemType": 3
+        },
+        "6806": {
+            "RawName": "b'Purging Stone'",
+            "Name": "Purging Stone",
+            "ItemID": 274,
+            "SoulCost": 1000,
+            "QuantityFlag": 11707930,
+            "InitialQuantity": 1,
+            "ItemType": 3
+        },
+        "6807": {
+            "RawName": "b'Cursebite Ring'",
+            "Name": "Cursebite Ring",
+            "ItemID": 113,
+            "SoulCost": 5000,
+            "QuantityFlag": 51000090,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "6850": {
+            "RawName": "b'Humanity'",
+            "Name": "Humanity",
+            "ItemID": 500,
+            "SoulCost": 5000,
+            "QuantityFlag": 11027900,
+            "InitialQuantity": 10,
+            "ItemType": 3
+        },
+        "6851": {
+            "RawName": "b'Twin Humanity'",
+            "Name": "Twin Humanity",
+            "ItemID": 501,
+            "SoulCost": 10000,
+            "QuantityFlag": 11027910,
+            "InitialQuantity": 5,
+            "ItemType": 3
+        },
+        "6852": {
+            "RawName": "b'Restless Humanities'",
+            "Name": "Restless Humanities",
+            "ItemID": 350,
+            "SoulCost": 8000,
+            "QuantityFlag": 11027920,
+            "InitialQuantity": 10,
+            "ItemType": 3
+        },
+        "6853": {
+            "RawName": "b'Ring of Condemnation'",
+            "Name": "Ring of Condemnation",
+            "ItemID": 133,
+            "SoulCost": 15000,
+            "QuantityFlag": 11027930,
+            "InitialQuantity": 1,
+            "ItemType": 2
+        },
+        "10000": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee3000'",
+            "Name": "\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u77e23000",
+            "ItemID": 3000,
+            "SoulCost": 0,
+            "RequiredGood": 3000,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10001": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x96\\xee3010'",
+            "Name": "\u9b54\u8853\uff1a\u5f37\u3044\u30bd\u30a6\u30eb\u306e\u77e23010",
+            "ItemID": 3010,
+            "SoulCost": 0,
+            "RequiredGood": 3010,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10002": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee3020'",
+            "Name": "\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u592a\u77e23020",
+            "ItemID": 3020,
+            "SoulCost": 0,
+            "RequiredGood": 3020,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10003": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\xbe\\x96\\xee3030'",
+            "Name": "\u9b54\u8853\uff1a\u5f37\u3044\u30bd\u30a6\u30eb\u306e\u592a\u77e23030",
+            "ItemID": 3030,
+            "SoulCost": 0,
+            "RequiredGood": 3030,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10004": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x92\\xc7\\x94\\xf6\\x82\\xb7\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x89\\xf23040'",
+            "Name": "\u9b54\u8853\uff1a\u8ffd\u5c3e\u3059\u308b\u30bd\u30a6\u30eb\u306e\u584a3040",
+            "ItemID": 3040,
+            "SoulCost": 0,
+            "RequiredGood": 3040,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10005": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x92\\xc7\\x94\\xf6\\x82\\xb7\\x82\\xe9\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x8c\\x8b\\x8f\\xbb\\x89\\xf23050'",
+            "Name": "\u9b54\u8853\uff1a\u8ffd\u5c3e\u3059\u308b\u30bd\u30a6\u30eb\u306e\u7d50\u6676\u584a3050",
+            "ItemID": 3050,
+            "SoulCost": 0,
+            "RequiredGood": 3050,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10008": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x91\\x843060'",
+            "Name": "\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u69cd3060",
+            "ItemID": 3060,
+            "SoulCost": 0,
+            "RequiredGood": 3060,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10009": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x83\\\\\\x83E\\x83\\x8b\\x82\\xcc\\x8c\\x8b\\x8f\\xbb\\x91\\x843070'",
+            "Name": "\u9b54\u8853\uff1a\u30bd\u30a6\u30eb\u306e\u7d50\u6676\u69cd3070",
+            "ItemID": 3070,
+            "SoulCost": 0,
+            "RequiredGood": 3070,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10010": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x96\\x82\\x96@\\x82\\xcc\\x95\\x90\\x8a\\xed3100'",
+            "Name": "\u9b54\u8853\uff1a\u9b54\u6cd5\u306e\u6b66\u56683100",
+            "ItemID": 3100,
+            "SoulCost": 0,
+            "RequiredGood": 3100,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10011": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x96\\x82\\x96@\\x82\\xcc\\x95\\x90\\x8a\\xed3110'",
+            "Name": "\u9b54\u8853\uff1a\u5f37\u3044\u9b54\u6cd5\u306e\u6b66\u56683110",
+            "ItemID": 3110,
+            "SoulCost": 0,
+            "RequiredGood": 3110,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10012": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8c\\x8b\\x8f\\xbb\\x96\\x82\\x96@\\x82\\xcc\\x95\\x90\\x8a\\xed3120'",
+            "Name": "\u9b54\u8853\uff1a\u7d50\u6676\u9b54\u6cd5\u306e\u6b66\u56683120",
+            "ItemID": 3120,
+            "SoulCost": 0,
+            "RequiredGood": 3120,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10013": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x96\\x82\\x96@\\x82\\xcc\\x8f\\x823300'",
+            "Name": "\u9b54\u8853\uff1a\u9b54\u6cd5\u306e\u76fe3300",
+            "ItemID": 3300,
+            "SoulCost": 0,
+            "RequiredGood": 3300,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10014": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8b\\xad\\x82\\xa2\\x96\\x82\\x96@\\x82\\xcc\\x8f\\x823310'",
+            "Name": "\u9b54\u8853\uff1a\u5f37\u3044\u9b54\u6cd5\u306e\u76fe3310",
+            "ItemID": 3310,
+            "SoulCost": 0,
+            "RequiredGood": 3310,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10015": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8c\\xa9\\x82\\xa6\\x82\\xc8\\x82\\xa2\\x95\\x90\\x8a\\xed3400'",
+            "Name": "\u9b54\u8853\uff1a\u898b\u3048\u306a\u3044\u6b66\u56683400",
+            "ItemID": 3400,
+            "SoulCost": 0,
+            "RequiredGood": 3400,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10016": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8c\\xa9\\x82\\xa6\\x82\\xc8\\x82\\xa2\\x91\\xcc3410'",
+            "Name": "\u9b54\u8853\uff1a\u898b\u3048\u306a\u3044\u4f533410",
+            "ItemID": 3410,
+            "SoulCost": 0,
+            "RequiredGood": 3410,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10017": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8f\\xc6\\x82\\xe7\\x82\\xb7\\x8c\\xf53500'",
+            "Name": "\u9b54\u8853\uff1a\u7167\u3089\u3059\u51493500",
+            "ItemID": 3500,
+            "SoulCost": 0,
+            "RequiredGood": 3500,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10018": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x89\\xb9\\x96\\xb3\\x82\\xb53510'",
+            "Name": "\u9b54\u8853\uff1a\u97f3\u7121\u30573510",
+            "ItemID": 3510,
+            "SoulCost": 0,
+            "RequiredGood": 3510,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10019": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x89\\xb9\\x91\\x97\\x82\\xe83520'",
+            "Name": "\u9b54\u8853\uff1a\u97f3\u9001\u308a3520",
+            "ItemID": 3520,
+            "SoulCost": 0,
+            "RequiredGood": 3520,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10020": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8fC\\x95\\x9c3530'",
+            "Name": "\u9b54\u8853\uff1a\u4fee\u5fa93530",
+            "ItemID": 3530,
+            "SoulCost": 0,
+            "RequiredGood": 3530,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10021": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x97\\x8e\\x89\\xba\\x90\\xa7\\x8c\\xe43540'",
+            "Name": "\u9b54\u8853\uff1a\u843d\u4e0b\u5236\u5fa13540",
+            "ItemID": 3540,
+            "SoulCost": 0,
+            "RequiredGood": 3540,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10022": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8b[\\x91\\xd43550'",
+            "Name": "\u9b54\u8853\uff1a\u64ec\u614b3550",
+            "ItemID": 3550,
+            "SoulCost": 0,
+            "RequiredGood": 3550,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10023": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x89\\xf0\\x8e\\xf43600'",
+            "Name": "\u9b54\u8853\uff1a\u89e3\u546a3600",
+            "ItemID": 3600,
+            "SoulCost": 0,
+            "RequiredGood": 3600,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10024": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x8e\\xa1\\x96\\xfc3610'",
+            "Name": "\u9b54\u8853\uff1a\u6cbb\u76523610",
+            "ItemID": 3610,
+            "SoulCost": 0,
+            "RequiredGood": 3610,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10025": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x94\\x92\\x97\\xb3\\x82\\xcc\\x91\\xa73700'",
+            "Name": "\u9b54\u8853\uff1a\u767d\u7adc\u306e\u606f3700",
+            "ItemID": 3700,
+            "SoulCost": 0,
+            "RequiredGood": 3700,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10026": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x8b\\x854000'",
+            "Name": "\u546a\u8853\uff1a\u706b\u74034000",
+            "ItemID": 4000,
+            "SoulCost": 0,
+            "RequiredGood": 4000,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10027": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x82\\xcc\\x8b\\xca4010'",
+            "Name": "\u546a\u8853\uff1a\u706b\u306e\u73894010",
+            "ItemID": 4010,
+            "SoulCost": 0,
+            "RequiredGood": 4010,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10028": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x91\\xe5\\x89\\xce\\x8b\\x854020'",
+            "Name": "\u546a\u8853\uff1a\u5927\u706b\u74034020",
+            "ItemID": 4020,
+            "SoulCost": 0,
+            "RequiredGood": 4020,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10029": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x89\\x8a\\x82\\xcc\\x97\\x924030'",
+            "Name": "\u546a\u8853\uff1a\u708e\u306e\u5d504030",
+            "ItemID": 4030,
+            "SoulCost": 0,
+            "RequiredGood": 4030,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10030": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x89\\x8a\\x82\\xcc\\x91\\xe5\\x97\\x924040'",
+            "Name": "\u546a\u8853\uff1a\u708e\u306e\u5927\u5d504040",
+            "ItemID": 4040,
+            "SoulCost": 0,
+            "RequiredGood": 4040,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10031": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x89\\xce\\x89\\x8a\\x95\\xac\\x97\\xac4050'",
+            "Name": "\u546a\u8853\uff1a\u706b\u708e\u5674\u6d414050",
+            "ItemID": 4050,
+            "SoulCost": 0,
+            "RequiredGood": 4050,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10034": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x82\\xc8\\x82\\xac\\x95\\xa5\\x82\\xa4\\x89\\x8a4060'",
+            "Name": "\u546a\u8853\uff1a\u306a\u304e\u6255\u3046\u708e4060",
+            "ItemID": 4060,
+            "SoulCost": 0,
+            "RequiredGood": 4060,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10035": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x94\\xad\\x89\\xce4100'",
+            "Name": "\u546a\u8853\uff1a\u767a\u706b4100",
+            "ItemID": 4100,
+            "SoulCost": 0,
+            "RequiredGood": 4100,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10036": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x91\\xe5\\x94\\xad\\x89\\xce4110'",
+            "Name": "\u546a\u8853\uff1a\u5927\u767a\u706b4110",
+            "ItemID": 4110,
+            "SoulCost": 0,
+            "RequiredGood": 4110,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10037": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x93\\xc5\\x82\\xcc\\x96\\xb64200'",
+            "Name": "\u546a\u8853\uff1a\u6bd2\u306e\u97274200",
+            "ItemID": 4200,
+            "SoulCost": 0,
+            "RequiredGood": 4200,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10038": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x96\\xd2\\x93\\xc5\\x82\\xcc\\x96\\xb64210'",
+            "Name": "\u546a\u8853\uff1a\u731b\u6bd2\u306e\u97274210",
+            "ItemID": 4210,
+            "SoulCost": 0,
+            "RequiredGood": 4210,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10039": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x8e_\\x82\\xcc\\x95\\xac\\x8e\\xcb4220'",
+            "Name": "\u546a\u8853\uff1a\u9178\u306e\u5674\u5c044220",
+            "ItemID": 4220,
+            "SoulCost": 0,
+            "RequiredGood": 4220,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10040": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x93S\\x82\\xcc\\x91\\xcc4300'",
+            "Name": "\u546a\u8853\uff1a\u9244\u306e\u4f534300",
+            "ItemID": 4300,
+            "SoulCost": 0,
+            "RequiredGood": 4300,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10041": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x8c\\x83\\x82\\xb5\\x82\\xa2\\x94\\xad\\x8a\\xbe4310'",
+            "Name": "\u546a\u8853\uff1a\u6fc0\u3057\u3044\u767a\u6c574310",
+            "ItemID": 4310,
+            "SoulCost": 0,
+            "RequiredGood": 4310,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10042": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x95s\\x8e\\x80\\x82\\xcc\\x96\\xa3\\x97\\xb94360'",
+            "Name": "\u546a\u8853\uff1a\u4e0d\u6b7b\u306e\u9b45\u4e864360",
+            "ItemID": 4360,
+            "SoulCost": 0,
+            "RequiredGood": 4360,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10043": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x93\\xe0\\x82\\xc8\\x82\\xe9\\x91\\xe5\\x97\\xcd4400'",
+            "Name": "\u546a\u8853\uff1a\u5185\u306a\u308b\u5927\u529b4400",
+            "ItemID": 4400,
+            "SoulCost": 0,
+            "RequiredGood": 4400,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10044": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x8d\\xac\\x93\\xd7\\x82\\xcc\\x91\\xe5\\x89\\xce\\x8b\\x854500'",
+            "Name": "\u546a\u8853\uff1a\u6df7\u6c8c\u306e\u5927\u706b\u74034500",
+            "ItemID": 4500,
+            "SoulCost": 0,
+            "RequiredGood": 4500,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10045": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x8d\\xac\\x93\\xd7\\x82\\xcc\\x97\\x924510'",
+            "Name": "\u546a\u8853\uff1a\u6df7\u6c8c\u306e\u5d504510",
+            "ItemID": 4510,
+            "SoulCost": 0,
+            "RequiredGood": 4510,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10046": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x82\\xc8\\x82\\xac\\x95\\xa5\\x82\\xa4\\x8d\\xac\\x93\\xd7\\x82\\xcc\\x89\\x8a4520'",
+            "Name": "\u546a\u8853\uff1a\u306a\u304e\u6255\u3046\u6df7\u6c8c\u306e\u708e4520",
+            "ItemID": 4520,
+            "SoulCost": 0,
+            "RequiredGood": 4520,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10047": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x89\\xf1\\x95\\x9c5000'",
+            "Name": "\u5947\u8de1\uff1a\u56de\u5fa95000",
+            "ItemID": 5000,
+            "SoulCost": 0,
+            "RequiredGood": 5000,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10048": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x91\\xe5\\x89\\xf1\\x95\\x9c5010'",
+            "Name": "\u5947\u8de1\uff1a\u5927\u56de\u5fa95010",
+            "ItemID": 5010,
+            "SoulCost": 0,
+            "RequiredGood": 5010,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10049": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8c\\xc0\\x82\\xe7\\x82\\xea\\x82\\xbd\\x91\\xe5\\x89\\xf1\\x95\\x9c5020'",
+            "Name": "\u5947\u8de1\uff1a\u9650\u3089\u308c\u305f\u5927\u56de\u5fa95020",
+            "ItemID": 5020,
+            "SoulCost": 0,
+            "RequiredGood": 5020,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10050": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x91\\xbe\\x97z\\x82\\xcc\\x8c\\xf5\\x82\\xcc\\x96\\xfc\\x82\\xb55030'",
+            "Name": "\u5947\u8de1\uff1a\u592a\u967d\u306e\u5149\u306e\u7652\u30575030",
+            "ItemID": 5030,
+            "SoulCost": 0,
+            "RequiredGood": 5030,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10051": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x90\\xb6\\x96\\xbd\\x97N\\x82\\xab5040'",
+            "Name": "\u5947\u8de1\uff1a\u751f\u547d\u6e67\u304d5040",
+            "ItemID": 5040,
+            "SoulCost": 0,
+            "RequiredGood": 5040,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10052": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x91\\xbe\\x97z\\x82\\xcc\\x8c\\xf5\\x82\\xcc\\x8cb\\x82\\xdd5050'",
+            "Name": "\u5947\u8de1\uff1a\u592a\u967d\u306e\u5149\u306e\u6075\u307f5050",
+            "ItemID": 5050,
+            "SoulCost": 0,
+            "RequiredGood": 5050,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10053": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x95\\xe6\\x89\\xa4\\x82\\xcc\\x8c\\x95\\x95\\x915100'",
+            "Name": "\u5947\u8de1\uff1a\u5893\u738b\u306e\u5263\u821e5100",
+            "ItemID": 5100,
+            "SoulCost": 0,
+            "RequiredGood": 5100,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10054": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x95\\xe6\\x89\\xa4\\x82\\xcc\\x91\\xe5\\x8c\\x95\\x95\\x915110'",
+            "Name": "\u5947\u8de1\uff1a\u5893\u738b\u306e\u5927\u5263\u821e5110",
+            "ItemID": 5110,
+            "SoulCost": 0,
+            "RequiredGood": 5110,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10055": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8e\\x80\\x82\\xcc\\x89\\xf1\\x94\\xf05200'",
+            "Name": "\u5947\u8de1\uff1a\u6b7b\u306e\u56de\u907f5200",
+            "ItemID": 5200,
+            "SoulCost": 0,
+            "RequiredGood": 5200,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10056": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8bA\\x8a\\xd25210'",
+            "Name": "\u5947\u8de1\uff1a\u5e30\u90845210",
+            "ItemID": 5210,
+            "SoulCost": 0,
+            "RequiredGood": 5210,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10057": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x83t\\x83H\\x81[\\x83X5300'",
+            "Name": "\u5947\u8de1\uff1a\u30d5\u30a9\u30fc\u30b95300",
+            "ItemID": 5300,
+            "SoulCost": 0,
+            "RequiredGood": 5300,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10058": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x90_\\x82\\xcc\\x93{\\x82\\xe85310'",
+            "Name": "\u5947\u8de1\uff1a\u795e\u306e\u6012\u308a5310",
+            "ItemID": 5310,
+            "SoulCost": 0,
+            "RequiredGood": 5310,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10059": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x95\\xfa\\x82\\xc2\\x83t\\x83H\\x81[\\x83X5320'",
+            "Name": "\u5947\u8de1\uff1a\u653e\u3064\u30d5\u30a9\u30fc\u30b95320",
+            "ItemID": 5320,
+            "SoulCost": 0,
+            "RequiredGood": 5320,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10060": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8f\\x95\\x8c\\xbe\\x8b\\x81\\x82\\xdf5400'",
+            "Name": "\u5947\u8de1\uff1a\u52a9\u8a00\u6c42\u30815400",
+            "ItemID": 5400,
+            "SoulCost": 0,
+            "RequiredGood": 5400,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10061": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x97\\x8b\\x82\\xcc\\x91\\x845500'",
+            "Name": "\u5947\u8de1\uff1a\u96f7\u306e\u69cd5500",
+            "ItemID": 5500,
+            "SoulCost": 0,
+            "RequiredGood": 5500,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10062": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x97\\x8b\\x82\\xcc\\x91\\xe5\\x91\\x845510'",
+            "Name": "\u5947\u8de1\uff1a\u96f7\u306e\u5927\u69cd5510",
+            "ItemID": 5510,
+            "SoulCost": 0,
+            "RequiredGood": 5510,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10063": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x91\\xbe\\x97z\\x82\\xcc\\x8c\\xf5\\x82\\xcc\\x91\\x845520'",
+            "Name": "\u5947\u8de1\uff1a\u592a\u967d\u306e\u5149\u306e\u69cd5520",
+            "ItemID": 5520,
+            "SoulCost": 0,
+            "RequiredGood": 5520,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10064": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x96\\x82\\x96@\\x96h\\x8c\\xec5600'",
+            "Name": "\u5947\u8de1\uff1a\u9b54\u6cd5\u9632\u8b775600",
+            "ItemID": 5600,
+            "SoulCost": 0,
+            "RequiredGood": 5600,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10065": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8b\\xad\\x89\\xbb\\x96\\x82\\x96@\\x96h\\x8c\\xec5610'",
+            "Name": "\u5947\u8de1\uff1a\u5f37\u5316\u9b54\u6cd5\u9632\u8b775610",
+            "ItemID": 5610,
+            "SoulCost": 0,
+            "RequiredGood": 5610,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10066": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x88\\xf6\\x89\\xca\\x89\\x9e\\x95\\xf15700'",
+            "Name": "\u5947\u8de1\uff1a\u56e0\u679c\u5fdc\u58315700",
+            "ItemID": 5700,
+            "SoulCost": 0,
+            "RequiredGood": 5700,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10068": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x8a\\xc9\\x82\\xe2\\x82\\xa9\\x82\\xc8\\x95\\xbd\\x98a\\x82\\xcc\\x95\\xe0\\x82\\xdd5800'",
+            "Name": "\u5947\u8de1\uff1a\u7de9\u3084\u304b\u306a\u5e73\u548c\u306e\u6b69\u307f5800",
+            "ItemID": 5800,
+            "SoulCost": 0,
+            "RequiredGood": 5800,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10069": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x92\\xbe\\x96\\xd9\\x82\\xcc\\x8b\\xd6\\x91\\xa55810'",
+            "Name": "\u5947\u8de1\uff1a\u6c88\u9ed9\u306e\u7981\u52475810",
+            "ItemID": 5810,
+            "SoulCost": 0,
+            "RequiredGood": 5810,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10070": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x91\\xbe\\x97z\\x82\\xcc\\x8c\\xf5\\x82\\xcc\\x8c\\x955900'",
+            "Name": "\u5947\u8de1\uff1a\u592a\u967d\u306e\u5149\u306e\u52635900",
+            "ItemID": 5900,
+            "SoulCost": 0,
+            "RequiredGood": 5900,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10071": {
+            "RawName": "b'\\x8a\\xef\\x90\\xd5\\x81F\\x88\\xc3\\x8c\\x8e\\x82\\xcc\\x8c\\xf5\\x82\\xcc\\x8c\\x955910'",
+            "Name": "\u5947\u8de1\uff1a\u6697\u6708\u306e\u5149\u306e\u52635910",
+            "ItemID": 5910,
+            "SoulCost": 0,
+            "RequiredGood": 5910,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10072": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x88\\xc5\\x82\\xcc\\x8b\\xca3710'",
+            "Name": "\u9b54\u8853\uff1a\u95c7\u306e\u73893710",
+            "ItemID": 3710,
+            "SoulCost": 0,
+            "RequiredGood": 3710,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10073": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x88\\xc5\\x82\\xcc\\x94\\xf2\\x96\\x973720'",
+            "Name": "\u9b54\u8853\uff1a\u95c7\u306e\u98db\u6cab3720",
+            "ItemID": 3720,
+            "SoulCost": 0,
+            "RequiredGood": 3720,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10074": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x88\\xc5\\x82\\xcc\\x96\\xb63730'",
+            "Name": "\u9b54\u8853\uff1a\u95c7\u306e\u97273730",
+            "ItemID": 3730,
+            "SoulCost": 0,
+            "RequiredGood": 3730,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10075": {
+            "RawName": "b'\\x96\\x82\\x8fp\\x81F\\x92\\xc7\\x82\\xa4\\x8e\\xd2\\x82\\xbd\\x82\\xbf3740'",
+            "Name": "\u9b54\u8853\uff1a\u8ffd\u3046\u8005\u305f\u30613740",
+            "ItemID": 3740,
+            "SoulCost": 0,
+            "RequiredGood": 3740,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        },
+        "10076": {
+            "RawName": "b'\\x8e\\xf4\\x8fp\\x81F\\x8d\\x95\\x89\\x8a4530'",
+            "Name": "\u546a\u8853\uff1a\u9ed2\u708e4530",
+            "ItemID": 4530,
+            "SoulCost": 0,
+            "RequiredGood": 4530,
+            "ShopMenuType": 2,
+            "ItemType": 4
+        }
+    }
+}

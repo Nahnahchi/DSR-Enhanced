@@ -1,0 +1,202 @@
+{
+    "param_type": "REINFORCE_PARAM_PROTECTOR_ST",
+    "big_endian": false,
+    "unknown": 0,
+    "paramdef_data_version": 1,
+    "flags1": 2,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "0": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed'",
+            "Name": "\u901a\u5e38"
+        },
+        "1": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{1'",
+            "Name": "\u901a\u5e38\uff0b1",
+            "PhysicalDefenseMultiplier": 1.100000023841858,
+            "MagicDefenseMultiplier": 1.100000023841858,
+            "FireDefenseMultiplier": 1.100000023841858,
+            "LightningDefenseMultiplier": 1.100000023841858,
+            "UpgradeMaterialID": 1
+        },
+        "2": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{2'",
+            "Name": "\u901a\u5e38\uff0b2",
+            "PhysicalDefenseMultiplier": 1.2000000476837158,
+            "MagicDefenseMultiplier": 1.2000000476837158,
+            "FireDefenseMultiplier": 1.2000000476837158,
+            "LightningDefenseMultiplier": 1.2000000476837158,
+            "UpgradeMaterialID": 2
+        },
+        "3": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{3'",
+            "Name": "\u901a\u5e38\uff0b3",
+            "PhysicalDefenseMultiplier": 1.2999999523162842,
+            "MagicDefenseMultiplier": 1.2999999523162842,
+            "FireDefenseMultiplier": 1.2999999523162842,
+            "LightningDefenseMultiplier": 1.2999999523162842,
+            "UpgradeMaterialID": 3
+        },
+        "4": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{4'",
+            "Name": "\u901a\u5e38\uff0b4",
+            "PhysicalDefenseMultiplier": 1.4299999475479126,
+            "MagicDefenseMultiplier": 1.4299999475479126,
+            "FireDefenseMultiplier": 1.4299999475479126,
+            "LightningDefenseMultiplier": 1.4299999475479126,
+            "PoisonResistanceMultiplier": 1.0499999523162842,
+            "ToxicResistanceMultiplier": 1.0499999523162842,
+            "BleedResistanceMultiplier": 1.0499999523162842,
+            "CurseResistanceMultiplier": 1.0499999523162842,
+            "UpgradeMaterialID": 4
+        },
+        "5": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{5'",
+            "Name": "\u901a\u5e38\uff0b5",
+            "PhysicalDefenseMultiplier": 1.559999942779541,
+            "MagicDefenseMultiplier": 1.559999942779541,
+            "FireDefenseMultiplier": 1.559999942779541,
+            "LightningDefenseMultiplier": 1.559999942779541,
+            "PoisonResistanceMultiplier": 1.100000023841858,
+            "ToxicResistanceMultiplier": 1.100000023841858,
+            "BleedResistanceMultiplier": 1.100000023841858,
+            "CurseResistanceMultiplier": 1.100000023841858,
+            "UpgradeMaterialID": 5
+        },
+        "6": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{6'",
+            "Name": "\u901a\u5e38\uff0b6",
+            "PhysicalDefenseMultiplier": 1.690000057220459,
+            "MagicDefenseMultiplier": 1.690000057220459,
+            "FireDefenseMultiplier": 1.690000057220459,
+            "LightningDefenseMultiplier": 1.690000057220459,
+            "PoisonResistanceMultiplier": 1.149999976158142,
+            "ToxicResistanceMultiplier": 1.149999976158142,
+            "BleedResistanceMultiplier": 1.149999976158142,
+            "CurseResistanceMultiplier": 1.149999976158142,
+            "UpgradeMaterialID": 6
+        },
+        "7": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{7'",
+            "Name": "\u901a\u5e38\uff0b7",
+            "PhysicalDefenseMultiplier": 1.850000023841858,
+            "MagicDefenseMultiplier": 1.850000023841858,
+            "FireDefenseMultiplier": 1.850000023841858,
+            "LightningDefenseMultiplier": 1.850000023841858,
+            "PoisonResistanceMultiplier": 1.2000000476837158,
+            "ToxicResistanceMultiplier": 1.2000000476837158,
+            "BleedResistanceMultiplier": 1.2000000476837158,
+            "CurseResistanceMultiplier": 1.2000000476837158,
+            "UpgradeMaterialID": 7
+        },
+        "8": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{8'",
+            "Name": "\u901a\u5e38\uff0b8",
+            "PhysicalDefenseMultiplier": 2.009999990463257,
+            "MagicDefenseMultiplier": 2.009999990463257,
+            "FireDefenseMultiplier": 2.009999990463257,
+            "LightningDefenseMultiplier": 2.009999990463257,
+            "PoisonResistanceMultiplier": 1.25,
+            "ToxicResistanceMultiplier": 1.25,
+            "BleedResistanceMultiplier": 1.25,
+            "CurseResistanceMultiplier": 1.25,
+            "UpgradeMaterialID": 8
+        },
+        "9": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{9'",
+            "Name": "\u901a\u5e38\uff0b9",
+            "PhysicalDefenseMultiplier": 2.1700000762939453,
+            "MagicDefenseMultiplier": 2.1700000762939453,
+            "FireDefenseMultiplier": 2.1700000762939453,
+            "LightningDefenseMultiplier": 2.1700000762939453,
+            "PoisonResistanceMultiplier": 1.2999999523162842,
+            "ToxicResistanceMultiplier": 1.2999999523162842,
+            "BleedResistanceMultiplier": 1.2999999523162842,
+            "CurseResistanceMultiplier": 1.2999999523162842,
+            "UpgradeMaterialID": 9
+        },
+        "10": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed\\x81{10'",
+            "Name": "\u901a\u5e38\uff0b10",
+            "PhysicalDefenseMultiplier": 2.4200000762939453,
+            "MagicDefenseMultiplier": 2.4200000762939453,
+            "FireDefenseMultiplier": 2.4200000762939453,
+            "LightningDefenseMultiplier": 2.4200000762939453,
+            "PoisonResistanceMultiplier": 1.399999976158142,
+            "ToxicResistanceMultiplier": 1.399999976158142,
+            "BleedResistanceMultiplier": 1.399999976158142,
+            "CurseResistanceMultiplier": 1.399999976158142,
+            "UpgradeMaterialID": 10
+        },
+        "100": {
+            "RawName": "b'\\x93\\xc1\\x8e\\xea'",
+            "Name": "\u7279\u6b8a"
+        },
+        "101": {
+            "RawName": "b'\\x93\\xc1\\x8e\\xea\\x81{1'",
+            "Name": "\u7279\u6b8a\uff0b1",
+            "PhysicalDefenseMultiplier": 1.0800000429153442,
+            "MagicDefenseMultiplier": 1.0800000429153442,
+            "FireDefenseMultiplier": 1.0800000429153442,
+            "LightningDefenseMultiplier": 1.0800000429153442,
+            "PoisonResistanceMultiplier": 1.0499999523162842,
+            "ToxicResistanceMultiplier": 1.0499999523162842,
+            "BleedResistanceMultiplier": 1.0499999523162842,
+            "CurseResistanceMultiplier": 1.0499999523162842,
+            "UpgradeMaterialID": 1
+        },
+        "102": {
+            "RawName": "b'\\x93\\xc1\\x8e\\xea\\x81{2'",
+            "Name": "\u7279\u6b8a\uff0b2",
+            "PhysicalDefenseMultiplier": 1.190000057220459,
+            "MagicDefenseMultiplier": 1.190000057220459,
+            "FireDefenseMultiplier": 1.190000057220459,
+            "LightningDefenseMultiplier": 1.190000057220459,
+            "PoisonResistanceMultiplier": 1.090000033378601,
+            "ToxicResistanceMultiplier": 1.090000033378601,
+            "BleedResistanceMultiplier": 1.090000033378601,
+            "CurseResistanceMultiplier": 1.090000033378601,
+            "UpgradeMaterialID": 2
+        },
+        "103": {
+            "RawName": "b'\\x93\\xc1\\x8e\\xea\\x81{3'",
+            "Name": "\u7279\u6b8a\uff0b3",
+            "PhysicalDefenseMultiplier": 1.2899999618530273,
+            "MagicDefenseMultiplier": 1.2899999618530273,
+            "FireDefenseMultiplier": 1.2899999618530273,
+            "LightningDefenseMultiplier": 1.2899999618530273,
+            "PoisonResistanceMultiplier": 1.1399999856948853,
+            "ToxicResistanceMultiplier": 1.1399999856948853,
+            "BleedResistanceMultiplier": 1.1399999856948853,
+            "CurseResistanceMultiplier": 1.1399999856948853,
+            "UpgradeMaterialID": 3
+        },
+        "104": {
+            "RawName": "b'\\x93\\xc1\\x8e\\xea\\x81{4'",
+            "Name": "\u7279\u6b8a\uff0b4",
+            "PhysicalDefenseMultiplier": 1.3899999856948853,
+            "MagicDefenseMultiplier": 1.3899999856948853,
+            "FireDefenseMultiplier": 1.3899999856948853,
+            "LightningDefenseMultiplier": 1.3899999856948853,
+            "PoisonResistanceMultiplier": 1.1799999475479126,
+            "ToxicResistanceMultiplier": 1.1799999475479126,
+            "BleedResistanceMultiplier": 1.1799999475479126,
+            "CurseResistanceMultiplier": 1.1799999475479126,
+            "UpgradeMaterialID": 4
+        },
+        "105": {
+            "RawName": "b'\\x93\\xc1\\x8e\\xea\\x81{5'",
+            "Name": "\u7279\u6b8a\uff0b5",
+            "PhysicalDefenseMultiplier": 1.5499999523162842,
+            "MagicDefenseMultiplier": 1.5499999523162842,
+            "FireDefenseMultiplier": 1.5499999523162842,
+            "LightningDefenseMultiplier": 1.5499999523162842,
+            "PoisonResistanceMultiplier": 1.2699999809265137,
+            "ToxicResistanceMultiplier": 1.2699999809265137,
+            "BleedResistanceMultiplier": 1.2699999809265137,
+            "CurseResistanceMultiplier": 1.2699999809265137,
+            "UpgradeMaterialID": 5
+        }
+    }
+}

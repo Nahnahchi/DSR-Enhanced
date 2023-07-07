@@ -1,0 +1,140 @@
+{
+    "binder_type": "BND3",
+    "signature": "07D7R6",
+    "flags": 46,
+    "big_endian": false,
+    "bit_big_endian": false,
+    "use_id_prefix": false,
+    "dcx_type": "DCX_DFLT_10000_24_9",
+    "entries": {
+        "N:\\FRPG\\data\\INTERROOT_x64\\script\\ai\\out\\bin": [
+            {
+                "flags": 2,
+                "id": 1054,
+                "name": "120000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1055,
+                "name": "120100_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1059,
+                "name": "266000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1060,
+                "name": "320000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1061,
+                "name": "327000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1063,
+                "name": "341000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1066,
+                "name": "526000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1085,
+                "name": "334000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1087,
+                "name": "250000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1088,
+                "name": "250001_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1093,
+                "name": "120200_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1094,
+                "name": "349000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1095,
+                "name": "349100_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1096,
+                "name": "279000_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1116,
+                "name": "006560_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1122,
+                "name": "006540_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1124,
+                "name": "006540_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1133,
+                "name": "006130_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1138,
+                "name": "006260_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1145,
+                "name": "006590_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1146,
+                "name": "006590_logic.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1147,
+                "name": "237001_battle.lua"
+            },
+            {
+                "flags": 2,
+                "id": 1149,
+                "name": "006280_battle.lua"
+            }
+        ],
+        "N:\\FRPG\\data\\INTERROOT_x64\\script": [
+            {
+                "flags": 2,
+                "id": 1000000,
+                "name": "m10_00_00_00.luagnl"
+            },
+            {
+                "flags": 2,
+                "id": 1000001,
+                "name": "m10_00_00_00.luainfo"
+            }
+        ]
+    }
+}

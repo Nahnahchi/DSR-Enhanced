@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -62,12 +63,12 @@ class State_4(State):
 
     def enter(self):
         ShowShopMessage(0, 0, 0)
-        AddTalkListData(menu_index=1, menu_text=15000400, required_flag=-1)
-        AddTalkListData(menu_index=2, menu_text=15000405, required_flag=-1)
-        AddTalkListData(menu_index=3, menu_text=15000410, required_flag=-1)
-        AddTalkListData(menu_index=4, menu_text=15000415, required_flag=-1)
-        AddTalkListData(menu_index=5, menu_text=15000416, required_flag=-1)
-        AddTalkListData(menu_index=6, menu_text=15000005, required_flag=-1)
+        AddTalkListData(menu_index=1, menu_text_id=15000400, required_flag=-1)
+        AddTalkListData(menu_index=2, menu_text_id=15000405, required_flag=-1)
+        AddTalkListData(menu_index=3, menu_text_id=15000410, required_flag=-1)
+        AddTalkListData(menu_index=4, menu_text_id=15000415, required_flag=-1)
+        AddTalkListData(menu_index=5, menu_text_id=15000416, required_flag=-1)
+        AddTalkListData(menu_index=6, menu_text_id=15000005, required_flag=-1)
 
     def test(self):
         if IsPlayerDead() == 1:

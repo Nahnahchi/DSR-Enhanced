@@ -1,0 +1,91 @@
+{
+    "param_type": "WHITE_COOL_TIME_PARAM_ST",
+    "big_endian": false,
+    "unknown": 1,
+    "paramdef_data_version": 1,
+    "flags1": 1,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "1": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b1'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb1",
+            "timeLimit0": 180.0,
+            "timeLimit1": 180.0,
+            "timeLimit2": 180.0,
+            "timeLimit3": 180.0
+        },
+        "2": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b2'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb2",
+            "timeLimit0": 180.0,
+            "timeLimit1": 180.0,
+            "timeLimit2": 180.0,
+            "timeLimit3": 180.0
+        },
+        "3": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b3'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb3",
+            "timeLimit0": 180.0,
+            "timeLimit1": 180.0,
+            "timeLimit2": 180.0,
+            "timeLimit3": 180.0
+        },
+        "4": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b4'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb4",
+            "timeLimit0": 180.0,
+            "timeLimit1": 180.0,
+            "timeLimit2": 180.0,
+            "timeLimit3": 180.0
+        },
+        "5": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b5'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb5",
+            "timeLimit0": 360.0,
+            "timeLimit1": 360.0,
+            "timeLimit2": 360.0,
+            "timeLimit3": 360.0
+        },
+        "6": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b6'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb6",
+            "timeLimit0": 360.0,
+            "timeLimit1": 360.0,
+            "timeLimit2": 360.0,
+            "timeLimit3": 360.0
+        },
+        "7": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b7'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb7",
+            "timeLimit0": 360.0,
+            "timeLimit1": 360.0,
+            "timeLimit2": 360.0,
+            "timeLimit3": 360.0
+        },
+        "8": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b8'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb8",
+            "timeLimit0": 360.0,
+            "timeLimit1": 360.0,
+            "timeLimit2": 360.0,
+            "timeLimit3": 360.0
+        },
+        "9": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b9'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb9",
+            "timeLimit0": 360.0,
+            "timeLimit1": 360.0,
+            "timeLimit2": 360.0,
+            "timeLimit3": 360.0
+        },
+        "10": {
+            "RawName": "b'\\x94\\x92\\x83T\\x83C\\x83\\x93\\x83\\x8c\\x83x\\x83\\x8b10'",
+            "Name": "\u767d\u30b5\u30a4\u30f3\u30ec\u30d9\u30eb10",
+            "timeLimit0": 360.0,
+            "timeLimit1": 360.0,
+            "timeLimit2": 360.0,
+            "timeLimit3": 360.0
+        }
+    }
+}

@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -15,7 +16,7 @@ class State_1(State):
         return [State_42]
 
     def enter(self):
-        TalkToPlayer(conversation=42020300, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020300, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -87,11 +88,11 @@ class State_6(State):
         return [State_4, State_17, State_26]
 
     def enter(self):
-        AddTalkListData(menu_index=1, menu_text=15000010, required_flag=-1)
-        AddTalkListData(menu_index=2, menu_text=15000350, required_flag=285)
+        AddTalkListData(menu_index=1, menu_text_id=15000010, required_flag=-1)
+        AddTalkListData(menu_index=2, menu_text_id=15000350, required_flag=285)
         ShowShopMessage(0, 0, 0)
-        AddTalkListData(menu_index=3, menu_text=15000000, required_flag=-1)
-        AddTalkListData(menu_index=4, menu_text=15000005, required_flag=-1)
+        AddTalkListData(menu_index=3, menu_text_id=15000000, required_flag=-1)
+        AddTalkListData(menu_index=4, menu_text_id=15000005, required_flag=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -161,7 +162,7 @@ class State_10(State):
         return [State_18]
 
     def enter(self):
-        TalkToPlayer(conversation=42021600, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021600, unk1=-1, unk2=-1)
         SetFlagState(flag=71320063, state=1)
         ForceCloseMenu()
 
@@ -221,7 +222,7 @@ class State_14(State):
         return [State_18]
 
     def enter(self):
-        TalkToPlayer(conversation=42021540, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021540, unk1=-1, unk2=-1)
         SetFlagState(flag=71320060, state=1)
         ForceCloseMenu()
 
@@ -241,7 +242,7 @@ class State_15(State):
         return [State_19]
 
     def enter(self):
-        TalkToPlayer(conversation=42020100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020100, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -260,7 +261,7 @@ class State_16(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42020700, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020700, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -483,7 +484,7 @@ class State_29(State):
         return [State_19]
 
     def enter(self):
-        TalkToPlayer(conversation=42020000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020000, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -516,7 +517,7 @@ class State_31(State):
         return [State_41]
 
     def enter(self):
-        TalkToPlayer(conversation=42020500, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020500, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -584,7 +585,7 @@ class State_35(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42020750, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020750, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -602,7 +603,7 @@ class State_36(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42021050, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021050, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -621,7 +622,7 @@ class State_37(State):
         return [State_19, State_62]
 
     def enter(self):
-        TalkToPlayer(conversation=42021700, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021700, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         ForceCloseMenu()
 
@@ -639,7 +640,7 @@ class State_38(State):
         return [State_19]
 
     def enter(self):
-        TalkToPlayer(conversation=42020150, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020150, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -658,7 +659,7 @@ class State_39(State):
         return [State_19]
 
     def enter(self):
-        TalkToPlayer(conversation=42020200, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020200, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
@@ -717,7 +718,7 @@ class State_43(State):
         return [State_41]
 
     def enter(self):
-        TalkToPlayer(conversation=42020600, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020600, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -735,7 +736,7 @@ class State_44(State):
         return [State_42]
 
     def enter(self):
-        TalkToPlayer(conversation=42020400, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020400, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -753,7 +754,7 @@ class State_45(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42021060, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021060, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -823,7 +824,7 @@ class State_50(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42020800, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020800, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -854,7 +855,7 @@ class State_52(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42020850, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020850, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -872,7 +873,7 @@ class State_53(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42020900, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020900, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -916,7 +917,7 @@ class State_56(State):
         return [State_18]
 
     def enter(self):
-        TalkToPlayer(conversation=42021550, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021550, unk1=-1, unk2=-1)
         SetFlagState(flag=71320061, state=1)
         ForceCloseMenu()
 
@@ -949,7 +950,7 @@ class State_58(State):
         return [State_18]
 
     def enter(self):
-        TalkToPlayer(conversation=42021560, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021560, unk1=-1, unk2=-1)
         SetFlagState(flag=71320062, state=1)
         ForceCloseMenu()
 
@@ -996,7 +997,7 @@ class State_61(State):
         return [State_18, State_22, State_23, State_70]
 
     def enter(self):
-        TalkToPlayer(conversation=42021700, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021700, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         ForceCloseMenu()
 
@@ -1031,7 +1032,7 @@ class State_63(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42020950, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42020950, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -1049,7 +1050,7 @@ class State_64(State):
         return [State_34]
 
     def enter(self):
-        TalkToPlayer(conversation=42021000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021000, unk1=-1, unk2=-1)
 
     def test(self):
         if IsAttackedBySomeone() == 1 or CheckSelfDeath() == 1:
@@ -1080,7 +1081,7 @@ class State_66(State):
         return [State_19]
 
     def enter(self):
-        TalkToPlayer(conversation=42021800, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=42021800, unk1=-1, unk2=-1)
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=71320074, state=1)
 

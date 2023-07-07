@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -72,7 +73,7 @@ class State_5(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000000, unk1=-1, unk2=-1)
         DebugEvent(message='初対面')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -167,7 +168,7 @@ class State_8(State):
         return [State_21]
 
     def enter(self):
-        TalkToPlayer(conversation=48000100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000100, unk1=-1, unk2=-1)
         DebugEvent(message='Yes')
 
     def test(self):
@@ -186,7 +187,7 @@ class State_9(State):
         return [State_22]
 
     def enter(self):
-        TalkToPlayer(conversation=48000700, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000700, unk1=-1, unk2=-1)
         DebugEvent(message='No')
 
     def test(self):
@@ -271,7 +272,7 @@ class State_15(State):
         return [State_7, State_16, State_48]
 
     def enter(self):
-        TalkToPlayer(conversation=48000800, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000800, unk1=-1, unk2=-1)
         SetFlagState(flag=71200043, state=1)
         ForceCloseMenu()
 
@@ -353,7 +354,7 @@ class State_20(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000702, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000702, unk1=-1, unk2=-1)
         DebugEvent(message='Noあと')
         DisplayOneLineHelp(text_id=-1)
 
@@ -401,7 +402,7 @@ class State_23(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000100, unk1=-1, unk2=-1)
         DebugEvent(message='Yesあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -504,7 +505,7 @@ class State_29(State):
         return [State_7, State_27]
 
     def enter(self):
-        TalkToPlayer(conversation=48000200, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000200, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yes')
         SetFlagState(flag=11205050, state=1)
 
@@ -524,7 +525,7 @@ class State_30(State):
         return [State_28, State_42]
 
     def enter(self):
-        TalkToPlayer(conversation=48000500, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000500, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-No')
 
     def test(self):
@@ -557,7 +558,7 @@ class State_32(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000300, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000300, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと1')
         DisplayOneLineHelp(text_id=-1)
 
@@ -577,7 +578,7 @@ class State_33(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000400, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000400, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと2')
         DisplayOneLineHelp(text_id=-1)
 
@@ -612,7 +613,7 @@ class State_35(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000600, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000600, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Noあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -633,7 +634,7 @@ class State_36(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000900, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000900, unk1=-1, unk2=-1)
         DebugEvent(message='裏切った')
         DisplayOneLineHelp(text_id=-1)
         ForceCloseMenu()
@@ -829,7 +830,7 @@ class State_47(State):
         return [State_7, State_55]
 
     def enter(self):
-        TalkToPlayer(conversation=48000210, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000210, unk1=-1, unk2=-1)
         DebugEvent(message='誓約したあと')
         SetFlagState(flag=11205050, state=1)
 
@@ -900,7 +901,7 @@ class State_51(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48001000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48001000, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと2')
         DisplayOneLineHelp(text_id=-1)
 
@@ -933,7 +934,7 @@ class State_53(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000320, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000320, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと1')
         DisplayOneLineHelp(text_id=-1)
 
@@ -953,7 +954,7 @@ class State_54(State):
         return [State_7, State_50]
 
     def enter(self):
-        TalkToPlayer(conversation=48000220, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000220, unk1=-1, unk2=-1)
         SetFlagState(flag=11205050, state=1)
 
     def test(self):
@@ -998,7 +999,7 @@ class State_56(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000103, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000103, unk1=-1, unk2=-1)
         DebugEvent(message='Yesあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)
@@ -1055,7 +1056,7 @@ class State_59(State):
         return [State_55]
 
     def enter(self):
-        TalkToPlayer(conversation=48000221, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000221, unk1=-1, unk2=-1)
         SetFlagState(flag=11205050, state=1)
 
     def test(self):
@@ -1076,7 +1077,7 @@ class State_60(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000320, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000320, unk1=-1, unk2=-1)
         DebugEvent(message='Yes-Yesあと1')
         DisplayOneLineHelp(text_id=-1)
 
@@ -1113,7 +1114,7 @@ class State_62(State):
         return [State_7]
 
     def enter(self):
-        TalkToPlayer(conversation=48000103, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=48000103, unk1=-1, unk2=-1)
         DebugEvent(message='Yesあと')
         DisplayOneLineHelp(text_id=-1)
         SetFlagState(flag=11205050, state=1)

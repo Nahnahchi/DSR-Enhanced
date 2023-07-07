@@ -1,0 +1,431 @@
+{
+    "param_type": "COOL_TIME_PARAM_ST",
+    "big_endian": false,
+    "unknown": 1,
+    "paramdef_data_version": 1,
+    "flags1": 1,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "101": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b1'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb1",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 600.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "102": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b2'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb2",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 600.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "103": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b3'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb3",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "104": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b4'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb4",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "105": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b5'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb5",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "106": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b6'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb6",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "107": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b7'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb7",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "108": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b8'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb8",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "109": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b9'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb9",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 180.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "110": {
+            "RawName": "b'\\x97\\x90\\x93\\xfc \\x83\\x8c\\x83x\\x83\\x8b10'",
+            "Name": "\u4e71\u5165 \u30ec\u30d9\u30eb10",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 180.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "201": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b1'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb1",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 600.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "202": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b2'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb2",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 600.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "203": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b3'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb3",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "204": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b4'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb4",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "205": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b5'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb5",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "206": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b6'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb6",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "207": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b7'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb7",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "208": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b8'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb8",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "209": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b9'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb9",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 180.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "210": {
+            "RawName": "b'\\x93\\x90\\x91\\xaf\\x92c \\x83\\x8c\\x83x\\x83\\x8b10'",
+            "Name": "\u76d7\u8cca\u56e3 \u30ec\u30d9\u30eb10",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 180.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "301": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b1'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb1",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 600.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "302": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b2'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb2",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 600.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "303": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b3'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb3",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "304": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b4'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb4",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "305": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b5'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb5",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 480.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "306": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b6'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb6",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "307": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b7'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb7",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "308": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b8'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb8",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 300.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "309": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b9'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb9",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 180.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "310": {
+            "RawName": "b'\\x89\\xa4\\x95\\xea\\x92\\xed \\x83\\x8c\\x83x\\x83\\x8b10'",
+            "Name": "\u738b\u6bcd\u5f1f \u30ec\u30d9\u30eb10",
+            "limitationTime_0": 900.0,
+            "observationTime_0": 180.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 300.0,
+            "observationTime_2": 200.0
+        },
+        "401": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b1'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb1",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "402": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b2'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb2",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "403": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b3'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb3",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "404": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b4'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb4",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "405": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b5'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb5",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "406": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b6'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb6",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "407": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b7'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb7",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "408": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b8'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb8",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "409": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b9'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb9",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        },
+        "410": {
+            "RawName": "b'\\x83j\\x83g\\x82\\xcc\\x8f\\xb5\\x91\\xd2\\x8f\\xf3 \\x83\\x8c\\x83x\\x83\\x8b10'",
+            "Name": "\u30cb\u30c8\u306e\u62db\u5f85\u72b6 \u30ec\u30d9\u30eb10",
+            "limitationTime_0": 600.0,
+            "observationTime_0": 450.0,
+            "limitationTime_1": 600.0,
+            "observationTime_1": 450.0,
+            "limitationTime_2": 600.0,
+            "observationTime_2": 450.0,
+            "limitationTime_3": 600.0,
+            "observationTime_3": 450.0
+        }
+    }
+}

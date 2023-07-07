@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -15,7 +16,7 @@ class State_1(State):
         return [State_2]
 
     def enter(self):
-        TalkToPlayer(conversation=62000000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=62000000, unk1=-1, unk2=-1)
 
     def test(self):
         if HasTalkEnded() == 1 and GetDistanceToPlayer() > 3:
@@ -49,7 +50,14 @@ class State_3(State):
         DisplayOneLineHelp(text_id=10010200)
 
     def test(self):
-        return State_2
+        if GetFlagState(11012997) == 1:
+            return State_4
+        if IsPlayerAttacking() == 0:
+            return State_2
+        if IsPlayerAttacking() == 1 and GetSelfHP() > 75:
+            return State_2
+        if IsPlayerAttacking() == 1 and GetSelfHP() <= 75:
+            return State_4
 
 
 class State_4(State):
@@ -62,7 +70,14 @@ class State_4(State):
         DisplayOneLineHelp(text_id=-1)
 
     def test(self):
-        return State_2
+        if GetFlagState(11012997) == 1:
+            return State_4
+        if IsPlayerAttacking() == 0:
+            return State_2
+        if IsPlayerAttacking() == 1 and GetSelfHP() > 75:
+            return State_2
+        if IsPlayerAttacking() == 1 and GetSelfHP() <= 75:
+            return State_4
 
 
 class State_5(State):
@@ -72,9 +87,9 @@ class State_5(State):
         return [State_1]
 
     def enter(self):
-        AddTalkListData(menu_index=1, menu_text=15000010, required_flag=-1)
+        AddTalkListData(menu_index=1, menu_text_id=15000010, required_flag=-1)
         ShowShopMessage(0, 0, 0)
-        AddTalkListData(menu_index=4, menu_text=15000005, required_flag=-1)
+        AddTalkListData(menu_index=4, menu_text_id=15000005, required_flag=-1)
 
     def test(self):
         if GetTalkListEntryResult() == 0:
@@ -83,6 +98,9 @@ class State_5(State):
             return State_6
         if GetTalkListEntryResult() == 4:
             return State_2
+    
+    def exit(self):
+        ClearTalkListData()
 
 
 class State_6(State):
@@ -96,4 +114,4 @@ class State_6(State):
 
     def test(self):
         if IsMenuOpen(11) == 0:
-            return State_2
+            return State_5

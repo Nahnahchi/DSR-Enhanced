@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -34,7 +35,7 @@ class State_2(State):
         return [State_1, State_4, State_5, State_6]
 
     def enter(self):
-        TalkToPlayer(conversation=62000100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=62000100, unk1=-1, unk2=-1)
 
     def test(self):
         if HasTalkEnded() == 1:
@@ -59,7 +60,7 @@ class State_4(State):
         return [State_1]
 
     def enter(self):
-        TalkToPlayer(conversation=24000000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=24000000, unk1=-1, unk2=-1)
         SetFlagState(flag=11402798, state=1)
 
     def test(self):
@@ -76,7 +77,7 @@ class State_5(State):
         return [State_1]
 
     def enter(self):
-        TalkToPlayer(conversation=24000100, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=24000100, unk1=-1, unk2=-1)
         SetFlagState(flag=11402797, state=1)
 
     def test(self):
@@ -93,7 +94,7 @@ class State_6(State):
         return [State_1]
 
     def enter(self):
-        TalkToPlayer(conversation=24000200, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=24000200, unk1=-1, unk2=-1)
         SetFlagState(flag=11402796, state=1)
 
     def test(self):
@@ -110,7 +111,7 @@ class State_7(State):
         return [State_1]
 
     def enter(self):
-        TalkToPlayer(conversation=24000300, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=24000300, unk1=-1, unk2=-1)
 
     def test(self):
         if HasTalkEnded() == 1 and GetDistanceToPlayer() >= 25:

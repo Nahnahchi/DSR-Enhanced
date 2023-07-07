@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -59,12 +60,12 @@ class State_4(State):
         return [State_7, State_10]
 
     def enter(self):
-        AddTalkListData(menu_index=1, menu_text=15000360, required_flag=715)
-        AddTalkListData(menu_index=3, menu_text=15000260, required_flag=853)
-        AddTalkListData(menu_index=2, menu_text=15000200, required_flag=-1)
-        AddTalkListData(menu_index=5, menu_text=15000350, required_flag=286)
+        AddTalkListData(menu_index=1, menu_text_id=15000360, required_flag=715)
+        AddTalkListData(menu_index=3, menu_text_id=15000260, required_flag=853)
+        AddTalkListData(menu_index=2, menu_text_id=15000200, required_flag=-1)
+        AddTalkListData(menu_index=5, menu_text_id=15000350, required_flag=286)
         ShowShopMessage(0, 0, 0)
-        AddTalkListData(menu_index=4, menu_text=15000005, required_flag=-1)
+        AddTalkListData(menu_index=4, menu_text_id=15000005, required_flag=-1)
         SetFlagState(flag=71100095, state=1)
 
     def test(self):

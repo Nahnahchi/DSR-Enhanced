@@ -1,0 +1,251 @@
+{
+    "param_type": "LOCK_CAM_PARAM_ST",
+    "big_endian": false,
+    "unknown": 0,
+    "paramdef_data_version": 1,
+    "flags1": 2,
+    "flags2": 0,
+    "paramdef_format_version": 0,
+    "rows": {
+        "0": {
+            "RawName": "b'\\x83f\\x83t\\x83H\\x83\\x8b\\x83g\\x92l'",
+            "Name": "\u30c7\u30d5\u30a9\u30eb\u30c8\u5024"
+        },
+        "1": {
+            "RawName": "b'\\x8f\\xa2\\x8a\\xab\\x96\\x82\\x96@\\x8e\\xcb\\x92\\xf6\\x8b\\x97\\x97\\xa3\\x8ew\\x92\\xe8\\x97p'",
+            "Name": "\u53ec\u559a\u9b54\u6cd5\u5c04\u7a0b\u8ddd\u96e2\u6307\u5b9a\u7528"
+        },
+        "101": {
+            "RawName": "b'\\x8b\\xdf\\x8b\\x97\\x97\\xa3'",
+            "Name": "\u8fd1\u8ddd\u96e2",
+            "CameraDistanceFromTarget": 2.200000047683716,
+            "CharacterVerticalOffset": 1.2200000286102295
+        },
+        "102": {
+            "RawName": "b'\\x92\\x86\\x8b\\x97\\x97\\xa3'",
+            "Name": "\u4e2d\u8ddd\u96e2",
+            "CameraDistanceFromTarget": 3.200000047683716,
+            "CharacterVerticalOffset": 1.3200000524520874
+        },
+        "103": {
+            "RawName": "b'\\x89\\x93\\x8b\\x97\\x97\\xa3'",
+            "Name": "\u9060\u8ddd\u96e2",
+            "CameraDistanceFromTarget": 5.0,
+            "MinRotationElevation": -20.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.600000023841858
+        },
+        "104": {
+            "RawName": "b'\\x83\\x80\\x83J\\x83f\\x90\\xea\\x97p'",
+            "Name": "\u30e0\u30ab\u30c7\u5c02\u7528",
+            "CameraDistanceFromTarget": 6.0,
+            "MinRotationElevation": -20.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.100000023841858
+        },
+        "105": {
+            "RawName": "b'\\x83h\\x83\\x89\\x83S\\x83\\x93\\x83]\\x83\\x93\\x83r\\x90\\xea\\x97p'",
+            "Name": "\u30c9\u30e9\u30b4\u30f3\u30be\u30f3\u30d3\u5c02\u7528",
+            "CameraDistanceFromTarget": 2.5
+        },
+        "110": {
+            "RawName": "b'\\x92\\xca\\x8f\\xed_\\x88\\xc3\\x88\\xc5'",
+            "Name": "\u901a\u5e38_\u6697\u95c7",
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "111": {
+            "RawName": "b'\\x8b\\xdf\\x8b\\x97\\x97\\xa3_\\x88\\xc3\\x88\\xc5'",
+            "Name": "\u8fd1\u8ddd\u96e2_\u6697\u95c7",
+            "CameraDistanceFromTarget": 2.200000047683716,
+            "CharacterVerticalOffset": 1.2200000286102295,
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "112": {
+            "RawName": "b'\\x92\\x86\\x8b\\x97\\x97\\xa3_\\x88\\xc3\\x88\\xc5'",
+            "Name": "\u4e2d\u8ddd\u96e2_\u6697\u95c7",
+            "CameraDistanceFromTarget": 3.200000047683716,
+            "CharacterVerticalOffset": 1.3200000524520874,
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "113": {
+            "RawName": "b'\\x89\\x93\\x8b\\x97\\x97\\xa3_\\x88\\xc3\\x88\\xc5'",
+            "Name": "\u9060\u8ddd\u96e2_\u6697\u95c7",
+            "CameraDistanceFromTarget": 5.0,
+            "MinRotationElevation": -20.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.600000023841858,
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "200": {
+            "RawName": "b'\\x81y\\x83v\\x83\\x8d\\x83g\\x83}\\x83b\\x83v\\x81z\\x82\\xbf\\x82\\xe5\\x82\\xc1\\x82\\xc6\\x8dL\\x82\\xa2'",
+            "Name": "\u3010\u30d7\u30ed\u30c8\u30de\u30c3\u30d7\u3011\u3061\u3087\u3063\u3068\u5e83\u3044",
+            "CameraDistanceFromTarget": 4.300000190734863,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.3200000524520874
+        },
+        "210": {
+            "RawName": "b'\\x81yDLC\\x81z\\x90[\\x95\\xa3\\x82\\xcc\\x8e\\xe5\\x90\\xed\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u6df1\u6df5\u306e\u4e3b\u6226\u7528\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 6.0,
+            "LockElevationShiftRatio": 0.30000001192092896,
+            "CharacterVerticalOffset": 1.6200000047683716
+        },
+        "211": {
+            "RawName": "b'\\x81yDLC\\x81z\\x83A\\x83\\x8b\\x83g\\x83\\x8a\\x83E\\x83X\\x90\\xed\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u30a2\u30eb\u30c8\u30ea\u30a6\u30b9\u6226\u7528\u30ab\u30e1\u30e9",
+            "LockElevationShiftRatio": 0.30000001192092896
+        },
+        "212": {
+            "RawName": "b'\\x81yDLC\\x81z\\x8d\\x95\\x97\\xb3\\x90\\xed\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u9ed2\u7adc\u6226\u7528\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 6.0,
+            "LockElevationShiftRatio": 0.47999998927116394,
+            "CharacterVerticalOffset": 1.7599999904632568
+        },
+        "213": {
+            "RawName": "b'\\x81yDLC\\x81z\\x8d\\xbd\\x90l\\x90\\xed\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u9396\u4eba\u6226\u7528\u30ab\u30e1\u30e9",
+            "LockElevationShiftRatio": 0.4000000059604645
+        },
+        "214": {
+            "RawName": "b'\\x81yDLC\\x81z\\x83S\\x81[\\x90\\xed\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u30b4\u30fc\u6226\u7528\u30ab\u30e1\u30e9",
+            "LockElevationShiftRatio": 0.550000011920929,
+            "CharacterVerticalOffset": 1.7200000286102295,
+            "VerticalFieldOfView": 46.0
+        },
+        "220": {
+            "RawName": "b'\\x81yDLC\\x81z\\x93\\xac\\x8bZ\\x8f\\xea\\x90\\xea\\x97p\\x83\\x8d\\x83b\\x83N\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u95d8\u6280\u5834\u5c02\u7528\u30ed\u30c3\u30af\u30ab\u30e1\u30e9"
+        },
+        "1000": {
+            "RawName": "b'\\xe6\\xc3\\x90H\\x83h\\x83\\x89\\x83S\\x83\\x93\\x90\\xea\\x97p'",
+            "Name": "\u8caa\u98df\u30c9\u30e9\u30b4\u30f3\u5c02\u7528",
+            "CameraDistanceFromTarget": 6.0,
+            "LockElevationShiftRatio": 0.4000000059604645
+        },
+        "1010": {
+            "RawName": "b'\\x83K\\x81[\\x83S\\x83C\\x83\\x8b\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u30ac\u30fc\u30b4\u30a4\u30eb\u7528\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 5.0,
+            "CharacterVerticalOffset": 1.7200000286102295
+        },
+        "1100": {
+            "RawName": "b'\\x81y1st\\x83}\\x83b\\x83v\\x81z\\x82\\xc2\\x82\\xe8\\x8b\\xb4'",
+            "Name": "\u30101st\u30de\u30c3\u30d7\u3011\u3064\u308a\u6a4b",
+            "CameraDistanceFromTarget": 6.0,
+            "MinRotationElevation": -30.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.7999999523162842,
+            "VerticalFieldOfView": 48.0
+        },
+        "1101": {
+            "RawName": "b'\\x81y1st\\x83}\\x83b\\x83v\\x81z\\x89\\x93\\x8b\\x97\\x97\\xa3'",
+            "Name": "\u30101st\u30de\u30c3\u30d7\u3011\u9060\u8ddd\u96e2",
+            "CameraDistanceFromTarget": 5.5,
+            "MinRotationElevation": -30.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.7000000476837158,
+            "VerticalFieldOfView": 45.0
+        },
+        "1102": {
+            "RawName": "b'\\x81y1st\\x83}\\x83b\\x83v\\x81z\\x83{\\x83X\\x95\\x94\\x89\\xae'",
+            "Name": "\u30101st\u30de\u30c3\u30d7\u3011\u30dc\u30b9\u90e8\u5c4b",
+            "MinRotationElevation": -10.0,
+            "LockElevationShiftRatio": 0.699999988079071,
+            "CharacterVerticalOffset": 1.6200000047683716
+        },
+        "1103": {
+            "RawName": "b'\\x81y1st\\x83}\\x83b\\x83v\\x81z\\x8b\\x8c\\x83{\\x83X\\x95\\x94\\x89\\xae'",
+            "Name": "\u30101st\u30de\u30c3\u30d7\u3011\u65e7\u30dc\u30b9\u90e8\u5c4b",
+            "MinRotationElevation": -55.0
+        },
+        "1210": {
+            "RawName": "b'\\x81yDLC\\x81z\\x8b\\xe0\\x83L\\x83\\x81\\x83\\x89\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u3010DLC\u3011\u91d1\u30ad\u30e1\u30e9\u7528\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 6.0,
+            "LockElevationShiftRatio": 0.20000000298023224,
+            "CharacterVerticalOffset": 1.6200000047683716
+        },
+        "1300": {
+            "RawName": "b'\\x95\\xe6\\x8f\\xea\\x8b\\xdf\\x8b\\x97\\x97\\xa3'",
+            "Name": "\u5893\u5834\u8fd1\u8ddd\u96e2",
+            "CameraDistanceFromTarget": 3.299999952316284,
+            "CharacterVerticalOffset": 1.3200000524520874,
+            "VerticalFieldOfView": 41.5
+        },
+        "1301": {
+            "RawName": "b'\\x95\\xe6\\x8f\\xea\\x89\\x93\\x8b\\x97\\x97\\xa3'",
+            "Name": "\u5893\u5834\u9060\u8ddd\u96e2",
+            "CameraDistanceFromTarget": 5.0,
+            "MinRotationElevation": -20.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.600000023841858
+        },
+        "1410": {
+            "RawName": "b'\\x94p\\x93s\\x83C\\x83U\\x83\\x8a\\x83X\\x90\\xea\\x97p'",
+            "Name": "\u5ec3\u90fd\u30a4\u30b6\u30ea\u30b9\u5c02\u7528",
+            "CameraDistanceFromTarget": 4.5,
+            "CharacterVerticalOffset": 1.6200000047683716,
+            "VerticalFieldOfView": 48.0
+        },
+        "1510": {
+            "RawName": "b'\\x83K\\x81[\\x83S\\x83C\\x83\\x8b\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u30ac\u30fc\u30b4\u30a4\u30eb\u7528\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 5.0,
+            "CharacterVerticalOffset": 1.6200000047683716
+        },
+        "1511": {
+            "RawName": "b'\\x83K\\x81[\\x83S\\x83C\\x83\\x8b\\x97p\\x83J\\x83\\x81\\x83\\x89_\\x96\\xe9\\x97p'",
+            "Name": "\u30ac\u30fc\u30b4\u30a4\u30eb\u7528\u30ab\u30e1\u30e9_\u591c\u7528",
+            "CameraDistanceFromTarget": 5.0,
+            "CharacterVerticalOffset": 1.6200000047683716,
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "1700": {
+            "RawName": "b'\\x83V\\x81[\\x83X\\x90\\xed\\x93\\xac\\x97p\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u30b7\u30fc\u30b9\u6226\u95d8\u7528\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 5.0,
+            "CharacterVerticalOffset": 1.6200000047683716
+        },
+        "10000": {
+            "RawName": "b'\\x8b\\xdf\\x8b\\x97\\x97\\xa3\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u8fd1\u8ddd\u96e2\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 2.200000047683716,
+            "CharacterVerticalOffset": 1.2200000286102295
+        },
+        "10001": {
+            "RawName": "b'\\x92\\x86\\x8b\\x97\\x97\\xa3\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u4e2d\u8ddd\u96e2\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 3.200000047683716,
+            "CharacterVerticalOffset": 1.149999976158142
+        },
+        "10002": {
+            "RawName": "b'\\x89\\x93\\x8b\\x97\\x97\\xa3\\x83J\\x83\\x81\\x83\\x89'",
+            "Name": "\u9060\u8ddd\u96e2\u30ab\u30e1\u30e9",
+            "CameraDistanceFromTarget": 6.0,
+            "MinRotationElevation": -20.0,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.7000000476837158
+        },
+        "10003": {
+            "RawName": "b'\\x88\\xc3\\x88\\xc5\\x83\\x8d\\x83b\\x83N'",
+            "Name": "\u6697\u95c7\u30ed\u30c3\u30af",
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "10004": {
+            "RawName": "b'\\x81y\\x83v\\x83\\x8d\\x83g\\x83}\\x83b\\x83v\\x81z\\x88\\xc3\\x88\\xc5'",
+            "Name": "\u3010\u30d7\u30ed\u30c8\u30de\u30c3\u30d7\u3011\u6697\u95c7",
+            "MinRotationElevation": -50.0,
+            "CharacterVerticalOffset": 1.6399999856948853,
+            "MaxDistanceFromCharacter": 7.0
+        },
+        "10005": {
+            "RawName": "b'\\x81y\\x83v\\x83\\x8d\\x83g\\x83}\\x83b\\x83v\\x81z\\x82\\xbf\\x82\\xe5\\x82\\xc1\\x82\\xc6\\x8dL\\x82\\xa2'",
+            "Name": "\u3010\u30d7\u30ed\u30c8\u30de\u30c3\u30d7\u3011\u3061\u3087\u3063\u3068\u5e83\u3044",
+            "CameraDistanceFromTarget": 4.300000190734863,
+            "LockElevationShiftRatio": 0.4000000059604645,
+            "CharacterVerticalOffset": 1.3200000524520874
+        }
+    }
+}

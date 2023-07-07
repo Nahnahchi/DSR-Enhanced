@@ -1,3 +1,4 @@
+"""TALK ESD STATE MACHINE 1"""
 from soulstruct.darksouls1r.ezstate.esd import *
 
 
@@ -15,7 +16,7 @@ class State_1(State):
         return [State_2]
 
     def enter(self):
-        TalkToPlayer(conversation=62000000, unk1=-1, unk2=-1)
+        TalkToPlayer(talk_param_id=62000000, unk1=-1, unk2=-1)
 
     def test(self):
         if HasTalkEnded() == 1 and GetDistanceToPlayer() > 3:
@@ -31,7 +32,7 @@ class State_2(State):
         return [State_0, State_1, State_3, State_4, State_5, State_6]
 
     def test(self):
-        if GetOneLineHelpStatus() == 0 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3:
+        if GetOneLineHelpStatus() == 0 and GetSelfHP() == 100 and HasDisableTalkPeriodElapsed() == 1 and IsTalkingToSomeoneElse() == 0 and CheckSelfDeath() == 0 and IsCharacterDisabled() == 0 and IsClientPlayer() == 0 and GetRelativeAngleBetweenPlayerAndSelf() <= 45 and GetDistanceToPlayer() <= 3:
             return State_3
         if GetOneLineHelpStatus() == 1 and (IsTalkingToSomeoneElse() or CheckSelfDeath() or IsCharacterDisabled() or IsClientPlayer() == 1 or GetRelativeAngleBetweenPlayerAndSelf() > 45 or GetDistanceToPlayer() > 3):
             return State_4
@@ -72,9 +73,9 @@ class State_5(State):
         return [State_6, State_7]
 
     def enter(self):
-        AddTalkListData(menu_index=1, menu_text=15000010, required_flag=-1)
+        AddTalkListData(menu_index=1, menu_text_id=15000010, required_flag=-1)
         ShowShopMessage(0, 0, 0)
-        AddTalkListData(menu_index=4, menu_text=15000005, required_flag=-1)
+        AddTalkListData(menu_index=4, menu_text_id=15000005, required_flag=-1)
 
     def test(self):
         if GetTalkListEntryResult() == 0:
@@ -83,6 +84,9 @@ class State_5(State):
             return State_6
         if GetTalkListEntryResult() == 4:
             return State_2
+    
+    def exit(self):
+        ClearTalkListData()
 
 
 class State_6(State):
@@ -92,7 +96,7 @@ class State_6(State):
         return [State_5]
 
     def enter(self):
-        OpenRegularShop(6800, 6805)
+        OpenRegularShop(6800, 6810)
 
     def test(self):
         if GetDistanceToPlayer() > 5:
